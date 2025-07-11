@@ -1,4 +1,4 @@
-package basicmod.util;
+package rubimod.util;
 
 import java.util.Objects;
 import java.util.function.Function;
