@@ -1,0 +1,17 @@
+rubimod\potions\BasePotion.class
+rubimod\relics\BaseRelic.class
+rubimod\util\TextureLoader$1.class
+rubimod\powers\BasePower.class
+rubimod\RubiMod.class
+rubimod\character\Hegemon.class
+rubimod\cards\BaseCard$VariableType.class
+rubimod\util\GeneralUtils.class
+rubimod\util\TextureLoader.class
+rubimod\character\Hegemon$Meta.class
+rubimod\cards\BaseCard.class
+rubimod\util\CardStats.class
+rubimod\cards\BaseCard$QuickDynamicVariable.class
+rubimod\cards\BaseCard$LocalVarInfo.class
+rubimod\util\TriFunction.class
+rubimod\util\KeywordInfo.class
+rubimod\relics\BaseRelic$1.class

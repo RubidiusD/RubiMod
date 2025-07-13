@@ -1,14 +1,13 @@
 package rubimod;
 
+import basemod.AutoAdd;
 import basemod.BaseMod;
-import basemod.interfaces.EditCharactersSubscriber;
-import basemod.interfaces.EditKeywordsSubscriber;
-import basemod.interfaces.EditStringsSubscriber;
-import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.*;
 import rubimod.util.GeneralUtils;
 import rubimod.util.KeywordInfo;
 import rubimod.util.TextureLoader;
 import rubimod.character.Hegemon;
+import rubimod.cards.BaseCard;
 import com.badlogic.gdx.Files;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglFileHandle;
@@ -31,6 +30,7 @@ import java.util.*;
 
 @SpireInitializer
 public class RubiMod implements
+        EditCardsSubscriber,
         EditCharactersSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
@@ -226,7 +226,15 @@ public class RubiMod implements
     }
 
     @Override
-    public void receiveEditCharacters() {
+    public void receiveEditCharacters() { // adds any characters to the game
         Hegemon.Meta.registerCharacter();
+    }
+
+    @Override
+    public void receiveEditCards() { // adds any cards to the game
+        new AutoAdd(modID)
+                .packageFilter(BaseCard.class)
+                .setDefaultSeen(true)
+                .cards();
     }
 }
