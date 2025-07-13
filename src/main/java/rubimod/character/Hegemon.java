@@ -138,11 +138,15 @@ public class Hegemon extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
         //List of IDs of cards for your starting deck.
         //If you want multiple of the same card, you have to add it multiple times.
-        retVal.add(Strike_Red.ID);
-        retVal.add(Strike_Red.ID);
-        retVal.add(Defend_Blue.ID);
-        retVal.add(Defend_Blue.ID);
-        retVal.add(Neutralize.ID);
+        retVal.add("RubiMod:Strike");
+        retVal.add("RubiMod:Strike");
+        retVal.add("RubiMod:Strike");
+        retVal.add("RubiMod:Strike");
+        retVal.add("RubiMod:Defend");
+        retVal.add("RubiMod:Defend");
+        retVal.add("RubiMod:Defend");
+        retVal.add("RubiMod:MidnightEyes");
+        retVal.add("RubiMod:CloakofNight");
 
         return retVal;
     }
@@ -180,9 +184,9 @@ public class Hegemon extends CustomPlayer {
         };
     }
 
-    private final Color cardRenderColor = Color.LIGHT_GRAY.cpy(); //Used for some vfx on moving cards (sometimes) (maybe)
-    private final Color cardTrailColor = Color.LIGHT_GRAY.cpy(); //Used for card trail vfx during gameplay.
-    private final Color slashAttackColor = Color.LIGHT_GRAY.cpy(); //Used for a screen tint effect when you attack the heart.
+    private final Color cardRenderColor = Color.BLACK.cpy(); //Used for some vfx on moving cards (sometimes) (maybe)
+    private final Color cardTrailColor = Color.BLACK.cpy(); //Used for card trail vfx during gameplay.
+    private final Color slashAttackColor = Color.BLACK.cpy(); //Used for a screen tint effect when you attack the heart.
     @Override
     public Color getCardRenderColor() {
         return cardRenderColor;
@@ -203,7 +207,7 @@ public class Hegemon extends CustomPlayer {
         //Font used to display your current energy.
         //energyNumFontRed, Blue, Green, and Purple are used by the basegame characters.
         //It is possible to make your own, but not convenient.
-        return FontHelper.energyNumFontRed;
+        return FontHelper.energyNumFontGreen;
     }
 
     @Override

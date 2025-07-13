@@ -15,11 +15,15 @@
   },
   "${modID}:Defend": {
     "NAME": "Defend",
-    "DESCRIPTION": "Gains !B! block."
+    "DESCRIPTION": "Gain !B! Block."
   },
   "${modID}:MidnightEyes": {
     "NAME": "Midnight Eyes",
     "DESCRIPTION": "Scry !M!.",
-    "UPGRADE_DESCRIPTION": "Scry |M|. NL Gain 1 Dexterity."
+    "UPGRADE_DESCRIPTION": "Scry |M|. NL Gain 1 Artifact."
+  },
+  "${modID}:CloakofNight": {
+    "NAME": "Cloak of Night",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Dexterity"
   }
 }
