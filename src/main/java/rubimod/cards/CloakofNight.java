@@ -16,16 +16,16 @@ public class CloakofNight extends BaseCard {
             CardType.SKILL,
             CardRarity.BASIC,
             CardTarget.SELF,
-            1
+            2 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int BLOCK = 3;
+    private static final int BLOCK = 8;
 
     public CloakofNight() {
         super(ID, info); // calls the parent constructor
 
         setBlock(BLOCK); // self-explanatory
-        setCostUpgrade(0);
+        setCostUpgrade(1);
     }
 
     @Override

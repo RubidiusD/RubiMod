@@ -16,7 +16,7 @@ public class Strike extends BaseCard {
             CardType.ATTACK,
             CardRarity.BASIC,
             CardTarget.ENEMY,
-            1
+            1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int DAMAGE = 6;
@@ -37,7 +37,7 @@ public class Strike extends BaseCard {
     }
 
     @Override
-    public AbstractCard makeCopy() { //Optional
+    public AbstractCard makeCopy() { // Optional
         return new Strike();
     }
 }

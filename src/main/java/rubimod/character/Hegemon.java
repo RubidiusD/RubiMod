@@ -10,9 +10,6 @@ import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.blue.Defend_Blue;
-import com.megacrit.cardcrawl.cards.green.Neutralize;
-import com.megacrit.cardcrawl.cards.red.Strike_Red;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
@@ -23,6 +20,11 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import rubimod.RubiMod;
+import rubimod.cards.CloakofNight;
+import rubimod.cards.MidnightEyes;
+import rubimod.cards.Strike;
+import rubimod.cards.Defend;
+
 import java.util.ArrayList;
 
 import static rubimod.RubiMod.characterPath;
@@ -138,15 +140,15 @@ public class Hegemon extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
         //List of IDs of cards for your starting deck.
         //If you want multiple of the same card, you have to add it multiple times.
-        retVal.add("RubiMod:Strike");
-        retVal.add("RubiMod:Strike");
-        retVal.add("RubiMod:Strike");
-        retVal.add("RubiMod:Strike");
-        retVal.add("RubiMod:Defend");
-        retVal.add("RubiMod:Defend");
-        retVal.add("RubiMod:Defend");
-        retVal.add("RubiMod:MidnightEyes");
-        retVal.add("RubiMod:CloakofNight");
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
+        retVal.add(CloakofNight.ID);
+        retVal.add(MidnightEyes.ID);
 
         return retVal;
     }
@@ -164,7 +166,8 @@ public class Hegemon extends CustomPlayer {
     public AbstractCard getStartCardForEvent() {
         //This card is used for the Gremlin card matching game.
         //It should be a non-strike non-defend starter card, but it doesn't have to be.
-        return new Strike_Red();
+        return new CloakofNight();
+//        return new Strike();
     }
 
     /*- Below this is methods that you should *probably* adjust, but don't have to. -*/

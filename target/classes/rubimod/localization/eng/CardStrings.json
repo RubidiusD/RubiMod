@@ -20,7 +20,7 @@
   "rubimod:MidnightEyes": {
     "NAME": "Midnight Eyes",
     "DESCRIPTION": "Scry !M!.",
-    "UPGRADE_DESCRIPTION": "Scry |M|. NL Gain 1 Artifact."
+    "UPGRADE_DESCRIPTION": "Scry !M!. NL Gain 1 Artifact."
   },
   "rubimod:CloakofNight": {
     "NAME": "Cloak of Night",

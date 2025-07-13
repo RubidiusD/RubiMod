@@ -16,7 +16,7 @@ public class MidnightEyes extends BaseCard {
             CardType.SKILL,
             CardRarity.BASIC,
             CardTarget.SELF,
-            0
+            0 // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int MAGIC = 3;
@@ -31,8 +31,8 @@ public class MidnightEyes extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ScryAction(magicNumber));
-        if (upgraded) {
-            addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, 1), 1));
+        if (magicNumber != baseMagicNumber) {
+            addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, 1)));
         }
     }
 

@@ -14,7 +14,7 @@ public class Defend extends BaseCard {
             CardType.SKILL,
             CardRarity.BASIC,
             CardTarget.SELF,
-            1
+            1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int BLOCK = 5;

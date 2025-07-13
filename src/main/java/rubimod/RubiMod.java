@@ -232,9 +232,9 @@ public class RubiMod implements
 
     @Override
     public void receiveEditCards() { // adds any cards to the game
-        new AutoAdd(modID)
-                .packageFilter(BaseCard.class)
-                .setDefaultSeen(true)
-                .cards();
+        new AutoAdd(modID) // Loads files
+                .packageFilter(BaseCard.class) // in the same package as this class
+                .setDefaultSeen(true) // and marks them as discovered
+                .cards(); // and adds them
     }
 }
