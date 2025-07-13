@@ -1,12 +1,14 @@
 package rubimod;
 
 import basemod.BaseMod;
+import basemod.interfaces.EditCharactersSubscriber;
 import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import rubimod.util.GeneralUtils;
 import rubimod.util.KeywordInfo;
 import rubimod.util.TextureLoader;
+import rubimod.character.Hegemon;
 import com.badlogic.gdx.Files;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglFileHandle;
@@ -29,6 +31,7 @@ import java.util.*;
 
 @SpireInitializer
 public class RubiMod implements
+        EditCharactersSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         PostInitializeSubscriber {
@@ -47,6 +50,8 @@ public class RubiMod implements
     //This will be called by ModTheSpire because of the @SpireInitializer annotation at the top of the class.
     public static void initialize() {
         new RubiMod();
+
+        Hegemon.Meta.registerColor();
     }
 
     public RubiMod() {
@@ -218,5 +223,10 @@ public class RubiMod implements
         else {
             throw new RuntimeException("Failed to determine mod info/ID based on initializer.");
         }
+    }
+
+    @Override
+    public void receiveEditCharacters() {
+        Hegemon.Meta.registerCharacter();
     }
 }
