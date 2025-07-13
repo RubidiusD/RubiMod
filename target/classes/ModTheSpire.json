@@ -3,7 +3,7 @@
   "name": "The Hegemon",
   "author_list": ["Rubidius \"Rubi\" Dext"],
   "description": "This mod adds random nonsense.\n\nLargely inspired by He Who Fights With Monsters \n\nby Shirtaloon (I can really recommend it) \n\nFeel free to have fun looking for the nonsense in normal gameplay! \n :3 \n  :3",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.0",
   "dependencies": ["basemod", "stslib"],

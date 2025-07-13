@@ -8,5 +8,22 @@
       "If you need to use it for stuff.",
       "Blizzard is a good example for this."
     ]
+  },
+  "rubimod:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deals !D! damage."
+  },
+  "rubimod:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "rubimod:MidnightEyes": {
+    "NAME": "Midnight Eyes",
+    "DESCRIPTION": "Scry !M!.",
+    "UPGRADE_DESCRIPTION": "Scry |M|. NL Gain 1 Artifact."
+  },
+  "rubimod:CloakofNight": {
+    "NAME": "Cloak of Night",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Dexterity"
   }
 }
