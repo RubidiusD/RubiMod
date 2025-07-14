@@ -9,7 +9,9 @@ rubimod\cards\BaseCard$VariableType.class
 rubimod\cards\Defend.class
 rubimod\util\GeneralUtils.class
 rubimod\util\TextureLoader.class
+rubimod\NecroticDamageInfo.class
 rubimod\character\Hegemon$Meta.class
+rubimod\cards\LashOut.class
 rubimod\cards\Strike.class
 rubimod\cards\BaseCard.class
 rubimod\util\CardStats.class
@@ -17,5 +19,6 @@ rubimod\cards\BaseCard$QuickDynamicVariable.class
 rubimod\cards\MidnightEyes.class
 rubimod\cards\BaseCard$LocalVarInfo.class
 rubimod\util\TriFunction.class
+rubimod\powers\Sin.class
 rubimod\util\KeywordInfo.class
 rubimod\relics\BaseRelic$1.class

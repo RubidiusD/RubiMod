@@ -25,5 +25,10 @@
   "rubimod:CloakofNight": {
     "NAME": "Cloak of Night",
     "DESCRIPTION": "Gain !B! Block. NL Gain 1 Dexterity"
+  },
+  "rubimod:LashOut": {
+    "NAME": "Lash Out",
+    "DESCRIPTION": "Deals !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deals !D! damage. NL Deals !M! #yNecrotic damage."
   }
 }
