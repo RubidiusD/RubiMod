@@ -11,7 +11,7 @@
   },
   "${modID}:Strike": {
     "NAME": "Strike",
-    "DESCRIPTION": "Deals !D! damage."
+    "DESCRIPTION": "Deal !D! damage."
   },
   "${modID}:Defend": {
     "NAME": "Defend",
@@ -28,7 +28,72 @@
   },
   "${modID}:LashOut": {
     "NAME": "Lash Out",
-    "DESCRIPTION": "Deals !D! damage.",
-    "UPGRADE_DESCRIPTION": "Deals !D! damage. NL Deals !M! #y Necrotic damage."
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !M! #y Necrotic damage."
+  },
+  "${modID}:Ruination": {
+    "NAME": "Ruination",
+    "DESCRIPTION": "Deal !D! damage. NL Deal !M! #y Necrotic damage."
+  },
+  "${modID}:Punish": {
+    "NAME": "Punish",
+    "DESCRIPTION": "Deal !M! #y Necrotic damage. NL Apply 1 #y Sin.",
+    "UPGRADE_DESCRIPTION": "Deal !M! #y Necrotic damage. NL Apply 2 #y Sin."
+  },
+  "${modID}:HeroicPlay": {
+    "NAME": "Heroic Play",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! #y Frail and !M! #y Vulnerable."
+  },
+  "${modID}:Penitent": {
+    "NAME": "Penitent",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Gain and apply 1 #y Strength."
+  },
+  "${modID}:HydraFlail": {
+    "NAME": "Hydra Flail",
+    "DESCRIPTION": "Deal !D! damage to a random enemy NL 2X times."
+  },
+  "${modID}:Dose": {
+    "NAME": "Dose",
+    "DESCRIPTION": "Apply !M! Poison."
+  },
+  "${modID}:Endure": {
+    "NAME": "Endure",
+    "DESCRIPTION": "Gain !B! Block twice. NL Gain !M! Frail."
+  },
+  "${modID}:Imbibe": {
+    "NAME": "Imbibe",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact."
+  },
+  "${modID}:SkillBookRed": {
+    "NAME": "Red Skill Book",
+    "DESCRIPTION": "Create a random red skill in your hand. NL Exhaust."
+    "UPGRADED_DESCRIPTION": "Create a random upgraded red skill in your hand. NL Exhaust."
+  },
+  "${modID}:SkillBookGreen": {
+    "NAME": "Green Skill Book",
+    "DESCRIPTION": "Create a random green skill in your hand. NL Exhaust."
+    "UPGRADED_DESCRIPTION": "Create a random upgraded green skill in your hand. NL Exhaust."
+  },
+  "${modID}:SkillBookBlue": {
+    "NAME": "Blue Skill Book",
+    "DESCRIPTION": "Create a random blue skill in your hand. NL Exhaust."
+    "UPGRADED_DESCRIPTION": "Create a random upgraded blue skill in your hand. NL Exhaust."
+  },
+  "${modID}:SkillBookPurple": {
+    "NAME": "Purple Skill Book",
+    "DESCRIPTION": "Create a random purple skill in your hand. NL Exhaust."
+    "UPGRADED_DESCRIPTION": "Create a random upgraded purple skill in your hand. NL Exhaust."
+  },
+  "${modID}:PathofShadows": {
+    "NAME": "Path of Shadows",
+    "DESCRIPTION": "Gain !B!x2 Block. NL You can't gain more Block from cards this turn. NL You do not lose Block at the start of next turn."
+  },
+  "${modID}:Meditation": {
+    "NAME": "Meditation",
+    "DESCRIPTION": "Each turn, gain Frail and draw a card."
+  },
+  "${modID}:AfflictionSpecialisation": {
+    "NAME": "Affliction Specialisation",
+    "DESCRIPTION": "gain !M! Artifact."
   }
 }

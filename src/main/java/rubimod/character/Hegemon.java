@@ -20,7 +20,11 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import rubimod.RubiMod;
-import rubimod.cards.*;
+import rubimod.cards.attacks.LashOut;
+import rubimod.cards.attacks.Strike;
+import rubimod.cards.skills.CloakofNight;
+import rubimod.cards.skills.Defend;
+import rubimod.cards.skills.MidnightEyes;
 
 import java.util.ArrayList;
 

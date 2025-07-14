@@ -10,5 +10,11 @@
     "DESCRIPTIONS": [
       "Takes #b", "0% additional #y Necrotic damage."
     ]
+  },
+  "${modID}:MeditationPower": {
+    "NAME": "Meditation",
+    "DESCRIPTIONS": [
+      "Gain #b", " Frail and draw #b", " cards."
+    ]
   }
 }

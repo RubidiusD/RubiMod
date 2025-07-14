@@ -19,5 +19,19 @@
       "multiword_keywords"
     ],
     "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
+  },
+  {
+    "PROPER_NAME": "Sin",
+    "NAMES": [
+      "sin"
+    ],
+    "DESCRIPTION": "Increases the effect of Necrotic damage by 10% per stack."
+  },
+  {
+    "PROPER_NAME": "Necrotic",
+    "NAMES": [
+      "necrotic"
+    ],
+    "DESCRIPTION": "Magical damage that doesn't benefit from your strength or enemies' vulnerabilities."
   }
 ]

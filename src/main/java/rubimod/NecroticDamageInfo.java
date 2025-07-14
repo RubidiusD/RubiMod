@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import rubimod.powers.Sin;
 
-public class NecroticDamageInfo extends DamageInfo {
+public class NecroticDamageInfo extends DamageInfo { // This version of damage info is affected by Sin.
     public NecroticDamageInfo(AbstractCreature damageSource, int base) {
         super(damageSource, base, DamageType.THORNS);
     }
@@ -18,19 +18,15 @@ public class NecroticDamageInfo extends DamageInfo {
     public void applyPowers(AbstractCreature owner, AbstractCreature target) {
         super.applyPowers(owner, target);
 
-        int sin = target.getPower(Sin.POWER_ID).amount;
-        if (sin != 0) {
-            float tmp = (float)this.output;
+        int sin = target.getPower(Sin.POWER_ID).amount; // get the target's amount of sin
+        if (sin != 0) { // if they have any
+            this.output = MathUtils.floor((float) this.output * (1.0f + (float) sin * 0.1f)); // apply sin and round down
 
-            tmp *= (1.0f + sin * 0.1f);
-
-            this.output = MathUtils.floor(tmp);
-
-            if (this.base != this.output) {
+            if (this.base != this.output) { // check if it should highlight n stuff
                 this.isModified = true;
             }
 
-            if (this.output < 0) {
+            if (this.output < 0) { // make sure it isn't negative
                 this.output = 0;
             }
         }

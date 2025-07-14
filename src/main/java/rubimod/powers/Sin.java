@@ -1,13 +1,13 @@
 package rubimod.powers;
 
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import rubimod.cards.skills.PathofShadows;
 
 import static rubimod.RubiMod.makeID;
 
 public class Sin extends BasePower {
-    public static final String POWER_ID = makeID("Sin");
+    public static final String POWER_ID = makeID(Sin.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
     //The only thing TURN_BASED controls is the color of the number on the power icon.
