@@ -150,5 +150,10 @@
   "${modID}:Punition": {
     "NAME": "Punition",
     "DESCRIPTION": "Apply !M! ${modID}:Sin. NL Deal ${modID}:Necrotic damage equal to the target's ${modID}:Sin."
+  },
+  "${modID}:PhoenixForm": {
+    "NAME": "Phoenix Form",
+    "DESCRIPTION": "Ethereal. NL Increase your buffs by an amount that increases each turn.",
+    "UPGRADE_DESCRIPTION": "Increase your buffs by an amount that increases each turn."
   }
 }

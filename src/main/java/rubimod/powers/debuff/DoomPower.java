@@ -1,8 +1,9 @@
-package rubimod.powers;
+package rubimod.powers.debuff;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import rubimod.powers.BasePower;
 
 import static rubimod.RubiMod.makeID;
 

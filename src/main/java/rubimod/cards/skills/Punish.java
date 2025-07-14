@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.NecroticDamageInfo;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.powers.Sin;
+import rubimod.powers.debuff.Sin;
 import rubimod.util.CardStats;
 
 public class Punish extends BaseCard {

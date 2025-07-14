@@ -3,7 +3,7 @@ package rubimod;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import rubimod.powers.Sin;
+import rubimod.powers.debuff.Sin;
 
 public class NecroticDamageInfo extends DamageInfo { // This version of damage info is affected by Sin.
     public NecroticDamageInfo(AbstractCreature damageSource, int base) {

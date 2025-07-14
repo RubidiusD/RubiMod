@@ -1,9 +1,10 @@
-package rubimod.powers;
+package rubimod.powers.buff;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.FrailPower;
+import rubimod.powers.BasePower;
 
 import static rubimod.RubiMod.makeID;
 

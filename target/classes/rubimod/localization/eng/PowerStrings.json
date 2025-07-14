@@ -28,5 +28,17 @@
     "DESCRIPTIONS": [
       "Increase debuffs by #b", " at the start of each turn, then increase that number by #b", ". "
     ]
+  },
+  "rubimod:PhoenixPower": {
+    "NAME": "Phoenix Form",
+    "DESCRIPTIONS": [
+      "Increase buffs by #b", " at the start of each turn, then increase that number by #b", ". "
+    ]
+  },
+  "rubimod:ShadowHand": {
+    "NAME": "Shadow Hand",
+    "DESCRIPTIONS": [
+      "Deals #b", " #yNecrotic damage with each attack. "
+    ]
   }
 }

@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.cards.skills.Punish2;
 import rubimod.character.Hegemon;
-import rubimod.powers.SnakePower;
+import rubimod.powers.buff.SnakePower;
 import rubimod.util.CardStats;
 
 public class WayoftheSnake extends BaseCard {

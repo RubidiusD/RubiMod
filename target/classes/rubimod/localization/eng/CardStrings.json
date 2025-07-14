@@ -150,5 +150,10 @@
   "rubimod:Punition": {
     "NAME": "Punition",
     "DESCRIPTION": "Apply !M! rubimod:Sin. NL Deal rubimod:Necrotic damage equal to the target's rubimod:Sin."
+  },
+  "rubimod:PhoenixForm": {
+    "NAME": "Phoenix Form",
+    "DESCRIPTION": "Ethereal. NL Increase your buffs by an amount that increases each turn.",
+    "UPGRADE_DESCRIPTION": "Increase your buffs by an amount that increases each turn."
   }
 }

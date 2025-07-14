@@ -3,14 +3,13 @@ package rubimod.relics;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
-import rubimod.cards.skills.uncommon.Punition;
 import rubimod.character.Hegemon;
 
 import static rubimod.RubiMod.makeID;
 
 public class MysteriousStranger extends BaseRelic {
-    private static final String NAME = "MysteriousStranger";
-    public static final String ID = makeID(Punition.class.getSimpleName());
+    private static final String NAME = MysteriousStranger.class.getSimpleName();
+    public static final String ID = makeID(NAME);
     private static final RelicTier RARITY = RelicTier.STARTER;
     private static final LandingSound SOUND = LandingSound.MAGICAL;
 

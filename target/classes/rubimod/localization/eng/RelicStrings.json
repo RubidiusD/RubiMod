@@ -12,5 +12,12 @@
     "DESCRIPTIONS": [
       "Start combat with #b", " Artifact."
     ]
+  },
+  "rubimod:SuspiciousSalve": {
+    "NAME": "Suspicious Salve",
+    "FLAVOR": "This is definitely just juiced animal. Ah well...",
+    "DESCRIPTIONS": [
+      "Artifact has a #b50% chance to stick around."
+    ]
   }
 }

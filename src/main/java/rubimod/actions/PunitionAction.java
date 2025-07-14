@@ -4,7 +4,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import rubimod.NecroticDamageInfo;
-import rubimod.powers.Sin;
+import rubimod.powers.debuff.Sin;
 
 public class PunitionAction extends AbstractGameAction {
     AbstractCreature owner;

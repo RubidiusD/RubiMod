@@ -1,13 +1,15 @@
-package rubimod.powers;
+package rubimod.powers.buff;
 
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import rubimod.cards.skills.Punish2;
+import rubimod.NecroticDamageInfo;
+import rubimod.powers.BasePower;
 
 import static rubimod.RubiMod.makeID;
 
-public class SnakePower extends BasePower {
-    public static final String POWER_ID = makeID(SnakePower.class.getSimpleName());
+public class ShadowHand extends BasePower {
+    public static final String POWER_ID = makeID(ShadowHand.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
     //The only thing TURN_BASED controls is the color of the number on the power icon.
@@ -15,15 +17,15 @@ public class SnakePower extends BasePower {
     //For a power to actually decrease/go away on its own they do it themselves.
     //Look at powers that do this like VulnerablePower and DoubleTapPower.
 
-    public SnakePower(AbstractCreature owner, int amount) {
+    public ShadowHand(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
 
     @Override
-    public void atStartOfTurn() {
-        super.atStartOfTurn();
+    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
+        super.onAttack(info, damageAmount, target);
 
-        addToBot(new MakeTempCardInHandAction(new Punish2(), amount));
+        addToTop(new DamageAction(target, new NecroticDamageInfo(owner, amount)));
     }
 
     public void updateDescription() {

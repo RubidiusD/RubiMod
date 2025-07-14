@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.powers.MeditationPower;
+import rubimod.powers.buff.MeditationPower;
 import rubimod.util.CardStats;
 
 public class Meditation extends BaseCard {
