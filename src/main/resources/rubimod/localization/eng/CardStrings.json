@@ -66,22 +66,22 @@
   },
   "${modID}:SkillBookRed": {
     "NAME": "Red Skill Book",
-    "DESCRIPTION": "Create a random red skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random red skill in your hand. NL Exhaust.",
     "UPGRADED_DESCRIPTION": "Create a random upgraded red skill in your hand. NL Exhaust."
   },
   "${modID}:SkillBookGreen": {
     "NAME": "Green Skill Book",
-    "DESCRIPTION": "Create a random green skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random green skill in your hand. NL Exhaust.",
     "UPGRADED_DESCRIPTION": "Create a random upgraded green skill in your hand. NL Exhaust."
   },
   "${modID}:SkillBookBlue": {
     "NAME": "Blue Skill Book",
-    "DESCRIPTION": "Create a random blue skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random blue skill in your hand. NL Exhaust.",
     "UPGRADED_DESCRIPTION": "Create a random upgraded blue skill in your hand. NL Exhaust."
   },
   "${modID}:SkillBookPurple": {
     "NAME": "Purple Skill Book",
-    "DESCRIPTION": "Create a random purple skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random purple skill in your hand. NL Exhaust.",
     "UPGRADED_DESCRIPTION": "Create a random upgraded purple skill in your hand. NL Exhaust."
   },
   "${modID}:PathofShadows": {

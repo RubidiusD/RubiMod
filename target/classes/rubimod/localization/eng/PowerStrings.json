@@ -8,7 +8,13 @@
   "rubimod:Sin": {
     "NAME": "Sin",
     "DESCRIPTIONS": [
-      "Takes #b", "0% additional #yNecrotic damage."
+      "Takes #b", "0% additional #y Necrotic damage."
+    ]
+  },
+  "rubimod:MeditationPower": {
+    "NAME": "Meditation",
+    "DESCRIPTIONS": [
+      "Gain #b", " Frail and draw #b", " cards."
     ]
   }
 }

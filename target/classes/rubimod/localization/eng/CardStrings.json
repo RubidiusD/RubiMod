@@ -11,7 +11,7 @@
   },
   "rubimod:Strike": {
     "NAME": "Strike",
-    "DESCRIPTION": "Deals !D! damage."
+    "DESCRIPTION": "Deal !D! damage."
   },
   "rubimod:Defend": {
     "NAME": "Defend",
@@ -28,7 +28,72 @@
   },
   "rubimod:LashOut": {
     "NAME": "Lash Out",
-    "DESCRIPTION": "Deals !D! damage.",
-    "UPGRADE_DESCRIPTION": "Deals !D! damage. NL Deals !M! #yNecrotic damage."
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !M! #y Necrotic damage."
+  },
+  "rubimod:Ruination": {
+    "NAME": "Ruination",
+    "DESCRIPTION": "Deal !D! damage. NL Deal !M! #y Necrotic damage."
+  },
+  "rubimod:Punish": {
+    "NAME": "Punish",
+    "DESCRIPTION": "Deal !M! #y Necrotic damage. NL Apply 1 #y Sin.",
+    "UPGRADE_DESCRIPTION": "Deal !M! #y Necrotic damage. NL Apply 2 #y Sin."
+  },
+  "rubimod:HeroicPlay": {
+    "NAME": "Heroic Play",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! #y Frail and !M! #y Vulnerable."
+  },
+  "rubimod:Penitent": {
+    "NAME": "Penitent",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Gain and apply 1 #y Strength."
+  },
+  "rubimod:HydraFlail": {
+    "NAME": "Hydra Flail",
+    "DESCRIPTION": "Deal !D! damage to a random enemy NL 2X times."
+  },
+  "rubimod:Dose": {
+    "NAME": "Dose",
+    "DESCRIPTION": "Apply !M! Poison."
+  },
+  "rubimod:Endure": {
+    "NAME": "Endure",
+    "DESCRIPTION": "Gain !B! Block twice. NL Gain !M! Frail."
+  },
+  "rubimod:Imbibe": {
+    "NAME": "Imbibe",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact."
+  },
+  "rubimod:SkillBookRed": {
+    "NAME": "Red Skill Book",
+    "DESCRIPTION": "Create a random red skill in your hand. NL Exhaust.",
+    "UPGRADED_DESCRIPTION": "Create a random upgraded red skill in your hand. NL Exhaust."
+  },
+  "rubimod:SkillBookGreen": {
+    "NAME": "Green Skill Book",
+    "DESCRIPTION": "Create a random green skill in your hand. NL Exhaust.",
+    "UPGRADED_DESCRIPTION": "Create a random upgraded green skill in your hand. NL Exhaust."
+  },
+  "rubimod:SkillBookBlue": {
+    "NAME": "Blue Skill Book",
+    "DESCRIPTION": "Create a random blue skill in your hand. NL Exhaust.",
+    "UPGRADED_DESCRIPTION": "Create a random upgraded blue skill in your hand. NL Exhaust."
+  },
+  "rubimod:SkillBookPurple": {
+    "NAME": "Purple Skill Book",
+    "DESCRIPTION": "Create a random purple skill in your hand. NL Exhaust.",
+    "UPGRADED_DESCRIPTION": "Create a random upgraded purple skill in your hand. NL Exhaust."
+  },
+  "rubimod:PathofShadows": {
+    "NAME": "Path of Shadows",
+    "DESCRIPTION": "Gain !B!x2 Block. NL You can't gain more Block from cards this turn. NL You do not lose Block at the start of next turn."
+  },
+  "rubimod:Meditation": {
+    "NAME": "Meditation",
+    "DESCRIPTION": "Each turn, gain Frail and draw a card."
+  },
+  "rubimod:AfflictionSpecialisation": {
+    "NAME": "Affliction Specialisation",
+    "DESCRIPTION": "gain !M! Artifact."
   }
 }
