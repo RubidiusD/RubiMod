@@ -1,5 +1,7 @@
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\AbsolutionAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\MercyAction.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\PunitionAction.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\SkillBookAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\HiddenJab.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\Riposte.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\Ruination.java
@@ -31,6 +33,8 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\start
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\Feint.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\InexorableDoom.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\PathofShadows.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\Punition.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\SkillBookColorless.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\character\Hegemon.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\NecroticDamageInfo.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\potions\BasePotion.java
@@ -40,6 +44,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\MeditationP
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\Sin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\SnakePower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\relics\BaseRelic.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\relics\MysteriousStranger.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\RubiMod.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\util\CardStats.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\util\GeneralUtils.java

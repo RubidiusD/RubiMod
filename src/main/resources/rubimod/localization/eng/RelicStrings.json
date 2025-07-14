@@ -5,5 +5,12 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. [E] is an energy icon."
     ]
+  },
+  "${modID}:MysteriousStranger": {
+    "NAME": "Mysterious Stranger",
+    "FLAVOR": "You feel yourself sniffle less, and your sore throat is gone.",
+    "DESCRIPTIONS": [
+      "Start combat with #b", " Artifact."
+    ]
   }
 }

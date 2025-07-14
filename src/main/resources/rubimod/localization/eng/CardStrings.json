@@ -37,13 +37,13 @@
   },
   "${modID}:Punish": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 1 ${modID}:Sin.",
-    "UPGRADE_DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 2 ${modID}:Sin."
+    "DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply #b1 ${modID}:Sin.",
+    "UPGRADE_DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply #b2 ${modID}:Sin."
   },
   "${modID}:Punish2": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 1 ${modID}:Sin. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 2 ${modID}:Sin. NL Exhaust"
+    "DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply #b1 ${modID}:Sin. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply #b2 ${modID}:Sin. NL Exhaust"
   },
   "${modID}:HeroicPlay": {
     "NAME": "Heroic Play",
@@ -51,7 +51,7 @@
   },
   "${modID}:Penitent": {
     "NAME": "Penitent",
-    "DESCRIPTION": "Deal !D!x!M! damage. NL Gain and apply 1 Strength."
+    "DESCRIPTION": "Deal !D! x !M! damage. NL Gain and apply 1 Strength."
   },
   "${modID}:HydraFlail": {
     "NAME": "Hydra Flail",
@@ -71,27 +71,32 @@
   },
   "${modID}:SkillBookRed": {
     "NAME": "Red Skill Book",
-    "DESCRIPTION": "Create a random red skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded red skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random red common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded red common skill in your hand. NL Exhaust."
   },
   "${modID}:SkillBookGreen": {
     "NAME": "Green Skill Book",
-    "DESCRIPTION": "Create a random green skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded green skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random green common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded green common skill in your hand. NL Exhaust."
   },
   "${modID}:SkillBookBlue": {
     "NAME": "Blue Skill Book",
-    "DESCRIPTION": "Create a random blue skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded blue skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random blue common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded blue common skill in your hand. NL Exhaust."
   },
   "${modID}:SkillBookPurple": {
     "NAME": "Purple Skill Book",
-    "DESCRIPTION": "Create a random purple skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded purple skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random purple common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded purple common skill in your hand. NL Exhaust."
+  },
+  "${modID}:SkillBookColorless": {
+    "NAME": "Colorless Skill Book",
+    "DESCRIPTION": "Create a random colorless uncommon skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded purple uncommon skill in your hand. NL Exhaust."
   },
   "${modID}:PathofShadows": {
     "NAME": "Path of Shadows",
-    "DESCRIPTION": "Gain !B!x2 Block. NL You can't gain more Block from cards this turn. NL You do not lose Block at the start of next turn."
+    "DESCRIPTION": "Gain !B!x2 Block. NL Gain no more Block from cards this turn. NL Keep your Block at the start of next turn."
   },
   "${modID}:Meditation": {
     "NAME": "Meditation",
@@ -108,8 +113,8 @@
   },
   "${modID}:Deliverance": {
     "NAME": "Deliverance",
-    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase ${modID}:sin and ${modID}:necrotic damage by 2 each time retained. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase ${modID}:sin and ${modID}:necrotic damage by 2 each time retained."
+    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase both by 2 each time retained. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase both by 2 each time retained."
   },
   "${modID}:InexorableDoom": {
     "NAME": "Inexorable Doom",
@@ -139,7 +144,11 @@
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 Punish+"
   },
   "${modID}:FalseOpening": {
-    "NAME": "FalseOpening",
+    "NAME": "False Opening",
     "DESCRIPTION": "Gain !B! Block. NL Create !M! Punish."
+  },
+  "${modID}:Punition": {
+    "NAME": "Punition",
+    "DESCRIPTION": "Apply !M! ${modID}:Sin. NL Deal ${modID}:Necrotic damage equal to the target's ${modID}:Sin."
   }
 }

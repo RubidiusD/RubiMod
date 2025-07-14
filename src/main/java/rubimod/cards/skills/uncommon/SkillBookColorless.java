@@ -1,4 +1,4 @@
-package rubimod.cards.skills.common;
+package rubimod.cards.skills.uncommon;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -9,17 +9,17 @@ import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
-public class SkillBookBlue extends BaseCard {
-    public static final String ID = makeID(SkillBookBlue.class.getSimpleName()); // makeID adds the mod name
+public class SkillBookColorless extends BaseCard {
+    public static final String ID = makeID(SkillBookColorless.class.getSimpleName()); // makeID adds the mod name
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
-            CardRarity.COMMON,
+            CardRarity.UNCOMMON,
             CardTarget.NONE,
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    public SkillBookBlue() {
+    public SkillBookColorless() {
         super(ID, info); // calls the parent constructor
 
         setMagic(0, 1);
@@ -28,11 +28,11 @@ public class SkillBookBlue extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SkillBookAction(p, CardRarity.COMMON, CardLibrary.LibraryType.BLUE, (magicNumber == 1)));
+        addToBot(new SkillBookAction(p, CardRarity.UNCOMMON, CardLibrary.LibraryType.COLORLESS, (magicNumber == 1)));
     }
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new SkillBookBlue();
+        return new SkillBookColorless();
     }
 }

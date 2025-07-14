@@ -37,13 +37,13 @@
   },
   "rubimod:Punish": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 1 rubimod:Sin.",
-    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 2 rubimod:Sin."
+    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply #b1 rubimod:Sin.",
+    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply #b2 rubimod:Sin."
   },
   "rubimod:Punish2": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 1 rubimod:Sin. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 2 rubimod:Sin. NL Exhaust"
+    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply #b1 rubimod:Sin. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply #b2 rubimod:Sin. NL Exhaust"
   },
   "rubimod:HeroicPlay": {
     "NAME": "Heroic Play",
@@ -51,7 +51,7 @@
   },
   "rubimod:Penitent": {
     "NAME": "Penitent",
-    "DESCRIPTION": "Deal !D!x!M! damage. NL Gain and apply 1 Strength."
+    "DESCRIPTION": "Deal !D! x !M! damage. NL Gain and apply 1 Strength."
   },
   "rubimod:HydraFlail": {
     "NAME": "Hydra Flail",
@@ -71,27 +71,32 @@
   },
   "rubimod:SkillBookRed": {
     "NAME": "Red Skill Book",
-    "DESCRIPTION": "Create a random red skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded red skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random red common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded red common skill in your hand. NL Exhaust."
   },
   "rubimod:SkillBookGreen": {
     "NAME": "Green Skill Book",
-    "DESCRIPTION": "Create a random green skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded green skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random green common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded green common skill in your hand. NL Exhaust."
   },
   "rubimod:SkillBookBlue": {
     "NAME": "Blue Skill Book",
-    "DESCRIPTION": "Create a random blue skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded blue skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random blue common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded blue common skill in your hand. NL Exhaust."
   },
   "rubimod:SkillBookPurple": {
     "NAME": "Purple Skill Book",
-    "DESCRIPTION": "Create a random purple skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded purple skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random purple common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded purple common skill in your hand. NL Exhaust."
+  },
+  "rubimod:SkillBookColorless": {
+    "NAME": "Colorless Skill Book",
+    "DESCRIPTION": "Create a random colorless uncommon skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded purple uncommon skill in your hand. NL Exhaust."
   },
   "rubimod:PathofShadows": {
     "NAME": "Path of Shadows",
-    "DESCRIPTION": "Gain !B!x2 Block. NL You can't gain more Block from cards this turn. NL You do not lose Block at the start of next turn."
+    "DESCRIPTION": "Gain !B!x2 Block. NL Gain no more Block from cards this turn. NL Keep your Block at the start of next turn."
   },
   "rubimod:Meditation": {
     "NAME": "Meditation",
@@ -108,8 +113,8 @@
   },
   "rubimod:Deliverance": {
     "NAME": "Deliverance",
-    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase rubimod:sin and rubimod:necrotic damage by 2 each time retained. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase rubimod:sin and rubimod:necrotic damage by 2 each time retained."
+    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase both by 2 each time retained. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase both by 2 each time retained."
   },
   "rubimod:InexorableDoom": {
     "NAME": "Inexorable Doom",
@@ -139,7 +144,11 @@
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 Punish+"
   },
   "rubimod:FalseOpening": {
-    "NAME": "FalseOpening",
+    "NAME": "False Opening",
     "DESCRIPTION": "Gain !B! Block. NL Create !M! Punish."
+  },
+  "rubimod:Punition": {
+    "NAME": "Punition",
+    "DESCRIPTION": "Apply !M! rubimod:Sin. NL Deal rubimod:Necrotic damage equal to the target's rubimod:Sin."
   }
 }

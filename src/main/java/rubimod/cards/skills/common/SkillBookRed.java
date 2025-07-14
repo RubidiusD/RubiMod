@@ -1,10 +1,10 @@
 package rubimod.cards.skills.common;
 
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.red.Flex;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import rubimod.actions.SkillBookAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
@@ -28,11 +28,7 @@ public class SkillBookRed extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractCard new_card = new Flex();
-        if (magicNumber > 0) {
-            new_card.upgrade();
-        }
-        addToBot(new MakeTempCardInHandAction(new_card));
+        addToBot(new SkillBookAction(p, CardRarity.COMMON, CardLibrary.LibraryType.RED, (magicNumber == 1)));
     }
 
     @Override

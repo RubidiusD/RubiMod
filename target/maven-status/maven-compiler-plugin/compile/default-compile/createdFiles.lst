@@ -1,8 +1,10 @@
 rubimod\potions\BasePotion.class
 rubimod\powers\SnakePower.class
+rubimod\cards\skills\uncommon\Punition.class
 rubimod\cards\skills\rare\FeastofAbsolution.class
 rubimod\cards\skills\common\SkillBookBlue.class
 rubimod\cards\attacks\common\HiddenJab.class
+rubimod\actions\PunitionAction.class
 rubimod\cards\skills\rare\HegemonsMercy.class
 rubimod\character\Hegemon.class
 rubimod\cards\attacks\starter\Strike.class
@@ -18,7 +20,9 @@ rubimod\cards\skills\Punish2.class
 rubimod\util\CardStats.class
 rubimod\cards\BaseCard$QuickDynamicVariable.class
 rubimod\cards\attacks\common\Riposte.class
+rubimod\cards\skills\uncommon\SkillBookColorless.class
 rubimod\powers\Sin.class
+rubimod\relics\MysteriousStranger.class
 rubimod\cards\attacks\uncommon\HeroicPlay.class
 rubimod\cards\skills\common\Endure.class
 rubimod\cards\attacks\rare\Deliverance.class
@@ -51,4 +55,5 @@ rubimod\util\KeywordInfo.class
 rubimod\cards\skills\common\Imbibe.class
 rubimod\cards\skills\common\SkillBookGreen.class
 rubimod\cards\skills\uncommon\InexorableDoom.class
+rubimod\actions\SkillBookAction.class
 rubimod\relics\BaseRelic$1.class

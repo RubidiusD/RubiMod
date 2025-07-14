@@ -17,7 +17,6 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
-import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import rubimod.RubiMod;
 import rubimod.cards.attacks.starter.LashOut;
@@ -25,6 +24,7 @@ import rubimod.cards.attacks.starter.Strike;
 import rubimod.cards.skills.starter.CloakofNight;
 import rubimod.cards.skills.starter.Defend;
 import rubimod.cards.skills.starter.MidnightEyes;
+import rubimod.relics.MysteriousStranger;
 
 import java.util.ArrayList;
 
@@ -159,7 +159,7 @@ public class Hegemon extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
         //IDs of starting relics. You can have multiple, but one is recommended.
-        retVal.add(BurningBlood.ID);
+        retVal.add(MysteriousStranger.ID);
 
         return retVal;
     }

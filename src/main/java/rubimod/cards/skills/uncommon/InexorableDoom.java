@@ -30,7 +30,7 @@ public class InexorableDoom extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new DoomPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(m, p, new DoomPower(m, magicNumber)));
     }
 
     @Override

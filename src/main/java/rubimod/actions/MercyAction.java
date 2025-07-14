@@ -30,9 +30,9 @@ public class MercyAction extends AbstractGameAction {
             }
         }
 
-        addToTop(new RemoveDebuffsAction(target));
         addToTop(new ApplyPowerAction(target, source, new StrengthPower(target, -total_debuff)));
         addToTop(new ApplyPowerAction(target, source, new GainStrengthPower(target, total_debuff / 2)));
+        addToTop(new RemoveDebuffsAction(target));
 
         this.isDone = true;
     }
