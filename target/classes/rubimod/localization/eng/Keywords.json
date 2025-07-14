@@ -33,5 +33,12 @@
       "necrotic"
     ],
     "DESCRIPTION": "Magical damage that doesn't benefit from your strength or enemies' vulnerabilities."
+  },
+  {
+    "PROPER_NAME": "Doom",
+    "NAMES": [
+      "doom"
+    ],
+    "DESCRIPTION": "Increase their debuffs by an amount that increases every turn."
   }
 ]

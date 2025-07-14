@@ -1,44 +1,42 @@
-package rubimod.cards.skills;
+package rubimod.cards.powers.uncommon;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.ArtifactPower;
 import rubimod.cards.BaseCard;
+import rubimod.cards.skills.Punish2;
 import rubimod.character.Hegemon;
+import rubimod.powers.SnakePower;
 import rubimod.util.CardStats;
 
-public class Imbibe extends BaseCard {
-    public static final String ID = makeID(Imbibe.class.getSimpleName()); // makeID adds the mod name
+public class WayoftheSnake extends BaseCard {
+    public static final String ID = makeID(WayoftheSnake.class.getSimpleName()); // makeID adds the mod name
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
-            CardType.SKILL,
-            CardRarity.COMMON,
+            CardType.POWER,
+            CardRarity.UNCOMMON,
             CardTarget.SELF,
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int BLOCK = 5;
-    private static final int UPG_BLOCK = 2;
     private static final int MAGIC = 1;
 
-    public Imbibe() {
+    public WayoftheSnake() {
         super(ID, info); // calls the parent constructor
 
-        setBlock(BLOCK, UPG_BLOCK); // self-explanatory
         setMagic(MAGIC); // self-explanatory
+        setInnate(false, true);
+        cardsToPreview = new Punish2();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new SnakePower(p, magicNumber)));
     }
 
     @Override
-    public AbstractCard makeCopy() { //Optional
-        return new Imbibe();
+    public AbstractCard makeCopy() { // Optional
+        return new WayoftheSnake();
     }
 }

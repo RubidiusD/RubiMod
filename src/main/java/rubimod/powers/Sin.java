@@ -2,7 +2,6 @@ package rubimod.powers;
 
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import rubimod.cards.skills.PathofShadows;
 
 import static rubimod.RubiMod.makeID;
 

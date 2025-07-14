@@ -8,7 +8,7 @@
   "${modID}:Sin": {
     "NAME": "Sin",
     "DESCRIPTIONS": [
-      "Takes #b", "0% additional #y Necrotic damage."
+      "Takes #b", "0% additional #yNecrotic damage."
     ]
   },
   "${modID}:MeditationPower": {
@@ -21,6 +21,12 @@
     "NAME": "Snake",
     "DESCRIPTIONS": [
       "Create #b", " Punish in your hand at the start of each turn."
+    ]
+  },
+  "${modID}:DoomPower": {
+    "NAME": "Doom",
+    "DESCRIPTIONS": [
+      "Increase debuffs by #b", " at the start of each turn, then increase that number by #b", ". "
     ]
   }
 }

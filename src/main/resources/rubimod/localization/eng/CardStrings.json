@@ -51,7 +51,7 @@
   },
   "${modID}:Penitent": {
     "NAME": "Penitent",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL Gain and apply 1 Strength."
+    "DESCRIPTION": "Deal !D!x!M! damage. NL Gain and apply 1 Strength."
   },
   "${modID}:HydraFlail": {
     "NAME": "Hydra Flail",
@@ -63,7 +63,7 @@
   },
   "${modID}:Endure": {
     "NAME": "Endure",
-    "DESCRIPTION": "Gain !B! Block twice. NL Gain !M! Frail."
+    "DESCRIPTION": "Gain !B!x2 Block. NL Gain !M! Frail."
   },
   "${modID}:Imbibe": {
     "NAME": "Imbibe",
@@ -72,22 +72,22 @@
   "${modID}:SkillBookRed": {
     "NAME": "Red Skill Book",
     "DESCRIPTION": "Create a random red skill in your hand. NL Exhaust.",
-    "UPGRADED_DESCRIPTION": "Create a random upgraded red skill in your hand. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Create a random upgraded red skill in your hand. NL Exhaust."
   },
   "${modID}:SkillBookGreen": {
     "NAME": "Green Skill Book",
     "DESCRIPTION": "Create a random green skill in your hand. NL Exhaust.",
-    "UPGRADED_DESCRIPTION": "Create a random upgraded green skill in your hand. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Create a random upgraded green skill in your hand. NL Exhaust."
   },
   "${modID}:SkillBookBlue": {
     "NAME": "Blue Skill Book",
     "DESCRIPTION": "Create a random blue skill in your hand. NL Exhaust.",
-    "UPGRADED_DESCRIPTION": "Create a random upgraded blue skill in your hand. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Create a random upgraded blue skill in your hand. NL Exhaust."
   },
   "${modID}:SkillBookPurple": {
     "NAME": "Purple Skill Book",
     "DESCRIPTION": "Create a random purple skill in your hand. NL Exhaust.",
-    "UPGRADED_DESCRIPTION": "Create a random upgraded purple skill in your hand. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Create a random upgraded purple skill in your hand. NL Exhaust."
   },
   "${modID}:PathofShadows": {
     "NAME": "Path of Shadows",
@@ -103,11 +103,43 @@
   },
   "${modID}:WayoftheSnake": {
     "NAME": "Way of the Snake",
-    "DESCRIPTION": "Start each turn with a Punish in hand."
+    "DESCRIPTION": "Start each turn with a Punish in hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Start each turn with a Punish in hand."
   },
   "${modID}:Deliverance": {
     "NAME": "Deliverance",
-    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase sin and necrotic damage by 2 each time retained. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase sin and necrotic damage by 2 each time retained."
+    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase ${modID}:sin and ${modID}:necrotic damage by 2 each time retained. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase ${modID}:sin and ${modID}:necrotic damage by 2 each time retained."
+  },
+  "${modID}:InexorableDoom": {
+    "NAME": "Inexorable Doom",
+    "DESCRIPTION": "Apply !M! ${modID}:Doom."
+  },
+  "${modID}:Feint": {
+    "NAME": "Feint",
+    "DESCRIPTION": "Gain !B! Block. NL If the target is attacking, apply !M! ${modID}:Sin."
+  },
+  "${modID}:FeastofAbsolution": {
+    "NAME": "Feast of Absolution",
+    "DESCRIPTION": "Draw !M! and gain !M! Energy. NL Cleanse all of the target's debuffs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw !M! and gain !M! Energy. NL Cleanse all of the target's debuffs and heal the same amount. NL Exhaust."
+  },
+  "${modID}:HegemonsMercy": {
+    "NAME": "Hegemon's Mercy",
+    "DESCRIPTION": "Cleanse all of the target's debuffs. NL Reduce their strength by the same amount. NL Only half is permanent. ",
+    "UPGRADE_DESCRIPTION": "Cleanse all of the target's debuffs. NL Reduce their strength by the same amount. NL Only half is permanent. NL Draw !M! cards. "
+  },
+  "${modID}:HiddenJab": {
+    "NAME": "Hidden Jab",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+  },
+  "${modID}:Riposte": {
+    "NAME": "Riposte",
+    "DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 Punish",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 Punish+"
+  },
+  "${modID}:FalseOpening": {
+    "NAME": "FalseOpening",
+    "DESCRIPTION": "Gain !B! Block. NL Create !M! Punish."
   }
 }

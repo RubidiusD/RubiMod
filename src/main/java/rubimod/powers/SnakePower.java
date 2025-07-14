@@ -23,7 +23,7 @@ public class SnakePower extends BasePower {
     public void atStartOfTurn() {
         super.atStartOfTurn();
 
-        addToBot(new MakeTempCardInHandAction(new Punish2()));
+        addToBot(new MakeTempCardInHandAction(new Punish2(), amount));
     }
 
     public void updateDescription() {

@@ -1,4 +1,4 @@
-package rubimod.cards.attacks;
+package rubimod.cards.attacks.common;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -11,21 +11,21 @@ import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
-public class LashOut extends BaseCard {
-    public static final String ID = makeID(LashOut.class.getSimpleName()); // makeID adds the mod name
+public class Ruination extends BaseCard {
+    public static final String ID = makeID(Ruination.class.getSimpleName()); // makeID adds the mod name
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.BASIC,
+            CardRarity.COMMON,
             CardTarget.ENEMY,
-            0 // card cost!! (-1 is X, -2 is unplayable)
+            1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int DAMAGE = 2;
-    private static final int MAGIC = 0;
+    private static final int DAMAGE = 4;
+    private static final int MAGIC = 3;
     private static final int UPG_MAGIC = 3;
 
-    public LashOut() {
+    public Ruination() {
         super(ID, info); // calls the parent constructor
 
         setDamage(DAMAGE); // self-explanatory
@@ -35,14 +35,11 @@ public class LashOut extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        if (magicNumber != baseMagicNumber)
-        {
-            addToBot(new DamageAction(m, new NecroticDamageInfo(p, magicNumber)));
-        }
+        addToBot(new DamageAction(m, new NecroticDamageInfo(p, magicNumber)));
     }
 
     @Override
     public AbstractCard makeCopy() { // Optional
-        return new LashOut();
+        return new Ruination();
     }
 }

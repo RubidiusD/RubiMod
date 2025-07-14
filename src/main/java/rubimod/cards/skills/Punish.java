@@ -22,7 +22,7 @@ public class Punish extends BaseCard {
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 1;
+    private static final int MAGIC = 2;
     private static final int UPG_MAGIC = 1;
 
     public Punish() {
@@ -33,8 +33,8 @@ public class Punish extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new NecroticDamageInfo(p, magicNumber + 1), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber)));
+        addToBot(new DamageAction(m, new NecroticDamageInfo(p, magicNumber), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber - 1)));
     }
 
     @Override

@@ -1,16 +1,16 @@
-package rubimod.cards.skills;
+package rubimod.cards.skills.common;
 
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.green.DodgeAndRoll;
+import com.megacrit.cardcrawl.cards.purple.Evaluate;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
-public class SkillBookGreen extends BaseCard {
-    public static final String ID = makeID(SkillBookGreen.class.getSimpleName()); // makeID adds the mod name
+public class SkillBookPurple extends BaseCard {
+    public static final String ID = makeID(SkillBookPurple.class.getSimpleName()); // makeID adds the mod name
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
@@ -19,7 +19,7 @@ public class SkillBookGreen extends BaseCard {
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    public SkillBookGreen() {
+    public SkillBookPurple() {
         super(ID, info); // calls the parent constructor
 
         setMagic(0, 1);
@@ -28,18 +28,15 @@ public class SkillBookGreen extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (magicNumber == baseMagicNumber) {
-            addToBot(new MakeTempCardInHandAction(new DodgeAndRoll()));
-        }
-        else {
-            AbstractCard new_card = new DodgeAndRoll();
+        AbstractCard new_card = new Evaluate();
+        if (magicNumber > 0) {
             new_card.upgrade();
-            addToBot(new MakeTempCardInHandAction(new_card));
         }
+        addToBot(new MakeTempCardInHandAction(new_card));
     }
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new SkillBookGreen();
+        return new SkillBookPurple();
     }
 }
