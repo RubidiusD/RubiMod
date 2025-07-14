@@ -16,5 +16,11 @@
     "DESCRIPTIONS": [
       "Gain #b", " Frail and draw #b", " cards."
     ]
+  },
+  "${modID}:SnakePower": {
+    "NAME": "Snake",
+    "DESCRIPTIONS": [
+      "Create #b", " Punish in your hand at the start of each turn."
+    ]
   }
 }

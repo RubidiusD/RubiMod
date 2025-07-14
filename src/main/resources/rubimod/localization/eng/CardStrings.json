@@ -29,24 +29,29 @@
   "${modID}:LashOut": {
     "NAME": "Lash Out",
     "DESCRIPTION": "Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !M! #y Necrotic damage."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !M! ${modID}:Necrotic damage."
   },
   "${modID}:Ruination": {
     "NAME": "Ruination",
-    "DESCRIPTION": "Deal !D! damage. NL Deal !M! #y Necrotic damage."
+    "DESCRIPTION": "Deal !D! damage. NL Deal !M! ${modID}:Necrotic damage."
   },
   "${modID}:Punish": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! #y Necrotic damage. NL Apply 1 #y Sin.",
-    "UPGRADE_DESCRIPTION": "Deal !M! #y Necrotic damage. NL Apply 2 #y Sin."
+    "DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 1 ${modID}:Sin.",
+    "UPGRADE_DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 2 ${modID}:Sin."
+  },
+  "${modID}:Punish2": {
+    "NAME": "Punish",
+    "DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 1 ${modID}:Sin. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 2 ${modID}:Sin. NL Exhaust"
   },
   "${modID}:HeroicPlay": {
     "NAME": "Heroic Play",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! #y Frail and !M! #y Vulnerable."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail and !M! Vulnerable."
   },
   "${modID}:Penitent": {
     "NAME": "Penitent",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL Gain and apply 1 #y Strength."
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Gain and apply 1 Strength."
   },
   "${modID}:HydraFlail": {
     "NAME": "Hydra Flail",
@@ -90,10 +95,19 @@
   },
   "${modID}:Meditation": {
     "NAME": "Meditation",
-    "DESCRIPTION": "Each turn, gain Frail and draw a card."
+    "DESCRIPTION": "At the start of each turn, gain Frail and draw a card."
   },
   "${modID}:AfflictionSpecialisation": {
     "NAME": "Affliction Specialisation",
-    "DESCRIPTION": "gain !M! Artifact."
+    "DESCRIPTION": "Gain !M! Artifact."
+  },
+  "${modID}:WayoftheSnake": {
+    "NAME": "Way of the Snake",
+    "DESCRIPTION": "Start each turn with a Punish in hand."
+  },
+  "${modID}:Deliverance": {
+    "NAME": "Deliverance",
+    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase sin and necrotic damage by 2 each time retained. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase sin and necrotic damage by 2 each time retained."
   }
 }

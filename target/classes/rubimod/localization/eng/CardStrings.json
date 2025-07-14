@@ -29,24 +29,29 @@
   "rubimod:LashOut": {
     "NAME": "Lash Out",
     "DESCRIPTION": "Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !M! #y Necrotic damage."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !M! rubimod:Necrotic damage."
   },
   "rubimod:Ruination": {
     "NAME": "Ruination",
-    "DESCRIPTION": "Deal !D! damage. NL Deal !M! #y Necrotic damage."
+    "DESCRIPTION": "Deal !D! damage. NL Deal !M! rubimod:Necrotic damage."
   },
   "rubimod:Punish": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! #y Necrotic damage. NL Apply 1 #y Sin.",
-    "UPGRADE_DESCRIPTION": "Deal !M! #y Necrotic damage. NL Apply 2 #y Sin."
+    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 1 rubimod:Sin.",
+    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 2 rubimod:Sin."
+  },
+  "rubimod:Punish2": {
+    "NAME": "Punish",
+    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 1 rubimod:Sin. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 2 rubimod:Sin. NL Exhaust"
   },
   "rubimod:HeroicPlay": {
     "NAME": "Heroic Play",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! #y Frail and !M! #y Vulnerable."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail and !M! Vulnerable."
   },
   "rubimod:Penitent": {
     "NAME": "Penitent",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL Gain and apply 1 #y Strength."
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Gain and apply 1 Strength."
   },
   "rubimod:HydraFlail": {
     "NAME": "Hydra Flail",
@@ -90,10 +95,19 @@
   },
   "rubimod:Meditation": {
     "NAME": "Meditation",
-    "DESCRIPTION": "Each turn, gain Frail and draw a card."
+    "DESCRIPTION": "At the start of each turn, gain Frail and draw a card."
   },
   "rubimod:AfflictionSpecialisation": {
     "NAME": "Affliction Specialisation",
-    "DESCRIPTION": "gain !M! Artifact."
+    "DESCRIPTION": "Gain !M! Artifact."
+  },
+  "rubimod:WayoftheSnake": {
+    "NAME": "Way of the Snake",
+    "DESCRIPTION": "Start each turn with a Punish in hand."
+  },
+  "rubimod:Deliverance": {
+    "NAME": "Deliverance",
+    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase sin and necrotic damage by 2 each time retained. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase sin and necrotic damage by 2 each time retained."
   }
 }

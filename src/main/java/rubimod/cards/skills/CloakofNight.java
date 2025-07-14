@@ -21,11 +21,12 @@ public class CloakofNight extends BaseCard {
     );
 
     private static final int BLOCK = 8;
+    private static final int UPG_BLOCK = -2;
 
     public CloakofNight() {
         super(ID, info); // calls the parent constructor
 
-        setBlock(BLOCK); // self-explanatory
+        setBlock(BLOCK, UPG_BLOCK); // self-explanatory
         setCostUpgrade(1);
     }
 

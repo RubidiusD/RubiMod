@@ -1,4 +1,5 @@
 rubimod\potions\BasePotion.class
+rubimod\powers\SnakePower.class
 rubimod\relics\BaseRelic.class
 rubimod\util\TextureLoader$1.class
 rubimod\powers\BasePower.class
@@ -7,6 +8,7 @@ rubimod\cards\attacks\LashOut.class
 rubimod\cards\attacks\Penitent.class
 rubimod\cards\skills\MidnightEyes.class
 rubimod\RubiMod.class
+rubimod\cards\attacks\Deliverance.class
 rubimod\cards\skills\SkillBookBlue.class
 rubimod\cards\attacks\Strike.class
 rubimod\cards\skills\Defend.class
@@ -19,12 +21,14 @@ rubimod\cards\skills\CloakofNight.class
 rubimod\cards\skills\Imbibe.class
 rubimod\NecroticDamageInfo.class
 rubimod\cards\skills\Punish.class
+rubimod\cards\powers\WayoftheSnake.class
 rubimod\character\Hegemon$Meta.class
 rubimod\cards\skills\Endure.class
 rubimod\powers\MeditationPower.class
 rubimod\cards\BaseCard.class
 rubimod\cards\powers\Meditation.class
 rubimod\cards\skills\PathofShadows.class
+rubimod\cards\skills\Punish2.class
 rubimod\util\CardStats.class
 rubimod\cards\BaseCard$QuickDynamicVariable.class
 rubimod\cards\attacks\HeroicPlay.class

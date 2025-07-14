@@ -1,3 +1,4 @@
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\Deliverance.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\HeroicPlay.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\HydraFlail.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\LashOut.java
@@ -7,6 +8,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\Stri
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\BaseCard.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\AfflictionSpecialisation.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\Meditation.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\WayoftheSnake.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\CloakofNight.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\Defend.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\Dose.java
@@ -15,6 +17,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\Imbib
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\MidnightEyes.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\PathofShadows.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\Punish.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\Punish2.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\SkillBookBlue.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\SkillBookGreen.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\SkillBookPurple.java
@@ -25,6 +28,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\potions\BasePotion
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\BasePower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\MeditationPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\Sin.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\SnakePower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\relics\BaseRelic.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\RubiMod.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\util\CardStats.java
