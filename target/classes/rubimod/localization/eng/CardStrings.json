@@ -113,8 +113,8 @@
   },
   "rubimod:Deliverance": {
     "NAME": "Deliverance",
-    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase both by 2 each time retained. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase both by 2 each time retained."
+    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase both by 2 on retain. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase both by 2 on retain."
   },
   "rubimod:InexorableDoom": {
     "NAME": "Inexorable Doom",

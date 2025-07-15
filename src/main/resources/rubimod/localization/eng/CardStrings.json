@@ -113,8 +113,8 @@
   },
   "${modID}:Deliverance": {
     "NAME": "Deliverance",
-    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase both by 2 each time retained. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase both by 2 each time retained."
+    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase both by 2 on retain. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase both by 2 on retain."
   },
   "${modID}:InexorableDoom": {
     "NAME": "Inexorable Doom",

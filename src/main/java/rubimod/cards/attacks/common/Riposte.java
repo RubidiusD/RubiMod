@@ -22,18 +22,24 @@ public class Riposte extends BaseCard {
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int DAMAGE = 4;
-    private static final int UPG_DAMAGE = 2;
+    private static final int DAMAGE = 3;
     private static final int MAGIC = 0;
     private static final int UPG_MAGIC = 1;
 
     public Riposte() {
         super(ID, info); // calls the parent constructor
 
-        setDamage(DAMAGE, UPG_DAMAGE); // self-explanatory
+        setDamage(DAMAGE); // self-explanatory
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
 
         cardsToPreview = new Punish2();
+    }
+
+    @Override
+    public void upgrade() {
+        super.upgrade();
+
+        cardsToPreview.upgrade();
     }
 
     @Override

@@ -19,5 +19,33 @@
     "DESCRIPTIONS": [
       "Artifact has a #b50% chance to stick around."
     ]
+  },
+  "${modID}:TheologyNotes": {
+    "NAME": "Theology Notes",
+    "FLAVOR": "Barely legible, these scraps appear to describe an intense hatred and,, 'Justice.'",
+    "DESCRIPTIONS": [
+      "Enemies start combat with #b", " ${modID}:Sin."
+    ]
+  },
+  "${modID}:PrayerBeads": {
+    "NAME": "Prayer Beads",
+    "FLAVOR": "Despite how old they must be, the etchings in each bead leave sharp ridges. Better wear them over clothes.",
+    "DESCRIPTIONS": [
+      "${modID}:Sin increases ${modID}:Necrotic damage by 15% instead of 10%."
+    ]
+  },
+  "${modID}:PropheticScraps": {
+    "NAME": "Prophetic Scraps",
+    "FLAVOR": "Whoever the previous owner of these was, their 'piety' was rather, shall we say, 'Old Testament.'",
+    "DESCRIPTIONS": [
+      "All enemies start with #b", " ${modID}:Doom."
+    ]
+  },
+  "${modID}:ReaperToken": {
+    "NAME": "Reaper Token",
+    "FLAVOR": "That isn't meant to be in this world. Whoever put it here likes you. Hopefully.",
+    "DESCRIPTIONS": [
+      "Gain Artifact at the start of every turn."
+    ]
   }
 }

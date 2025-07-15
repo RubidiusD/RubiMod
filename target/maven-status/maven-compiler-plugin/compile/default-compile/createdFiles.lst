@@ -27,6 +27,7 @@ rubimod\powers\buff\SnakePower.class
 rubimod\relics\MysteriousStranger.class
 rubimod\powers\debuff\DoomPower.class
 rubimod\cards\attacks\uncommon\HeroicPlay.class
+rubimod\relics\PrayerBeads.class
 rubimod\cards\skills\common\Endure.class
 rubimod\cards\attacks\rare\Deliverance.class
 rubimod\cards\skills\uncommon\Feint.class
@@ -47,10 +48,13 @@ rubimod\powers\buff\PhoenixPower.class
 rubimod\util\TextureLoader.class
 rubimod\cards\attacks\uncommon\HydraFlail.class
 rubimod\cards\skills\uncommon\PathofShadows.class
+rubimod\relics\ReaperToken.class
 rubimod\cards\skills\starter\MidnightEyes.class
+rubimod\relics\PropheticScraps.class
 rubimod\cards\skills\Punish.class
 rubimod\character\Hegemon$Meta.class
 rubimod\cards\skills\common\Dose.class
+rubimod\relics\TheologyNotes.class
 rubimod\actions\AbsolutionAction.class
 rubimod\cards\attacks\uncommon\Penitent.class
 rubimod\cards\BaseCard$LocalVarInfo.class

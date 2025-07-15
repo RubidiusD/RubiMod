@@ -28,7 +28,7 @@ public class SkillBookColorless extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SkillBookAction(p, CardRarity.UNCOMMON, CardLibrary.LibraryType.COLORLESS, (magicNumber == 1)));
+        addToBot(new SkillBookAction(CardRarity.UNCOMMON, CardLibrary.LibraryType.COLORLESS, (magicNumber == 1)));
     }
 
     @Override

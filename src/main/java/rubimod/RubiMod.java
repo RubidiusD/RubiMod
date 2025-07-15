@@ -213,7 +213,7 @@ public class RubiMod implements
      */
     private static void loadModInfo() {
         Optional<ModInfo> infos = Arrays.stream(Loader.MODINFOS).filter((modInfo)->{
-            AnnotationDB annotationDB = Patcher.annotationDBMap.get(modInfo.jarURL);
+            @SuppressWarnings("UrlHashCode") AnnotationDB annotationDB = Patcher.annotationDBMap.get(modInfo.jarURL);
             if (annotationDB == null)
                 return false;
             Set<String> initializers = annotationDB.getAnnotationIndex().getOrDefault(SpireInitializer.class.getName(), Collections.emptySet());

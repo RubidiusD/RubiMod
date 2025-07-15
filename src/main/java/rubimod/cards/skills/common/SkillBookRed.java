@@ -28,7 +28,7 @@ public class SkillBookRed extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SkillBookAction(p, CardRarity.COMMON, CardLibrary.LibraryType.RED, (magicNumber == 1)));
+        addToBot(new SkillBookAction(CardRarity.COMMON, CardLibrary.LibraryType.RED, (magicNumber == 1)));
     }
 
     @Override
