@@ -28,9 +28,9 @@ public class NecroticDamageInfo extends DamageInfo { // This version of damage i
                 AbstractDungeon.player.getRelic(PrayerBeads.ID).flash();
             }
 
-            this.output = MathUtils.floor((float) this.output * (1.0f + (float) sin * sin_potency)); // apply sin and round down
+            this.output = MathUtils.floor(((float) this.output) * (1.0f + ((float) sin) * sin_potency)); // apply sin and round down
 
-            if (this.base != this.output) { // check if it should highlight n stuff
+            if (this.output != this.base) { // check if it should highlight n stuff
                 this.isModified = true;
             }
 

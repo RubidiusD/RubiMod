@@ -1,12 +1,13 @@
 package rubimod.powers.debuff;
 
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
 
 import static rubimod.RubiMod.makeID;
 
-public class Sin extends BasePower {
+public class Bleeding extends BasePower {
     public static final String POWER_ID = makeID(Sin.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
@@ -15,17 +16,30 @@ public class Sin extends BasePower {
     //For a power to actually decrease/go away on its own they do it themselves.
     //Look at powers that do this like VulnerablePower and DoubleTapPower.
 
-    public Sin(AbstractCreature owner, int amount) {
-        super(POWER_ID, TYPE, TURN_BASED, owner, amount);
+    private static AbstractCreature source;
+
+    public Bleeding(AbstractCreature owner, AbstractCreature source_) {
+        super(POWER_ID, TYPE, TURN_BASED, owner, -1);
+        source = source_;
     }
 
     @Override
     public void stackPower(int stackAmount) {
-        super.stackPower(stackAmount);
-        updateDescription();
+        amount = -1;
+    }
+
+    @Override
+    public int onHeal(int healAmount) {
+        if (healAmount > 0) {
+            if (owner.hasPower(LeechToxin.POWER_ID)) {owner.getPower(LeechToxin.POWER_ID).onSpecificTrigger();}
+            this.flash();
+            addToTop(new RemoveSpecificPowerAction(owner, source, POWER_ID));
+        }
+        return 0;
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0];
     }
+
 }

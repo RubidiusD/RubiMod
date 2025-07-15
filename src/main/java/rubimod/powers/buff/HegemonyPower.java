@@ -21,6 +21,12 @@ public class HegemonyPower extends BasePower {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
 
+    @Override
+    public void stackPower(int stackAmount) {
+        super.stackPower(stackAmount);
+        updateDescription();
+    }
+
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner) {
             this.flash();

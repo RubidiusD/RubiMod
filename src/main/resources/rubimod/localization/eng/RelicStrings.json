@@ -47,5 +47,12 @@
     "DESCRIPTIONS": [
       "Gain Artifact at the start of every turn."
     ]
+  },
+  "${modID}:BloodMagic": {
+    "NAME": "Blood Magic",
+    "FLAVOR": "Good things come with a price.",
+    "DESCRIPTIONS": [
+      "Gain 1 [E] at the start of each turn. Start combat ${modID}:Bleeding."
+    ]
   }
 }

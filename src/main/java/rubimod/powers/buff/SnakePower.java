@@ -21,6 +21,12 @@ public class SnakePower extends BasePower {
     }
 
     @Override
+    public void stackPower(int stackAmount) {
+        super.stackPower(stackAmount);
+        updateDescription();
+    }
+
+    @Override
     public void atStartOfTurn() {
         super.atStartOfTurn();
 

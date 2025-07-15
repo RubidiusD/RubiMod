@@ -4,7 +4,9 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
+import rubimod.powers.buff.StudiousPower;
 
 import java.util.ArrayList;
 
@@ -32,6 +34,10 @@ public class SkillBookAction extends AbstractGameAction {
         AbstractCard tmp = cardList.get(choice);
         if (upgraded)
             tmp.upgrade();
+        if (tmp.cost > 0 && AbstractDungeon.player.hasPower(StudiousPower.POWER_ID))
+        {
+            tmp.modifyCostForCombat(tmp.cost - 1);
+        }
 
         addToTop(new MakeTempCardInHandAction(tmp));
         this.isDone = true;

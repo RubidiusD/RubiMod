@@ -22,6 +22,12 @@ public class MeditationPower extends BasePower {
     }
 
     @Override
+    public void stackPower(int stackAmount) {
+        super.stackPower(stackAmount);
+        updateDescription();
+    }
+
+    @Override
     public void atStartOfTurnPostDraw() {
         super.atStartOfTurnPostDraw();
 

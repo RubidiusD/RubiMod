@@ -1,6 +1,8 @@
-package rubimod.powers.buff;
+package rubimod.powers.debuff;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import rubimod.NecroticDamageInfo;
@@ -8,17 +10,20 @@ import rubimod.powers.BasePower;
 
 import static rubimod.RubiMod.makeID;
 
-public class ShadowHand extends BasePower {
-    public static final String POWER_ID = makeID(ShadowHand.class.getSimpleName());
-    private static final PowerType TYPE = PowerType.BUFF;
+public class LeechToxin extends BasePower {
+    public static final String POWER_ID = makeID(LeechToxin.class.getSimpleName());
+    private static final PowerType TYPE = PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
     //The only thing TURN_BASED controls is the color of the number on the power icon.
     //Turn based powers are white, non-turn based powers are red or green depending on if their amount is positive or negative.
     //For a power to actually decrease/go away on its own they do it themselves.
     //Look at powers that do this like VulnerablePower and DoubleTapPower.
 
-    public ShadowHand(AbstractCreature owner, int amount) {
+    private static AbstractCreature source;
+
+    public LeechToxin(AbstractCreature owner, AbstractCreature source_, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
+        source = source_;
     }
 
     @Override
@@ -28,10 +33,17 @@ public class ShadowHand extends BasePower {
     }
 
     @Override
-    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        super.onAttack(info, damageAmount, target);
+    public void onSpecificTrigger() {
+        super.onSpecificTrigger();
 
-        addToTop(new DamageAction(target, new NecroticDamageInfo(owner, amount)));
+        reducePower(1);
+        if (amount == 0)
+            addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
+        this.flash();
+        updateDescription();
+
+        addToTop(new DamageAction(owner, new NecroticDamageInfo(source, 1, DamageInfo.DamageType.HP_LOSS)));
+        addToTop(new ApplyPowerAction(owner, source, new Bleeding(owner, source)));
     }
 
     public void updateDescription() {

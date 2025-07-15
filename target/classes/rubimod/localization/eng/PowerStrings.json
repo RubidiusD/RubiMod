@@ -58,5 +58,29 @@
     "DESCRIPTIONS": [
       "Whenever you would lose Artifact, gain #b", " Regen."
     ]
+  },
+  "rubimod:StudiousPower": {
+    "NAME": "Studious",
+    "DESCRIPTIONS": [
+      "Whenever you create a card, reduce its [E] cost by #b1."
+    ]
+  },
+  "rubimod:Bleeding": {
+    "NAME": "Bleeding",
+    "DESCRIPTIONS": [
+      "Negate the next time you would have healed."
+    ]
+  },
+  "rubimod:LeechToxin": {
+    "NAME": "Leech Toxin",
+    "DESCRIPTIONS": [
+      "Reapply Bleeding and deal 1 Necrotic damage #b", " times."
+    ]
+  },
+  "rubimod:Colin": {
+    "NAME": "Colin",
+    "DESCRIPTIONS": [
+      "Apply Bleeding and Vulnerable for the next #b", " turns."
+    ]
   }
 }

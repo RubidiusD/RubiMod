@@ -10,8 +10,8 @@ import static rubimod.RubiMod.makeID;
 public class PhoenixPower extends BasePower {
     public static final String POWER_ID = makeID(PhoenixPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
-    private static final boolean TURN_BASED = true;
-    public int buffGainRate = 1;
+    private static final boolean TURN_BASED = false;
+    public int buffGainRate;
     //The only thing TURN_BASED controls is the color of the number on the power icon.
     //Turn based powers are white, non-turn based powers are red or green depending on if their amount is positive or negative.
     //For a power to actually decrease/go away on its own they do it themselves.
@@ -19,8 +19,8 @@ public class PhoenixPower extends BasePower {
 
     public PhoenixPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
-
         buffGainRate = amount;
+        updateDescription();
     }
 
     @Override
@@ -30,7 +30,7 @@ public class PhoenixPower extends BasePower {
         int totalBuff = 0; // calculate the total amount of buff you have
         for (AbstractPower power : owner.powers)
         {
-            if ((power.type == PowerType.BUFF && !power.ID.equals(POWER_ID)) || (power.canGoNegative && power.amount > 0))
+            if (power.amount > 0 && ((power.type == PowerType.BUFF && !power.ID.equals(POWER_ID)) || (power.canGoNegative)))
             {
                 totalBuff += power.amount;
             }
@@ -38,6 +38,8 @@ public class PhoenixPower extends BasePower {
 
         if (totalBuff == 0) { // if you have none
             buffGainRate += amount * 2; // just increase how much they'll gain later
+            updateDescription();
+            this.flash();
             return;
         }
 
@@ -46,7 +48,7 @@ public class PhoenixPower extends BasePower {
 
         for (AbstractPower power : owner.powers)
         {
-            if ((power.type == PowerType.BUFF && !power.ID.equals(POWER_ID)) || (power.canGoNegative && power.amount > 0))
+            if (power.amount > 0 && ((power.type == PowerType.BUFF && !power.ID.equals(POWER_ID)) || (power.canGoNegative)))
             {
                 float bias = ((float) amount_to_distribute * power.amount) / totalBuff;
                 int allocation = MathUtils.floor(bias);
@@ -61,14 +63,16 @@ public class PhoenixPower extends BasePower {
             }
         }
 
-        this.flash();
         buffGainRate += amount + amount_to_distribute;
+        updateDescription();
+        this.flash();
     }
 
     @Override
     public void stackPower(int stackAmount) { // on gaining an additional instance
         super.stackPower(stackAmount);
         this.buffGainRate += stackAmount; // also immediately increase rate of gain
+        updateDescription();
     }
 
     public void updateDescription() {

@@ -159,5 +159,38 @@
   "${modID}:HegemonyCard": {
     "NAME": "Hegemony",
     "DESCRIPTION": "Ethereal. NL Whenever you are attacked, apply !M! ${modID}:Sin back."
+  },
+  "${modID}:DarkGuardian": {
+    "NAME": "Dark Guardian",
+    "DESCRIPTION": "Ethereal. NL Whenever you would lose Artifact, gain !M! Regen.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever you would lose Artifact, gain !M! Regen."
+  },
+  "${modID}:SinEaterCard": {
+    "NAME": "Sin Eater",
+    "DESCRIPTION": "Whenever you would lose Artifact, gain !M! Block."
+  },
+  "${modID}:RelentlessStudent": {
+    "NAME": "Relentless Student",
+    "DESCRIPTION": "Whenever you create a card in combat, reduce its cost by 1."
+  },
+  "${modID}:LeechBite": {
+    "NAME": "Leech Bite",
+    "DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding. ",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding and ${modID}:leech toxin."
+  },
+  "${modID}:SpiritCoin": {
+    "NAME": "Spirit Coin",
+    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Bleed. ",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding and ${modID}:leech toxin."
+  },
+  "${modID}:LeechHose": {
+    "NAME": "Leech Hose",
+    "DESCRIPTION": "Deal !D!X damage to ALL enemies. NL Apply ${modID}:Bleed and Vulnerable for X turns. ",
+    "UPGRADE_DESCRIPTION": "Deal !D!X damage to ALL enemies. NL Apply ${modID}:Bleed and Vulnerable for X turns. NL. If this is the first card you play, reduce their strength by X. "
+  },
+  "${modID}:Sacrifice": {
+    "NAME": "Ritual Sacrifice",
+    "DESCRIPTION": "You can no longer heal. NL !M! Strength.",
+    "UPGRADE_DESCRIPTION": "You can no longer heal. NL !M! Strength and 1 Ritual. "
   }
 }

@@ -10,8 +10,8 @@ import static rubimod.RubiMod.makeID;
 public class DoomPower extends BasePower {
     public static final String POWER_ID = makeID(DoomPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.DEBUFF;
-    private static final boolean TURN_BASED = true;
-    public int debuffGainRate = 1;
+    private static final boolean TURN_BASED = false;
+    public int debuffGainRate;
     //The only thing TURN_BASED controls is the color of the number on the power icon.
     //Turn based powers are white, non-turn based powers are red or green depending on if their amount is positive or negative.
     //For a power to actually decrease/go away on its own they do it themselves.
@@ -19,8 +19,8 @@ public class DoomPower extends BasePower {
 
     public DoomPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
-
         debuffGainRate = amount;
+        updateDescription();
     }
 
     @Override
@@ -30,7 +30,7 @@ public class DoomPower extends BasePower {
         int totalDebuff = 0; // calculate the total amount of debuff they have
         for (AbstractPower power : owner.powers)
         {
-            if ((power.type == PowerType.DEBUFF && !power.ID.equals(POWER_ID)) || (power.canGoNegative && power.amount < 0))
+            if ((power.type == PowerType.DEBUFF && !power.ID.equals(POWER_ID) && power.amount > 0) || (power.canGoNegative && power.amount < 0))
             {
                 totalDebuff += Math.abs(power.amount);
             }
@@ -38,6 +38,8 @@ public class DoomPower extends BasePower {
 
         if (totalDebuff == 0) { // if they have none
             debuffGainRate += amount * 2; // just increase how much they'll gain later
+            updateDescription();
+            this.flash();
             return;
         }
 
@@ -66,8 +68,8 @@ public class DoomPower extends BasePower {
         }
 
         debuffGainRate += amount + amount_to_distribute;
-
         updateDescription();
+        this.flash();
     }
 
     @Override

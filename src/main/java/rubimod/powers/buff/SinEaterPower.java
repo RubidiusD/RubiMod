@@ -3,6 +3,7 @@ package rubimod.powers.buff;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import rubimod.powers.BasePower;
 
 import static rubimod.RubiMod.makeID;
@@ -20,10 +21,16 @@ public class SinEaterPower extends BasePower {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
 
+    @Override
+    public void stackPower(int stackAmount) {
+        super.stackPower(stackAmount);
+        updateDescription();
+    }
+
     // new
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if (power.type == PowerType.DEBUFF && !power.ID.equals("Shackled") && target == this.owner && target.hasPower("Artifact")) {
+        if (power.type == PowerType.DEBUFF && !power.ID.equals("Shackled") && target == this.owner && target.hasPower("Artifact") && target.getPower(ArtifactPower.POWER_ID).amount != 0) {
             this.flash();
             addToTop(new GainBlockAction(owner, owner, this.amount));
         }
