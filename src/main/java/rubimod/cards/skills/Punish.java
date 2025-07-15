@@ -4,9 +4,10 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.NecroticDamageInfo;
+import rubimod.actions.NecroticDamageAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Sin;
@@ -33,7 +34,7 @@ public class Punish extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new NecroticDamageInfo(p, magicNumber), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new NecroticDamageAction(m, new DamageInfo(p, magicNumber), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber - 1)));
     }
 

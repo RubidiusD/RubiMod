@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import rubimod.NecroticDamageInfo;
+import rubimod.actions.NecroticDamageAction;
 import rubimod.powers.BasePower;
 
 import static rubimod.RubiMod.makeID;
@@ -42,7 +42,7 @@ public class LeechToxin extends BasePower {
         this.flash();
         updateDescription();
 
-        addToTop(new DamageAction(owner, new NecroticDamageInfo(source, 1, DamageInfo.DamageType.HP_LOSS)));
+        addToTop(new NecroticDamageAction(owner, new DamageInfo(source, 1, DamageInfo.DamageType.HP_LOSS)));
         addToTop(new ApplyPowerAction(owner, source, new Bleeding(owner, source)));
     }
 

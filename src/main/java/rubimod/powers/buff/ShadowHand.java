@@ -3,7 +3,7 @@ package rubimod.powers.buff;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import rubimod.NecroticDamageInfo;
+import rubimod.actions.NecroticDamageAction;
 import rubimod.powers.BasePower;
 
 import static rubimod.RubiMod.makeID;
@@ -31,7 +31,7 @@ public class ShadowHand extends BasePower {
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         super.onAttack(info, damageAmount, target);
 
-        addToTop(new DamageAction(target, new NecroticDamageInfo(owner, amount)));
+        addToTop(new NecroticDamageAction(target, new DamageInfo(owner, amount)));
     }
 
     public void updateDescription() {

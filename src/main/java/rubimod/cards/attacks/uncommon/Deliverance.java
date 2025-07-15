@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.NecroticDamageInfo;
+import rubimod.actions.NecroticDamageAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Sin;
@@ -38,7 +38,8 @@ public class Deliverance extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new DamageAction(m, new NecroticDamageInfo(p, magicNumber)));
+//        addToBot(new DamageAction(m, new NecroticDamageInfo(p, magicNumber)));
+        addToBot(new NecroticDamageAction(m, new DamageInfo(p, magicNumber)));
         addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber)));
     }
 

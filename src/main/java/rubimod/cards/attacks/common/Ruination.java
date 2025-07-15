@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.NecroticDamageInfo;
+import rubimod.actions.NecroticDamageAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
@@ -35,7 +35,8 @@ public class Ruination extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new DamageAction(m, new NecroticDamageInfo(p, magicNumber)));
+//        addToBot(new DamageAction(m, new NecroticDamageInfo(p, magicNumber)));
+        addToBot(new NecroticDamageAction(m, new DamageInfo(p, magicNumber)));
     }
 
     @Override

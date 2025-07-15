@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.NecroticDamageInfo;
+import rubimod.actions.NecroticDamageAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
@@ -37,7 +37,7 @@ public class LashOut extends BaseCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         if (magicNumber != baseMagicNumber)
         {
-            addToBot(new DamageAction(m, new NecroticDamageInfo(p, magicNumber)));
+            addToBot(new NecroticDamageAction(m, new DamageInfo(p, magicNumber)));
         }
     }
 

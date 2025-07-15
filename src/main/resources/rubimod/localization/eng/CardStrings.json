@@ -37,13 +37,13 @@
   },
   "${modID}:Punish": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply #b1 ${modID}:Sin.",
-    "UPGRADE_DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply #b2 ${modID}:Sin."
+    "DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 1 ${modID}:Sin.",
+    "UPGRADE_DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 2 ${modID}:Sin."
   },
   "${modID}:Punish2": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply #b1 ${modID}:Sin. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply #b2 ${modID}:Sin. NL Exhaust"
+    "DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 1 ${modID}:Sin. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 2 ${modID}:Sin. NL Exhaust"
   },
   "${modID}:HeroicPlay": {
     "NAME": "Heroic Play",
@@ -185,8 +185,8 @@
   },
   "${modID}:LeechHose": {
     "NAME": "Leech Hose",
-    "DESCRIPTION": "Deal !D!X damage to ALL enemies. NL Apply ${modID}:Bleed and Vulnerable for X turns. ",
-    "UPGRADE_DESCRIPTION": "Deal !D!X damage to ALL enemies. NL Apply ${modID}:Bleed and Vulnerable for X turns. NL. If this is the first card you play, reduce their strength by X. "
+    "DESCRIPTION": "Deal !D!X damage to ALL enemies and apply ${modID}:Bleed and Vulnerable for X turns. ",
+    "UPGRADE_DESCRIPTION": "Deal !D!X damage to ALL enemies and apply ${modID}:Bleed and Vulnerable for X turns. NL If this is the first card you play, reduce their strength by X. "
   },
   "${modID}:Sacrifice": {
     "NAME": "Ritual Sacrifice",

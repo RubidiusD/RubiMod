@@ -37,13 +37,13 @@
   },
   "rubimod:Punish": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply #b1 rubimod:Sin.",
-    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply #b2 rubimod:Sin."
+    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 1 rubimod:Sin.",
+    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 2 rubimod:Sin."
   },
   "rubimod:Punish2": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply #b1 rubimod:Sin. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply #b2 rubimod:Sin. NL Exhaust"
+    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 1 rubimod:Sin. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 2 rubimod:Sin. NL Exhaust"
   },
   "rubimod:HeroicPlay": {
     "NAME": "Heroic Play",
@@ -185,8 +185,8 @@
   },
   "rubimod:LeechHose": {
     "NAME": "Leech Hose",
-    "DESCRIPTION": "Deal !D!X damage to ALL enemies. NL Apply rubimod:Bleed and Vulnerable for X turns. ",
-    "UPGRADE_DESCRIPTION": "Deal !D!X damage to ALL enemies. NL Apply rubimod:Bleed and Vulnerable for X turns. NL. If this is the first card you play, reduce their strength by X. "
+    "DESCRIPTION": "Deal !D!X damage to ALL enemies and apply rubimod:Bleed and Vulnerable for X turns. ",
+    "UPGRADE_DESCRIPTION": "Deal !D!X damage to ALL enemies and apply rubimod:Bleed and Vulnerable for X turns. NL If this is the first card you play, reduce their strength by X. "
   },
   "rubimod:Sacrifice": {
     "NAME": "Ritual Sacrifice",
