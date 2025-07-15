@@ -1,5 +1,6 @@
 package rubimod.patches;
 
+import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch2;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -8,7 +9,7 @@ import rubimod.powers.buff.StudiousPower;
 
 @SpirePatch2(
         clz= MakeTempCardInHandAction.class,
-        method="MakeTempCardInHandAction",
+        method= SpirePatch.CONSTRUCTOR,
         paramtypez={
                 AbstractCard.class,
                 boolean.class
