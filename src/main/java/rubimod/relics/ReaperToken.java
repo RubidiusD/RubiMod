@@ -19,6 +19,7 @@ public class ReaperToken extends BaseRelic {
     public void atTurnStart() {
         super.atTurnStart();
 
+        this.flash();
         addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, 1)));
     }
 

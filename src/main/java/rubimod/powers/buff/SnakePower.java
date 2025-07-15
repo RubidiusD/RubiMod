@@ -24,6 +24,7 @@ public class SnakePower extends BasePower {
     public void atStartOfTurn() {
         super.atStartOfTurn();
 
+        this.flash();
         addToBot(new MakeTempCardInHandAction(new Punish2(), amount));
     }
 

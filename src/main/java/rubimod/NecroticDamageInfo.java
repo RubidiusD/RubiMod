@@ -23,7 +23,10 @@ public class NecroticDamageInfo extends DamageInfo { // This version of damage i
         int sin = target.getPower(Sin.POWER_ID).amount; // get the target's amount of sin
         if (sin != 0) { // if they have any
             float sin_potency = 0.1f;
-            if (owner.isPlayer && AbstractDungeon.player.hasRelic(PrayerBeads.ID)) sin_potency = 0.15f;
+            if (owner.isPlayer && AbstractDungeon.player.hasRelic(PrayerBeads.ID)) {
+                sin_potency = 0.15f;
+                AbstractDungeon.player.getRelic(PrayerBeads.ID).flash();
+            }
 
             this.output = MathUtils.floor((float) this.output * (1.0f + (float) sin * sin_potency)); // apply sin and round down
 

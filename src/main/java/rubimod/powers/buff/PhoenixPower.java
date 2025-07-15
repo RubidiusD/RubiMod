@@ -61,6 +61,7 @@ public class PhoenixPower extends BasePower {
             }
         }
 
+        this.flash();
         buffGainRate += amount + amount_to_distribute;
     }
 

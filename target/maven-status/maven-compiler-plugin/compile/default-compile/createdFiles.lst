@@ -5,6 +5,7 @@ rubimod\cards\skills\uncommon\Punition.class
 rubimod\cards\skills\rare\FeastofAbsolution.class
 rubimod\cards\skills\common\SkillBookBlue.class
 rubimod\cards\attacks\common\HiddenJab.class
+rubimod\cards\skills\rare\InexorableDoom.class
 rubimod\actions\PunitionAction.class
 rubimod\cards\skills\rare\HegemonsMercy.class
 rubimod\character\Hegemon.class
@@ -14,6 +15,7 @@ rubimod\util\GeneralUtils.class
 rubimod\powers\buff\ShadowHand.class
 rubimod\cards\attacks\common\Ruination.class
 rubimod\cards\powers\uncommon\Meditation.class
+rubimod\cards\powers\uncommon\SinEaterCard.class
 rubimod\NecroticDamageInfo.class
 rubimod\cards\attacks\starter\LashOut.class
 rubimod\cards\BaseCard.class
@@ -26,15 +28,16 @@ rubimod\cards\skills\uncommon\SkillBookColorless.class
 rubimod\powers\buff\SnakePower.class
 rubimod\relics\MysteriousStranger.class
 rubimod\powers\debuff\DoomPower.class
+rubimod\cards\powers\rare\HegemonyCard.class
 rubimod\cards\attacks\uncommon\HeroicPlay.class
 rubimod\relics\PrayerBeads.class
 rubimod\cards\skills\common\Endure.class
 rubimod\cards\attacks\rare\Deliverance.class
 rubimod\cards\skills\uncommon\Feint.class
 rubimod\cards\skills\common\SkillBookPurple.class
+rubimod\powers\buff\SinEaterPower.class
 rubimod\relics\BaseRelic.class
 rubimod\util\TextureLoader$1.class
-rubimod\patches\ArtifactSalvePatch.class
 rubimod\powers\BasePower.class
 rubimod\cards\skills\starter\CloakofNight.class
 rubimod\cards\powers\uncommon\AfflictionSpecialisation.class
@@ -44,9 +47,12 @@ rubimod\actions\MercyAction.class
 rubimod\cards\powers\uncommon\WayoftheSnake.class
 rubimod\cards\BaseCard$VariableType.class
 rubimod\cards\skills\common\FalseOpening.class
+rubimod\powers\buff\BlessingsBounty.class
+rubimod\patches\ArtifactPatch.class
 rubimod\powers\buff\PhoenixPower.class
 rubimod\util\TextureLoader.class
 rubimod\cards\attacks\uncommon\HydraFlail.class
+rubimod\cards\powers\rare\DarkGuardian.class
 rubimod\cards\skills\uncommon\PathofShadows.class
 rubimod\relics\ReaperToken.class
 rubimod\cards\skills\starter\MidnightEyes.class
@@ -54,6 +60,7 @@ rubimod\relics\PropheticScraps.class
 rubimod\cards\skills\Punish.class
 rubimod\character\Hegemon$Meta.class
 rubimod\cards\skills\common\Dose.class
+rubimod\powers\buff\HegemonyPower.class
 rubimod\relics\TheologyNotes.class
 rubimod\actions\AbsolutionAction.class
 rubimod\cards\attacks\uncommon\Penitent.class
@@ -63,6 +70,5 @@ rubimod\util\KeywordInfo.class
 rubimod\cards\skills\common\Imbibe.class
 rubimod\cards\skills\common\SkillBookGreen.class
 rubimod\relics\SuspiciousSalve.class
-rubimod\cards\skills\uncommon\InexorableDoom.class
 rubimod\actions\SkillBookAction.class
 rubimod\relics\BaseRelic$1.class

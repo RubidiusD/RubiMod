@@ -24,6 +24,8 @@ public class TheologyNotes extends BaseRelic {
     public void atBattleStartPreDraw() {
         super.atBattleStartPreDraw();
 
+        this.flash();
+
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
             addToTop(new ApplyPowerAction(m, AbstractDungeon.player, new Sin(m, SIN)));
         }

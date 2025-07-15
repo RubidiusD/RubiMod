@@ -1,15 +1,15 @@
 package rubimod.powers.buff;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.powers.FrailPower;
 import rubimod.powers.BasePower;
+import rubimod.powers.debuff.Sin;
 
 import static rubimod.RubiMod.makeID;
 
-public class MeditationPower extends BasePower {
-    public static final String POWER_ID = makeID(MeditationPower.class.getSimpleName());
+public class HegemonyPower extends BasePower {
+    public static final String POWER_ID = makeID(HegemonyPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
     //The only thing TURN_BASED controls is the color of the number on the power icon.
@@ -17,20 +17,20 @@ public class MeditationPower extends BasePower {
     //For a power to actually decrease/go away on its own they do it themselves.
     //Look at powers that do this like VulnerablePower and DoubleTapPower.
 
-    public MeditationPower(AbstractCreature owner, int amount) {
+    public HegemonyPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
 
-    @Override
-    public void atStartOfTurnPostDraw() {
-        super.atStartOfTurnPostDraw();
+    public int onAttacked(DamageInfo info, int damageAmount) {
+        if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner) {
+            this.flash();
+            addToTop(new ApplyPowerAction(info.owner, owner, new Sin(info.owner, amount)));
+        }
 
-        addToBot(new ApplyPowerAction(owner, owner, new FrailPower(owner, amount, false)));
-        addToBot(new DrawCardAction(owner, amount));
-        this.flash();
+        return damageAmount;
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
+        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
 }

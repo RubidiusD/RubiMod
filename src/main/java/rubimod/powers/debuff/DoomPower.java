@@ -66,12 +66,15 @@ public class DoomPower extends BasePower {
         }
 
         debuffGainRate += amount + amount_to_distribute;
+
+        updateDescription();
     }
 
     @Override
     public void stackPower(int stackAmount) { // on gaining an additional instance
         super.stackPower(stackAmount);
         this.debuffGainRate += stackAmount; // also immediately increase rate of gain
+        this.updateDescription();
     }
 
     public void updateDescription() {

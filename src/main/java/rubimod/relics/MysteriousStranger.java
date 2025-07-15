@@ -23,6 +23,7 @@ public class MysteriousStranger extends BaseRelic {
     public void atBattleStartPreDraw() {
         super.atBattleStartPreDraw();
 
+        this.flash();
         addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, ARTIFACT)));
     }
 

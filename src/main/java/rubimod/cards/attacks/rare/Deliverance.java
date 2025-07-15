@@ -46,7 +46,6 @@ public class Deliverance extends BaseCard {
     public void onRetained() {
         super.onRetained();
         magicNumber += 2;
-        initializeDescription();
     }
 
     @Override

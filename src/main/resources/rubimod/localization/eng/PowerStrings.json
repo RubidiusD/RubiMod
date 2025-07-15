@@ -8,7 +8,7 @@
   "${modID}:Sin": {
     "NAME": "Sin",
     "DESCRIPTIONS": [
-      "Takes #b", "0% additional #yNecrotic damage."
+      "Takes #b", "0% additional Necrotic damage."
     ]
   },
   "${modID}:MeditationPower": {
@@ -38,7 +38,25 @@
   "${modID}:ShadowHand": {
     "NAME": "Shadow Hand",
     "DESCRIPTIONS": [
-      "Deals #b", " #yNecrotic damage with each attack. "
+      "Deals #b", " Necrotic damage with each attack. "
+    ]
+  },
+  "${modID}:HegemonyPower": {
+    "NAME": "Hegemony",
+    "DESCRIPTIONS": [
+      "Retributively apply #b", " Sin when hit."
+    ]
+  },
+  "${modID}:SinEaterPower": {
+    "NAME": "Sin Eater",
+    "DESCRIPTIONS": [
+      "Whenever you would lose Artifact, gain #b", " Block."
+    ]
+  },
+  "${modID}:BlessingsBounty": {
+    "NAME": "Blessing's Bounty",
+    "DESCRIPTIONS": [
+      "Whenever you would lose Artifact, gain #b", " Regen."
     ]
   }
 }

@@ -24,6 +24,7 @@ public class PropheticScraps extends BaseRelic {
     @Override
     public void atBattleStartPreDraw() {
         super.atBattleStartPreDraw();
+        this.flash();
 
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
             addToTop(new ApplyPowerAction(m, AbstractDungeon.player, new DoomPower(m, DOOM)));
