@@ -3,6 +3,7 @@ package rubimod.relics;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 
 import static rubimod.RubiMod.makeID;
@@ -17,6 +18,13 @@ public class MysteriousStranger extends BaseRelic {
 
     public MysteriousStranger()  {
         super(ID, NAME, Hegemon.Meta.CARD_COLOR, RARITY, SOUND);
+    }
+
+    @Override
+    public void onEquip() {
+        super.onEquip();
+
+        UnlockTracker.markRelicAsSeen(ID);
     }
 
     @Override

@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.actions.ApplyNecroToxinAction;
+import rubimod.actions.ApplyNecrotoxinAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
@@ -38,7 +38,7 @@ public class ToxicStrike extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new ApplyNecroToxinAction(m, p, magicNumber));
+        addToBot(new ApplyNecrotoxinAction(m, p, magicNumber));
     }
 
     @Override

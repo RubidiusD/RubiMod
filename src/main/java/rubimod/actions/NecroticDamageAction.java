@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import rubimod.powers.debuff.Sin;
-import rubimod.relics.PrayerBeads;
+import rubimod.relics.PaperUmbrella;
 
 public class NecroticDamageAction extends AbstractGameAction {
     private final DamageInfo info;
@@ -30,15 +30,29 @@ public class NecroticDamageAction extends AbstractGameAction {
 
     public void update()
     {
+        System.out.println("Base necrotic damage " + this.info.base + ".");
         if (target.hasPower(Sin.POWER_ID))
         {
+            System.out.println("Applying " + target.getPower(Sin.POWER_ID).amount + " sin.");
             float sin_potency = 0.1f;
-            if (info.owner.isPlayer && AbstractDungeon.player.hasRelic(PrayerBeads.ID)) {
+            if (info.owner.isPlayer && AbstractDungeon.player.hasRelic(PaperUmbrella.ID)) {
                 sin_potency = 0.15f;
-                AbstractDungeon.player.getRelic(PrayerBeads.ID).flash();
+                AbstractDungeon.player.getRelic(PaperUmbrella.ID).flash();
             }
+            System.out.println("At potency " + sin_potency + ".");
 
-            this.info.base = MathUtils.floor(((float) this.info.base) * (1.0f + ((float) target.getPower(Sin.POWER_ID).amount) * sin_potency)); // apply sin and round down
+            this.info.base = MathUtils.floor(
+                (
+                    (float) this.info.base
+                ) * (
+                    1.0f + (
+                        (
+                            (float) target.getPower(Sin.POWER_ID).amount
+                        ) * sin_potency
+                    )
+                )
+            ); // apply sin and round down
+            System.out.println("Total necrotic damage " + this.info.base + ".");
 
             if (this.info.base < 0)
                 this.info.base = 0;

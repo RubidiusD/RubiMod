@@ -3,14 +3,14 @@ package rubimod.actions;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import rubimod.powers.debuff.NecroToxin;
+import rubimod.powers.debuff.Necrotoxin;
 
-public class ApplyNecroToxinAction extends AbstractGameAction {
+public class ApplyNecrotoxinAction extends AbstractGameAction {
     AbstractCreature target;
     AbstractCreature source;
     int amount;
 
-    public ApplyNecroToxinAction(AbstractCreature target, AbstractCreature source, int amount)
+    public ApplyNecrotoxinAction(AbstractCreature target, AbstractCreature source, int amount)
     {
         this.actionType = ActionType.POWER;
         this.target = target;
@@ -20,7 +20,7 @@ public class ApplyNecroToxinAction extends AbstractGameAction {
 
     public void update()
     {
-        addToTop(new ApplyPowerAction(target, source, new NecroToxin(target, source, amount)));
+        addToTop(new ApplyPowerAction(target, source, new Necrotoxin(target, source, amount)));
         this.isDone = true;
     }
 }

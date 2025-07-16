@@ -6,7 +6,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch2;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import rubimod.powers.buff.StudiousPower;
+import rubimod.powers.buff.LearnedPower;
 
 @SpirePatch2(
         clz= MakeTempCardInHandAction.class,
@@ -20,7 +20,7 @@ public class StudiousHandManyPatch
 {
     public static void PostFix(AbstractCard ___c)
     {
-        if (___c.cost > 0 && AbstractDungeon.player.hasPower(StudiousPower.POWER_ID))
+        if (___c.cost > 0 && AbstractDungeon.player.hasPower(LearnedPower.POWER_ID))
             ___c.modifyCostForCombat(___c.cost-1);
     }
 }

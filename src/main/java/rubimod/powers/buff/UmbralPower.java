@@ -2,7 +2,7 @@ package rubimod.powers.buff;
 
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import rubimod.actions.ApplyNecroToxinAction;
+import rubimod.actions.ApplyNecrotoxinAction;
 import rubimod.powers.BasePower;
 
 import static rubimod.RubiMod.makeID;
@@ -31,7 +31,7 @@ public class UmbralPower extends BasePower {
         super.onInflictDamage(info, damageAmount, target);
 
         if (damageAmount > 0 && target != this.owner && info.type == DamageInfo.DamageType.NORMAL) {
-            addToTop(new ApplyNecroToxinAction(target, owner, amount));
+            addToTop(new ApplyNecrotoxinAction(target, owner, amount));
             flash();
         }
     }

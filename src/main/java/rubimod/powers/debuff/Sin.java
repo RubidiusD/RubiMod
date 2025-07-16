@@ -1,8 +1,10 @@
 package rubimod.powers.debuff;
 
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
+import rubimod.relics.PaperUmbrella;
 
 import static rubimod.RubiMod.makeID;
 
@@ -26,6 +28,9 @@ public class Sin extends BasePower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+        if (!owner.isPlayer && AbstractDungeon.player.hasRelic(PaperUmbrella.ID))
+            this.description = DESCRIPTIONS[0] + amount * 15 + DESCRIPTIONS[1];
+        else
+            this.description = DESCRIPTIONS[0] + amount + "0" + DESCRIPTIONS[1];
     }
 }

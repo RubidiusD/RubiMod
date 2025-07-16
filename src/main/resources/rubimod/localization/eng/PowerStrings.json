@@ -8,7 +8,7 @@
   "${modID}:Sin": {
     "NAME": "Sin",
     "DESCRIPTIONS": [
-      "Takes #b", "0% additional Necrotic damage."
+      "Take #b", "% additional Necrotic damage."
     ]
   },
   "${modID}:MeditationPower": {
@@ -59,10 +59,17 @@
       "Whenever you would lose Artifact, gain #b", " Regen."
     ]
   },
+  "${modID}:LearnedPower": {
+    "NAME": "Learned",
+    "DESCRIPTIONS": [
+      "Whenever you create a card, reduce its [E] cost by #b1."
+    ]
+  },
   "${modID}:StudiousPower": {
     "NAME": "Studious",
     "DESCRIPTIONS": [
-      "Whenever you create a card, reduce its [E] cost by #b1."
+      "Learn an uncommon single-use skill each turn.",
+      "Learn #b1", " uncommon single-use skills each turn."
     ]
   },
   "${modID}:Bleeding": {
@@ -83,8 +90,8 @@
       "Apply Bleeding and Vulnerable for the next #b", " turns."
     ]
   },
-  "${modID}:NecroToxin": {
-    "NAME": "Necro Toxin",
+  "${modID}:Necrotoxin": {
+    "NAME": "Necrotoxin",
     "DESCRIPTIONS": [
       "Take #b", " Necrotic damage each turn, for #r", " total."
     ]
@@ -92,13 +99,19 @@
   "${modID}:UmbralTempPower": {
     "NAME": "Umbral Venom",
     "DESCRIPTIONS": [
-      "Apply #b", " Necro Toxin on hit this turn."
+      "Apply #b", " Necrotoxin on hit this turn."
     ]
   },
   "${modID}:UmbralPower": {
     "NAME": "Umbral Armour",
     "DESCRIPTIONS": [
-      "Apply #b", " Necro Toxin on unblocked hits."
+      "Apply #b", " Necrotoxin on unblocked hits."
+    ]
+  },
+  "${modID}:Stalling": {
+    "NAME": "Stalling",
+    "DESCRIPTIONS": [
+      "Apply #b", " Regen on hit for the turn."
     ]
   }
 }

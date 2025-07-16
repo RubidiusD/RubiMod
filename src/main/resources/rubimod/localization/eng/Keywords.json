@@ -53,11 +53,9 @@
     "DESCRIPTION": "Negates the next instance of healing."
   },
   {
-    "PROPER_NAME": "Necro Toxin",
+    "PROPER_NAME": "Necrotoxin",
     "NAMES": [
-      "necro toxin",
-      "necro-toxin",
-      "necro_toxin"
+      "necrotoxin"
     ],
     "DESCRIPTION": "Deals decreasing damage over time."
   }

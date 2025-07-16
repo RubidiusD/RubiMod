@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.rewards.RewardItem;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 
 import static rubimod.RubiMod.makeID;
@@ -20,6 +21,8 @@ public class ReaperToken extends BaseRelic {
     @Override
     public void onEquip() {
         super.onEquip();
+
+        UnlockTracker.markRelicAsSeen(ID);
 
         NewRelic = false;
     }

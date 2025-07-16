@@ -2,8 +2,14 @@ package rubimod;
 
 import basemod.AutoAdd;
 import basemod.BaseMod;
+import basemod.helpers.CardBorderGlowManager;
 import basemod.interfaces.*;
+import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import rubimod.cards.attacks.rare.LeechHose;
+import rubimod.cards.skills.rare.InexorableDoom;
 import rubimod.relics.BaseRelic;
 import rubimod.util.GeneralUtils;
 import rubimod.util.KeywordInfo;
@@ -55,6 +61,32 @@ public class RubiMod implements
         new RubiMod();
 
         Hegemon.Meta.registerColor();
+
+        CardBorderGlowManager.addGlowInfo(new CardBorderGlowManager.GlowInfo() {
+            @Override
+            public boolean test(AbstractCard card) {
+                //return true if "card" follows this rule, else return false
+
+                return ((card.cardID.equals(LeechHose.ID) && card.magicNumber == 1 && AbstractDungeon.actionManager.cardsPlayedThisTurn.isEmpty()) ||
+                        (card.cardID.equals(InexorableDoom.ID) && AbstractDungeon.player.drawPile.size() >= card.magicNumber)
+                );
+            }
+
+            @Override
+            public Color getColor(AbstractCard card) {
+                //return an instance of Color to be used as the color. e.g. Color.WHITE.cpy().
+
+                return Color.YELLOW.cpy();
+            }
+
+            @Override
+            public String glowID() {
+                //return a string to be used as a unique ID for this glow.
+                //It's recommended to follow the usual modding convention of "modname:name"
+
+                return makeID("LeechHoseGlow");
+            }
+        });
     }
 
     public RubiMod() {
@@ -237,8 +269,11 @@ public class RubiMod implements
     public void receiveEditCards() { // adds any cards to the game
         new AutoAdd(modID) // Loads files
                 .packageFilter(BaseCard.class) // in the same package as this class
-                .setDefaultSeen(true) // and marks them as discovered
-                .cards(); // and adds them
+                .any(BaseCard.class, (info, card) -> {
+                    BaseMod.addCard(card);
+                    if (info.seen || card.rarity == AbstractCard.CardRarity.BASIC)
+                        UnlockTracker.markCardAsSeen(card.cardID); // marks as discovered if seen before or a starter
+                });
     }
 
     @Override

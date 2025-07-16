@@ -1,43 +1,40 @@
-package rubimod.cards.skills.uncommon;
+package rubimod.cards.powers.uncommon;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.actions.ApplyNecrotoxinAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.powers.debuff.Sin;
+import rubimod.powers.buff.HegemonyPower;
 import rubimod.util.CardStats;
 
-public class Suffer extends BaseCard {
-    public static final String ID = makeID(Suffer.class.getSimpleName()); // makeID adds the mod name
+public class RelentlessStudy extends BaseCard {
+    public static final String ID = makeID(RelentlessStudy.class.getSimpleName()); // makeID adds the mod name
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
-            CardType.SKILL,
+            CardType.POWER,
             CardRarity.UNCOMMON,
-            CardTarget.ENEMY,
+            CardTarget.SELF,
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 5;
+    private static final int MAGIC = 1;
 
-    public Suffer() {
+    public RelentlessStudy() {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC); // self-explanatory
-        setCustomVar("Sin", 0, 2);
+        setInnate(false, true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyNecrotoxinAction(m, p, magicNumber));
-        if (customVar("Sin") != 0)
-            addToBot(new ApplyPowerAction(p, p, new Sin(p, customVar("Sin"))));
+        addToBot(new ApplyPowerAction(p, p, new HegemonyPower(p, magicNumber)));
     }
 
     @Override
-    public AbstractCard makeCopy() { //Optional
-        return new Suffer();
+    public AbstractCard makeCopy() { // Optional
+        return new RelentlessStudy();
     }
 }

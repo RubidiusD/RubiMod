@@ -15,7 +15,7 @@
   },
   "rubimod:SuspiciousSalve": {
     "NAME": "Suspicious Salve",
-    "FLAVOR": "This is definitely just juiced animal. Ah well...",
+    "FLAVOR": "This is definitely just monster juices. Ah well...",
     "DESCRIPTIONS": [
       "Artifact has a #b50% chance to stick around."
     ]
@@ -27,9 +27,9 @@
       "Enemies start combat with #b", " Sin."
     ]
   },
-  "rubimod:PrayerBeads": {
-    "NAME": "Prayer Beads",
-    "FLAVOR": "Despite how old they must be, the etchings in each bead leave sharp ridges. Better wear them over clothes.",
+  "rubimod:PaperUmbrella": {
+    "NAME": "Paper Umbrella",
+    "FLAVOR": "This is wildly out of place. A good find, nevertheless.",
     "DESCRIPTIONS": [
       "Sin increases Necrotic damage by 15% instead of 10%."
     ]
@@ -49,11 +49,18 @@
       "Skip Relic"
     ]
   },
-  "rubimod:BloodMagic": {
-    "NAME": "Blood Magic",
-    "FLAVOR": "Good things come with a price.",
+  "rubimod:ConcealedRazor": {
+    "NAME": "Concealed Razor",
+    "FLAVOR": "The blade is too short to be used for anything else.",
     "DESCRIPTIONS": [
       "Gain 1 [E] at the start of each turn. Start combat Bleeding."
+    ]
+  },
+  "rubimod:VehicleVoltron": {
+    "NAME": "Vehicle Voltron",
+    "FLAVOR": "This is hardly relevant to combat. It seems to have no mystical or chemical properties.",
+    "DESCRIPTIONS": [
+      "You and all enemies start combat with 5 Regen."
     ]
   }
 }

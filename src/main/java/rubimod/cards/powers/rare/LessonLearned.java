@@ -6,11 +6,11 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.powers.buff.StudiousPower;
+import rubimod.powers.buff.LearnedPower;
 import rubimod.util.CardStats;
 
-public class RelentlessStudent extends BaseCard {
-    public static final String ID = makeID(RelentlessStudent.class.getSimpleName()); // makeID adds the mod name
+public class LessonLearned extends BaseCard {
+    public static final String ID = makeID(LessonLearned.class.getSimpleName()); // makeID adds the mod name
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,
@@ -21,7 +21,7 @@ public class RelentlessStudent extends BaseCard {
 
     private static final int MAGIC = -1;
 
-    public RelentlessStudent() {
+    public LessonLearned() {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC); // self-explanatory
@@ -29,11 +29,11 @@ public class RelentlessStudent extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new StudiousPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new LearnedPower(p, magicNumber)));
     }
 
     @Override
     public AbstractCard makeCopy() { // Optional
-        return new RelentlessStudent();
+        return new LessonLearned();
     }
 }

@@ -16,8 +16,11 @@ public class ArtifactPatch
 {
     public static void Prefix(ArtifactPower power)
     {
+        System.out.println("Artifact Patch");
+
         if (power.owner.isPlayer && AbstractDungeon.player.hasRelic(SuspiciousSalve.ID))
         {
+            System.out.println("Triggering Salve");
             AbstractDungeon.player.getRelic(SuspiciousSalve.ID).onTrigger();
         }
 
