@@ -24,7 +24,7 @@ public class MysteriousStranger extends BaseRelic {
         super.atBattleStart();
 
         this.flash();
-        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, ARTIFACT)));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, ARTIFACT)));
     }
 
     @Override

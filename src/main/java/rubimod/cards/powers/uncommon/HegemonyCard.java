@@ -1,4 +1,4 @@
-package rubimod.cards.powers.rare;
+package rubimod.cards.powers.uncommon;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -14,9 +14,9 @@ public class HegemonyCard extends BaseCard {
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,
-            CardRarity.RARE,
+            CardRarity.UNCOMMON,
             CardTarget.SELF,
-            2 // card cost!! (-1 is X, -2 is unplayable)
+            1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int MAGIC = 1;
@@ -25,7 +25,7 @@ public class HegemonyCard extends BaseCard {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC); // self-explanatory
-        setEthereal(true, false);
+        setInnate(false, true);
     }
 
     @Override

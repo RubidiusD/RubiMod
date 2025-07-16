@@ -21,7 +21,7 @@ public class BloodMagic extends BaseRelic {
     public void atBattleStartPreDraw() {
         super.atBattleStartPreDraw();
 
-        addToBot(new ApplyPowerAction(AbstractDungeon.player,  AbstractDungeon.player, new Bleeding(AbstractDungeon.player, AbstractDungeon.player)));
+        addToTop(new ApplyPowerAction(AbstractDungeon.player,  AbstractDungeon.player, new Bleeding(AbstractDungeon.player, AbstractDungeon.player)));
     }
 
     public void onEquip() {

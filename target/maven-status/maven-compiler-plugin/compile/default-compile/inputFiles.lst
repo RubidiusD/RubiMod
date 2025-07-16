@@ -1,4 +1,5 @@
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\AbsolutionAction.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\ApplyNecroToxinAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\MercyAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\NecroticDamageAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\PunitionAction.java
@@ -8,6 +9,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\comm
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\Riposte.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\Ruination.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\SpiritCoin.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\ToxicStrike.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\rare\LeechHose.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\starter\LashOut.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\starter\Strike.java
@@ -15,12 +17,15 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\unco
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\HeroicPlay.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\HydraFlail.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\Penitent.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\StoriedDagger.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\ToxicElbow.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\BaseCard.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\rare\DarkGuardian.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\rare\HegemonyCard.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\rare\PhoenixForm.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\rare\RelentlessStudent.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\rare\SuitUp.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\uncommon\AfflictionSpecialisation.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\uncommon\HegemonyCard.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\uncommon\Meditation.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\uncommon\Sacrifice.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\uncommon\SinEaterCard.java
@@ -45,6 +50,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncom
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\PathofShadows.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\Punition.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\SkillBookColorless.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\Suffer.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\character\Hegemon.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\NecroticDamageInfo.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\ArtifactPatch.java
@@ -62,10 +68,13 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\Shadow
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\SinEaterPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\SnakePower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\StudiousPower.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\UmbralPower.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\UmbralTempPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Bleeding.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Colin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\DoomPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\LeechToxin.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\NecroToxin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Sin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\relics\BaseRelic.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\relics\BloodMagic.java

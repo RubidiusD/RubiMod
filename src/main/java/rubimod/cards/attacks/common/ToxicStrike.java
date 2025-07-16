@@ -1,45 +1,48 @@
-package rubimod.cards.skills;
+package rubimod.cards.attacks.common;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.actions.NecroticDamageAction;
+import rubimod.actions.ApplyNecroToxinAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.powers.debuff.Sin;
 import rubimod.util.CardStats;
 
-public class Punish extends BaseCard {
-    public static final String ID = makeID(Punish.class.getSimpleName()); // makeID adds the mod name
+public class ToxicStrike extends BaseCard {
+    public static final String ID = makeID(ToxicStrike.class.getSimpleName()); // makeID adds the mod name
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
-            CardType.SKILL,
+            CardType.ATTACK,
             CardRarity.COMMON,
             CardTarget.ENEMY,
-            0 // card cost!! (-1 is X, -2 is unplayable)
+            1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 2;
+    private static final int DAMAGE = 6;
+    private static final int UPG_DAMAGE = 3;
+    private static final int MAGIC = 3;
     private static final int UPG_MAGIC = 1;
 
-    public Punish() {
+    public ToxicStrike() {
         super(ID, info); // calls the parent constructor
 
+        setDamage(DAMAGE, UPG_DAMAGE); // self-explanatory
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
+
+        tags.add(CardTags.STRIKE);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new NecroticDamageAction(m, new DamageInfo(p, magicNumber, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber - 1)));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        addToBot(new ApplyNecroToxinAction(m, p, magicNumber));
     }
 
     @Override
     public AbstractCard makeCopy() { // Optional
-        return new Punish();
+        return new ToxicStrike();
     }
 }

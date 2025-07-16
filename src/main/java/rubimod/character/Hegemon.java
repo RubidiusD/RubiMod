@@ -24,6 +24,7 @@ import rubimod.cards.attacks.starter.Strike;
 import rubimod.cards.skills.starter.CloakofNight;
 import rubimod.cards.skills.starter.Defend;
 import rubimod.cards.skills.starter.MidnightEyes;
+import rubimod.cards.skills.uncommon.SkillBookColorless;
 import rubimod.relics.MysteriousStranger;
 
 import java.util.ArrayList;
@@ -39,7 +40,7 @@ public class Hegemon extends CustomPlayer {
     public static final int ORB_SLOTS = 0;
 
     //Strings
-    private static final String ID = RubiMod.makeID("Hegemon"); //This should match whatever you have in the CharacterStrings.json file
+    private static final String ID = RubiMod.makeID(Hegemon.class.getSimpleName()); //This should match whatever you have in the CharacterStrings.json file
     private static String[] getNames() { return CardCrawlGame.languagePack.getCharacterString(ID).NAMES; }
     private static String[] getText() { return CardCrawlGame.languagePack.getCharacterString(ID).TEXT; }
 

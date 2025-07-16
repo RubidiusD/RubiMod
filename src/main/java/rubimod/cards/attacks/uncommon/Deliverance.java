@@ -39,7 +39,7 @@ public class Deliverance extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
 //        addToBot(new DamageAction(m, new NecroticDamageInfo(p, magicNumber)));
-        addToBot(new NecroticDamageAction(m, new DamageInfo(p, magicNumber)));
+        addToBot(new NecroticDamageAction(m, new DamageInfo(p, magicNumber, DamageInfo.DamageType.THORNS)));
         addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber)));
     }
 

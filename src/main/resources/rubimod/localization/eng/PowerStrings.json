@@ -38,7 +38,7 @@
   "${modID}:ShadowHand": {
     "NAME": "Shadow Hand",
     "DESCRIPTIONS": [
-      "Deals #b", " Necrotic damage with each attack. "
+      "Deal #b", " Necrotic damage with each attack. "
     ]
   },
   "${modID}:HegemonyPower": {
@@ -81,6 +81,24 @@
     "NAME": "Colin",
     "DESCRIPTIONS": [
       "Apply Bleeding and Vulnerable for the next #b", " turns."
+    ]
+  },
+  "${modID}:NecroToxin": {
+    "NAME": "Necro Toxin",
+    "DESCRIPTIONS": [
+      "Take #b", " Necrotic damage each turn, for #r", " total."
+    ]
+  },
+  "${modID}:UmbralTempPower": {
+    "NAME": "Umbral Venom",
+    "DESCRIPTIONS": [
+      "Apply #b", " Necro Toxin on hit this turn."
+    ]
+  },
+  "${modID}:UmbralPower": {
+    "NAME": "Umbral Armour",
+    "DESCRIPTIONS": [
+      "Apply #b", " Necro Toxin on unblocked hits."
     ]
   }
 }

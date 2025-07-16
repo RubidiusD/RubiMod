@@ -11,7 +11,7 @@ import static rubimod.RubiMod.makeID;
 public class TheologyNotes extends BaseRelic {
     private static final String NAME = TheologyNotes.class.getSimpleName();
     public static final String ID = makeID(NAME);
-    private static final RelicTier RARITY = RelicTier.UNCOMMON;
+    private static final RelicTier RARITY = RelicTier.COMMON;
     private static final LandingSound SOUND = LandingSound.FLAT;
 
     private static final int SIN = 2;

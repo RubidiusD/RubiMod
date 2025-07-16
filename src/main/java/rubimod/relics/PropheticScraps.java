@@ -12,7 +12,7 @@ import static rubimod.RubiMod.makeID;
 public class PropheticScraps extends BaseRelic {
     private static final String NAME = PropheticScraps.class.getSimpleName();
     public static final String ID = makeID(NAME);
-    private static final RelicTier RARITY = RelicTier.BOSS;
+    private static final RelicTier RARITY = RelicTier.RARE;
     private static final LandingSound SOUND = LandingSound.FLAT;
 
     private static final int DOOM = 1;

@@ -37,7 +37,7 @@ public class LashOut extends BaseCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         if (magicNumber != baseMagicNumber)
         {
-            addToBot(new NecroticDamageAction(m, new DamageInfo(p, magicNumber)));
+            addToBot(new NecroticDamageAction(m, new DamageInfo(p, magicNumber, DamageInfo.DamageType.THORNS)));
         }
     }
 

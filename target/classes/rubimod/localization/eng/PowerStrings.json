@@ -38,7 +38,7 @@
   "rubimod:ShadowHand": {
     "NAME": "Shadow Hand",
     "DESCRIPTIONS": [
-      "Deals #b", " Necrotic damage with each attack. "
+      "Deal #b", " Necrotic damage with each attack. "
     ]
   },
   "rubimod:HegemonyPower": {
@@ -81,6 +81,24 @@
     "NAME": "Colin",
     "DESCRIPTIONS": [
       "Apply Bleeding and Vulnerable for the next #b", " turns."
+    ]
+  },
+  "rubimod:NecroToxin": {
+    "NAME": "Necro Toxin",
+    "DESCRIPTIONS": [
+      "Take #b", " Necrotic damage each turn, for #r", " total."
+    ]
+  },
+  "rubimod:UmbralTempPower": {
+    "NAME": "Umbral Venom",
+    "DESCRIPTIONS": [
+      "Apply #b", " Necro Toxin on hit this turn."
+    ]
+  },
+  "rubimod:UmbralPower": {
+    "NAME": "Umbral Armour",
+    "DESCRIPTIONS": [
+      "Apply #b", " Necro Toxin on unblocked hits."
     ]
   }
 }

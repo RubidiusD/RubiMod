@@ -23,7 +23,7 @@ public class PunitionAction extends AbstractGameAction {
             return;
         }
 //        addToTop(new DamageAction(target, new NecroticDamageInfo(owner, target.getPower(Sin.POWER_ID).amount), AttackEffect.POISON));
-        addToTop(new NecroticDamageAction(target, new DamageInfo(owner, target.getPower(Sin.POWER_ID).amount), AttackEffect.POISON));
+        addToTop(new NecroticDamageAction(target, new DamageInfo(owner, target.getPower(Sin.POWER_ID).amount, DamageInfo.DamageType.THORNS), AttackEffect.POISON));
 
         this.isDone = true;
     }

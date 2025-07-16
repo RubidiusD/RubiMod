@@ -10,7 +10,7 @@ import rubimod.powers.BasePower;
 import static rubimod.RubiMod.makeID;
 
 public class Colin extends BasePower {
-    public static final String POWER_ID = makeID(Sin.class.getSimpleName());
+    public static final String POWER_ID = makeID(Colin.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.DEBUFF;
     private static final boolean TURN_BASED = true;
     //The only thing TURN_BASED controls is the color of the number on the power icon.

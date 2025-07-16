@@ -45,5 +45,7 @@ public class NecroticDamageAction extends AbstractGameAction {
         }
 
         addToTop(new DamageAction(target, info, attackEffect));
+
+        this.isDone = true;
     }
 }

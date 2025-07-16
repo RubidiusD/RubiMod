@@ -51,5 +51,14 @@
       "leech"
     ],
     "DESCRIPTION": "Negates the next instance of healing."
+  },
+  {
+    "PROPER_NAME": "Necro Toxin",
+    "NAMES": [
+      "necro toxin",
+      "necro-toxin",
+      "necro_toxin"
+    ],
+    "DESCRIPTION": "Deals decreasing damage over time."
   }
 ]

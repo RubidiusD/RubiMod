@@ -192,5 +192,26 @@
     "NAME": "Ritual Sacrifice",
     "DESCRIPTION": "You can no longer heal. NL !M! Strength.",
     "UPGRADE_DESCRIPTION": "You can no longer heal. NL !M! Strength and 1 Ritual. "
+  },
+  "rubimod:ToxicStrike": {
+    "NAME": "Toxic Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! rubimod:Necro_Toxin."
+  },
+  "rubimod:ToxicElbow": {
+    "NAME": "Toxic Elbow",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! rubimod:Necro_Toxin."
+  },
+  "rubimod:StoriedDagger": {
+    "NAME": "Storied Dagger",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! rubimod:Necro_Toxin with each attack this turn."
+  },
+  "rubimod:Suffer": {
+    "NAME": "Suffer!",
+    "DESCRIPTION": "Apply !M! rubimod:Necro_Toxin.",
+    "UPGRADE_DESCRIPTION": "Apply !M! rubimod:Necro_Toxin and !rubimod:Sin! rubimod:Sin"
+  },
+  "rubimod:SuitUp": {
+    "NAME": "Suit Up!",
+    "DESCRIPTION": "Whenever an unblocked attack deals damage, apply !M! rubimod:Necro_Toxin."
   }
 }
