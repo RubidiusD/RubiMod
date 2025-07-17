@@ -61,32 +61,6 @@ public class RubiMod implements
         new RubiMod();
 
         Hegemon.Meta.registerColor();
-
-        CardBorderGlowManager.addGlowInfo(new CardBorderGlowManager.GlowInfo() {
-            @Override
-            public boolean test(AbstractCard card) {
-                //return true if "card" follows this rule, else return false
-
-                return ((card.cardID.equals(LeechHose.ID) && card.magicNumber == 1 && AbstractDungeon.actionManager.cardsPlayedThisTurn.isEmpty()) ||
-                        (card.cardID.equals(InexorableDoom.ID) && AbstractDungeon.player.drawPile.size() >= card.magicNumber)
-                );
-            }
-
-            @Override
-            public Color getColor(AbstractCard card) {
-                //return an instance of Color to be used as the color. e.g. Color.WHITE.cpy().
-
-                return Color.YELLOW.cpy();
-            }
-
-            @Override
-            public String glowID() {
-                //return a string to be used as a unique ID for this glow.
-                //It's recommended to follow the usual modding convention of "modname:name"
-
-                return makeID("LeechHoseGlow");
-            }
-        });
     }
 
     public RubiMod() {
@@ -274,6 +248,33 @@ public class RubiMod implements
                     if (info.seen || card.rarity == AbstractCard.CardRarity.BASIC)
                         UnlockTracker.markCardAsSeen(card.cardID); // marks as discovered if seen before or a starter
                 });
+
+        // Card Glow Hopefully?
+        CardBorderGlowManager.addGlowInfo(new CardBorderGlowManager.GlowInfo() {
+            @Override
+            public boolean test(AbstractCard card) {
+                //return true if "card" follows this rule, else return false
+
+                return ((card.cardID.equals(LeechHose.ID) && card.magicNumber == 1 && AbstractDungeon.actionManager.cardsPlayedThisTurn.isEmpty()) ||
+                        (card.cardID.equals(InexorableDoom.ID) && AbstractDungeon.player.drawPile.size() >= card.magicNumber)
+                );
+            }
+
+            @Override
+            public Color getColor(AbstractCard card) {
+                //return an instance of Color to be used as the color. e.g. Color.WHITE.cpy().
+
+                return Color.YELLOW.cpy();
+            }
+
+            @Override
+            public String glowID() {
+                //return a string to be used as a unique ID for this glow.
+                //It's recommended to follow the usual modding convention of "modname:name"
+
+                return makeID("Glow");
+            }
+        });
     }
 
     @Override
