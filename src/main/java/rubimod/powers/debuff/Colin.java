@@ -42,6 +42,12 @@ public class Colin extends BasePower {
         updateDescription();
 
         addToTop(new ApplyPowerAction(owner, source, new Bleeding(owner, source)));
+    }
+
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        super.atEndOfTurn(isPlayer);
+
         addToTop(new ApplyPowerAction(owner, source, new VulnerablePower(owner,1, !source.isPlayer)));
     }
 

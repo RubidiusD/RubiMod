@@ -11,7 +11,7 @@ import static rubimod.RubiMod.makeID;
 
 public class Stalling extends BasePower {
     public static final String POWER_ID = makeID(Stalling.class.getSimpleName());
-    private static final PowerType TYPE = PowerType.DEBUFF;
+    private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
     //The only thing TURN_BASED controls is the color of the number on the power icon.
     //Turn based powers are white, non-turn based powers are red or green depending on if their amount is positive or negative.
