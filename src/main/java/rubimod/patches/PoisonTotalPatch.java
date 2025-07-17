@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.powers.PoisonPower;
         paramtypez={}
 )
 public class PoisonTotalPatch {
-    public void Postfix(PoisonPower power) {
+    public static void Postfix(PoisonPower power) {
         power.description = power.description + " For a total of #b" + (power.amount * (power.amount + 1)) / 2 + ".";
     }
 }
