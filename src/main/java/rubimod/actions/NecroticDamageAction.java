@@ -30,6 +30,7 @@ public class NecroticDamageAction extends AbstractGameAction {
 
     public void update()
     {
+        int new_damage = info.base;
         System.out.println("Base necrotic damage " + this.info.base + ".");
         if (target.hasPower(Sin.POWER_ID))
         {
@@ -41,7 +42,7 @@ public class NecroticDamageAction extends AbstractGameAction {
             }
             System.out.println("At potency " + sin_potency + ".");
 
-            this.info.base = MathUtils.floor(
+            new_damage = MathUtils.floor(
                 (
                     (float) this.info.base
                 ) * (
@@ -52,13 +53,13 @@ public class NecroticDamageAction extends AbstractGameAction {
                     )
                 )
             ); // apply sin and round down
-            System.out.println("Total necrotic damage " + this.info.base + ".");
+            System.out.println("Total necrotic damage " + new_damage + ".");
 
-            if (this.info.base < 0)
-                this.info.base = 0;
+            if (new_damage < 0)
+                new_damage = 0;
         }
 
-        addToTop(new DamageAction(target, info, attackEffect));
+        addToTop(new DamageAction(target, new DamageInfo(info.owner, new_damage, DamageInfo.DamageType.THORNS), attackEffect));
 
         this.isDone = true;
     }
