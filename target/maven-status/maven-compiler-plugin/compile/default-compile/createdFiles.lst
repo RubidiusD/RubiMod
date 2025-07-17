@@ -53,8 +53,10 @@ rubimod\util\TextureLoader$1.class
 rubimod\cards\attacks\common\LeechBite.class
 rubimod\powers\BasePower.class
 rubimod\cards\skills\uncommon\Suffer.class
+rubimod\patches\PoisonTotalPatch.class
 rubimod\cards\skills\starter\CloakofNight.class
 rubimod\cards\powers\uncommon\AfflictionSpecialisation.class
+rubimod\patches\RegenTotalPatch.class
 rubimod\cards\skills\starter\Defend.class
 rubimod\powers\buff\UmbralTempPower.class
 rubimod\RubiMod.class
@@ -68,7 +70,6 @@ rubimod\cards\skills\common\FalseOpening.class
 rubimod\powers\buff\BlessingsBounty.class
 rubimod\patches\ArtifactPatch.class
 rubimod\powers\buff\PhoenixPower.class
-rubimod\patches\PoisonPatch.class
 rubimod\cards\attacks\common\ToxicStrike.class
 rubimod\util\TextureLoader.class
 rubimod\cards\attacks\uncommon\HydraFlail.class
@@ -100,7 +101,6 @@ rubimod\cards\skills\common\Imbibe.class
 rubimod\cards\skills\common\SkillBookGreen.class
 rubimod\relics\SuspiciousSalve.class
 rubimod\patches\StudiousDiscoveryPatch.class
-rubimod\patches\RegenPatch.class
 rubimod\actions\SkillBookAction.class
 rubimod\cards\attacks\uncommon\Deliverance.class
 rubimod\powers\debuff\Necrotoxin.class

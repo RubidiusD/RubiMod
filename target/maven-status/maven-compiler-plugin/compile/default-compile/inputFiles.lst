@@ -56,8 +56,8 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncom
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\character\Hegemon.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\NecroticDamageInfo.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\ArtifactPatch.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\PoisonPatch.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\RegenPatch.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\PoisonTotalPatch.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\RegenTotalPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\StudiousDiscoveryPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\StudiousDrawPilePatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\StudiousHandManyPatch.java
