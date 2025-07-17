@@ -60,7 +60,7 @@
     "NAME": "Vehicle Voltron",
     "FLAVOR": "This is hardly relevant to combat. It seems to have no mystical or chemical properties.",
     "DESCRIPTIONS": [
-      "You and all enemies start combat with 5 Regen."
+      "You start with #b", " and all enemies start combat with #r", " Regen."
     ]
   }
 }
