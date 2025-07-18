@@ -2,12 +2,11 @@ package rubimod.powers.debuff;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import rubimod.actions.NecroticDamageAction;
+import rubimod.actions.NecrotoxinLoseHPAction;
 import rubimod.powers.BasePower;
 
 import static rubimod.RubiMod.makeID;
@@ -38,7 +37,7 @@ public class Necrotoxin extends BasePower {
         super.atStartOfTurn();
 
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-            addToTop(new NecroticDamageAction(owner, new DamageInfo(source, amount, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.POISON));
+            addToTop(new NecrotoxinLoseHPAction(owner, source, amount, AbstractGameAction.AttackEffect.POISON));
 
             reducePower(1);
             if (amount == 0)

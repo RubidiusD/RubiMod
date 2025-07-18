@@ -95,6 +95,7 @@ rubimod\relics\TheologyNotes.class
 rubimod\actions\AbsolutionAction.class
 rubimod\cards\attacks\uncommon\ToxicElbow.class
 rubimod\cards\powers\rare\SuitUp.class
+rubimod\actions\NecrotoxinLoseHPAction.class
 rubimod\cards\attacks\uncommon\Penitent.class
 rubimod\cards\BaseCard$LocalVarInfo.class
 rubimod\util\TriFunction.class

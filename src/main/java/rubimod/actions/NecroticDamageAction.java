@@ -28,35 +28,39 @@ public class NecroticDamageAction extends AbstractGameAction {
         this.attackEffect = AttackEffect.NONE;
     }
 
-    public void update()
-    {
-        int new_damage = info.base;
+    public static int calculateSin(AbstractCreature target, AbstractCreature source, int base)
+    {int new_damage = base;
         if (target.hasPower(Sin.POWER_ID))
         {
             float sin_potency = 0.1f;
-            if (info.owner.isPlayer && AbstractDungeon.player.hasRelic(PaperUmbrella.ID)) {
+            if (source.isPlayer && AbstractDungeon.player.hasRelic(PaperUmbrella.ID)) {
                 sin_potency = 0.15f;
                 AbstractDungeon.player.getRelic(PaperUmbrella.ID).flash();
             }
             System.out.println("At potency " + sin_potency + ".");
 
             new_damage = MathUtils.floor(
-                (
-                    (float) this.info.base
-                ) * (
-                    1.0f + (
-                        (
-                            (float) target.getPower(Sin.POWER_ID).amount
-                        ) * sin_potency
+                    (
+                            (float) base
+                    ) * (
+                            1.0f + (
+                                    (
+                                            (float) target.getPower(Sin.POWER_ID).amount
+                                    ) * sin_potency
+                            )
                     )
-                )
             ); // apply sin and round down
 
             if (new_damage < 0)
                 new_damage = 0;
         }
 
-        addToTop(new DamageAction(target, new DamageInfo(info.owner, new_damage, DamageInfo.DamageType.THORNS), attackEffect));
+        return new_damage;
+    }
+
+    public void update()
+    {
+        addToTop(new DamageAction(target, new DamageInfo(info.owner, calculateSin(target, info.owner, info.base), DamageInfo.DamageType.THORNS), attackEffect));
 
         this.isDone = true;
     }
