@@ -14,13 +14,13 @@ import rubimod.powers.buff.LearnedPower;
 )
 public class LearnedHandCopyPatch {
     @SpirePostfixPatch
-    public static AbstractCard PostFix(AbstractCard card)
+    public static AbstractCard PostFix(AbstractCard __result)
     {
-        if (card.type != AbstractCard.CardType.STATUS && card.type != AbstractCard.CardType.CURSE && card.cost > 0 && AbstractDungeon.player.hasPower(LearnedPower.POWER_ID))
+        if (__result.type != AbstractCard.CardType.STATUS && __result.type != AbstractCard.CardType.CURSE && __result.cost > 0 && AbstractDungeon.player.hasPower(LearnedPower.POWER_ID))
         {
-            card.costForTurn = card.cost -= 1;
-            card.isCostModified = true;
+            __result.costForTurn = __result.cost -= 1;
+            __result.isCostModified = true;
         }
-        return card;
+        return __result;
     }
 }
