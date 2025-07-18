@@ -24,7 +24,7 @@
 
     <!-- This information will be displayed in ModTheSpire, the modded launcher. -->
     <name>The Hegemon</name>
-    <version>0.4.10</version>
+    <version>0.4.11</version>
     <!-- Avoid using \ in this description, as they can cause the description to fail to load. -->
     <!-- If you really want to use them, you'll need to "escape" them by putting another one in front, like \\ -->
     <description>This mod adds random nonsense.\n

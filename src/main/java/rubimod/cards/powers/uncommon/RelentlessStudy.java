@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.powers.buff.HegemonyPower;
+import rubimod.powers.buff.StudiousPower;
 import rubimod.util.CardStats;
 
 public class RelentlessStudy extends BaseCard {
@@ -30,7 +30,7 @@ public class RelentlessStudy extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new HegemonyPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new StudiousPower(p, magicNumber)));
     }
 
     @Override
