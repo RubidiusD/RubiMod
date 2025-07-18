@@ -180,12 +180,12 @@
   "${modID}:LeechBite": {
     "NAME": "Leech Bite",
     "DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding. ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding and ${modID}:Leech Toxin."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding and ${modID}:Leech_Toxin."
   },
   "${modID}:SpiritCoin": {
     "NAME": "Spirit Coin",
     "DESCRIPTION": "Deal !D! damage. NL ${modID}:Bleed. ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding and ${modID}:Leech Toxin."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding and ${modID}:Leech_Toxin."
   },
   "${modID}:LeechHose": {
     "NAME": "Leech Hose",

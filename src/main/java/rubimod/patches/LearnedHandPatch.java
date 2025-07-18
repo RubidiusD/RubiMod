@@ -1,6 +1,5 @@
 package rubimod.patches;
 
-
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch2;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -13,14 +12,17 @@ import rubimod.powers.buff.LearnedPower;
         method= SpirePatch.CONSTRUCTOR,
         paramtypez={
                 AbstractCard.class,
-                int.class
+                boolean.class
         }
 )
-public class StudiousHandManyPatch
+public class LearnedHandPatch
 {
     public static void PostFix(AbstractCard ___c)
     {
-        if (___c.cost > 0 && AbstractDungeon.player.hasPower(LearnedPower.POWER_ID))
-            ___c.modifyCostForCombat(___c.cost-1);
+        if (___c.type != AbstractCard.CardType.STATUS && ___c.type != AbstractCard.CardType.CURSE && ___c.cost > 0 && AbstractDungeon.player.hasPower(LearnedPower.POWER_ID))
+        {
+            ___c.costForTurn = ___c.cost -= 1;
+            ___c.isCostModified = true;
+        }
     }
 }

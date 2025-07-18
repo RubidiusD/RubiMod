@@ -3,8 +3,6 @@ package rubimod.patches;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
-//import rubimod.powers.buff.BlessingsBounty;
-//import rubimod.powers.buff.SinEaterPower;
 import rubimod.relics.SuspiciousSalve;
 
 @SpirePatch(
@@ -16,23 +14,7 @@ public class ArtifactPatch
 {
     public static void Prefix(ArtifactPower power)
     {
-        System.out.println("Artifact Patch");
-
         if (power.owner.isPlayer && AbstractDungeon.player.hasRelic(SuspiciousSalve.ID))
-        {
-            System.out.println("Triggering Salve");
             AbstractDungeon.player.getRelic(SuspiciousSalve.ID).onTrigger();
-        }
-
-        // old
-//        if (power.owner.hasPower(BlessingsBounty.POWER_ID))
-//        {
-//            power.owner.getPower(BlessingsBounty.POWER_ID).onSpecificTrigger();
-//        }
-//
-//        if (power.owner.hasPower(SinEaterPower.POWER_ID))
-//        {
-//            power.owner.getPower(SinEaterPower.POWER_ID).onSpecificTrigger();
-//        }
     }
 }

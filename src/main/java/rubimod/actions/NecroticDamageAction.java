@@ -31,10 +31,8 @@ public class NecroticDamageAction extends AbstractGameAction {
     public void update()
     {
         int new_damage = info.base;
-        System.out.println("Base necrotic damage " + this.info.base + ".");
         if (target.hasPower(Sin.POWER_ID))
         {
-            System.out.println("Applying " + target.getPower(Sin.POWER_ID).amount + " sin.");
             float sin_potency = 0.1f;
             if (info.owner.isPlayer && AbstractDungeon.player.hasRelic(PaperUmbrella.ID)) {
                 sin_potency = 0.15f;
@@ -53,7 +51,6 @@ public class NecroticDamageAction extends AbstractGameAction {
                     )
                 )
             ); // apply sin and round down
-            System.out.println("Total necrotic damage " + new_damage + ".");
 
             if (new_damage < 0)
                 new_damage = 0;

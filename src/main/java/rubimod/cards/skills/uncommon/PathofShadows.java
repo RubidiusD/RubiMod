@@ -22,12 +22,13 @@ public class PathofShadows extends BaseCard {
     );
 
     private static final int BLOCK = 6;
+    private static final int UPG_BLOCK = -3;
     private static final int MAGIC = 2;
 
     public PathofShadows() {
         super(ID, info); // calls the parent constructor
 
-        setBlock(BLOCK); // self-explanatory
+        setBlock(BLOCK, UPG_BLOCK); // self-explanatory
         setMagic(MAGIC); // self-explanatory
         setCostUpgrade(1);
     }

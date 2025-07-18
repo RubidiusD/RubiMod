@@ -41,7 +41,7 @@ public class LeechToxin extends BasePower {
         this.flash();
         updateDescription();
 
-        addToTop(new NecroticDamageAction(owner, new DamageInfo(source, 1, DamageInfo.DamageType.HP_LOSS)));
+        addToTop(new NecroticDamageAction(owner, new DamageInfo(source, amount + 1, DamageInfo.DamageType.HP_LOSS)));
         addToTop(new ApplyPowerAction(owner, source, new Bleeding(owner, source)));
     }
 

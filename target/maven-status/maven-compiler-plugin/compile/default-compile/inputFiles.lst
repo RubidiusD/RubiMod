@@ -56,12 +56,12 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncom
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\character\Hegemon.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\NecroticDamageInfo.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\ArtifactPatch.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedDiscoveryPatch.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedDrawPilePatch.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedHandManyPatch.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedHandPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\PoisonTotalPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\RegenTotalPatch.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\StudiousDiscoveryPatch.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\StudiousDrawPilePatch.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\StudiousHandManyPatch.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\StudiousHandPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\potions\BasePotion.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\BasePower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\BlessingsBounty.java

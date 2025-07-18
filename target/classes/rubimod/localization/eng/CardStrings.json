@@ -180,12 +180,12 @@
   "rubimod:LeechBite": {
     "NAME": "Leech Bite",
     "DESCRIPTION": "Deal !D! damage. NL Inflict rubimod:Bleeding. ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict rubimod:Bleeding and rubimod:Leech Toxin."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict rubimod:Bleeding and rubimod:Leech_Toxin."
   },
   "rubimod:SpiritCoin": {
     "NAME": "Spirit Coin",
     "DESCRIPTION": "Deal !D! damage. NL rubimod:Bleed. ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict rubimod:Bleeding and rubimod:Leech Toxin."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict rubimod:Bleeding and rubimod:Leech_Toxin."
   },
   "rubimod:LeechHose": {
     "NAME": "Leech Hose",

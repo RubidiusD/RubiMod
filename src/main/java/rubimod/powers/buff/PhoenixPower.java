@@ -24,8 +24,8 @@ public class PhoenixPower extends BasePower {
     }
 
     @Override
-    public void atStartOfTurn() { // Trigger the power's effect
-        super.atStartOfTurn();
+    public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
+        super.atEndOfTurnPreEndTurnCards(isPlayer);
 
         int totalBuff = 0; // calculate the total amount of buff you have
         for (AbstractPower power : owner.powers)

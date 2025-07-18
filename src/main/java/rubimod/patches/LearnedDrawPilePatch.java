@@ -12,13 +12,16 @@ import rubimod.powers.buff.LearnedPower;
         method="update",
         paramtypez={}
 )
-public class StudiousDrawPilePatch {
+public class LearnedDrawPilePatch {
         @SpireInsertPatch(
-                rloc=1
+                loc=68
         )
-        public static void Insert(AbstractCard ___cardToMake)
+        public static void Insert(AbstractCard ___c)
         {
-            if (___cardToMake.cost > 0 && AbstractDungeon.player.hasPower(LearnedPower.POWER_ID))
-                ___cardToMake.modifyCostForCombat(___cardToMake.cost-1);
+            if (___c.type != AbstractCard.CardType.STATUS && ___c.type != AbstractCard.CardType.CURSE && ___c.cost > 0 && AbstractDungeon.player.hasPower(LearnedPower.POWER_ID))
+            {
+                ___c.costForTurn = ___c.cost -= 1;
+                ___c.isCostModified = true;
+            }
         }
 }
