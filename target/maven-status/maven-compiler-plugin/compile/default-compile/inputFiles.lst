@@ -57,9 +57,10 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\character\Hegemon.
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\NecroticDamageInfo.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\ArtifactPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedDiscoveryPatch.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedDrawPileBottomPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedDrawPilePatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedForeignPatch.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedHandCopyPatch.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedHandPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\PoisonTotalPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\RegenTotalPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\potions\BasePotion.java

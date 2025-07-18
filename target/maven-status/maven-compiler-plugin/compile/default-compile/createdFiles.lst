@@ -8,12 +8,12 @@ rubimod\cards\skills\rare\FeastofAbsolution.class
 rubimod\cards\skills\common\SkillBookBlue.class
 rubimod\actions\ApplyNecrotoxinAction.class
 rubimod\cards\attacks\common\HiddenJab.class
+rubimod\patches\LearnedDrawPileBottomPatch.class
 rubimod\cards\skills\rare\InexorableDoom.class
 rubimod\actions\PunitionAction.class
 rubimod\cards\skills\rare\HegemonsMercy.class
 rubimod\character\Hegemon.class
 rubimod\cards\attacks\starter\Strike.class
-rubimod\patches\LearnedHandCopyPatch.class
 rubimod\cards\skills\common\SkillBookRed.class
 rubimod\RubiMod$1.class
 rubimod\util\GeneralUtils.class
@@ -43,6 +43,7 @@ rubimod\powers\debuff\DoomPower.class
 rubimod\cards\attacks\common\SpiritCoin.class
 rubimod\cards\attacks\uncommon\HeroicPlay.class
 rubimod\cards\skills\common\Endure.class
+rubimod\patches\LearnedHandPatch.class
 rubimod\cards\skills\uncommon\Feint.class
 rubimod\cards\skills\common\SkillBookPurple.class
 rubimod\powers\debuff\Stalling.class

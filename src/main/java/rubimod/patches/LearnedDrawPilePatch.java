@@ -13,9 +13,7 @@ import rubimod.powers.buff.LearnedPower;
         paramtypez={}
 )
 public class LearnedDrawPilePatch {
-        @SpireInsertPatch(
-                loc=68
-        )
+        @SpireInsertPatch(rloc=12)
         public static void Insert(AbstractCard ___c)
         {
             if (___c.type != AbstractCard.CardType.STATUS && ___c.type != AbstractCard.CardType.CURSE && ___c.cost > 0 && AbstractDungeon.player.hasPower(LearnedPower.POWER_ID))

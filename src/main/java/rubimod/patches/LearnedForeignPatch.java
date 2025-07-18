@@ -13,7 +13,7 @@ import rubimod.powers.buff.LearnedPower;
         paramtypez={}
 )
 public class LearnedForeignPatch {
-    @SpireInsertPatch(loc=35)
+    @SpireInsertPatch(rloc=9)
     public static void insert(AbstractCard ___disCard)
     {
         if (___disCard.type != AbstractCard.CardType.STATUS && ___disCard.type != AbstractCard.CardType.CURSE && ___disCard.cost > 0 && AbstractDungeon.player.hasPower(LearnedPower.POWER_ID))
