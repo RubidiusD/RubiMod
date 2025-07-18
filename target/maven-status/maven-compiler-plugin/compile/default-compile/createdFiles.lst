@@ -13,6 +13,7 @@ rubimod\actions\PunitionAction.class
 rubimod\cards\skills\rare\HegemonsMercy.class
 rubimod\character\Hegemon.class
 rubimod\cards\attacks\starter\Strike.class
+rubimod\patches\LearnedHandCopyPatch.class
 rubimod\cards\skills\common\SkillBookRed.class
 rubimod\RubiMod$1.class
 rubimod\util\GeneralUtils.class
@@ -42,7 +43,6 @@ rubimod\powers\debuff\DoomPower.class
 rubimod\cards\attacks\common\SpiritCoin.class
 rubimod\cards\attacks\uncommon\HeroicPlay.class
 rubimod\cards\skills\common\Endure.class
-rubimod\patches\LearnedHandPatch.class
 rubimod\cards\skills\uncommon\Feint.class
 rubimod\cards\skills\common\SkillBookPurple.class
 rubimod\powers\debuff\Stalling.class
@@ -52,6 +52,7 @@ rubimod\relics\BaseRelic.class
 rubimod\util\TextureLoader$1.class
 rubimod\cards\attacks\common\LeechBite.class
 rubimod\powers\BasePower.class
+rubimod\patches\LearnedForeignPatch.class
 rubimod\cards\skills\uncommon\Suffer.class
 rubimod\patches\PoisonTotalPatch.class
 rubimod\cards\skills\starter\CloakofNight.class
@@ -93,7 +94,6 @@ rubimod\relics\TheologyNotes.class
 rubimod\actions\AbsolutionAction.class
 rubimod\cards\attacks\uncommon\ToxicElbow.class
 rubimod\cards\powers\rare\SuitUp.class
-rubimod\patches\LearnedHandManyPatch.class
 rubimod\cards\attacks\uncommon\Penitent.class
 rubimod\cards\BaseCard$LocalVarInfo.class
 rubimod\util\TriFunction.class

@@ -15,7 +15,7 @@ import rubimod.powers.buff.LearnedPower;
 public class LearnedDiscoveryPatch
 {
     @SpireInsertPatch(
-            loc=67
+            rloc=25
     )
     public static void Insert(AbstractCard ___disCard, AbstractCard ___disCard2)
     {

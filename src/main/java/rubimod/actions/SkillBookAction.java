@@ -4,9 +4,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
-import rubimod.powers.buff.LearnedPower;
 
 import java.util.ArrayList;
 
@@ -14,7 +12,7 @@ public class SkillBookAction extends AbstractGameAction {
     private final boolean upgraded;
     private final CardLibrary.LibraryType color;
     private final AbstractCard.CardRarity rarity;
-    private SingleUse single_use;
+    private SingleUse single_use = SingleUse.FALSE;
 
     public enum SingleUse {
         TRUE,
@@ -53,10 +51,6 @@ public class SkillBookAction extends AbstractGameAction {
         AbstractCard tmp = cardList.get(choice);
         if (upgraded)
             tmp.upgrade();
-        if (tmp.cost > 0 && AbstractDungeon.player.hasPower(LearnedPower.POWER_ID))
-        {
-            tmp.modifyCostForCombat(tmp.cost - 1);
-        }
         if (single_use.equals(SingleUse.TRUE))
             tmp.exhaustOnUseOnce = true;
 
