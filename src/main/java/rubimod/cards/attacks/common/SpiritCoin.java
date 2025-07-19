@@ -23,7 +23,7 @@ public class SpiritCoin extends BaseCard {
     );
 
     private static final int DAMAGE = 11;
-    private static final int UPG_DAMAGE = 19;
+    private static final int UPG_DAMAGE = 1;
 
     public SpiritCoin() {
         super(ID, info); // calls the parent constructor
