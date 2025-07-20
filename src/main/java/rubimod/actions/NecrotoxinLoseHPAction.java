@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 
-import static rubimod.actions.NecroticDamageAction.calculateSin;
+import static rubimod.powers.debuff.Sin.calculateSin;
 
 public class NecrotoxinLoseHPAction extends PoisonLoseHpAction {
     public NecrotoxinLoseHPAction(AbstractCreature target, AbstractCreature source, int amount, AbstractGameAction.AttackEffect effect) {

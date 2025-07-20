@@ -24,7 +24,6 @@ import rubimod.cards.attacks.starter.Strike;
 import rubimod.cards.skills.starter.CloakofNight;
 import rubimod.cards.skills.starter.Defend;
 import rubimod.cards.skills.starter.MidnightEyes;
-import rubimod.cards.skills.uncommon.SkillBookColorless;
 import rubimod.relics.MysteriousStranger;
 
 import java.util.ArrayList;
@@ -100,7 +99,7 @@ public class Hegemon extends CustomPlayer {
             characterPath("energyorb/layer4.png"),
             characterPath("energyorb/layer5.png"),
             characterPath("energyorb/cover.png"), //"container"
-            characterPath("energyorb/layer1d.png"), //When you don't have energy
+            characterPath("energyorb/layer1.png"), //When you don't have energy
             characterPath("energyorb/layer2d.png"),
             characterPath("energyorb/layer3d.png"),
             characterPath("energyorb/layer4d.png"),
@@ -189,9 +188,9 @@ public class Hegemon extends CustomPlayer {
         };
     }
 
-    private final Color cardRenderColor = Color.BLACK.cpy(); //Used for some vfx on moving cards (sometimes) (maybe)
-    private final Color cardTrailColor = Color.BLACK.cpy(); //Used for card trail vfx during gameplay.
-    private final Color slashAttackColor = Color.BLACK.cpy(); //Used for a screen tint effect when you attack the heart.
+    private final Color cardRenderColor = Color.DARK_GRAY.cpy(); //Used for some vfx on moving cards (sometimes) (maybe)
+    private final Color cardTrailColor = Color.DARK_GRAY.cpy(); //Used for card trail vfx during gameplay.
+    private final Color slashAttackColor = Color.DARK_GRAY.cpy(); //Used for a screen tint effect when you attack the heart.
     @Override
     public Color getCardRenderColor() {
         return cardRenderColor;

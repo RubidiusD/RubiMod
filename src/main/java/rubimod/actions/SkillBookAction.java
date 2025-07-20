@@ -49,10 +49,13 @@ public class SkillBookAction extends AbstractGameAction {
             choice = 0;
 
         AbstractCard tmp = cardList.get(choice);
-        if (upgraded)
+        if (this.upgraded)
             tmp.upgrade();
-        if (single_use.equals(SingleUse.TRUE))
+        if (this.single_use.equals(SingleUse.TRUE))
+        {
             tmp.exhaustOnUseOnce = true;
+            tmp.exhaust = true;
+        }
 
         addToTop(new MakeTempCardInHandAction(tmp));
         this.isDone = true;

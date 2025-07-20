@@ -24,8 +24,8 @@ public class StudiousPower extends BasePower {
     }
 
     @Override
-    public void atStartOfTurnPostDraw() {
-        super.atStartOfTurnPostDraw();
+    public void atStartOfTurn() {
+        super.atStartOfTurn();
 
         addToBot(new SkillBookAction(AbstractCard.CardRarity.UNCOMMON, LIBRARY_COLOR, SkillBookAction.SingleUse.TRUE));
         this.flashWithoutSound();

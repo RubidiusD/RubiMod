@@ -1,5 +1,6 @@
 package rubimod.powers.debuff;
 
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -12,10 +13,6 @@ public class Sin extends BasePower {
     public static final String POWER_ID = makeID(Sin.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
-    //The only thing TURN_BASED controls is the color of the number on the power icon.
-    //Turn based powers are white, non-turn based powers are red or green depending on if their amount is positive or negative.
-    //For a power to actually decrease/go away on its own they do it themselves.
-    //Look at powers that do this like VulnerablePower and DoubleTapPower.
 
     public Sin(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
@@ -25,6 +22,36 @@ public class Sin extends BasePower {
     public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
         updateDescription();
+    }
+
+    public static int calculateSin(AbstractCreature target, AbstractCreature source, int base)
+    {int new_damage = base;
+        if (target.hasPower(Sin.POWER_ID))
+        {
+            float sin_potency = 0.1f;
+            if (source.isPlayer && AbstractDungeon.player.hasRelic(PaperUmbrella.ID)) {
+                sin_potency = 0.15f;
+                AbstractDungeon.player.getRelic(PaperUmbrella.ID).flash();
+            }
+            System.out.println("At potency " + sin_potency + ".");
+
+            new_damage = MathUtils.floor(
+                    (
+                            (float) base
+                    ) * (
+                            1.0f + (
+                                    (
+                                            (float) target.getPower(Sin.POWER_ID).amount
+                                    ) * sin_potency
+                            )
+                    ) + 0.5f
+            ); // apply sin and round down
+
+            if (new_damage < 0)
+                new_damage = 0;
+        }
+
+        return new_damage;
     }
 
     public void updateDescription() {
