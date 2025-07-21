@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.cards.attacks.rare.LeechHose;
-import rubimod.cards.skills.rare.InexorableDoom;
+import rubimod.cards.skills.uncommon.InexorableDoom;
 import rubimod.relics.BaseRelic;
 import rubimod.util.GeneralUtils;
 import rubimod.util.KeywordInfo;

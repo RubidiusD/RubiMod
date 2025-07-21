@@ -1,4 +1,4 @@
-package rubimod.cards.skills.rare;
+package rubimod.cards.skills.uncommon;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -19,8 +19,8 @@ public class InexorableDoom extends BaseCard {
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 40;
-    private static final int UPG_MAGIC = -30;
+    private static final int MAGIC = 25;
+    private static final int UPG_MAGIC = -15;
 
     public InexorableDoom() {
         super(ID, info); // calls the parent constructor

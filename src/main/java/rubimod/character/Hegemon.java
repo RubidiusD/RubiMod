@@ -111,8 +111,8 @@ public class Hegemon extends CustomPlayer {
             -20.0F,
             20.0F,
             -40.0F,
-            40.0F,
-            360.0F
+            60.0F,
+            120.0F
     };
 
 

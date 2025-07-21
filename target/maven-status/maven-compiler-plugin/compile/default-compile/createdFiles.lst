@@ -55,7 +55,6 @@ rubimod\util\KeywordInfo.class
 rubimod\cards\skills\common\Imbibe.class
 rubimod\cards\skills\common\SkillBookGreen.class
 rubimod\relics\SuspiciousSalve.class
-rubimod\cards\attacks\uncommon\Deliverance.class
 rubimod\powers\debuff\Necrotoxin.class
 rubimod\relics\BaseRelic$1.class
 rubimod\powers\buff\MeditationPower.class
@@ -64,7 +63,6 @@ rubimod\powers\debuff\Sin.class
 rubimod\relics\ConcealedRazor.class
 rubimod\cards\skills\common\SkillBookBlue.class
 rubimod\actions\ApplyNecrotoxinAction.class
-rubimod\cards\skills\rare\InexorableDoom.class
 rubimod\cards\skills\common\SkillBookRed.class
 rubimod\powers\buff\StudiousPower.class
 rubimod\cards\powers\uncommon\Meditation.class
@@ -78,6 +76,7 @@ rubimod\cards\BaseCard$QuickDynamicVariable.class
 rubimod\relics\PaperUmbrella.class
 rubimod\powers\debuff\DoomPower.class
 rubimod\cards\attacks\common\SpiritCoin.class
+rubimod\cards\attacks\rare\Deliverance.class
 rubimod\patches\LearnedHandPatch.class
 rubimod\cards\skills\uncommon\Feint.class
 rubimod\powers\debuff\Stalling.class
@@ -106,4 +105,5 @@ rubimod\cards\powers\rare\SuitUp.class
 rubimod\actions\NecrotoxinLoseHPAction.class
 rubimod\cards\attacks\uncommon\Penitent.class
 rubimod\util\TriFunction.class
+rubimod\cards\skills\uncommon\InexorableDoom.class
 rubimod\actions\SkillBookAction.class

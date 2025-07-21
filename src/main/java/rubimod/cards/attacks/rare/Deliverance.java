@@ -1,4 +1,4 @@
-package rubimod.cards.attacks.uncommon;
+package rubimod.cards.attacks.rare;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -18,7 +18,7 @@ public class Deliverance extends BaseCard {
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.UNCOMMON,
+            CardRarity.RARE,
             CardTarget.ENEMY,
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
@@ -33,12 +33,12 @@ public class Deliverance extends BaseCard {
         setMagic(MAGIC); // self-explanatory
         setSelfRetain(true);
         setExhaust(true, false);
+        setCustomVar("Increase", 3);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-//        addToBot(new DamageAction(m, new NecroticDamageInfo(p, magicNumber)));
         addToBot(new NecroticDamageAction(m, new DamageInfo(p, magicNumber, DamageInfo.DamageType.THORNS)));
         addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber)));
     }
@@ -46,7 +46,7 @@ public class Deliverance extends BaseCard {
     @Override
     public void onRetained() {
         super.onRetained();
-        magicNumber += 2;
+        magicNumber += customVar("Increase");
     }
 
     @Override

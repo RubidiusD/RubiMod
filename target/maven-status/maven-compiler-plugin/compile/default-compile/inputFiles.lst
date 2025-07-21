@@ -11,10 +11,10 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\comm
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\Ruination.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\SpiritCoin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\ToxicStrike.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\rare\Deliverance.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\rare\LeechHose.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\starter\LashOut.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\starter\Strike.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\Deliverance.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\HeroicPlay.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\HydraFlail.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\Penitent.java
@@ -44,11 +44,11 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\Punis
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\Punish2.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\FeastofAbsolution.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\HegemonsMercy.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\InexorableDoom.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\starter\CloakofNight.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\starter\Defend.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\starter\MidnightEyes.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\Feint.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\InexorableDoom.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\PathofShadows.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\Punition.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\SkillBookColorless.java

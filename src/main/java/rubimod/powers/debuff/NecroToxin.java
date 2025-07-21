@@ -10,6 +10,7 @@ import rubimod.actions.NecrotoxinLoseHPAction;
 import rubimod.powers.BasePower;
 
 import static rubimod.RubiMod.makeID;
+import static rubimod.powers.debuff.Sin.calculateSin;
 
 public class Necrotoxin extends BasePower {
     public static final String POWER_ID = makeID(Necrotoxin.class.getSimpleName());
@@ -46,6 +47,11 @@ public class Necrotoxin extends BasePower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1] + amount * (amount + 1) / 2 + DESCRIPTIONS[2];
+        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+        if (owner.hasPower(Sin.POWER_ID))
+            this.description += calculateSin(owner, source, amount * (amount + 1) / 2);
+        else
+            this.description += amount * (amount + 1) / 2;
+        this.description += DESCRIPTIONS[2];
     }
 }

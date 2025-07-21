@@ -113,8 +113,8 @@
   },
   "${modID}:Deliverance": {
     "NAME": "Deliverance",
-    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase both by 2 on retain. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase both by 2 on retain."
+    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase both by !rubimod:Increase! on retain. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase both by !rubimod:Increase! on retain."
   },
   "${modID}:InexorableDoom": {
     "NAME": "Inexorable Doom",
@@ -158,7 +158,8 @@
   },
   "${modID}:HegemonyCard": {
     "NAME": "Hegemony",
-    "DESCRIPTION": "Ethereal. NL Whenever you are attacked, apply !M! ${modID}:Sin back."
+    "DESCRIPTION": "Ethereal. NL Whenever you are attacked, apply !M! ${modID}:Sin back.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever you are attacked, apply !M! ${modID}:Sin back."
   },
   "${modID}:DarkGuardian": {
     "NAME": "Dark Guardian",
