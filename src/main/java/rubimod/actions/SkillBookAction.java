@@ -12,7 +12,7 @@ public class SkillBookAction extends AbstractGameAction {
     private final boolean upgraded;
     private final CardLibrary.LibraryType color;
     private final AbstractCard.CardRarity rarity;
-    private SingleUse single_use = SingleUse.FALSE;
+    private final SingleUse single_use;
 
     public enum SingleUse {
         TRUE,

@@ -39,18 +39,20 @@ public class UmbralTempPower extends BasePower {
     public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
         super.atEndOfTurnPreEndTurnCards(isPlayer);
 
-        amount = 0;
-        updateDescription();
-        addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
+//        amount = 0;
+//        updateDescription();
+        owner.powers.remove(this);
+//        addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
     }
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         super.atEndOfTurn(isPlayer);
 
-        amount = 0;
-        updateDescription();
-        addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
+//        amount = 0;
+//        updateDescription();
+        owner.powers.remove(this);
+//        addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
     }
 
     public void updateDescription() {

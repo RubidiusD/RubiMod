@@ -10,6 +10,8 @@ import com.megacrit.cardcrawl.powers.RegenPower;
 )
 public class RegenTotalPatch {
     public static void Postfix(RegenPower power) {
-        power.description = power.description + " For a total of #b" + (power.amount * (power.amount + 1)) / 2 + ".";
+        if (power.owner.isPlayer) {
+            power.description = power.description + " For a total of #b" + (power.amount * (power.amount + 1)) / 2 + ".";
+        }
     }
 }

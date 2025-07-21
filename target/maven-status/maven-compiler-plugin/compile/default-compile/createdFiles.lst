@@ -43,6 +43,7 @@ rubimod\cards\skills\common\FalseOpening.class
 rubimod\powers\buff\BlessingsBounty.class
 rubimod\patches\ArtifactPatch.class
 rubimod\powers\buff\PhoenixPower.class
+rubimod\patches\CardCopyPatch.class
 rubimod\cards\attacks\uncommon\HydraFlail.class
 rubimod\cards\powers\rare\DarkGuardian.class
 rubimod\cards\powers\uncommon\RelentlessStudy.class

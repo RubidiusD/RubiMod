@@ -56,10 +56,13 @@ public class PhoenixPower extends BasePower {
                     allocation ++;
                 allocation += overflow * power.amount;
 
-                power.stackPower(allocation);
-
-                amount_to_distribute -= allocation;
-                totalBuff -= allocation;
+                if (allocation != 0)
+                {
+                    power.stackPower(allocation);
+                    power.updateDescription();
+                    amount_to_distribute -= allocation;
+                    totalBuff -= allocation;
+                }
             }
         }
 

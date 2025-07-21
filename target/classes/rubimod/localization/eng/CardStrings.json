@@ -153,8 +153,7 @@
   },
   "rubimod:PhoenixForm": {
     "NAME": "Phoenix Form",
-    "DESCRIPTION": "Ethereal. NL Increase your buffs by an amount that increases each turn.",
-    "UPGRADE_DESCRIPTION": "Increase your buffs by an amount that increases each turn."
+    "DESCRIPTION": "Ethereal. NL Increase your buffs by an amount that increases each turn."
   },
   "rubimod:HegemonyCard": {
     "NAME": "Hegemony",

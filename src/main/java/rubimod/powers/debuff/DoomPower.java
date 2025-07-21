@@ -30,7 +30,7 @@ public class DoomPower extends BasePower {
         int totalDebuff = 0; // calculate the total amount of debuff they have
         for (AbstractPower power : owner.powers)
         {
-            if ((power.type == PowerType.DEBUFF && !power.ID.equals(POWER_ID) && power.amount > 0) || (power.canGoNegative && power.amount < 0))
+            if ((power.type == PowerType.DEBUFF && !power.ID.equals(POWER_ID) && !power.canGoNegative && power.amount > 0) || (power.canGoNegative && power.amount < 0))
             {
                 totalDebuff += Math.abs(power.amount);
             }
@@ -48,7 +48,7 @@ public class DoomPower extends BasePower {
 
         for (AbstractPower power : owner.powers)
         {
-            if ((power.type == PowerType.DEBUFF && !power.ID.equals(POWER_ID)) || (power.canGoNegative && power.amount < 0))
+            if ((power.type == PowerType.DEBUFF && !power.ID.equals(POWER_ID) && !power.canGoNegative  && power.amount > 0) || (power.canGoNegative && power.amount < 0))
             {
                 float bias = ((float) amount_to_distribute * Math.abs(power.amount)) / totalDebuff;
                 int allocation = MathUtils.floor(bias);
@@ -56,14 +56,18 @@ public class DoomPower extends BasePower {
                     allocation ++;
                 allocation += overflow * Math.abs(power.amount);
 
-                if (power.canGoNegative && power.amount < 0) {
-                    power.stackPower(-allocation);
-                } else {
-                    power.stackPower(allocation);
-                }
+                if (allocation != 0)
+                {
+                    if (power.canGoNegative) {
+                        power.stackPower(-allocation);
+                    } else {
+                        power.stackPower(allocation);
+                    }
+                    power.updateDescription();
 
-                amount_to_distribute -= allocation;
-                totalDebuff -= allocation;
+                    amount_to_distribute -= allocation;
+                    totalDebuff -= allocation;
+                }
             }
         }
 

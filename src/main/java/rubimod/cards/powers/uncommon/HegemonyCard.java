@@ -26,6 +26,7 @@ public class HegemonyCard extends BaseCard {
 
         setMagic(MAGIC); // self-explanatory
         setInnate(false, true);
+        setEthereal(true);
     }
 
     @Override
