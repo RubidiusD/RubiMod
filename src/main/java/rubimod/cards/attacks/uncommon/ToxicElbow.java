@@ -16,7 +16,7 @@ public class ToxicElbow extends BaseCard {
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.COMMON,
+            CardRarity.UNCOMMON,
             CardTarget.ENEMY,
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
