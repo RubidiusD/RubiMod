@@ -11,11 +11,11 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 )
 public class CardCopyPatch {
     @SpirePostfixPatch
-    public static AbstractCard Postfix(AbstractCard __result, AbstractCard __card) {
-        __result.exhaust = __card.exhaust;
-        __result.exhaustOnUseOnce = __card.exhaustOnUseOnce;
-        __result.exhaustOnFire = __card.exhaustOnFire;
-        __result.retain = __card.retain;
+    public static AbstractCard Postfix(AbstractCard __result, AbstractCard ___card) {
+        __result.exhaust = ___card.exhaust;
+        __result.exhaustOnUseOnce = ___card.exhaustOnUseOnce;
+        __result.exhaustOnFire = ___card.exhaustOnFire;
+        __result.retain = ___card.retain;
 
 
         return __result;
