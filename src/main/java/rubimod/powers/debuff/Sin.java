@@ -30,10 +30,12 @@ public class Sin extends BasePower {
         if (target.hasPower(Sin.POWER_ID) && target.getPower(Sin.POWER_ID).amount > 0)
         {
             float sin_potency = 0.1f;
-            if (source.isPlayer && AbstractDungeon.player.hasRelic(PaperUmbrella.ID)) {
-                sin_potency = 0.15f;
-                AbstractDungeon.player.getRelic(PaperUmbrella.ID).flash();
-            }
+//            if (source.isPlayer
+//                    && AbstractDungeon.player.hasRelic(PaperUmbrella.ID)
+//            ) {
+//                sin_potency = 0.15f;
+//                AbstractDungeon.player.getRelic(PaperUmbrella.ID).flash();
+//            }
 //            System.out.println("At potency " + sin_potency + ".");
 
             new_damage = MathUtils.floor(

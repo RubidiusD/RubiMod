@@ -48,9 +48,9 @@ public class Necrotoxin extends BasePower {
 
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
-//        if (owner.hasPower(Sin.POWER_ID))
-//            this.description += calculateSin(owner, source, amount * (amount + 1) / 2);
-//        else
+        if (owner.hasPower(Sin.POWER_ID))
+            this.description += calculateSin(owner, source, amount * (amount + 1) / 2);
+        else
             this.description += amount * (amount + 1) / 2;
         this.description += DESCRIPTIONS[2];
     }
