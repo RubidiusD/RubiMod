@@ -1,114 +1,114 @@
 {
-  "${modID}:PowerID": {
+  "rubimod:PowerID": {
     "NAME": "Ultimate Power",
     "DESCRIPTIONS": [
       "You are Very Cool and Strong."
     ]
   },
-  "${modID}:Sin": {
+  "rubimod:Sin": {
     "NAME": "Sin",
     "DESCRIPTIONS": [
       "Take #b", "% additional Necrotic damage."
     ]
   },
-  "${modID}:MeditationPower": {
+  "rubimod:MeditationPower": {
     "NAME": "Meditation",
     "DESCRIPTIONS": [
       "Gain #b", " Frail and draw #b", " cards."
     ]
   },
-  "${modID}:SnakePower": {
+  "rubimod:SnakePower": {
     "NAME": "Snake",
     "DESCRIPTIONS": [
       "Create #b", " Punish in your hand at the start of each turn."
     ]
   },
-  "${modID}:DoomPower": {
+  "rubimod:DoomPower": {
     "NAME": "Doom",
     "DESCRIPTIONS": [
       "Increase debuffs by #b", " at the start of each turn, then increase that number by #b", ". "
     ]
   },
-  "${modID}:PhoenixPower": {
+  "rubimod:PhoenixPower": {
     "NAME": "Phoenix Form",
     "DESCRIPTIONS": [
       "Increase buffs by #b", " at the start of each turn, then increase that number by #b", ". "
     ]
   },
-  "${modID}:ShadowHand": {
+  "rubimod:ShadowHand": {
     "NAME": "Shadow Hand",
     "DESCRIPTIONS": [
       "Deal #b", " Necrotic damage with each attack. "
     ]
   },
-  "${modID}:HegemonyPower": {
+  "rubimod:HegemonyPower": {
     "NAME": "Hegemony",
     "DESCRIPTIONS": [
       "Retributively apply #b", " Sin when hit."
     ]
   },
-  "${modID}:SinEaterPower": {
+  "rubimod:SinEaterPower": {
     "NAME": "Sin Eater",
     "DESCRIPTIONS": [
       "Whenever you would lose Artifact, gain #b", " Block."
     ]
   },
-  "${modID}:BlessingsBounty": {
+  "rubimod:BlessingsBounty": {
     "NAME": "Blessing's Bounty",
     "DESCRIPTIONS": [
       "Whenever you would lose Artifact, gain #b", " Regen."
     ]
   },
-  "${modID}:LearnedPower": {
+  "rubimod:LearnedPower": {
     "NAME": "Learned",
     "DESCRIPTIONS": [
       "Whenever you create a card, reduce its [E] cost by #b1."
     ]
   },
-  "${modID}:StudiousPower": {
+  "rubimod:StudiousPower": {
     "NAME": "Studious",
     "DESCRIPTIONS": [
       "Learn an uncommon single-use skill each turn.",
       "Learn #b1", " uncommon single-use skills each turn."
     ]
   },
-  "${modID}:Bleeding": {
+  "rubimod:Bleeding": {
     "NAME": "Bleeding",
     "DESCRIPTIONS": [
       "Negate the next time you would have healed."
     ]
   },
-  "${modID}:LeechToxin": {
+  "rubimod:LeechToxin": {
     "NAME": "Leech Toxin",
     "DESCRIPTIONS": [
       "Reapply Bleeding and deal 1 Necrotic damage #b", " times."
     ]
   },
-  "${modID}:Colin": {
+  "rubimod:Colin": {
     "NAME": "Colin",
     "DESCRIPTIONS": [
       "Apply Bleeding and Vulnerable for the next #b", " turns."
     ]
   },
-  "${modID}:Necrotoxin": {
+  "rubimod:Necrotoxin": {
     "NAME": "Necrotoxin",
     "DESCRIPTIONS": [
       "Take #b", " Necrotic damage each turn, for #r", " total."
     ]
   },
-  "${modID}:UmbralTempPower": {
+  "rubimod:UmbralTempPower": {
     "NAME": "Umbral Venom",
     "DESCRIPTIONS": [
       "Apply #b", " Necrotoxin on hit this turn."
     ]
   },
-  "${modID}:UmbralPower": {
+  "rubimod:UmbralPower": {
     "NAME": "Umbral Armour",
     "DESCRIPTIONS": [
       "Apply #b", " Necrotoxin on unblocked hits."
     ]
   },
-  "${modID}:Stalling": {
+  "rubimod:Stalling": {
     "NAME": "Stalling",
     "DESCRIPTIONS": [
       "Apply #b", " Regen on hit for the turn."

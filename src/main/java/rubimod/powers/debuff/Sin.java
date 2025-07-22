@@ -34,7 +34,7 @@ public class Sin extends BasePower {
                 sin_potency = 0.15f;
                 AbstractDungeon.player.getRelic(PaperUmbrella.ID).flash();
             }
-            System.out.println("At potency " + sin_potency + ".");
+//            System.out.println("At potency " + sin_potency + ".");
 
             new_damage = MathUtils.floor(
                     (
@@ -46,7 +46,7 @@ public class Sin extends BasePower {
                                     ) * sin_potency
                             )
                     ) + 0.5f
-            ); // apply sin and round down
+            ); // apply sin and round
 
             if (new_damage < 0)
                 new_damage = 0;

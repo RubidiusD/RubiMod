@@ -1,47 +1,47 @@
 {
-  "${modID}:RelicID": {
+  "rubimod:RelicID": {
     "NAME": "Good Relic",
     "FLAVOR": "Flavor text displayed in detailed relic view.",
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. [E] is an energy icon."
     ]
   },
-  "${modID}:MysteriousStranger": {
+  "rubimod:MysteriousStranger": {
     "NAME": "Mysterious Stranger",
     "FLAVOR": "You feel yourself sniffle less, and your sore throat is gone.",
     "DESCRIPTIONS": [
       "Start combat with #b", " Artifact."
     ]
   },
-  "${modID}:SuspiciousSalve": {
+  "rubimod:SuspiciousSalve": {
     "NAME": "Suspicious Salve",
     "FLAVOR": "This is definitely just monster juices. Ah well...",
     "DESCRIPTIONS": [
       "Artifact has a #b50% chance to stick around."
     ]
   },
-  "${modID}:TheologyNotes": {
+  "rubimod:TheologyNotes": {
     "NAME": "Theology Notes",
     "FLAVOR": "Barely legible, these scraps appear to describe an intense hatred and,, 'Justice.'",
     "DESCRIPTIONS": [
       "Enemies start combat with #b", " Sin."
     ]
   },
-  "${modID}:PaperUmbrella": {
+  "rubimod:PaperUmbrella": {
     "NAME": "Paper Umbrella",
     "FLAVOR": "This is wildly out of place. A good find, nevertheless.",
     "DESCRIPTIONS": [
       "Sin increases Necrotic damage by 15% instead of 10%."
     ]
   },
-  "${modID}:PropheticScraps": {
+  "rubimod:PropheticScraps": {
     "NAME": "Prophetic Scraps",
     "FLAVOR": "Whoever the previous owner of these was, their 'piety' was rather, shall we say, 'Old Testament.'",
     "DESCRIPTIONS": [
       "All enemies start with #b", " Doom."
     ]
   },
-  "${modID}:ReaperToken": {
+  "rubimod:ReaperToken": {
     "NAME": "Reaper Token",
     "FLAVOR": "That isn't meant to be in this world. Whoever put it here likes you. Hopefully.",
     "DESCRIPTIONS": [
@@ -49,14 +49,14 @@
       "Skip Relic"
     ]
   },
-  "${modID}:ConcealedRazor": {
+  "rubimod:ConcealedRazor": {
     "NAME": "Concealed Razor",
     "FLAVOR": "The blade is too short to be used for anything else.",
     "DESCRIPTIONS": [
       "Gain 1 [E] at the start of each turn. Start combat Bleeding."
     ]
   },
-  "${modID}:VehicleVoltron": {
+  "rubimod:VehicleVoltron": {
     "NAME": "Vehicle Voltron",
     "FLAVOR": "This is hardly relevant to combat. It seems to have no mystical or chemical properties.",
     "DESCRIPTIONS": [

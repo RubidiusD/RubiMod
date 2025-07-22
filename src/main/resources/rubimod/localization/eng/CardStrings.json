@@ -1,5 +1,5 @@
 {
-  "${modID}:ExampleCard": {
+  "rubimod:ExampleCard": {
     "NAME": "Name",
     "DESCRIPTION": "Description. NL Second line.",
     "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
@@ -9,175 +9,175 @@
       "Blizzard is a good example for this."
     ]
   },
-  "${modID}:Strike": {
+  "rubimod:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
   },
-  "${modID}:Defend": {
+  "rubimod:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
-  "${modID}:MidnightEyes": {
+  "rubimod:MidnightEyes": {
     "NAME": "Midnight Eyes",
     "DESCRIPTION": "Scry !M!.",
     "UPGRADE_DESCRIPTION": "Scry !M!. NL Gain 1 Artifact."
   },
-  "${modID}:CloakofNight": {
+  "rubimod:CloakofNight": {
     "NAME": "Cloak of Night",
     "DESCRIPTION": "Gain !B! Block. NL Gain 1 Dexterity"
   },
-  "${modID}:LashOut": {
+  "rubimod:LashOut": {
     "NAME": "Lash Out",
     "DESCRIPTION": "Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !M! ${modID}:Necrotic damage."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !M! rubimod:Necrotic damage."
   },
-  "${modID}:Ruination": {
+  "rubimod:Ruination": {
     "NAME": "Ruination",
-    "DESCRIPTION": "Deal !D! damage. NL Deal !M! ${modID}:Necrotic damage."
+    "DESCRIPTION": "Deal !D! damage. NL Deal !M! rubimod:Necrotic damage."
   },
-  "${modID}:Punish": {
+  "rubimod:Punish": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 1 ${modID}:Sin.",
-    "UPGRADE_DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 2 ${modID}:Sin."
+    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 1 rubimod:Sin.",
+    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 2 rubimod:Sin."
   },
-  "${modID}:Punish2": {
+  "rubimod:Punish2": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 1 ${modID}:Sin. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Deal !M! ${modID}:Necrotic damage. NL Apply 2 ${modID}:Sin. NL Exhaust"
+    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 1 rubimod:Sin. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 2 rubimod:Sin. NL Exhaust"
   },
-  "${modID}:HeroicPlay": {
+  "rubimod:HeroicPlay": {
     "NAME": "Heroic Play",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail and !M! Vulnerable."
   },
-  "${modID}:Penitent": {
+  "rubimod:Penitent": {
     "NAME": "Penitent",
     "DESCRIPTION": "Deal !D! x !M! damage. NL Gain and apply 1 Strength."
   },
-  "${modID}:HydraFlail": {
+  "rubimod:HydraFlail": {
     "NAME": "Hydra Flail",
     "DESCRIPTION": "Deal !D! damage to a random enemy NL 2X times."
   },
-  "${modID}:Dose": {
+  "rubimod:Dose": {
     "NAME": "Dose",
     "DESCRIPTION": "Apply !M! Poison."
   },
-  "${modID}:Endure": {
+  "rubimod:Endure": {
     "NAME": "Endure",
     "DESCRIPTION": "Gain !B!x2 Block. NL Gain !M! Frail."
   },
-  "${modID}:Imbibe": {
+  "rubimod:Imbibe": {
     "NAME": "Imbibe",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact."
   },
-  "${modID}:SkillBookRed": {
+  "rubimod:SkillBookRed": {
     "NAME": "Red Skill Book",
     "DESCRIPTION": "Create a random red common skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Create a random upgraded red common skill in your hand. NL Exhaust."
   },
-  "${modID}:SkillBookGreen": {
+  "rubimod:SkillBookGreen": {
     "NAME": "Green Skill Book",
     "DESCRIPTION": "Create a random green common skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Create a random upgraded green common skill in your hand. NL Exhaust."
   },
-  "${modID}:SkillBookBlue": {
+  "rubimod:SkillBookBlue": {
     "NAME": "Blue Skill Book",
     "DESCRIPTION": "Create a random blue common skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Create a random upgraded blue common skill in your hand. NL Exhaust."
   },
-  "${modID}:SkillBookPurple": {
+  "rubimod:SkillBookPurple": {
     "NAME": "Purple Skill Book",
     "DESCRIPTION": "Create a random purple common skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Create a random upgraded purple common skill in your hand. NL Exhaust."
   },
-  "${modID}:SkillBookColorless": {
+  "rubimod:SkillBookColorless": {
     "NAME": "Colorless Skill Book",
     "DESCRIPTION": "Create a random colorless uncommon skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Create a random upgraded purple uncommon skill in your hand. NL Exhaust."
   },
-  "${modID}:PathofShadows": {
+  "rubimod:PathofShadows": {
     "NAME": "Path of Shadows",
     "DESCRIPTION": "Gain !B!x2 Block. NL Gain no more Block from cards this turn. NL Keep your Block at the start of next turn."
   },
-  "${modID}:Meditation": {
+  "rubimod:Meditation": {
     "NAME": "Meditation",
     "DESCRIPTION": "At the start of each turn, gain Frail and draw a card."
   },
-  "${modID}:AfflictionSpecialisation": {
+  "rubimod:AfflictionSpecialisation": {
     "NAME": "Affliction Specialisation",
     "DESCRIPTION": "Gain !M! Artifact."
   },
-  "${modID}:WayoftheSnake": {
+  "rubimod:WayoftheSnake": {
     "NAME": "Way of the Snake",
     "DESCRIPTION": "Start each turn with a Punish in hand.",
     "UPGRADE_DESCRIPTION": "Innate. NL Start each turn with a Punish in hand."
   },
-  "${modID}:Deliverance": {
+  "rubimod:Deliverance": {
     "NAME": "Deliverance",
-    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase both by !rubimod:Increase! on retain. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! ${modID}:Necrotic damage and apply !M! ${modID}:Sin. NL Increase both by !rubimod:Increase! on retain."
+    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase both by !rubimod:Increase! on retain. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase both by !rubimod:Increase! on retain."
   },
-  "${modID}:InexorableDoom": {
+  "rubimod:InexorableDoom": {
     "NAME": "Inexorable Doom",
-    "DESCRIPTION": "Apply !${modID}:Doom! ${modID}:Doom. NL Shuffle this card into your draw pile if it has !M! cards. "
+    "DESCRIPTION": "Apply !rubimod:Doom! rubimod:Doom. NL Shuffle this card into your draw pile if it has !M! cards. "
   },
-  "${modID}:Feint": {
+  "rubimod:Feint": {
     "NAME": "Feint",
-    "DESCRIPTION": "Gain !B! Block. NL If the target is attacking, apply !M! ${modID}:Sin."
+    "DESCRIPTION": "Gain !B! Block. NL If the target is attacking, apply !M! rubimod:Sin."
   },
-  "${modID}:FeastofAbsolution": {
+  "rubimod:FeastofAbsolution": {
     "NAME": "Absolution",
     "DESCRIPTION": "Draw !M! and gain [E]. NL Cleanse all of the target's debuffs. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Draw !M! and gain [E]. NL Cleanse all of the target's debuffs and heal the same amount. NL Exhaust."
   },
-  "${modID}:HegemonsMercy": {
+  "rubimod:HegemonsMercy": {
     "NAME": "Hegemon's Mercy",
     "DESCRIPTION": "Cleanse all of the target's debuffs. NL Reduce their strength by the same amount. NL Only half is permanent. ",
     "UPGRADE_DESCRIPTION": "Cleanse all of the target's debuffs. NL Reduce their strength by the same amount. NL Only half is permanent. NL Draw !M! cards. "
   },
-  "${modID}:HiddenJab": {
+  "rubimod:HiddenJab": {
     "NAME": "Hidden Jab",
     "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
   },
-  "${modID}:Riposte": {
+  "rubimod:Riposte": {
     "NAME": "Riposte",
     "DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 Punish",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 Punish+"
   },
-  "${modID}:FalseOpening": {
+  "rubimod:FalseOpening": {
     "NAME": "False Opening",
     "DESCRIPTION": "Gain !B! Block. NL Create !M! Punish."
   },
-  "${modID}:Punition": {
+  "rubimod:Punition": {
     "NAME": "Punition",
-    "DESCRIPTION": "Apply !M! ${modID}:Sin. NL Deal ${modID}:Necrotic damage equal to the target's ${modID}:Sin."
+    "DESCRIPTION": "Apply !M! rubimod:Sin. NL Deal rubimod:Necrotic damage equal to the target's rubimod:Sin."
   },
-  "${modID}:PhoenixForm": {
+  "rubimod:PhoenixForm": {
     "NAME": "Phoenix Form",
     "DESCRIPTION": "Ethereal. NL Increase your buffs by an amount that increases each turn."
   },
-  "${modID}:HegemonyCard": {
+  "rubimod:HegemonyCard": {
     "NAME": "Hegemony",
-    "DESCRIPTION": "Ethereal. NL Whenever you are attacked, apply !M! ${modID}:Sin back.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever you are attacked, apply !M! ${modID}:Sin back."
+    "DESCRIPTION": "Ethereal. NL Whenever you are attacked, apply !M! rubimod:Sin back.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever you are attacked, apply !M! rubimod:Sin back."
   },
-  "${modID}:DarkGuardian": {
+  "rubimod:DarkGuardian": {
     "NAME": "Dark Guardian",
     "DESCRIPTION": "Ethereal. NL Whenever you would lose Artifact, gain !M! Regen.",
     "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever you would lose Artifact, gain !M! Regen."
   },
-  "${modID}:SinEaterCard": {
+  "rubimod:SinEaterCard": {
     "NAME": "Sin Eater",
     "DESCRIPTION": "Whenever you would lose Artifact, gain !M! Block."
   },
-  "${modID}:LessonLearned": {
+  "rubimod:LessonLearned": {
     "NAME": "Lesson Learned",
     "DESCRIPTION": "Whenever you create a card in combat, reduce its cost by 1."
   },
-  "${modID}:RelentlessStudy": {
+  "rubimod:RelentlessStudy": {
     "NAME": "Relentless Study",
     "DESCRIPTION": "Create !M! random single-use uncommon skill in your hand each turn."
   },
-  "${modID}:LeechBite": {
+  "rubimod:LeechBite": {
     "NAME": "Leech Bite",
     "DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding. ",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding and ${modID}:Leech_Toxin."

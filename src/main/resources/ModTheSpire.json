@@ -1,5 +1,5 @@
 {
-  "modid": "${modID}",
+  "modid": "rubimod",
   "name": "${project.name}",
   "author_list": ["${author}"],
   "description": "!(project.description)",

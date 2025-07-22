@@ -1,5 +1,5 @@
 {
-  "${modID}:Example": {
+  "rubimod:Example": {
     "TEXT": [
       "This is",
       "an array of Strings."
