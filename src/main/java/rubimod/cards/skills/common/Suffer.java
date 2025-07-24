@@ -1,45 +1,43 @@
-package rubimod.cards.skills.uncommon;
+package rubimod.cards.skills.common;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.actions.PunitionAction;
+import rubimod.actions.ApplyNecrotoxinAction;
 import rubimod.cards.BaseCard;
-import rubimod.util.CustomTags;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Sin;
 import rubimod.util.CardStats;
 
-public class Punition extends BaseCard {
-    public static final String ID = makeID(Punition.class.getSimpleName()); // makeID adds the mod name
+public class Suffer extends BaseCard {
+    public static final String ID = makeID(Suffer.class.getSimpleName()); // makeID adds the mod name
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
-            CardRarity.UNCOMMON,
+            CardRarity.COMMON,
             CardTarget.ENEMY,
-            2 // card cost!! (-1 is X, -2 is unplayable)
+            1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 2;
+    private static final int MAGIC = 5;
 
-    public Punition() {
+    public Suffer() {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC); // self-explanatory
-        setCostUpgrade(1);
-
-        tags.add(CustomTags.PUNISH);
+        setCustomVar("Sin", 0, 2);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber)));
-        addToBot(new PunitionAction(p, m));
+        addToBot(new ApplyNecrotoxinAction(m, p, magicNumber));
+        if (customVar("Sin") != 0)
+            addToBot(new ApplyPowerAction(p, p, new Sin(p, customVar("Sin"))));
     }
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new Punition();
+        return new Suffer();
     }
 }

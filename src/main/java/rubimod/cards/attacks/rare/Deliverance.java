@@ -20,11 +20,13 @@ public class Deliverance extends BaseCard {
             CardType.ATTACK,
             CardRarity.RARE,
             CardTarget.ENEMY,
-            0 // card cost!! (-1 is X, -2 is unplayable)
+            1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int DAMAGE = 5;
     private static final int MAGIC = 0;
+    private static final int INCREASE = 3;
+    private static final int UPG_INCREASE = 1;
 
     public Deliverance() {
         super(ID, info); // calls the parent constructor
@@ -32,8 +34,7 @@ public class Deliverance extends BaseCard {
         setDamage(DAMAGE); // self-explanatory
         setMagic(MAGIC); // self-explanatory
         setSelfRetain(true);
-        setExhaust(true, false);
-        setCustomVar("Increase", 3);
+        setCustomVar("Increase", INCREASE, UPG_INCREASE);
     }
 
     @Override
@@ -46,7 +47,7 @@ public class Deliverance extends BaseCard {
     @Override
     public void onRetained() {
         super.onRetained();
-        magicNumber += customVar("Increase");
+        this.upgradeMagicNumber(customVar("Increase"));
     }
 
     @Override

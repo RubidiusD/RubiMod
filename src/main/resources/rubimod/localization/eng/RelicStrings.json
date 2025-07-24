@@ -31,7 +31,14 @@
     "NAME": "Paper Umbrella",
     "FLAVOR": "This is wildly out of place. A good find, nevertheless.",
     "DESCRIPTIONS": [
-      "Sin increases Necrotic damage by 15% instead of 10%."
+      "Sin increases Necrotic damage by #b15% instead of #b10%."
+    ]
+  },
+  "rubimod:ComicPage": {
+    "NAME": "Comic Page",
+    "FLAVOR": "Is this what they call an \"anti-hero\"?",
+    "DESCRIPTIONS": [
+      "Punish (and Punition) does #b", " additional necrotic damage."
     ]
   },
   "rubimod:PropheticScraps": {

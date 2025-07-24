@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
-import rubimod.cards.skills.Punish2;
+import rubimod.cards.skills.Punish;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
@@ -31,14 +31,14 @@ public class FalseOpening extends BaseCard {
         setBlock(BLOCK, UPG_BLOCK); // self-explanatory
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
 
-        cardsToPreview = new Punish2();
+        cardsToPreview = new Punish();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
         for (int i = 0; i < magicNumber; i++) {
-            addToBot(new MakeTempCardInHandAction(new Punish2()));
+            addToBot(new MakeTempCardInHandAction(new Punish()));
         }
     }
 

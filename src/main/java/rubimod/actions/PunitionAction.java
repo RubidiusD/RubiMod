@@ -3,7 +3,9 @@ package rubimod.actions;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import rubimod.powers.debuff.Sin;
+import rubimod.relics.ComicPage;
 
 public class PunitionAction extends AbstractGameAction {
     AbstractCreature owner;
@@ -23,7 +25,9 @@ public class PunitionAction extends AbstractGameAction {
             return;
         }
 //        addToTop(new DamageAction(target, new NecroticDamageInfo(owner, target.getPower(Sin.POWER_ID).amount), AttackEffect.POISON));
-        addToTop(new NecroticDamageAction(target, new DamageInfo(owner, target.getPower(Sin.POWER_ID).amount, DamageInfo.DamageType.THORNS), AttackEffect.POISON));
+        addToTop(new NecroticDamageAction(target, new DamageInfo(owner,
+                target.getPower(Sin.POWER_ID).amount + ((AbstractDungeon.player.hasRelic(ComicPage.ID)) ? ComicPage.BUFF : 0),
+                DamageInfo.DamageType.THORNS), AttackEffect.POISON));
 
         this.isDone = true;
     }

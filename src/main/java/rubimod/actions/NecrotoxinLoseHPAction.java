@@ -29,7 +29,7 @@ public class NecrotoxinLoseHPAction extends PoisonLoseHpAction {
             if (this.target.currentHealth > 0) {
                 this.target.tint.color = Color.DARK_GRAY.cpy();
                 this.target.tint.changeColor(Color.WHITE.cpy());
-                this.target.damage(new DamageInfo(this.source, calculateSin(target, source, amount), DamageInfo.DamageType.HP_LOSS));
+                this.target.damage(new DamageInfo(this.source, calculateSin(target, amount), DamageInfo.DamageType.HP_LOSS));
             }
             if ((AbstractDungeon.getCurrRoom()).monsters.areMonstersBasicallyDead())
                 AbstractDungeon.actionManager.clearPostCombatActions();

@@ -2,7 +2,7 @@ package rubimod.powers.buff;
 
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import rubimod.cards.skills.Punish2;
+import rubimod.cards.skills.Punish;
 import rubimod.powers.BasePower;
 
 import static rubimod.RubiMod.makeID;
@@ -31,7 +31,7 @@ public class SnakePower extends BasePower {
         super.atStartOfTurn();
 
         this.flash();
-        addToBot(new MakeTempCardInHandAction(new Punish2(), amount));
+        addToBot(new MakeTempCardInHandAction(new Punish(), amount));
     }
 
     public void updateDescription() {

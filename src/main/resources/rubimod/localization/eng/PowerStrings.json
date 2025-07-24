@@ -93,7 +93,7 @@
   "rubimod:Necrotoxin": {
     "NAME": "Necrotoxin",
     "DESCRIPTIONS": [
-      "Take #b", " Necrotic damage each turn, for #r", " total."
+      "Take ", " Necrotic damage each turn, for #r", " total."
     ]
   },
   "rubimod:UmbralTempPower": {
@@ -112,6 +112,24 @@
     "NAME": "Stalling",
     "DESCRIPTIONS": [
       "Apply #b", " Regen on hit for the turn."
+    ]
+  },
+  "rubimod:TacticalMapPower": {
+    "NAME": "Tactical Map",
+    "DESCRIPTIONS": [
+      "On exhausting a card, draw and then discard #b", " cards."
+    ]
+  },
+  "rubimod:LikeBloodPower": {
+    "NAME": "Like Blood",
+    "DESCRIPTIONS": [
+      "At the end of your turn, if you have Artifact, gain #b", " Block."
+    ]
+  },
+  "rubimod:VaccinePower": {
+    "NAME": "Vaccine",
+    "DESCRIPTIONS": [
+      "Gain #b", " Artifact on taking a debuff."
     ]
   }
 }

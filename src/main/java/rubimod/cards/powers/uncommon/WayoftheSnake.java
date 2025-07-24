@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
-import rubimod.cards.skills.Punish2;
+import rubimod.cards.skills.Punish;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.SnakePower;
 import rubimod.util.CardStats;
@@ -27,7 +27,7 @@ public class WayoftheSnake extends BaseCard {
 
         setMagic(MAGIC); // self-explanatory
         setInnate(false, true);
-        cardsToPreview = new Punish2();
+        cardsToPreview = new Punish();
     }
 
     @Override

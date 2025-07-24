@@ -37,13 +37,7 @@
   },
   "rubimod:Punish": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 1 rubimod:Sin.",
-    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 2 rubimod:Sin."
-  },
-  "rubimod:Punish2": {
-    "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 1 rubimod:Sin. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply 2 rubimod:Sin. NL Exhaust"
+    "DESCRIPTION": "Deal !M! rubimod:Necrotic damage. NL Apply !rubimod:Sin! rubimod:Sin. NL Exhaust"
   },
   "rubimod:HeroicPlay": {
     "NAME": "Heroic Play",
@@ -113,8 +107,7 @@
   },
   "rubimod:Deliverance": {
     "NAME": "Deliverance",
-    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase both by !rubimod:Increase! on retain. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase both by !rubimod:Increase! on retain."
+    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !M! rubimod:Sin. NL Increase both by !rubimod:Increase! on retain."
   },
   "rubimod:InexorableDoom": {
     "NAME": "Inexorable Doom",
@@ -222,5 +215,18 @@
     "NAME": "Stall",
     "DESCRIPTION": "Gain !M! Strength, but also apply !${modID}:Stall! Regen on hit for the turn.",
     "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! Strength, but also apply !${modID}:Stall! Regen on hit for the turn."
+  },
+  "${modID}:TacticalMap": {
+    "NAME": "Tactical Map",
+    "DESCRIPTION": "On exhausting a card, draw and then discard !M! card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL On exhausting a card, draw and then discard !M! card."
+  },
+  "${modID}:Vaccine": {
+    "NAME": "Vaccine",
+    "DESCRIPTION": "On gaining a debuff, gain !M! Artifact."
+  },
+  "${modID}:LikeBlood": {
+    "NAME": "Like Blood",
+    "DESCRIPTION": "At the end of your turn, if you have Artifact, gain !M! Block."
   }
 }

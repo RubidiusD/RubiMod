@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
-import rubimod.cards.skills.Punish2;
+import rubimod.cards.skills.Punish;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
@@ -32,7 +32,7 @@ public class Riposte extends BaseCard {
         setDamage(DAMAGE); // self-explanatory
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
 
-        cardsToPreview = new Punish2();
+        cardsToPreview = new Punish();
     }
 
     @Override
@@ -47,7 +47,7 @@ public class Riposte extends BaseCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (m.intent.equals(AbstractMonster.Intent.ATTACK) || m.intent.equals(AbstractMonster.Intent.ATTACK_BUFF) || m.intent.equals(AbstractMonster.Intent.ATTACK_DEBUFF) || m.intent.equals(AbstractMonster.Intent.ATTACK_DEFEND))
             for (int i = 0; i < 2; i++) {
-                AbstractCard new_card = new Punish2();
+                AbstractCard new_card = new Punish();
                 if (magicNumber > 0) new_card.upgrade();
                 addToBot(new MakeTempCardInHandAction(new_card));
             }
