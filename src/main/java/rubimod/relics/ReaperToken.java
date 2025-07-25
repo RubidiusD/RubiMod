@@ -33,7 +33,7 @@ public class ReaperToken extends BaseRelic {
             AbstractDungeon.combatRewardScreen.open();
             AbstractDungeon.combatRewardScreen.rewards.clear();
             if (AbstractDungeon.player.hasRelic(SuspiciousSalve.ID))
-                AbstractDungeon.combatRewardScreen.rewards.add(new RewardItem(AbstractDungeon.returnRandomScreenlessRelic(RelicTier.RARE)));
+                AbstractDungeon.combatRewardScreen.rewards.add(new RewardItem(AbstractDungeon.returnRandomScreenlessRelic(SuspiciousSalve.RARITY)));
             else
                 AbstractDungeon.combatRewardScreen.rewards.add(new RewardItem(new SuspiciousSalve()));
             AbstractDungeon.combatRewardScreen.positionRewards();

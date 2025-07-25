@@ -20,6 +20,13 @@
       "Artifact has a #b50% chance to stick around."
     ]
   },
+  "rubimod:GordonRelic": {
+    "NAME": "Gordon Relic (temp name)",
+    "FLAVOR": "A temp name?? in my game???",
+    "DESCRIPTIONS": [
+      "Whenever an enemy dies, transfer any rubimod:Sin it has to a random enemy."
+    ]
+  },
   "rubimod:TheologyNotes": {
     "NAME": "Theology Notes",
     "FLAVOR": "Barely legible, these scraps appear to describe an intense hatred and,, 'Justice.'",

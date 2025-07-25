@@ -45,6 +45,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\commo
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\common\SkillBookRed.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\common\Suffer.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\Punish.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\DoomsHarbinger.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\FeastofAbsolution.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\HegemonsMercy.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\starter\CloakofNight.java
@@ -84,6 +85,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\Vaccin
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Bleeding.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Colin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\DoomPower.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Harbinger.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\LeechToxin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Necrotoxin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Sin.java

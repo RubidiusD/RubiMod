@@ -1,6 +1,5 @@
 package rubimod.cards.skills.rare;
 
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -19,19 +18,16 @@ public class HegemonsMercy extends BaseCard {
             3 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 0;
-    private static final int UPG_MAGIC = 3;
-
     public HegemonsMercy() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(MAGIC, UPG_MAGIC); // self-explanatory
+        setExhaust(true); // self-explanatory
+        setCostUpgrade(2);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new MercyAction(m, p));
-        addToBot(new DrawCardAction(magicNumber));
     }
 
     @Override

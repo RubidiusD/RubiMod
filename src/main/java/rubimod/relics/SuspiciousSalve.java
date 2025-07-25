@@ -12,7 +12,7 @@ import static rubimod.RubiMod.makeID;
 public class SuspiciousSalve extends BaseRelic {
     private static final String NAME = SuspiciousSalve.class.getSimpleName();
     public static final String ID = makeID(NAME);
-    private static final RelicTier RARITY = RelicTier.RARE;
+    public static final RelicTier RARITY = RelicTier.RARE;
     private static final LandingSound SOUND = LandingSound.CLINK;
 
     public SuspiciousSalve()  {

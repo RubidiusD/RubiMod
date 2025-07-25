@@ -105,4 +105,6 @@ public abstract class BaseRelic extends CustomRelic {
     }
 
     public void onArtifactLost(AbstractCreature owner) {}
+
+    public void onAllyArtifactLost() {}
 }

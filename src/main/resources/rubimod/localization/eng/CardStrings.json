@@ -124,8 +124,7 @@
   },
   "rubimod:HegemonsMercy": {
     "NAME": "Hegemon's Mercy",
-    "DESCRIPTION": "Cleanse all of the target's debuffs. NL Reduce their strength by the same amount. NL Only half is permanent. ",
-    "UPGRADE_DESCRIPTION": "Cleanse all of the target's debuffs. NL Reduce their strength by the same amount. NL Only half is permanent. NL Draw !M! cards. "
+    "DESCRIPTION": "Cleanse all of the target's debuffs and reduce their strength by the same amount. NL Only half is permanent. NL Exhaust."
   },
   "rubimod:HiddenJab": {
     "NAME": "Hidden Jab",
@@ -172,61 +171,66 @@
   },
   "rubimod:LeechBite": {
     "NAME": "Leech Bite",
-    "DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding. ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding and ${modID}:Leech_Toxin."
+    "DESCRIPTION": "Deal !D! damage. NL Inflict rubimod:Bleeding. ",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict rubimod:Bleeding and rubimod:Leech_Toxin."
   },
-  "${modID}:SpiritCoin": {
+  "rubimod:SpiritCoin": {
     "NAME": "Spirit Coin",
-    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Bleed. ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict ${modID}:Bleeding and ${modID}:Leech_Toxin."
+    "DESCRIPTION": "Deal !D! damage. NL rubimod:Bleed. ",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict rubimod:Bleeding and rubimod:Leech_Toxin."
   },
-  "${modID}:LeechHose": {
+  "rubimod:LeechHose": {
     "NAME": "Leech Hose",
-    "DESCRIPTION": "Deal !D!X damage to ALL enemies and apply ${modID}:Bleed and Vulnerable for X turns. ",
-    "UPGRADE_DESCRIPTION": "Deal !D!X damage to ALL enemies and apply ${modID}:Bleed and Vulnerable for X turns. NL If this is the first card you play, reduce their strength by X. "
+    "DESCRIPTION": "Deal !D!X damage to ALL enemies and apply rubimod:Bleed and Vulnerable for X turns. ",
+    "UPGRADE_DESCRIPTION": "Deal !D!X damage to ALL enemies and apply rubimod:Bleed and Vulnerable for X turns. NL If this is the first card you play, reduce their strength by X. "
   },
-  "${modID}:Sacrifice": {
+  "rubimod:Sacrifice": {
     "NAME": "Ritual Sacrifice",
     "DESCRIPTION": "You can no longer heal. NL !M! Strength.",
     "UPGRADE_DESCRIPTION": "You can no longer heal. NL !M! Strength and 1 Ritual. "
   },
-  "${modID}:ToxicStrike": {
+  "rubimod:ToxicStrike": {
     "NAME": "Toxic Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Necrotoxin."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! rubimod:Necrotoxin."
   },
-  "${modID}:ToxicElbow": {
+  "rubimod:ToxicElbow": {
     "NAME": "Toxic Elbow",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Necrotoxin."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! rubimod:Necrotoxin."
   },
-  "${modID}:StoriedDagger": {
+  "rubimod:StoriedDagger": {
     "NAME": "Storied Dagger",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Necrotoxin with each attack this turn."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! rubimod:Necrotoxin with each attack this turn."
   },
-  "${modID}:Suffer": {
+  "rubimod:Suffer": {
     "NAME": "Suffer!",
-    "DESCRIPTION": "Apply !M! ${modID}:Necrotoxin.",
-    "UPGRADE_DESCRIPTION": "Apply !M! ${modID}:Necrotoxin and !${modID}:Sin! ${modID}:Sin"
+    "DESCRIPTION": "Apply !M! rubimod:Necrotoxin.",
+    "UPGRADE_DESCRIPTION": "Apply !M! rubimod:Necrotoxin and !rubimod:Sin! rubimod:Sin"
   },
-  "${modID}:SuitUp": {
+  "rubimod:SuitUp": {
     "NAME": "Suit Up!",
-    "DESCRIPTION": "Whenever an unblocked attack deals damage, apply !M! ${modID}:Necrotoxin."
+    "DESCRIPTION": "Whenever an unblocked attack deals damage, apply !M! rubimod:Necrotoxin."
   },
-  "${modID}:Stall": {
+  "rubimod:Stall": {
     "NAME": "Stall",
-    "DESCRIPTION": "Gain !M! Strength, but also apply !${modID}:Stall! Regen on hit for the turn.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! Strength, but also apply !${modID}:Stall! Regen on hit for the turn."
+    "DESCRIPTION": "Gain !M! Strength, but also apply !rubimod:Stall! Regen on hit for the turn.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! Strength, but also apply !rubimod:Stall! Regen on hit for the turn."
   },
-  "${modID}:TacticalMap": {
+  "rubimod:TacticalMap": {
     "NAME": "Tactical Map",
     "DESCRIPTION": "On exhausting a card, draw and then discard !M! card.",
     "UPGRADE_DESCRIPTION": "Innate. NL On exhausting a card, draw and then discard !M! card."
   },
-  "${modID}:Vaccine": {
+  "rubimod:Vaccine": {
     "NAME": "Vaccine",
     "DESCRIPTION": "On gaining a debuff, gain !M! Artifact."
   },
-  "${modID}:LikeBlood": {
+  "rubimod:LikeBlood": {
     "NAME": "Like Blood",
     "DESCRIPTION": "At the end of your turn, if you have Artifact, gain !M! Block."
+  },
+  "rubimod:DoomsHarbinger": {
+    "NAME": "Doom's Harbinger",
+    "DESCRIPTION": "Apply 5 rubimod:Necrotoxin. Target's afflictions are transferred on death. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply 5 rubimod:Necrotoxin. Target's afflictions are transferred on death."
   }
 }

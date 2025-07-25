@@ -34,6 +34,7 @@ rubimod\util\TextureLoader$1.class
 rubimod\powers\BasePower.class
 rubimod\patches\LearnedForeignPatch.class
 rubimod\cards\powers\uncommon\AfflictionSpecialisation.class
+rubimod\cards\skills\rare\DoomsHarbinger.class
 rubimod\patches\RegenTotalPatch.class
 rubimod\powers\buff\UmbralTempPower.class
 rubimod\cards\skills\uncommon\Stall.class
@@ -46,6 +47,7 @@ rubimod\powers\buff\BlessingsBounty.class
 rubimod\patches\ArtifactPatch.class
 rubimod\powers\buff\PhoenixPower.class
 rubimod\patches\CardCopyPatch.class
+rubimod\powers\debuff\Harbinger.class
 rubimod\cards\attacks\uncommon\HydraFlail.class
 rubimod\cards\powers\rare\DarkGuardian.class
 rubimod\cards\powers\uncommon\RelentlessStudy.class

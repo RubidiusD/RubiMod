@@ -32,7 +32,13 @@
   "rubimod:PhoenixPower": {
     "NAME": "Phoenix Form",
     "DESCRIPTIONS": [
-      "Increase buffs by #b", " at the start of each turn, then increase that number by #b", ". "
+      "Increase buffs by #b", " at the end of each turn, then increase that number by #b", ". "
+    ]
+  },
+  "rubimod:Harbinger": {
+    "NAME": "Harbinger of Doom",
+    "DESCRIPTIONS": [
+      "On death, transfer #b", " debuffs to a random enemy. SOT, increase that number by #b", ". "
     ]
   },
   "rubimod:ShadowHand": {
