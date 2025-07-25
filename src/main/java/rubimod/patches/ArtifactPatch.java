@@ -18,17 +18,17 @@ import rubimod.relics.BaseRelic;
 public class ArtifactPatch
 {
     @SpirePrefixPatch
-    public static void Prefix(ArtifactPower power)
+    public static void Prefix(ArtifactPower __instance)
     {
         for (AbstractRelic r : AbstractDungeon.player.relics)
             if (r instanceof BaseRelic)
-                ((BaseRelic) r).onArtifactLost(power.owner);
+                ((BaseRelic) r).onArtifactLost(__instance.owner);
         for (AbstractPower p : AbstractDungeon.player.powers)
             if (p instanceof BasePower)
-                ((BasePower) p).onArtifactLost(power.owner);
+                ((BasePower) p).onArtifactLost(__instance.owner);
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters)
             for (AbstractPower p : m.powers)
                 if (p instanceof BasePower)
-                    ((BasePower) p).onArtifactLost(power.owner);
+                    ((BasePower) p).onArtifactLost(__instance.owner);
     }
 }

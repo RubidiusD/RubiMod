@@ -86,6 +86,4 @@ public abstract class BasePower extends AbstractPower {
     }
 
     public void onArtifactLost(AbstractCreature owner) {}
-
-    public void onAllyArtifactLost() {}
 }

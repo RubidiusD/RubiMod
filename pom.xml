@@ -24,7 +24,7 @@
 
     <!-- This information will be displayed in ModTheSpire, the modded launcher. -->
     <name>The Hegemon</name>
-    <version>1.1.2</version>
+    <version>1.1.3</version>
     <!-- Avoid using \ in this description, as they can cause the description to fail to load. -->
     <!-- If you really want to use them, you'll need to "escape" them by putting another one in front, like \\ -->
     <description>This mod adds random nonsense.\n
@@ -163,6 +163,7 @@
                                 <!--This puts a copy of your mod's jar file into the SlayTheSpire mods folder so it will be loaded.-->
                                 <!--On mac, it will be copied to another location. See further below.-->
                                 <copy file="target/rubimod.jar" tofile="${steam.path}/common/SlayTheSpire/rubimod/content/rubimod.jar"/>
+                                <copy file="target/rubimod.jar" tofile="${steam.path}/workshop/content/646570/3531504374/rubimod.jar"/>
                             </target>
                         </configuration>
                         <goals>
@@ -244,6 +245,7 @@
                                     <target>
                                         <!-- This moves your mod into a common folder where all mods you make can go. -->
                                         <copy file="target/rubimod.jar" tofile="${steam.path}/common/SlayTheSpire/rubimod/content/rubimod.jar"/>
+                                        <copy file="target/rubimod.jar" tofile="${steam.path}/workshop/content/646570/3531504374/rubimod.jar"/>
                                     </target>
                                 </configuration>
                                 <goals>
