@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.actions.PunitionAction;
 import rubimod.cards.BaseCard;
-import rubimod.util.CustomTags;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Sin;
 import rubimod.util.CardStats;
@@ -28,8 +27,6 @@ public class Punition extends BaseCard {
 
         setMagic(MAGIC); // self-explanatory
         setCostUpgrade(1);
-
-        tags.add(CustomTags.PUNISH);
     }
 
     @Override

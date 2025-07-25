@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.actions.NecroticDamageAction;
 import rubimod.cards.BaseCard;
-import rubimod.util.CustomTags;
 import rubimod.powers.debuff.Sin;
 import rubimod.relics.ComicPage;
 import rubimod.util.CardStats;
@@ -36,8 +35,7 @@ public class Punish extends BaseCard {
         setCustomVar("Sin", SIN, UPG_SIN);
         setExhaust(true);
 
-        tags.add(CustomTags.PUNISH);
-        if (AbstractDungeon.player.hasRelic(ComicPage.ID))
+        if (AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(ComicPage.ID))
             upgradeMagicNumber(ComicPage.BUFF);
     }
 

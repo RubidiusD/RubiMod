@@ -8,7 +8,6 @@ rubimod\cards\skills\rare\HegemonsMercy.class
 rubimod\character\Hegemon.class
 rubimod\relics\ComicPage.class
 rubimod\cards\attacks\starter\Strike.class
-rubimod\util\CustomTags.class
 rubimod\RubiMod$1.class
 rubimod\util\GeneralUtils.class
 rubimod\powers\buff\ShadowHand.class
