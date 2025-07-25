@@ -28,7 +28,7 @@ public class GordonRelic extends BaseRelic {
 
     @Override
     public void onMonsterDeath(AbstractMonster m) {
-        if (!m.hasPower(Sin.POWER_ID) || m.getPower(Sin.POWER_ID).amount == 0)
+        if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead() || !m.hasPower(Sin.POWER_ID) || m.getPower(Sin.POWER_ID).amount == 0)
             return;
         this.addToTop(new ApplyPowerToRandomEnemyAction(AbstractDungeon.player, new Sin((AbstractCreature)null, m.getPower(Sin.POWER_ID).amount)));
         this.addToTop(new RelicAboveCreatureAction(m, this));

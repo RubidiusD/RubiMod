@@ -2,6 +2,7 @@ package rubimod.powers.debuff;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerToRandomEnemyAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
 
@@ -30,6 +31,8 @@ public class Harbinger extends BasePower {
 
     @Override
     public void onDeath() { // Trigger the power's effect
+        if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead())
+            return;
         ArrayList<AbstractPower> debuffs = new ArrayList<>(owner.powers); // Get a copy of the owner's debuffs
         for (int index = 0; index < debuffs.size(); index++) { // Remove the buffs (and itself)
             AbstractPower debuff = debuffs.get(index);

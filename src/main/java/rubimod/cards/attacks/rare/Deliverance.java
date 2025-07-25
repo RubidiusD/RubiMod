@@ -25,7 +25,7 @@ public class Deliverance extends BaseCard {
 
     private static final int DAMAGE = 5;
     private static final int MAGIC = 0;
-    private static final int INCREASE = 3;
+    private static final int INCREASE = 2;
     private static final int UPG_INCREASE = 1;
 
     public Deliverance() {
@@ -35,18 +35,20 @@ public class Deliverance extends BaseCard {
         setMagic(MAGIC); // self-explanatory
         setSelfRetain(true);
         setCustomVar("Increase", INCREASE, UPG_INCREASE);
+        setCustomVar("Sin", 0);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         addToBot(new NecroticDamageAction(m, new DamageInfo(p, magicNumber, DamageInfo.DamageType.THORNS)));
-        addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber)));
+        addToBot(new ApplyPowerAction(m, p, new Sin(m, customVar("Sin"))));
     }
 
     @Override
     public void onRetained() {
         this.upgradeMagicNumber(customVar("Increase"));
+        this.upgradeCustomVar("Sin", customVar("Increase") - 1);
     }
 
     @Override

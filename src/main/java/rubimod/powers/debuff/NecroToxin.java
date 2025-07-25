@@ -66,6 +66,6 @@ public class Necrotoxin extends BasePower implements HealthBarRenderPower {
 
     @Override
     public Color getColor() {
-        return CardHelper.getColor(18, 5, 25);
+        return CardHelper.getColor(50, 25, 75);
     }
 }
