@@ -2,6 +2,7 @@ package rubimod.relics;
 
 import basemod.abstracts.CustomRelic;
 import basemod.helpers.RelicType;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import rubimod.util.GeneralUtils;
 import rubimod.util.TextureLoader;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -102,4 +103,6 @@ public abstract class BaseRelic extends CustomRelic {
     private static boolean notPng(String name) {
         return !name.endsWith(".png");
     }
+
+    public void onArtifactLost(AbstractCreature owner) {}
 }

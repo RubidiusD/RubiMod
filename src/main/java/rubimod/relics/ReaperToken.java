@@ -20,9 +20,8 @@ public class ReaperToken extends BaseRelic {
 
     @Override
     public void onEquip() {
-        super.onEquip();
-
         UnlockTracker.markRelicAsSeen(ID);
+        AbstractDungeon.player.relics.remove(AbstractDungeon.player.getRelic(MysteriousStranger.ID));
 
         NewRelic = false;
     }
@@ -46,7 +45,6 @@ public class ReaperToken extends BaseRelic {
 
     @Override
     public void atTurnStart() {
-        super.atTurnStart();
         this.flash();
         addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, 1)));
     }

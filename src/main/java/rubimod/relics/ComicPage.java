@@ -19,8 +19,6 @@ public class ComicPage extends BaseRelic {
 
     @Override
     public void onEquip() {
-        super.onEquip();
-
         UnlockTracker.markRelicAsSeen(ID);
     }
 

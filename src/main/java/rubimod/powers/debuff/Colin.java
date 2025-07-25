@@ -33,8 +33,6 @@ public class Colin extends BasePower {
 
     @Override
     public void atStartOfTurn() {
-        super.atStartOfTurn();
-
         reducePower(1);
         if (amount == 0)
             addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
@@ -46,8 +44,6 @@ public class Colin extends BasePower {
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
-        super.atEndOfTurn(isPlayer);
-
         addToTop(new ApplyPowerAction(owner, source, new VulnerablePower(owner,1, !source.isPlayer)));
     }
 

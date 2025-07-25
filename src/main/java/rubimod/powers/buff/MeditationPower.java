@@ -29,8 +29,6 @@ public class MeditationPower extends BasePower {
 
     @Override
     public void atStartOfTurnPostDraw() {
-        super.atStartOfTurnPostDraw();
-
         addToBot(new ApplyPowerAction(owner, owner, new FrailPower(owner, amount, false)));
         addToBot(new DrawCardAction(owner, amount));
         this.flash();

@@ -25,8 +25,6 @@ public class DoomPower extends BasePower {
 
     @Override
     public void atStartOfTurn() { // Trigger the power's effect
-        super.atStartOfTurn();
-
         int totalDebuff = 0; // calculate the total amount of debuff they have
         for (AbstractPower power : owner.powers)
         {

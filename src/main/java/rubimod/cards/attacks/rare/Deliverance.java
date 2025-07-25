@@ -46,7 +46,6 @@ public class Deliverance extends BaseCard {
 
     @Override
     public void onRetained() {
-        super.onRetained();
         this.upgradeMagicNumber(customVar("Increase"));
     }
 

@@ -17,8 +17,6 @@ public class PaperUmbrella extends BaseRelic {
 
     @Override
     public void onEquip() {
-        super.onEquip();
-
         UnlockTracker.markRelicAsSeen(ID);
     }
 

@@ -1,6 +1,7 @@
 package rubimod.relics;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -20,16 +21,12 @@ public class SuspiciousSalve extends BaseRelic {
 
     @Override
     public void onEquip() {
-        super.onEquip();
-
         UnlockTracker.markRelicAsSeen(ID);
     }
 
     @Override
-    public void onTrigger() {
-        super.onTrigger();
-
-        if (Math.random() < 0.5)
+    public void onArtifactLost(AbstractCreature owner) {
+        if (owner.isPlayer && Math.random() < 0.5)
         {
             System.out.println("Salve-ing Artifact");
             flash();

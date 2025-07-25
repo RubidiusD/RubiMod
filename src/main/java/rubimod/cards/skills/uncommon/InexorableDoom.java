@@ -38,7 +38,6 @@ public class InexorableDoom extends BaseCard {
 
     @Override
     public void triggerWhenDrawn() {
-        super.triggerWhenDrawn();
         this.shuffleBackIntoDrawPile = false;
     }
 

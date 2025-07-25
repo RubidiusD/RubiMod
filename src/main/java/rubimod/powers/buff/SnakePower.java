@@ -28,8 +28,6 @@ public class SnakePower extends BasePower {
 
     @Override
     public void atStartOfTurn() {
-        super.atStartOfTurn();
-
         this.flash();
         addToBot(new MakeTempCardInHandAction(new Punish(), amount));
     }

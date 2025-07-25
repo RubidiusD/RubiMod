@@ -33,8 +33,6 @@ public class LeechToxin extends BasePower {
 
     @Override
     public void onSpecificTrigger() {
-        super.onSpecificTrigger();
-
         reducePower(1);
         if (amount == 0)
             addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));

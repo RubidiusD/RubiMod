@@ -28,8 +28,6 @@ public class ShadowHand extends BasePower {
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        super.onAttack(info, damageAmount, target);
-
         addToTop(new NecroticDamageAction(target, new DamageInfo(owner, amount, DamageInfo.DamageType.THORNS)));
     }
 

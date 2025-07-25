@@ -24,14 +24,11 @@ public class PropheticScraps extends BaseRelic {
 
     @Override
     public void onEquip() {
-        super.onEquip();
-
         UnlockTracker.markRelicAsSeen(ID);
     }
 
     @Override
     public void atBattleStartPreDraw() {
-        super.atBattleStartPreDraw();
         this.flash();
 
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {

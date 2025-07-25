@@ -24,15 +24,11 @@ public class VehicleVoltron extends BaseRelic {
 
     @Override
     public void onEquip() {
-        super.onEquip();
-
         UnlockTracker.markRelicAsSeen(ID);
     }
 
     @Override
     public void atBattleStart() {
-        super.atBattleStart();
-
         this.flash();
         addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RegenPower(AbstractDungeon.player, PLAYER_REGEN)));
 

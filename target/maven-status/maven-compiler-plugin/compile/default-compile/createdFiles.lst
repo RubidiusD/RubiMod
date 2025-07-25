@@ -74,6 +74,7 @@ rubimod\powers\buff\StudiousPower.class
 rubimod\cards\powers\uncommon\Meditation.class
 rubimod\powers\debuff\Bleeding.class
 rubimod\cards\attacks\starter\LashOut.class
+rubimod\relics\GordonRelic.class
 rubimod\powers\debuff\Colin.class
 rubimod\util\CardStats.class
 rubimod\cards\BaseCard$QuickDynamicVariable.class
