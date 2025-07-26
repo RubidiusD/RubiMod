@@ -133,7 +133,7 @@
   "rubimod:Riposte": {
     "NAME": "Riposte",
     "DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 Punish",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 Punish+"
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 #gPunish+"
   },
   "rubimod:FalseOpening": {
     "NAME": "False Opening",
@@ -199,7 +199,7 @@
   },
   "rubimod:StoriedDagger": {
     "NAME": "Storied Dagger",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! rubimod:Necrotoxin with each attack this turn."
+    "DESCRIPTION": "Apply !M! rubimod:Necrotoxin with each attack this turn. NL Deal !D! damage."
   },
   "rubimod:Suffer": {
     "NAME": "Suffer!",
@@ -230,7 +230,11 @@
   },
   "rubimod:DoomsHarbinger": {
     "NAME": "Doom's Harbinger",
-    "DESCRIPTION": "Apply 5 rubimod:Necrotoxin. Target's afflictions are transferred on death. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply 5 rubimod:Necrotoxin. Target's afflictions are transferred on death."
+    "DESCRIPTION": "Apply 5 rubimod:Necrotoxin. Target's debuffs are transferred on death. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply 5 rubimod:Necrotoxin. Target's debuffs are transferred on death."
+  },
+  "rubimod:Anticipation": {
+    "NAME": "Anticipation",
+    "DESCRIPTION": "Lose !rubimod:Tax! HP. NL Gain [E] [E]. Draw !M! cards. NL Exhaust."
   }
 }

@@ -45,6 +45,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\commo
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\common\SkillBookRed.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\common\Suffer.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\Punish.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\Anticipation.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\DoomsHarbinger.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\FeastofAbsolution.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\HegemonsMercy.java
@@ -80,7 +81,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\SinEat
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\SnakePower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\StudiousPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\TacticalMapPower.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\UmbralTempPower.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\UmbralVenom.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\VaccinePower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Bleeding.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Colin.java

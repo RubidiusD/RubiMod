@@ -1,3 +1,4 @@
+rubimod\powers\buff\UmbralVenom.class
 rubimod\powers\debuff\LeechToxin.class
 rubimod\cards\skills\uncommon\Punition.class
 rubimod\cards\skills\rare\FeastofAbsolution.class
@@ -35,7 +36,7 @@ rubimod\patches\LearnedForeignPatch.class
 rubimod\cards\powers\uncommon\AfflictionSpecialisation.class
 rubimod\cards\skills\rare\DoomsHarbinger.class
 rubimod\patches\RegenTotalPatch.class
-rubimod\powers\buff\UmbralTempPower.class
+rubimod\cards\skills\rare\Anticipation.class
 rubimod\cards\skills\uncommon\Stall.class
 rubimod\patches\LearnedDrawPilePatch.class
 rubimod\cards\attacks\uncommon\StoriedDagger.class

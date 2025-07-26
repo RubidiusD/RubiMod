@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.powers.buff.UmbralTempPower;
+import rubimod.powers.buff.UmbralVenom;
 import rubimod.util.CardStats;
 
 public class StoriedDagger extends BaseCard {
@@ -36,8 +36,8 @@ public class StoriedDagger extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new ApplyPowerAction(p, p, new UmbralVenom(m, magicNumber)));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        addToBot(new ApplyPowerAction(p, p, new UmbralTempPower(m, magicNumber)));
     }
 
     @Override

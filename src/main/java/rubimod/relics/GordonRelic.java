@@ -1,13 +1,14 @@
 package rubimod.relics;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerToRandomEnemyAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Sin;
+
+import java.util.ArrayList;
 
 import static rubimod.RubiMod.makeID;
 
@@ -30,8 +31,11 @@ public class GordonRelic extends BaseRelic {
     public void onMonsterDeath(AbstractMonster m) {
         if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead() || !m.hasPower(Sin.POWER_ID) || m.getPower(Sin.POWER_ID).amount == 0)
             return;
-        this.addToTop(new ApplyPowerToRandomEnemyAction(AbstractDungeon.player, new Sin((AbstractCreature)null, m.getPower(Sin.POWER_ID).amount)));
-        this.addToTop(new RelicAboveCreatureAction(m, this));
+        ArrayList<AbstractMonster> monsters = AbstractDungeon.getCurrRoom().monsters.monsters;
+        monsters.remove(m);
+        AbstractMonster target = monsters.get((int) (Math.random() * monsters.size()));
+        this.addToTop(new ApplyPowerAction(target, AbstractDungeon.player, new Sin(target, m.getPower(Sin.POWER_ID).amount)));
+        this.addToTop(new RelicAboveCreatureAction(target, this));
     }
 
     @Override

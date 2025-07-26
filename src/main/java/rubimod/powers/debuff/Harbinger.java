@@ -27,11 +27,12 @@ public class Harbinger extends BasePower {
     {
         this.flashWithoutSound();
         transferEnergy += this.amount;
+        updateDescription();
     }
 
     @Override
     public void onDeath() { // Trigger the power's effect
-        if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead())
+        if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead()) // check there are other monsters to transfer to
             return;
         ArrayList<AbstractPower> debuffs = new ArrayList<>(owner.powers); // Get a copy of the owner's debuffs
         for (int index = 0; index < debuffs.size(); index++) { // Remove the buffs (and itself)

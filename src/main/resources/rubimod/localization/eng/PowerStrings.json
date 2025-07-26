@@ -38,7 +38,7 @@
   "rubimod:Harbinger": {
     "NAME": "Harbinger of Doom",
     "DESCRIPTIONS": [
-      "On death, transfer #b", " debuffs to a random enemy. SOT, increase that number by #b", ". "
+      "On death, transfer #b", " debuffs to a random enemy. Each turn, increase that number by #b", ". "
     ]
   },
   "rubimod:ShadowHand": {
@@ -102,16 +102,10 @@
       "Take ", " Necrotic damage each turn, for #r", " total."
     ]
   },
-  "rubimod:UmbralTempPower": {
+  "rubimod:UmbralVenom": {
     "NAME": "Umbral Venom",
     "DESCRIPTIONS": [
       "Apply #b", " Necrotoxin on hit this turn."
-    ]
-  },
-  "rubimod:UmbralPower": {
-    "NAME": "Umbral Armour",
-    "DESCRIPTIONS": [
-      "Apply #b", " Necrotoxin on unblocked hits."
     ]
   },
   "rubimod:Stalling": {

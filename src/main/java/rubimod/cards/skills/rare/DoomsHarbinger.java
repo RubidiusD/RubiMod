@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import rubimod.actions.ApplyNecrotoxinAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Harbinger;
@@ -32,6 +33,7 @@ public class DoomsHarbinger extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new ApplyNecrotoxinAction(m, p, magicNumber));
         addToBot(new ApplyPowerAction(m, p, new Harbinger(m, customVar("Harbinger"))));
     }
 

@@ -22,6 +22,8 @@ public class Sin extends BasePower {
     public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
         updateDescription();
+        if (owner.hasPower(Necrotoxin.POWER_ID))
+            owner.getPower(Necrotoxin.POWER_ID).updateDescription();
     }
 
     public static int calculateSin(AbstractCreature target, int base)
