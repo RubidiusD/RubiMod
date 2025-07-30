@@ -1,4 +1,4 @@
-package rubimod.cards.attacks.common;
+package rubimod.cards.attacks.uncommon;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -17,12 +17,12 @@ public class Riposte extends BaseCard {
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.COMMON,
+            CardRarity.UNCOMMON,
             CardTarget.ENEMY,
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int DAMAGE = 3;
+    private static final int DAMAGE = 4;
     private static final int MAGIC = 0;
     private static final int UPG_MAGIC = 1;
 

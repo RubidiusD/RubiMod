@@ -17,7 +17,6 @@ rubimod\cards\powers\uncommon\SinEaterCard.class
 rubimod\cards\powers\uncommon\HegemonyCard.class
 rubimod\cards\BaseCard.class
 rubimod\cards\powers\rare\PhoenixForm.class
-rubimod\cards\attacks\common\Riposte.class
 rubimod\cards\skills\uncommon\SkillBookColorless.class
 rubimod\patches\LearnedDiscoveryPatch.class
 rubimod\relics\VehicleVoltron.class
@@ -57,10 +56,12 @@ rubimod\relics\TheologyNotes.class
 rubimod\actions\AbsolutionAction.class
 rubimod\cards\BaseCard$LocalVarInfo.class
 rubimod\util\KeywordInfo.class
+rubimod\cards\skills\uncommon\Hemorrhage.class
 rubimod\cards\skills\common\Imbibe.class
 rubimod\cards\skills\common\SkillBookGreen.class
 rubimod\powers\buff\TacticalMapPower.class
 rubimod\relics\SuspiciousSalve.class
+rubimod\cards\attacks\uncommon\Riposte.class
 rubimod\powers\debuff\Necrotoxin.class
 rubimod\relics\BaseRelic$1.class
 rubimod\powers\buff\MeditationPower.class
@@ -69,6 +70,7 @@ rubimod\powers\debuff\Sin.class
 rubimod\relics\ConcealedRazor.class
 rubimod\powers\buff\LikeBloodPower.class
 rubimod\cards\skills\common\Suffer.class
+rubimod\cards\skills\uncommon\FeastofBlood.class
 rubimod\cards\skills\common\SkillBookBlue.class
 rubimod\actions\ApplyNecrotoxinAction.class
 rubimod\cards\skills\common\SkillBookRed.class
@@ -87,6 +89,7 @@ rubimod\cards\attacks\rare\Deliverance.class
 rubimod\patches\LearnedHandPatch.class
 rubimod\cards\skills\uncommon\Feint.class
 rubimod\cards\attacks\common\LeechBite.class
+rubimod\actions\BloodFeastAction.class
 rubimod\patches\PoisonTotalPatch.class
 rubimod\cards\skills\starter\CloakofNight.class
 rubimod\cards\skills\starter\Defend.class

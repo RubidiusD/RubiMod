@@ -212,8 +212,8 @@
   },
   "rubimod:Stall": {
     "NAME": "Stall",
-    "DESCRIPTION": "Gain !M! Strength, while Stalling.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! Strength, while Stalling."
+    "DESCRIPTION": "Gain !M! Strength while Stalling.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! Strength while Stalling."
   },
   "rubimod:Stalling": {
     "NAME": "Stalling",
@@ -239,6 +239,15 @@
   },
   "rubimod:Anticipation": {
     "NAME": "Anticipation",
-    "DESCRIPTION": "Lose !rubimod:Tax! HP. NL Gain [E] [E]. Draw !M! cards. NL Exhaust."
+    "DESCRIPTION": "Lose !rubimod:Tax! temporary HP. NL Next turn, gain [E] [E], draw !M! cards. NL Exhaust."
+  },
+  "rubimod:FeastofBlood": {
+    "NAME": "Feast of Blood",
+    "DESCRIPTION": "Apply !M! rubimod:Necrotoxin. NL If the target is rubimod:Bleeding, remove it and gain !rubimod:Regen! Regen."
+  },
+  "rubimod:Hemorrhage": {
+    "NAME": "Hemorrhage",
+    "DESCRIPTION": "Apply rubimod:Bleeding. Draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Apply rubimod:Bleeding and rubimod:Leech_Toxin. Draw 1 card."
   }
 }
