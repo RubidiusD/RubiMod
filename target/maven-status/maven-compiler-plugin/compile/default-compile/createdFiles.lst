@@ -86,7 +86,6 @@ rubimod\cards\attacks\common\SpiritCoin.class
 rubimod\cards\attacks\rare\Deliverance.class
 rubimod\patches\LearnedHandPatch.class
 rubimod\cards\skills\uncommon\Feint.class
-rubimod\powers\debuff\Stalling.class
 rubimod\cards\attacks\common\LeechBite.class
 rubimod\patches\PoisonTotalPatch.class
 rubimod\cards\skills\starter\CloakofNight.class
@@ -112,6 +111,8 @@ rubimod\cards\attacks\uncommon\ToxicElbow.class
 rubimod\cards\powers\rare\SuitUp.class
 rubimod\actions\NecrotoxinLoseHPAction.class
 rubimod\cards\attacks\uncommon\Penitent.class
+rubimod\cards\Stalling.class
+rubimod\powers\buff\StallingPower.class
 rubimod\util\TriFunction.class
 rubimod\cards\skills\uncommon\InexorableDoom.class
 rubimod\cards\powers\rare\Vaccine.class

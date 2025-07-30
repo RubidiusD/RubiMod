@@ -108,7 +108,7 @@
       "Apply #b", " Necrotoxin on hit this turn."
     ]
   },
-  "rubimod:Stalling": {
+  "rubimod:StallingPower": {
     "NAME": "Stalling",
     "DESCRIPTIONS": [
       "Apply #b", " Regen on hit for the turn."

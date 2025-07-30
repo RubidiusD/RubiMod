@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import com.megacrit.cardcrawl.powers.EnergizedPower;
+import com.megacrit.cardcrawl.powers.RegenPower;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
@@ -24,7 +25,8 @@ public class Anticipation extends BaseCard {
     private static final int MAGIC = 2;
     private static final int UPG_MAGIC = 2;
     private static final int ENERGY = 2;
-    private static final int TAX = 2;
+    private static final int TAX = 10;
+    private static final int REGEN = 4;
 
     public Anticipation() {
         super(ID, info); // calls the parent constructor
@@ -32,6 +34,7 @@ public class Anticipation extends BaseCard {
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
         setCustomVar("Energy", ENERGY);
         setCustomVar("Tax", TAX);
+        setCustomVar("Regen", REGEN);
         setExhaust(true);
     }
 
@@ -39,6 +42,7 @@ public class Anticipation extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, magicNumber)));
         addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, customVar("Energy"))));
+        addToBot(new ApplyPowerAction(p, p, new RegenPower(p, customVar("Regen"))));
         addToBot(new LoseHPAction(p, p, customVar("Tax")));
     }
 

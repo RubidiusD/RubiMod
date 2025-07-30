@@ -212,8 +212,12 @@
   },
   "rubimod:Stall": {
     "NAME": "Stall",
-    "DESCRIPTION": "Gain !M! Strength, but also apply !rubimod:Stall! Regen on hit for the turn.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! Strength, but also apply !rubimod:Stall! Regen on hit for the turn."
+    "DESCRIPTION": "Gain !M! Strength, while Stalling.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! Strength, while Stalling."
+  },
+  "rubimod:Stalling": {
+    "NAME": "Stalling",
+    "DESCRIPTION": "Ethereal. NL Apply !M! regen on hit. NL On exhaust, reduce strength by !rubimod:Strength!."
   },
   "rubimod:TacticalMap": {
     "NAME": "Tactical Map",

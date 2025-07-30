@@ -19,7 +19,7 @@ public class PunitionAction extends AbstractGameAction {
 
     public void update()
     {
-        if (target.getPower(Sin.POWER_ID).amount == 0)
+        if (!target.hasPower(Sin.POWER_ID) || target.getPower(Sin.POWER_ID).amount == 0)
         {
             this.isDone = true;
             return;

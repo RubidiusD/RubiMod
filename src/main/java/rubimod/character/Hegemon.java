@@ -149,6 +149,7 @@ public class Hegemon extends CustomPlayer {
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
         retVal.add(CloakofNight.ID);
         retVal.add(MidnightEyes.ID);
 

@@ -20,12 +20,13 @@ public class Punition extends BaseCard {
             2 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 2;
+    private static final int MAGIC = 3;
+    private static final int UPG_MAGIC = -2;
 
     public Punition() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(MAGIC); // self-explanatory
+        setMagic(MAGIC, UPG_MAGIC); // self-explanatory
         setCostUpgrade(1);
     }
 
