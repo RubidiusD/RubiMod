@@ -21,13 +21,13 @@ public class Punition extends BaseCard {
     );
 
     private static final int MAGIC = 3;
-    private static final int UPG_MAGIC = -2;
 
     public Punition() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(MAGIC, UPG_MAGIC); // self-explanatory
+        setMagic(MAGIC); // self-explanatory
         setCostUpgrade(1);
+        setExhaust(true);
     }
 
     @Override

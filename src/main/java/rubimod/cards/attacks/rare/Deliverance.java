@@ -27,6 +27,8 @@ public class Deliverance extends BaseCard {
     private static final int MAGIC = 0;
     private static final int INCREASE = 2;
     private static final int UPG_INCREASE = 1;
+    private static final int SIN_INCREASE = 1;
+    private static final int UPG_SIN_INCREASE = 1;
 
     public Deliverance() {
         super(ID, info); // calls the parent constructor
@@ -35,6 +37,7 @@ public class Deliverance extends BaseCard {
         setMagic(MAGIC); // self-explanatory
         setSelfRetain(true);
         setCustomVar("Increase", INCREASE, UPG_INCREASE);
+        setCustomVar("Sin Increase", SIN_INCREASE, UPG_SIN_INCREASE);
         setCustomVar("Sin", 0);
     }
 
@@ -48,7 +51,7 @@ public class Deliverance extends BaseCard {
     @Override
     public void onRetained() {
         this.upgradeMagicNumber(customVar("Increase"));
-        this.upgradeCustomVar("Sin", customVar("Increase") - 1);
+        this.upgradeCustomVar("Sin", customVar("Sin Increase"));
     }
 
     @Override

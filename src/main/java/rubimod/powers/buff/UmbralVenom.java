@@ -34,9 +34,7 @@ public class UmbralVenom extends BasePower {
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
-        if (isPlayer) {
-            this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
-        }
+        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
     }
 
     public void updateDescription() {

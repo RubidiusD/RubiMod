@@ -7,10 +7,10 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.RegenPower;
 import rubimod.powers.debuff.Bleeding;
 
-public class BloodFeastAction extends AbstractGameAction {
+public class FeastAction extends AbstractGameAction {
     private int amount = 0;
     private int heal = 0;
-    public BloodFeastAction(AbstractCreature target, AbstractCreature source, int amount, int heal) {
+    public FeastAction(AbstractCreature target, AbstractCreature source, int amount, int heal) {
         super();
         this.target = target;
         this.source = source;

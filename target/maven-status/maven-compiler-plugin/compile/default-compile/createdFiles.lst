@@ -9,6 +9,7 @@ rubimod\cards\skills\rare\HegemonsMercy.class
 rubimod\character\Hegemon.class
 rubimod\relics\ComicPage.class
 rubimod\cards\attacks\starter\Strike.class
+rubimod\util\CustomTags.class
 rubimod\RubiMod$1.class
 rubimod\util\GeneralUtils.class
 rubimod\powers\buff\ShadowHand.class
@@ -22,6 +23,7 @@ rubimod\patches\LearnedDiscoveryPatch.class
 rubimod\relics\VehicleVoltron.class
 rubimod\powers\buff\SnakePower.class
 rubimod\relics\MysteriousStranger.class
+rubimod\actions\HarvestAction.class
 rubimod\cards\attacks\uncommon\HeroicPlay.class
 rubimod\cards\skills\common\Endure.class
 rubimod\cards\powers\uncommon\TacticalMap.class
@@ -70,6 +72,7 @@ rubimod\powers\debuff\Sin.class
 rubimod\relics\ConcealedRazor.class
 rubimod\powers\buff\LikeBloodPower.class
 rubimod\cards\skills\common\Suffer.class
+rubimod\cards\attacks\rare\BloodHarvest.class
 rubimod\cards\skills\uncommon\FeastofBlood.class
 rubimod\cards\skills\common\SkillBookBlue.class
 rubimod\actions\ApplyNecrotoxinAction.class
@@ -85,14 +88,15 @@ rubimod\cards\BaseCard$QuickDynamicVariable.class
 rubimod\relics\PaperUmbrella.class
 rubimod\powers\debuff\DoomPower.class
 rubimod\cards\attacks\common\SpiritCoin.class
+rubimod\patches\ExecutePatch.class
 rubimod\cards\attacks\rare\Deliverance.class
 rubimod\patches\LearnedHandPatch.class
 rubimod\cards\skills\uncommon\Feint.class
 rubimod\cards\attacks\common\LeechBite.class
-rubimod\actions\BloodFeastAction.class
 rubimod\patches\PoisonTotalPatch.class
 rubimod\cards\skills\starter\CloakofNight.class
 rubimod\cards\skills\starter\Defend.class
+rubimod\powers\debuff\LegacyofSin.class
 rubimod\RubiMod.class
 rubimod\actions\MercyAction.class
 rubimod\cards\powers\uncommon\LikeBlood.class
@@ -112,6 +116,7 @@ rubimod\powers\buff\LearnedPower.class
 rubimod\powers\buff\HegemonyPower.class
 rubimod\cards\attacks\uncommon\ToxicElbow.class
 rubimod\cards\powers\rare\SuitUp.class
+rubimod\actions\FeastAction.class
 rubimod\actions\NecrotoxinLoseHPAction.class
 rubimod\cards\attacks\uncommon\Penitent.class
 rubimod\cards\Stalling.class

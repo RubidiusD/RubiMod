@@ -31,12 +31,6 @@ public class StallingPower extends BasePower {
         addToTop(new ApplyPowerAction(target, owner, new RegenPower(target, amount)));
     }
 
-    @Override
-    public void atEndOfTurn(boolean isPlayer) {
-        super.atEndOfTurn(isPlayer);
-        addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
-    }
-
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }

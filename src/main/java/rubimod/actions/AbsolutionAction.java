@@ -9,15 +9,13 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class AbsolutionAction extends AbstractGameAction {
     private boolean heals = false;
 
-    public AbsolutionAction(AbstractCreature target, AbstractCreature source, int should_heal) {
+    public AbsolutionAction(AbstractCreature target, AbstractCreature source, boolean should_heal) {
         super();
         this.target = target;
         this.source = source;
         this.actionType = ActionType.REDUCE_POWER;
         this.attackEffect = AttackEffect.POISON;
-
-        if (should_heal != 0)
-            heals = true;
+        this.heals = should_heal;
     }
 
     @Override

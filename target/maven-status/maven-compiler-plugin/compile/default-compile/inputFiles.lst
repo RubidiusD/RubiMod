@@ -1,6 +1,7 @@
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\AbsolutionAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\ApplyNecrotoxinAction.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\BloodFeastAction.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\FeastAction.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\HarvestAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\MercyAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\NecroticDamageAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\actions\NecrotoxinLoseHPAction.java
@@ -11,6 +12,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\comm
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\Ruination.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\SpiritCoin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\common\ToxicStrike.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\rare\BloodHarvest.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\rare\Deliverance.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\rare\LeechHose.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\starter\LashOut.java
@@ -65,6 +67,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\Stalling.jav
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\character\Hegemon.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\ArtifactPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\CardCopyPatch.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\ExecutePatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedDiscoveryPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedDrawPileBottomPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedDrawPilePatch.java
@@ -93,6 +96,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Coli
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\DoomPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Harbinger.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\LeechToxin.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\LegacyofSin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Necrotoxin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\debuff\Sin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\relics\BaseRelic.java
@@ -108,6 +112,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\relics\TheologyNot
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\relics\VehicleVoltron.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\RubiMod.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\util\CardStats.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\util\CustomTags.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\util\GeneralUtils.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\util\KeywordInfo.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\util\TextureLoader.java

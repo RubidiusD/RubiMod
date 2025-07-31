@@ -1,6 +1,7 @@
 package rubimod.powers.debuff;
 
 import com.badlogic.gdx.math.MathUtils;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -24,6 +25,11 @@ public class Sin extends BasePower {
         updateDescription();
         if (owner.hasPower(Necrotoxin.POWER_ID))
             owner.getPower(Necrotoxin.POWER_ID).updateDescription();
+    }
+
+    @Override
+    public void onRemove() {
+        addToTop(new ApplyPowerAction(owner, owner, new LegacyofSin(owner, amount)));
     }
 
     public static int calculateSin(AbstractCreature target, int base)

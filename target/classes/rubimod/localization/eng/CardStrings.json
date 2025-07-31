@@ -86,7 +86,7 @@
   "rubimod:SkillBookColorless": {
     "NAME": "Colorless Skill Book",
     "DESCRIPTION": "Create a random colorless uncommon skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded purple uncommon skill in your hand. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Create a random upgraded colorless uncommon skill in your hand. NL Exhaust."
   },
   "rubimod:PathofShadows": {
     "NAME": "Path of Shadows",
@@ -141,7 +141,7 @@
   },
   "rubimod:Punition": {
     "NAME": "Punition",
-    "DESCRIPTION": "Apply !M! rubimod:Sin. NL Deal rubimod:Necrotic damage equal to the target's rubimod:Sin."
+    "DESCRIPTION": "Apply !M! rubimod:Sin. Deal rubimod:Necrotic damage equal to the target's rubimod:Sin. NL Exhaust."
   },
   "rubimod:PhoenixForm": {
     "NAME": "Phoenix Form",
@@ -217,7 +217,7 @@
   },
   "rubimod:Stalling": {
     "NAME": "Stalling",
-    "DESCRIPTION": "Ethereal. NL Apply !M! regen on hit. NL On exhaust, reduce strength by !rubimod:Strength!."
+    "DESCRIPTION": "Ethereal. NL Apply 2 regen on hit. NL On exhaust, reduce strength by !rubimod:Strength!."
   },
   "rubimod:TacticalMap": {
     "NAME": "Tactical Map",
@@ -249,5 +249,9 @@
     "NAME": "Hemorrhage",
     "DESCRIPTION": "Apply rubimod:Bleeding. Draw 1 card.",
     "UPGRADE_DESCRIPTION": "Apply rubimod:Bleeding and rubimod:Leech_Toxin. Draw 1 card."
+  },
+  "rubimod:BloodHarvest": {
+    "NAME": "Blood Harvest",
+    "DESCRIPTION": "Deal !D! damage. If Fatal, heal HP equal to unblocked damage dealt."
   }
 }

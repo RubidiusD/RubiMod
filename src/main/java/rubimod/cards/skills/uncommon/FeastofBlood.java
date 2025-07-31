@@ -2,7 +2,7 @@ package rubimod.cards.skills.uncommon;
 
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.actions.BloodFeastAction;
+import rubimod.actions.FeastAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
@@ -27,10 +27,12 @@ public class FeastofBlood extends BaseCard {
 
         setMagic(MAGIC, UPG_MAGIC);
         setCustomVar("Regen", REGEN, UPG_REGEN);
+
+        tags.add(CardTags.HEALING);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToTop(new BloodFeastAction(m, p, magicNumber, customVar("Regen")));
+        addToTop(new FeastAction(m, p, magicNumber, customVar("Regen")));
     }
 }
