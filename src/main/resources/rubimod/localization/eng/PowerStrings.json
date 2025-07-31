@@ -87,7 +87,7 @@
   "rubimod:LeechToxin": {
     "NAME": "Leech Toxin",
     "DESCRIPTIONS": [
-      "Reapply Bleeding and deal 1 Necrotic damage #b", " times."
+      "Reapply Bleeding and deal #b", " Necrotic damage."
     ]
   },
   "rubimod:Colin": {

@@ -19,12 +19,9 @@ public class Stalling extends BaseCard {
             -2 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int HEAL = 2;
-
     public Stalling() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(HEAL);
         setCustomVar("Strength", 0);
         setEthereal(true);
         setExhaust(true);
@@ -39,7 +36,10 @@ public class Stalling extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, -customVar("Strength"))));
+        if (p.hasPower(StrengthPower.POWER_ID))
+            p.getPower(StrengthPower.POWER_ID).reducePower(customVar("Strength"));
+        else
+            addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, -customVar("Strength"))));
         addToBot(new RemoveSpecificPowerAction(p, p, StallingPower.POWER_ID));
     }
 

@@ -24,7 +24,7 @@ public class SinEaterPower extends BasePower {
     @Override
     public void onArtifactLost(AbstractCreature owner) {
         if (owner.equals(this.owner)) {
-            this.flash();
+            this.flashWithoutSound();
             addToTop(new GainBlockAction(owner, owner, this.amount));
         }
     }

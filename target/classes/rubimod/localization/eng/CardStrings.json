@@ -132,12 +132,12 @@
   },
   "rubimod:Riposte": {
     "NAME": "Riposte",
-    "DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 Punish",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 #gPunish+"
+    "DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 *Punish",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 *Punish+"
   },
   "rubimod:FalseOpening": {
     "NAME": "False Opening",
-    "DESCRIPTION": "Gain !B! Block. NL Create !M! Punish."
+    "DESCRIPTION": "Gain !B! Block. NL Create !M! *Punish."
   },
   "rubimod:Punition": {
     "NAME": "Punition",
@@ -213,7 +213,7 @@
   "rubimod:Stall": {
     "NAME": "Stall",
     "DESCRIPTION": "Gain !M! Strength while Stalling.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! Strength while Stalling."
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain !M! Strength while Stalling."
   },
   "rubimod:Stalling": {
     "NAME": "Stalling",

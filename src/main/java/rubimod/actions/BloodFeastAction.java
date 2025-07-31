@@ -22,11 +22,11 @@ public class BloodFeastAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        addToTop(new ApplyNecrotoxinAction(target, source, amount));
         if (target.hasPower(Bleeding.POWER_ID)) {
-            addToTop(new RemoveSpecificPowerAction(target, source, Bleeding.POWER_ID));
             addToTop(new ApplyPowerAction(source, source, new RegenPower(source, heal)));
+            addToTop(new RemoveSpecificPowerAction(target, source, Bleeding.POWER_ID));
         }
+        addToTop(new ApplyNecrotoxinAction(target, source, amount));
 
         this.isDone = true;
     }

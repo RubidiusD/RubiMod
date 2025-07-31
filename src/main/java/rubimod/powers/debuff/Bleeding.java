@@ -11,10 +11,6 @@ public class Bleeding extends BasePower {
     public static final String POWER_ID = makeID(Bleeding.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
-    //The only thing TURN_BASED controls is the color of the number on the power icon.
-    //Turn based powers are white, non-turn based powers are red or green depending on if their amount is positive or negative.
-    //For a power to actually decrease/go away on its own they do it themselves.
-    //Look at powers that do this like VulnerablePower and DoubleTapPower.
 
     private static AbstractCreature source;
 
@@ -30,12 +26,14 @@ public class Bleeding extends BasePower {
 
     @Override
     public int onHeal(int healAmount) {
-        if (healAmount > 0) {
-            if (owner.hasPower(LeechToxin.POWER_ID)) {owner.getPower(LeechToxin.POWER_ID).onSpecificTrigger();}
-            this.flash();
-            addToTop(new RemoveSpecificPowerAction(owner, source, POWER_ID));
-        }
+        if (healAmount > 0) { addToTop(new RemoveSpecificPowerAction(owner, source, POWER_ID)); }
         return 0;
+    }
+
+    @Override
+    public void onRemove() {
+        if (owner.hasPower(LeechToxin.POWER_ID)) {owner.getPower(LeechToxin.POWER_ID).onSpecificTrigger();}
+        this.flash();
     }
 
     public void updateDescription() {
