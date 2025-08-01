@@ -11,7 +11,7 @@ import rubimod.powers.debuff.Sin;
 import rubimod.util.CardStats;
 
 public class Suffer extends BaseCard {
-    public static final String ID = makeID(Suffer.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + Suffer.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,

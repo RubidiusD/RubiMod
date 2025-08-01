@@ -12,11 +12,11 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import rubimod.actions.NecrotoxinLoseHPAction;
 import rubimod.powers.BasePower;
 
-import static rubimod.RubiMod.makeID;
+
 import static rubimod.powers.debuff.Sin.calculateSin;
 
 public class Necrotoxin extends BasePower implements HealthBarRenderPower {
-    public static final String POWER_ID = makeID(Necrotoxin.class.getSimpleName());
+    public static final String POWER_ID = ("rubimod:" + Necrotoxin.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.DEBUFF;
     private static final boolean TURN_BASED = true;
     private final AbstractCreature source;

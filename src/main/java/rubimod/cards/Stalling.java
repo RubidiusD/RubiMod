@@ -10,7 +10,7 @@ import rubimod.powers.buff.StallingPower;
 import rubimod.util.CardStats;
 
 public class Stalling extends BaseCard {
-    public static final String ID = makeID(Stalling.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + Stalling.class.getSimpleName());
     private static final CardStats info = new CardStats(
             CardColor.COLORLESS,
             CardType.STATUS,

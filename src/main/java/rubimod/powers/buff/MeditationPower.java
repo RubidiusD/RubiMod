@@ -6,10 +6,10 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.FrailPower;
 import rubimod.powers.BasePower;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class MeditationPower extends BasePower {
-    public static final String POWER_ID = makeID(MeditationPower.class.getSimpleName());
+    public static final String POWER_ID = ("rubimod:" + MeditationPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
     //The only thing TURN_BASED controls is the color of the number on the power icon.

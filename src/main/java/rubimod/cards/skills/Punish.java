@@ -14,7 +14,7 @@ import rubimod.relics.ComicPage;
 import rubimod.util.CardStats;
 
 public class Punish extends BaseCard {
-    public static final String ID = makeID(Punish.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + Punish.class.getSimpleName());
     private static final CardStats info = new CardStats(
             CardColor.COLORLESS,
             CardType.SKILL,

@@ -5,10 +5,10 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class PhoenixPower extends BasePower {
-    public static final String POWER_ID = makeID(PhoenixPower.class.getSimpleName());
+    public static final String POWER_ID = ("rubimod:" + PhoenixPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
     public int buffGainRate;

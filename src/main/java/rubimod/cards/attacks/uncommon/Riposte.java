@@ -13,7 +13,7 @@ import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
 public class Riposte extends BaseCard {
-    public static final String ID = makeID(Riposte.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + Riposte.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,

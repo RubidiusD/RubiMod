@@ -118,6 +118,7 @@ rubimod\cards\attacks\uncommon\ToxicElbow.class
 rubimod\cards\powers\rare\SuitUp.class
 rubimod\actions\FeastAction.class
 rubimod\actions\NecrotoxinLoseHPAction.class
+rubimod\subscriptions\ArtifactLostSubscriber.class
 rubimod\cards\attacks\uncommon\Penitent.class
 rubimod\cards\Stalling.class
 rubimod\powers\buff\StallingPower.class

@@ -7,11 +7,11 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import rubimod.actions.NecroticDamageAction;
 import rubimod.powers.BasePower;
 
-import static rubimod.RubiMod.makeID;
+
 import static rubimod.powers.debuff.Sin.calculateSin;
 
 public class LeechToxin extends BasePower {
-    public static final String POWER_ID = makeID(LeechToxin.class.getSimpleName());
+    public static final String POWER_ID = ("rubimod:" + LeechToxin.class.getSimpleName());
     private static final PowerType TYPE = PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
 

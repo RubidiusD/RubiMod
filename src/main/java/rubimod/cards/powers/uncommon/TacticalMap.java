@@ -10,7 +10,7 @@ import rubimod.powers.buff.TacticalMapPower;
 import rubimod.util.CardStats;
 
 public class TacticalMap extends BaseCard {
-    public static final String ID = makeID(TacticalMap.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + TacticalMap.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,

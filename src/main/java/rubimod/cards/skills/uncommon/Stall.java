@@ -13,7 +13,7 @@ import rubimod.powers.buff.StallingPower;
 import rubimod.util.CardStats;
 
 public class Stall extends BaseCard {
-    public static final String ID = makeID(Stall.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + Stall.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,

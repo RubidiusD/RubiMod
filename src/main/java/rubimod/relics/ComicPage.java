@@ -3,11 +3,11 @@ package rubimod.relics;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class ComicPage extends BaseRelic {
     private static final String NAME = ComicPage.class.getSimpleName();
-    public static final String ID = makeID(NAME);
+    public static final String ID = ("rubimod:" + NAME);
     private static final RelicTier RARITY = RelicTier.UNCOMMON;
     private static final LandingSound SOUND = LandingSound.FLAT;
 

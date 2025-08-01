@@ -11,7 +11,7 @@ import rubimod.powers.buff.SnakePower;
 import rubimod.util.CardStats;
 
 public class WayoftheSnake extends BaseCard {
-    public static final String ID = makeID(WayoftheSnake.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + WayoftheSnake.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,

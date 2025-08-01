@@ -8,10 +8,10 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
 import rubimod.relics.PaperUmbrella;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class Sin extends BasePower {
-    public static final String POWER_ID = makeID(Sin.class.getSimpleName());
+    public static final String POWER_ID = ("rubimod:" + Sin.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
 

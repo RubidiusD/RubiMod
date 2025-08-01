@@ -10,7 +10,7 @@ import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
 public class SkillBookColorless extends BaseCard {
-    public static final String ID = makeID(SkillBookColorless.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + SkillBookColorless.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,

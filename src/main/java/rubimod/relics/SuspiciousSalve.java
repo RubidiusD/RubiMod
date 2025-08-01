@@ -5,13 +5,15 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import rubimod.RubiMod;
 import rubimod.character.Hegemon;
+import rubimod.subscriptions.ArtifactLostSubscriber;
 
-import static rubimod.RubiMod.makeID;
 
-public class SuspiciousSalve extends BaseRelic {
+
+public class SuspiciousSalve extends BaseRelic implements ArtifactLostSubscriber {
     private static final String NAME = SuspiciousSalve.class.getSimpleName();
-    public static final String ID = makeID(NAME);
+    public static final String ID = ("rubimod:" + NAME);
     public static final RelicTier RARITY = RelicTier.RARE;
     private static final LandingSound SOUND = LandingSound.CLINK;
 
@@ -25,7 +27,7 @@ public class SuspiciousSalve extends BaseRelic {
     }
 
     @Override
-    public void onArtifactLost(AbstractCreature owner) {
+    public void receiveArtifactLost(AbstractCreature owner) {
         if (owner.isPlayer && Math.random() < 0.5)
         {
             System.out.println("Salve-ing Artifact");

@@ -103,6 +103,4 @@ public abstract class BaseRelic extends CustomRelic {
     private static boolean notPng(String name) {
         return !name.endsWith(".png");
     }
-
-    public void onArtifactLost(AbstractCreature owner) {}
 }

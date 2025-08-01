@@ -25,7 +25,6 @@ import static rubimod.util.TextureLoader.getCardTextureString;
 public abstract class BaseCard extends CustomCard {
     final private static Map<String, DynamicVariable> customVars = new HashMap<>();
 
-    protected static String makeID(String name) { return RubiMod.makeID(name); }
     protected CardStrings cardStrings;
 
     protected boolean upgradesDescription;
@@ -604,7 +603,7 @@ public abstract class BaseCard extends CustomCard {
 
         public QuickDynamicVariable(String key) {
             this.localKey = key;
-            this.key = makeID(key);
+            this.key = ("rubimod:" + key);
         }
 
         @Override

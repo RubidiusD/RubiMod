@@ -7,11 +7,11 @@ import com.megacrit.cardcrawl.rewards.RewardItem;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class ReaperToken extends BaseRelic {
     private static final String NAME = ReaperToken.class.getSimpleName();
-    public static final String ID = makeID(NAME);
+    public static final String ID = ("rubimod:" + NAME);
     private static final RelicTier RARITY = RelicTier.BOSS;
     private static final LandingSound SOUND = LandingSound.HEAVY;
     private boolean NewRelic = true;

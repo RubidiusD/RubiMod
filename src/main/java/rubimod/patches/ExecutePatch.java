@@ -17,6 +17,7 @@ import rubimod.util.CustomTags;
     @SpirePatch2(clz= Feed.class, method= SpirePatch.CONSTRUCTOR, paramtypez = {}),
     @SpirePatch2(clz= HandOfGreed.class, method= SpirePatch.CONSTRUCTOR, paramtypez = {}),
     @SpirePatch2(cls= "BuxomMod.cards.HungryDwarf", method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "BuxomMod"),
+    @SpirePatch2(cls= "Cards.FoxHime.Attack.DispersionSex", method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "FoxHime"),
     @SpirePatch2(cls= "hermit.cards.DeadOrAlive", method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "Hermit"),
     @SpirePatch2(cls= "hermit.cards.DeadOrAlive", method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "downfall"),
     @SpirePatch2(cls= "slimebound.cards.MassFeed", method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "downfall")

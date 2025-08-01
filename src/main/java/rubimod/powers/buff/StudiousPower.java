@@ -5,11 +5,11 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import rubimod.actions.SkillBookAction;
 import rubimod.powers.BasePower;
 
-import static rubimod.RubiMod.makeID;
+
 import static rubimod.character.Hegemon.Meta.LIBRARY_COLOR;
 
 public class StudiousPower extends BasePower {
-    public static final String POWER_ID = makeID(StudiousPower.class.getSimpleName());
+    public static final String POWER_ID = ("rubimod:" + StudiousPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 

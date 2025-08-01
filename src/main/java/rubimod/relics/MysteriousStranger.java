@@ -6,11 +6,11 @@ import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class MysteriousStranger extends BaseRelic {
     private static final String NAME = MysteriousStranger.class.getSimpleName();
-    public static final String ID = makeID(NAME);
+    public static final String ID = ("rubimod:" + NAME);
     private static final RelicTier RARITY = RelicTier.STARTER;
     private static final LandingSound SOUND = LandingSound.MAGICAL;
 

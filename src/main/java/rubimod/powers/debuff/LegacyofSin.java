@@ -6,10 +6,10 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import rubimod.powers.BasePower;
 import rubimod.util.CustomTags;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class LegacyofSin extends BasePower {
-    public static final String POWER_ID = makeID(LegacyofSin.class.getSimpleName());
+    public static final String POWER_ID = ("rubimod:" + LegacyofSin.class.getSimpleName());
     private static final PowerType TYPE = PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
 

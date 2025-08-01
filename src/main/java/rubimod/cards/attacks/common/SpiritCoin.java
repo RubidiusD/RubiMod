@@ -13,7 +13,7 @@ import rubimod.powers.debuff.Bleeding;
 import rubimod.util.CardStats;
 
 public class SpiritCoin extends BaseCard {
-    public static final String ID = makeID(SpiritCoin.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + SpiritCoin.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,

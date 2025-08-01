@@ -132,7 +132,7 @@
       "Gain #b", " Artifact on taking a debuff."
     ]
   },
-  "rubimod:LegacyOfSin": {
+  "rubimod:LegacyofSin": {
     "NAME": "Legacy of Sin",
     "DESCRIPTIONS": [
       "Takes #b", "% additional execute damage."

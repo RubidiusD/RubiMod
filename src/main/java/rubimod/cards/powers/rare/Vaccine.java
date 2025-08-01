@@ -10,7 +10,7 @@ import rubimod.powers.buff.VaccinePower;
 import rubimod.util.CardStats;
 
 public class Vaccine extends BaseCard {
-    public static final String ID = makeID(Vaccine.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + Vaccine.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,

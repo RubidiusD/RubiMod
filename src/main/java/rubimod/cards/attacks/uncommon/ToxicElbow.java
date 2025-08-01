@@ -12,7 +12,7 @@ import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
 public class ToxicElbow extends BaseCard {
-    public static final String ID = makeID(ToxicElbow.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + ToxicElbow.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,

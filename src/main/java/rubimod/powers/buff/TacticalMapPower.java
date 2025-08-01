@@ -6,10 +6,10 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import rubimod.powers.BasePower;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class TacticalMapPower extends BasePower {
-    public static final String POWER_ID = makeID(TacticalMapPower.class.getSimpleName());
+    public static final String POWER_ID = ("rubimod:" + TacticalMapPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 

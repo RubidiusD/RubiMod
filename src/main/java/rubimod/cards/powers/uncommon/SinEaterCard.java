@@ -11,7 +11,7 @@ import rubimod.powers.buff.SinEaterPower;
 import rubimod.util.CardStats;
 
 public class SinEaterCard extends BaseCard {
-    public static final String ID = makeID(SinEaterCard.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + SinEaterCard.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,

@@ -5,10 +5,10 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import rubimod.powers.BasePower;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class LikeBloodPower extends BasePower {
-    public static final String POWER_ID = makeID(LikeBloodPower.class.getSimpleName());
+    public static final String POWER_ID = ("rubimod:" + LikeBloodPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 

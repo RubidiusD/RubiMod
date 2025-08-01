@@ -11,7 +11,7 @@ import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
 public class Strike extends BaseCard {
-    public static final String ID = makeID(Strike.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + Strike.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,

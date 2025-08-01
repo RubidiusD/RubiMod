@@ -8,11 +8,11 @@ import rubimod.character.Hegemon;
 import rubimod.powers.debuff.DoomPower;
 import rubimod.powers.debuff.Sin;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class PropheticScraps extends BaseRelic {
     private static final String NAME = PropheticScraps.class.getSimpleName();
-    public static final String ID = makeID(NAME);
+    public static final String ID = ("rubimod:" + NAME);
     private static final RelicTier RARITY = RelicTier.RARE;
     private static final LandingSound SOUND = LandingSound.FLAT;
 

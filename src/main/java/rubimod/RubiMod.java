@@ -7,10 +7,13 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.MinionPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.cards.attacks.rare.LeechHose;
 import rubimod.cards.skills.uncommon.InexorableDoom;
 import rubimod.relics.BaseRelic;
+import rubimod.util.CustomTags;
 import rubimod.util.GeneralUtils;
 import rubimod.util.KeywordInfo;
 import rubimod.util.TextureLoader;
@@ -50,12 +53,6 @@ public class RubiMod implements
     private static final String resourcesFolder = checkResourcesPath();
     public static final Logger logger = LogManager.getLogger(modID); //Used to output to the console.
 
-    //This is used to prefix the IDs of various objects like cards and relics,
-    //to avoid conflicts between different mods using the same name for things.
-    public static String makeID(String id) {
-        return modID + ":" + id;
-    }
-
     //This will be called by ModTheSpire because of the @SpireInitializer annotation at the top of the class.
     public static void initialize() {
         new RubiMod();
@@ -65,7 +62,7 @@ public class RubiMod implements
 
     public RubiMod() {
         BaseMod.subscribe(this); //This will make BaseMod trigger all the subscribers at their appropriate times.
-        logger.info(modID + " subscribed to BaseMod.");
+        logger.info("rubimod subscribed to BaseMod.");
     }
 
     @Override
@@ -239,6 +236,16 @@ public class RubiMod implements
         Hegemon.Meta.registerCharacter();
     }
 
+    public static boolean canExecute(int damage)
+    {
+        for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
+            if (!m.halfDead && !m.isDead && m.currentHealth <= damage && !m.hasPower(MinionPower.POWER_ID)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
     @Override
     public void receiveEditCards() { // adds any cards to the game
         new AutoAdd(modID) // Loads files
@@ -255,8 +262,9 @@ public class RubiMod implements
             public boolean test(AbstractCard card) {
                 //return true if "card" follows this rule, else return false
 
-                return ((card.cardID.equals(LeechHose.ID) && card.magicNumber == 1 && AbstractDungeon.actionManager.cardsPlayedThisTurn.isEmpty()) ||
-                        (card.cardID.equals(InexorableDoom.ID) && AbstractDungeon.player.drawPile.size() >= card.magicNumber)
+                return ((card.cardID.equals(LeechHose.ID) && card.magicNumber != 0 && AbstractDungeon.actionManager.cardsPlayedThisTurn.isEmpty()) ||
+                        (card.cardID.equals(InexorableDoom.ID) && AbstractDungeon.player.drawPile.size() >= card.magicNumber) ||
+                        (card.tags.contains(CustomTags.EXECUTE) && canExecute(card.damage))
                 );
             }
 
@@ -272,7 +280,7 @@ public class RubiMod implements
                 //return a string to be used as a unique ID for this glow.
                 //It's recommended to follow the usual modding convention of "modname:name"
 
-                return makeID("Glow");
+                return ("rubimod:" + "Glow");
             }
         });
     }

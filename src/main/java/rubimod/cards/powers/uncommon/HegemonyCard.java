@@ -10,7 +10,7 @@ import rubimod.powers.buff.HegemonyPower;
 import rubimod.util.CardStats;
 
 public class HegemonyCard extends BaseCard {
-    public static final String ID = makeID(HegemonyCard.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + HegemonyCard.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,

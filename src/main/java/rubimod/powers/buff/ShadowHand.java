@@ -5,10 +5,10 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import rubimod.actions.NecroticDamageAction;
 import rubimod.powers.BasePower;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class ShadowHand extends BasePower {
-    public static final String POWER_ID = makeID(ShadowHand.class.getSimpleName());
+    public static final String POWER_ID = ("rubimod:" + ShadowHand.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
     //The only thing TURN_BASED controls is the color of the number on the power icon.

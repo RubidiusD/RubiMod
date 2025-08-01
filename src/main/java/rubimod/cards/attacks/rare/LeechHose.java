@@ -16,7 +16,7 @@ import rubimod.powers.debuff.Colin;
 import rubimod.util.CardStats;
 
 public class LeechHose extends BaseCard {
-    public static final String ID = makeID(LeechHose.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + LeechHose.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,

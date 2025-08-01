@@ -10,7 +10,7 @@ import rubimod.util.CardStats;
 import rubimod.util.CustomTags;
 
 public class BloodHarvest extends BaseCard {
-    public static final String ID = makeID(BloodHarvest.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + BloodHarvest.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,

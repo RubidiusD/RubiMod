@@ -7,10 +7,10 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.RegenPower;
 import rubimod.powers.BasePower;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class StallingPower extends BasePower {
-    public static final String POWER_ID = makeID(StallingPower.class.getSimpleName());
+    public static final String POWER_ID = ("rubimod:" + StallingPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
@@ -26,9 +26,11 @@ public class StallingPower extends BasePower {
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        super.onAttack(info, damageAmount, target);
-
-        addToTop(new ApplyPowerAction(target, owner, new RegenPower(target, amount)));
+        if (info.type != DamageInfo.DamageType.HP_LOSS)
+        {
+            addToTop(new ApplyPowerAction(target, owner, new RegenPower(target, amount)));
+            flashWithoutSound();
+        }
     }
 
     public void updateDescription() {

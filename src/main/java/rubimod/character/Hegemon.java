@@ -39,7 +39,7 @@ public class Hegemon extends CustomPlayer {
     public static final int ORB_SLOTS = 0;
 
     //Strings
-    private static final String ID = RubiMod.makeID(Hegemon.class.getSimpleName()); //This should match whatever you have in the CharacterStrings.json file
+    private static final String ID = ("rubimod:" + Hegemon.class.getSimpleName()); //This should match whatever you have in the CharacterStrings.json file
     private static String[] getNames() { return CardCrawlGame.languagePack.getCharacterString(ID).NAMES; }
     private static String[] getText() { return CardCrawlGame.languagePack.getCharacterString(ID).TEXT; }
 

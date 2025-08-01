@@ -3,11 +3,10 @@ package rubimod.powers.buff;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import rubimod.powers.BasePower;
+import rubimod.subscriptions.ArtifactLostSubscriber;
 
-import static rubimod.RubiMod.makeID;
-
-public class SinEaterPower extends BasePower {
-    public static final String POWER_ID = makeID(SinEaterPower.class.getSimpleName());
+public class SinEaterPower extends BasePower implements ArtifactLostSubscriber {
+    public static final String POWER_ID = ("rubimod:" + SinEaterPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
@@ -20,9 +19,9 @@ public class SinEaterPower extends BasePower {
         super.stackPower(stackAmount);
         updateDescription();
     }
-
+    
     @Override
-    public void onArtifactLost(AbstractCreature owner) {
+    public void receiveArtifactLost(AbstractCreature owner) {
         if (owner.equals(this.owner)) {
             this.flashWithoutSound();
             addToTop(new GainBlockAction(owner, owner, this.amount));

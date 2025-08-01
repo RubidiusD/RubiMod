@@ -11,7 +11,7 @@ import rubimod.powers.debuff.Sin;
 import rubimod.util.CardStats;
 
 public class Feint extends BaseCard {
-    public static final String ID = makeID(Feint.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + Feint.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,

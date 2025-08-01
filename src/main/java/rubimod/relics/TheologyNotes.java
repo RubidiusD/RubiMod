@@ -7,11 +7,11 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Sin;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class TheologyNotes extends BaseRelic {
     private static final String NAME = TheologyNotes.class.getSimpleName();
-    public static final String ID = makeID(NAME);
+    public static final String ID = ("rubimod:" + NAME);
     private static final RelicTier RARITY = RelicTier.COMMON;
     private static final LandingSound SOUND = LandingSound.FLAT;
 

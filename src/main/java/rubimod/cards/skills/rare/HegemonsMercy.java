@@ -9,7 +9,7 @@ import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
 public class HegemonsMercy extends BaseCard {
-    public static final String ID = makeID(HegemonsMercy.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + HegemonsMercy.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,

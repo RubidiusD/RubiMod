@@ -10,7 +10,7 @@ import rubimod.powers.buff.LikeBloodPower;
 import rubimod.util.CardStats;
 
 public class LikeBlood extends BaseCard {
-    public static final String ID = makeID(LikeBlood.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("rubimod:" + LikeBlood.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,

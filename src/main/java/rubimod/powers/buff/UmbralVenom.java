@@ -6,10 +6,10 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import rubimod.actions.ApplyNecrotoxinAction;
 import rubimod.powers.BasePower;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class UmbralVenom extends BasePower {
-    public static final String POWER_ID = makeID(UmbralVenom.class.getSimpleName());
+    public static final String POWER_ID = ("rubimod:" + UmbralVenom.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
@@ -34,7 +34,8 @@ public class UmbralVenom extends BasePower {
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
-        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+        this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+        owner.powers.remove(this);
     }
 
     public void updateDescription() {

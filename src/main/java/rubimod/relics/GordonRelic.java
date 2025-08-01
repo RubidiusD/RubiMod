@@ -10,11 +10,11 @@ import rubimod.powers.debuff.Sin;
 
 import java.util.ArrayList;
 
-import static rubimod.RubiMod.makeID;
+
 
 public class GordonRelic extends BaseRelic {
     private static final String NAME = GordonRelic.class.getSimpleName();
-    public static final String ID = makeID(NAME);
+    public static final String ID = ("rubimod:" + NAME);
     private static final RelicTier RARITY = RelicTier.RARE;
     private static final LandingSound SOUND = LandingSound.SOLID;
 
