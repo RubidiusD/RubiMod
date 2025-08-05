@@ -28,8 +28,8 @@ public class Strike extends BaseCard {
 
         setDamage(DAMAGE, UPG_DAMAGE); // self-explanatory
 
-        tags.add(CardTags.STARTER_STRIKE);
-        tags.add(CardTags.STRIKE);
+        addTag(CardTags.STARTER_STRIKE);
+        addTag(CardTags.STRIKE);
     }
 
     @Override

@@ -29,7 +29,7 @@ public class FeastofAbsolution extends BaseCard {
         setCustomVar("Heals", 0, 1);
         setExhaust(true);
 
-        tags.add(CardTags.HEALING);
+        addTag(CardTags.HEALING);
     }
 
     @Override

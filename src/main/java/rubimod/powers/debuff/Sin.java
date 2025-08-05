@@ -8,8 +8,6 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
 import rubimod.relics.PaperUmbrella;
 
-
-
 public class Sin extends BasePower {
     public static final String POWER_ID = ("rubimod:" + Sin.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.DEBUFF;

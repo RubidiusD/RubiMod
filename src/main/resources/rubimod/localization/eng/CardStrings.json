@@ -107,7 +107,7 @@
   },
   "rubimod:Deliverance": {
     "NAME": "Deliverance",
-    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !rubimod:Sin! rubimod:Sin. NL Increase both by !rubimod:Increase! on retain."
+    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! rubimod:Necrotic damage and apply !rubimod:Sin! rubimod:Sin. Increase both by !rubimod:Increase! on retain."
   },
   "rubimod:InexorableDoom": {
     "NAME": "Inexorable Doom",
@@ -120,7 +120,7 @@
   "rubimod:FeastofAbsolution": {
     "NAME": "Absolution",
     "DESCRIPTION": "Draw !M! and gain [E]. NL Cleanse all of the target's debuffs. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Draw !M! and gain [E]. NL Cleanse all of the target's debuffs and heal the same amount. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Draw !M!. NL Cleanse all of the target's debuffs and heal the half the amount. NL Exhaust."
   },
   "rubimod:HegemonsMercy": {
     "NAME": "Hegemon's Mercy",
@@ -253,5 +253,9 @@
   "rubimod:BloodHarvest": {
     "NAME": "Blood Harvest",
     "DESCRIPTION": "Deal !D! damage. If Fatal, heal HP equal to unblocked damage dealt."
+  },
+  "rubimod:Verdict": {
+    "NAME": "Verdict",
+    "DESCRIPTION": "Deal damage equal to !M!% of target's lost health."
   }
 }

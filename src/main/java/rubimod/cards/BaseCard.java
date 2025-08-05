@@ -132,11 +132,14 @@ public abstract class BaseCard extends CustomCard {
         }
     }
 
-
+    protected void addTag(CardTags tag) {
+        tags.add(tag);
+    }
 
     protected final void setCustomVar(String key, int base) {
         this.setCustomVar(key, base, 0);
     }
+
     protected final void setCustomVar(String key, int base, int upgrade) {
         setCustomVarValue(key, base, upgrade);
 

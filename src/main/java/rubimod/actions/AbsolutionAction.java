@@ -32,7 +32,7 @@ public class AbsolutionAction extends AbstractGameAction {
                 }
             }
 
-            addToTop(new HealAction(source, target, total_debuff));
+            addToTop(new HealAction(source, target, total_debuff / 2));
         }
 
         addToTop(new RemoveDebuffsAction(target));

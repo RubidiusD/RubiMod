@@ -28,7 +28,7 @@ public class FeastofBlood extends BaseCard {
         setMagic(MAGIC, UPG_MAGIC);
         setCustomVar("Regen", REGEN, UPG_REGEN);
 
-        tags.add(CardTags.HEALING);
+        addTag(CardTags.HEALING);
     }
 
     @Override

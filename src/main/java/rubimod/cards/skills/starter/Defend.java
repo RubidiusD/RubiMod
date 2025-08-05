@@ -26,7 +26,7 @@ public class Defend extends BaseCard {
 
         setBlock(BLOCK, UPG_BLOCK); // self-explanatory
 
-        tags.add(CardTags.STARTER_DEFEND);
+        addTag(CardTags.STARTER_DEFEND);
     }
 
     @Override

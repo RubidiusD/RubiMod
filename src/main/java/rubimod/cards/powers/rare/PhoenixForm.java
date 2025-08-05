@@ -29,7 +29,7 @@ public class PhoenixForm extends BaseCard {
         setEthereal(true);
         setCostUpgrade(2);
 
-        tags.add(BaseModCardTags.FORM);
+        addTag(BaseModCardTags.FORM);
     }
 
     @Override

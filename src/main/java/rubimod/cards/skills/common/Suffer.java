@@ -33,7 +33,7 @@ public class Suffer extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyNecrotoxinAction(m, p, magicNumber));
         if (customVar("Sin") != 0)
-            addToBot(new ApplyPowerAction(p, p, new Sin(p, customVar("Sin"))));
+            addToBot(new ApplyPowerAction(m, p, new Sin(m, customVar("Sin"))));
     }
 
     @Override

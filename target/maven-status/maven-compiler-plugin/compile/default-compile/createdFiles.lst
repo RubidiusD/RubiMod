@@ -1,5 +1,6 @@
 rubimod\powers\buff\UmbralVenom.class
 rubimod\powers\debuff\LeechToxin.class
+rubimod\cards\attacks\uncommon\Verdict.class
 rubimod\cards\skills\uncommon\Punition.class
 rubimod\cards\skills\rare\FeastofAbsolution.class
 rubimod\cards\attacks\common\HiddenJab.class
@@ -93,6 +94,7 @@ rubimod\cards\attacks\rare\Deliverance.class
 rubimod\patches\LearnedHandPatch.class
 rubimod\cards\skills\uncommon\Feint.class
 rubimod\cards\attacks\common\LeechBite.class
+rubimod\patches\ExecuteJudgementPatch.class
 rubimod\patches\PoisonTotalPatch.class
 rubimod\cards\skills\starter\CloakofNight.class
 rubimod\cards\skills\starter\Defend.class

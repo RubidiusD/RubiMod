@@ -27,8 +27,8 @@ public class BloodHarvest extends BaseCard {
 
         setDamage(DAMAGE, UPG_DAMAGE); // self-explanatory
 
-        tags.add(CardTags.HEALING);
-        tags.add(CustomTags.EXECUTE);
+        addTag(CardTags.HEALING);
+        addTag(CustomTags.EXECUTE);
     }
 
     @Override

@@ -1,12 +1,11 @@
 package rubimod.powers.debuff;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import rubimod.powers.BasePower;
 import rubimod.util.CustomTags;
-
-
 
 public class LegacyofSin extends BasePower {
     public static final String POWER_ID = ("rubimod:" + LegacyofSin.class.getSimpleName());
@@ -24,11 +23,20 @@ public class LegacyofSin extends BasePower {
     }
 
     @Override
+    public void onRemove() {
+        addToTop(new ApplyPowerAction(owner, owner, new LegacyofSin(owner, amount)));
+    }
+
+    @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType type, AbstractCard card)
     {
         if (card.tags.contains(CustomTags.EXECUTE))
-            return damage * (1 + ((float) amount * 0.1f));
+            return calculate(damage);
         return damage;
+    }
+
+    public float calculate(float damage) {
+        return damage * (1 + ((float) amount * 0.1f));
     }
 
     public void updateDescription() {

@@ -23,6 +23,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\unco
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\Riposte.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\StoriedDagger.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\ToxicElbow.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\attacks\uncommon\Verdict.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\BaseCard.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\rare\DarkGuardian.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\rare\LessonLearned.java
@@ -67,6 +68,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\Stalling.jav
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\character\Hegemon.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\ArtifactPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\CardCopyPatch.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\ExecuteJudgementPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\ExecutePatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedDiscoveryPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedDrawPileBottomPatch.java

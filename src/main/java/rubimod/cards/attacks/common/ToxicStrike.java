@@ -32,7 +32,7 @@ public class ToxicStrike extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE); // self-explanatory
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
 
-        tags.add(CardTags.STRIKE);
+        addTag(CardTags.STRIKE);
     }
 
     @Override
