@@ -22,15 +22,14 @@ public class HiddenJab extends BaseCard {
     );
 
     private static final int DAMAGE = 3;
-    private static final int UPG_DAMAGE = 2;
-    private static final int BLOCK = 5;
-    private static final int UPG_BLOCK = 2;
+    private static final int UPG_DAMAGE = 3;
+    private static final int BLOCK = 7;
 
     public HiddenJab() {
         super(ID, info); // calls the parent constructor
 
         setDamage(DAMAGE, UPG_DAMAGE); // self-explanatory
-        setBlock(BLOCK, UPG_BLOCK); // self-explanatory
+        setBlock(BLOCK); // self-explanatory
     }
 
     @Override

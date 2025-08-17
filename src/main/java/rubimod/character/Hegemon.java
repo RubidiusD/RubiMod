@@ -18,12 +18,11 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import rubimod.RubiMod;
 import rubimod.cards.attacks.starter.LashOut;
 import rubimod.cards.attacks.starter.Strike;
 import rubimod.cards.skills.starter.CloakofNight;
 import rubimod.cards.skills.starter.Defend;
-import rubimod.cards.skills.starter.MidnightEyes;
+import rubimod.cards.skills.common.MidnightEyes;
 import rubimod.relics.MysteriousStranger;
 
 import java.util.ArrayList;
@@ -151,7 +150,6 @@ public class Hegemon extends CustomPlayer {
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(CloakofNight.ID);
-        retVal.add(MidnightEyes.ID);
 
         return retVal;
     }

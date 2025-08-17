@@ -1,4 +1,4 @@
-package rubimod.cards.skills.starter;
+package rubimod.cards.skills.common;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.utility.ScryAction;
@@ -15,7 +15,7 @@ public class MidnightEyes extends BaseCard {
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
-            CardRarity.BASIC,
+            CardRarity.COMMON,
             CardTarget.SELF,
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
@@ -27,16 +27,12 @@ public class MidnightEyes extends BaseCard {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
-        setCustomVar("Artifact", 0, 1);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ScryAction(magicNumber));
-        if (customVarUpgraded("Artifact"))
-        {
-            addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, 1)));
-        }
+        addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, 1)));
     }
 
     @Override

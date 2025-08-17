@@ -21,21 +21,22 @@ public class Endure extends BaseCard {
     );
 
     private static final int BLOCK = 3;
-    private static final int UPG_BLOCK = 1;
-    private static final int MAGIC = 1;
+    private static final int MAGIC = 2;
+    private static final int UPG_MAGIC = 2;
 
     public Endure() {
         super(ID, info); // calls the parent constructor
 
-        setBlock(BLOCK, UPG_BLOCK); // self-explanatory
-        setMagic(MAGIC); // self-explanatory
+        setBlock(BLOCK); // self-explanatory
+        setMagic(MAGIC, UPG_MAGIC); // self-explanatory
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, block));
-        addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ApplyPowerAction(p, p, new FrailPower(p, magicNumber, false)));
+        for (int i = 0; i < this.magicNumber; i++) {
+            addToBot(new GainBlockAction(p, p, block));
+        }
+        addToBot(new ApplyPowerAction(p, p, new FrailPower(p, 1, false)));
     }
 
     @Override

@@ -44,11 +44,8 @@
   {
     "PROPER_NAME": "Bleeding",
     "NAMES": [
-      "leech toxin",
       "bleeding",
-      "bleed",
-      "leech_toxin",
-      "leech"
+      "bleed"
     ],
     "DESCRIPTION": "Negates the next instance of healing."
   },
@@ -58,5 +55,13 @@
       "necrotoxin"
     ],
     "DESCRIPTION": "Deals decreasing damage over time."
+  },
+  {
+    "PROPER_NAME": "Leech Toxin",
+    "NAMES": [
+      "leech toxin",
+      "leech_toxin"
+    ],
+    "DESCRIPTION": "On refreshes target's Bleeding and deals Necrotic damage equal to stacks."
   }
 ]

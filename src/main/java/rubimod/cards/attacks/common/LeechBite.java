@@ -23,9 +23,9 @@ public class LeechBite extends BaseCard {
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int DAMAGE = 6;
+    private static final int DAMAGE = 8;
     private static final int MAGIC = 0;
-    private static final int UPG_MAGIC = 1;
+    private static final int UPG_MAGIC = 2;
 
     public LeechBite() {
         super(ID, info); // calls the parent constructor

@@ -1,4 +1,4 @@
-package rubimod.cards;
+package rubimod.cards.statuses;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import rubimod.cards.BaseCard;
 import rubimod.powers.buff.StallingPower;
 import rubimod.util.CardStats;
 

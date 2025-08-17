@@ -19,8 +19,7 @@
   },
   "rubimod:MidnightEyes": {
     "NAME": "Midnight Eyes",
-    "DESCRIPTION": "Scry !M!.",
-    "UPGRADE_DESCRIPTION": "Scry !M!. NL Gain 1 Artifact."
+    "DESCRIPTION": "Scry !M!. NL Gain 1 Artifact."
   },
   "rubimod:CloakofNight": {
     "NAME": "Cloak of Night",
@@ -57,7 +56,7 @@
   },
   "rubimod:Endure": {
     "NAME": "Endure",
-    "DESCRIPTION": "Gain !B!x2 Block. NL Gain !M! Frail."
+    "DESCRIPTION": "Gain !B! x !M! Block. NL Gain Frail."
   },
   "rubimod:Imbibe": {
     "NAME": "Imbibe",
@@ -87,6 +86,11 @@
     "NAME": "Colorless Skill Book",
     "DESCRIPTION": "Create a random colorless uncommon skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Create a random upgraded colorless uncommon skill in your hand. NL Exhaust."
+  },
+  "rubimod:SkillBookTemplate": {
+    "NAME": " Skill Book",
+    "DESCRIPTION": "Create a random ? common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded ? common skill in your hand. NL Exhaust."
   },
   "rubimod:PathofShadows": {
     "NAME": "Path of Shadows",
@@ -243,7 +247,7 @@
   },
   "rubimod:FeastofBlood": {
     "NAME": "Feast of Blood",
-    "DESCRIPTION": "Apply !M! rubimod:Necrotoxin. NL If the target is rubimod:Bleeding, remove it and gain !rubimod:Regen! Regen."
+    "DESCRIPTION": "Apply !M! rubimod:Leech_Toxin. NL If the target is rubimod:Bleeding, remove it and gain !rubimod:Regen! Regen."
   },
   "rubimod:Hemorrhage": {
     "NAME": "Hemorrhage",
@@ -257,5 +261,18 @@
   "rubimod:Verdict": {
     "NAME": "Verdict",
     "DESCRIPTION": "Deal damage equal to !M!% of target's lost health."
+  },
+  "rubimod:Vector": {
+    "NAME": "Vector",
+    "DESCRIPTION": "Apply !M! rubimod:Leech_Toxin and heal target by 1. NL Draw 1 card."
+  },
+  "rubimod:Disease": {
+    "NAME": "Disease",
+    "DESCRIPTION": "Apply !M! rubimod:Leech_Toxin and heal target."
+  },
+  "rubimod:PlagueBearer": {
+    "NAME": "Plague Bearer",
+    "DESCRIPTION": "After each turn, shuffle a Vector into the draw pile.",
+    "UPGRADE_DESCRIPTION": "After each turn, shuffle 2 Vectors into the draw pile."
   }
 }

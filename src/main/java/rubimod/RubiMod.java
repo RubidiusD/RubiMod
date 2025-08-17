@@ -6,11 +6,14 @@ import basemod.helpers.CardBorderGlowManager;
 import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.MinionPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.cards.attacks.rare.LeechHose;
+import rubimod.cards.skills.common.SkillBookTemplate;
 import rubimod.cards.skills.uncommon.InexorableDoom;
 import rubimod.relics.BaseRelic;
 import rubimod.util.CustomTags;
@@ -256,7 +259,13 @@ public class RubiMod implements
                         UnlockTracker.markCardAsSeen(card.cardID); // marks as discovered if seen before or a starter
                 });
 
-        // Card Glow Hopefully?
+        BaseMod.removeCard(SkillBookTemplate.ID, Hegemon.Meta.CARD_COLOR);
+        for (AbstractCard.CardColor colour : BaseMod.getCardColors()) {
+            if (BaseMod.getCardCount(colour) > 50)
+                BaseMod.addCard(new SkillBookTemplate().setColour(CardLibrary.LibraryType.valueOf(colour.toString())));
+        }
+
+        // Card Glow Conditions
         CardBorderGlowManager.addGlowInfo(new CardBorderGlowManager.GlowInfo() {
             @Override
             public boolean test(AbstractCard card) {
@@ -280,7 +289,7 @@ public class RubiMod implements
                 //return a string to be used as a unique ID for this glow.
                 //It's recommended to follow the usual modding convention of "modname:name"
 
-                return ("rubimod:" + "Glow");
+                return ("rubimod:YellowGlow");
             }
         });
     }

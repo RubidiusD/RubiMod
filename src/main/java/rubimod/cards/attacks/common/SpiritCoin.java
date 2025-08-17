@@ -22,8 +22,8 @@ public class SpiritCoin extends BaseCard {
             2 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int DAMAGE = 11;
-    private static final int UPG_DAMAGE = 1;
+    private static final int DAMAGE = 15;
+    private static final int UPG_DAMAGE = 8;
 
     public SpiritCoin() {
         super(ID, info); // calls the parent constructor

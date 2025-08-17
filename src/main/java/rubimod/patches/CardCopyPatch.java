@@ -17,7 +17,6 @@ public class CardCopyPatch {
         __result.exhaustOnFire = __instance.exhaustOnFire;
         __result.retain = __instance.retain;
 
-
         return __result;
     }
 }

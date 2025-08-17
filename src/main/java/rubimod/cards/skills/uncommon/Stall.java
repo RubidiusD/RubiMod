@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import rubimod.cards.BaseCard;
-import rubimod.cards.Stalling;
+import rubimod.cards.statuses.Stalling;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.StallingPower;
 import rubimod.util.CardStats;
