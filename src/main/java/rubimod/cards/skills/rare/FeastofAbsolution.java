@@ -35,7 +35,8 @@ public class FeastofAbsolution extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DrawCardAction(magicNumber));
-        addToBot(new GainEnergyAction(magicNumber));
+        if (customVar("Heals") == 0)
+            addToBot(new GainEnergyAction(magicNumber));
         addToBot(new AbsolutionAction(m, p, (customVar("Heals") != 0)));
     }
 

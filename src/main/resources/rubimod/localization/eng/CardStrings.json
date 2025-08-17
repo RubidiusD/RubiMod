@@ -120,7 +120,7 @@
   "rubimod:FeastofAbsolution": {
     "NAME": "Absolution",
     "DESCRIPTION": "Draw !M! and gain [E]. NL Cleanse all of the target's debuffs. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Draw !M!. NL Cleanse all of the target's debuffs and heal the half the amount. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Draw !M!. Cleanse all of the target's debuffs and heal the half the amount. NL Exhaust."
   },
   "rubimod:HegemonsMercy": {
     "NAME": "Hegemon's Mercy",

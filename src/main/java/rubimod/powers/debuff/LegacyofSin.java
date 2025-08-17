@@ -36,6 +36,10 @@ public class LegacyofSin extends BasePower {
     }
 
     public float calculate(float damage) {
+        return damage * (1 + ((float) this.amount * 0.1f));
+    }
+
+    public static float calculateExecute(float damage, int amount) {
         return damage * (1 + ((float) amount * 0.1f));
     }
 

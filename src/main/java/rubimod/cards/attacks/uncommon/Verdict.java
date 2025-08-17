@@ -8,8 +8,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
+import rubimod.powers.debuff.LegacyofSin;
 import rubimod.util.CardStats;
-import rubimod.util.CustomTags;
+
+import static rubimod.powers.debuff.LegacyofSin.calculateExecute;
 
 public class Verdict extends BaseCard {
     public static final String ID = ("rubimod:" + Verdict.class.getSimpleName());
@@ -22,27 +24,32 @@ public class Verdict extends BaseCard {
     );
 
     private static final int DAMAGE = 0;
-    private static final int MAGIC = 8;
-    private static final int UPG_MAGIC = 2;
+    private static final int MAGIC = 10;
+    private static final int UPG_MAGIC = 3;
 
     public Verdict() {
         super(ID, info); // calls the parent constructor
 
         setDamage(DAMAGE); // self-explanatory
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
-
-        addTag(CustomTags.EXECUTE);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToTop(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), (damage > 15) ? AbstractGameAction.AttackEffect.LIGHTNING : AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        addToTop(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), (this.damage > 15) ? AbstractGameAction.AttackEffect.LIGHTNING : AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
+        float tmp = 0;
         if (mo != null)
-            this.baseDamage = (int) (0.01f * magicNumber * (mo.maxHealth - mo.currentHealth));
+        {
+            tmp = 0.01f * magicNumber * (mo.maxHealth - mo.currentHealth);
+            if (mo.hasPower(LegacyofSin.POWER_ID))
+                tmp = calculateExecute(tmp, mo.getPower(LegacyofSin.POWER_ID).amount);
+        }
+        this.baseDamage = (int) (tmp + 0.5f);
+
         super.calculateCardDamage(mo);
         this.rawDescription = cardStrings.DESCRIPTION + "(" + this.damage + ")";
         this.initializeDescription();
