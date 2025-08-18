@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
+import rubimod.cards.skills.Vector;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.PlagueBearerPower;
 import rubimod.util.CardStats;
@@ -26,6 +27,7 @@ public class PlagueBearer extends BaseCard {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
+        cardsToPreview = new Vector();
     }
 
     @Override

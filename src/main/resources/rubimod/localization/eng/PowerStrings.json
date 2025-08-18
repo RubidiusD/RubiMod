@@ -137,5 +137,11 @@
     "DESCRIPTIONS": [
       "Takes #b", "% additional execute damage."
     ]
+  },
+  "rubimod:PlagueBearerPower": {
+    "NAME": "Plague Bearer",
+    "DESCRIPTIONS": [
+      "End of turn, create #b", " Vectors in the draw pile. "
+    ]
   }
 }

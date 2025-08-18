@@ -9,6 +9,8 @@ import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
+import java.util.ArrayList;
+
 public class SkillBookTemplate extends BaseCard {
     public static final String ID = ("rubimod:" + SkillBookTemplate.class.getSimpleName());
     public CardLibrary.LibraryType colour = Hegemon.Meta.LIBRARY_COLOR;
@@ -36,11 +38,22 @@ public class SkillBookTemplate extends BaseCard {
         this.colour = colour;
         name = colour.toString() + name;
         rawDescription = rawDescription.substring(0, rawDescription.indexOf("?")) + colour.toString() + rawDescription.substring(rawDescription.indexOf("?") + 1);
+        cardID += colour.toString();
         return this;
     }
 
     @Override
     public AbstractCard makeCopy() { //Optional
         return new SkillBookTemplate().setColour(this.colour);
+    }
+
+    private static final String[] rejectedColors = {"Saber", "Projections", "Extra", "Other_COLOR", "Noble_Phantasm_COLOR"};
+    public static boolean isAccepted(CardColor c) {
+        for (String s : rejectedColors) {
+            if (c.toString().equals(s)) {
+                return false;
+            }
+        }
+        return true;
     }
 }

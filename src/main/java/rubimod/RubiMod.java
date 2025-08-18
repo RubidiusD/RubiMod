@@ -5,8 +5,8 @@ import basemod.BaseMod;
 import basemod.helpers.CardBorderGlowManager;
 import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
+import com.evacipated.cardcrawl.modthespire.lib.SpireSideload;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -43,6 +43,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 @SpireInitializer
+@SpireSideload(modIDs = {"customcafepatchmod"})
 public class RubiMod implements
         EditCardsSubscriber,
         EditRelicsSubscriber,
@@ -261,8 +262,11 @@ public class RubiMod implements
 
         BaseMod.removeCard(SkillBookTemplate.ID, Hegemon.Meta.CARD_COLOR);
         for (AbstractCard.CardColor colour : BaseMod.getCardColors()) {
-            if (BaseMod.getCardCount(colour) > 50)
+            System.out.println("Making card for colour " + colour.toString());
+            if (SkillBookTemplate.isAccepted(colour)) {
                 BaseMod.addCard(new SkillBookTemplate().setColour(CardLibrary.LibraryType.valueOf(colour.toString())));
+                System.out.println(" (accepted)");
+            }
         }
 
         // Card Glow Conditions

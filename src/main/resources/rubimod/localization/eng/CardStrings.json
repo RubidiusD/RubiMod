@@ -264,7 +264,7 @@
   },
   "rubimod:Vector": {
     "NAME": "Vector",
-    "DESCRIPTION": "Apply !M! rubimod:Leech_Toxin and heal target by 1. NL Draw 1 card."
+    "DESCRIPTION": "Apply !M! rubimod:Leech_Toxin and heal target by 1. NL Draw 1 card. NL Exhaust."
   },
   "rubimod:Disease": {
     "NAME": "Disease",

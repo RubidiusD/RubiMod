@@ -48,9 +48,9 @@ public class Hegemon extends CustomPlayer {
         //Library color is basically the same as card color, but you need both because that's how the game was made.
         @SpireEnum
         public static PlayerClass HEGEMON;
-        @SpireEnum(name = "HEGEMON_BLACK") // These two MUST match. Change it to something unique for your character.
+        @SpireEnum(name = "The Hegemon") // These two MUST match. Change it to something unique for your character.
         public static AbstractCard.CardColor CARD_COLOR;
-        @SpireEnum(name = "HEGEMON_BLACK") @SuppressWarnings("unused")
+        @SpireEnum(name = "The Hegemon") @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
 
         //Character select images
