@@ -243,7 +243,7 @@
   },
   "rubimod:Anticipation": {
     "NAME": "Anticipation",
-    "DESCRIPTION": "Lose !rubimod:Tax! temporary HP. NL Next turn, gain [E] [E], draw !M! cards. NL Exhaust."
+    "DESCRIPTION": "Lose !rubimod:Tax! temporary HP. NL Next turn, gain 2 [E], draw !M! cards. NL Exhaust."
   },
   "rubimod:FeastofBlood": {
     "NAME": "Feast of Blood",

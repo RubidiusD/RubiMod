@@ -39,7 +39,6 @@ rubimod\powers\BasePower.class
 rubimod\cards\statuses\Stalling.class
 rubimod\cards\powers\uncommon\AfflictionSpecialisation.class
 rubimod\cards\skills\rare\DoomsHarbinger.class
-rubimod\patches\RegenTotalPatch.class
 rubimod\cards\skills\rare\Anticipation.class
 rubimod\cards\skills\uncommon\Stall.class
 rubimod\cards\attacks\uncommon\StoriedDagger.class
@@ -54,6 +53,7 @@ rubimod\patches\CardCopyPatch.class
 rubimod\powers\debuff\Harbinger.class
 rubimod\cards\attacks\uncommon\HydraFlail.class
 rubimod\cards\powers\rare\DarkGuardian.class
+rubimod\patches\PowerTotalPatches$PoisonTotalPatch.class
 rubimod\cards\powers\uncommon\RelentlessStudy.class
 rubimod\actions\SkillBookAction$SingleUse.class
 rubimod\relics\PropheticScraps.class
@@ -62,6 +62,7 @@ rubimod\actions\AbsolutionAction.class
 rubimod\cards\BaseCard$LocalVarInfo.class
 rubimod\util\KeywordInfo.class
 rubimod\cards\skills\uncommon\Hemorrhage.class
+rubimod\patches\PowerTotalPatches.class
 rubimod\cards\skills\common\SkillBookGreen.class
 rubimod\powers\buff\TacticalMapPower.class
 rubimod\relics\SuspiciousSalve.class
@@ -84,6 +85,7 @@ rubimod\powers\buff\StudiousPower.class
 rubimod\cards\powers\uncommon\Meditation.class
 rubimod\patches\LearnedPatches$LearnedForeignPatch.class
 rubimod\cards\skills\uncommon\Imbibe.class
+rubimod\patches\PowerTotalPatches$RegenTotalPatch.class
 rubimod\powers\debuff\Bleeding.class
 rubimod\cards\attacks\starter\LashOut.class
 rubimod\relics\GordonRelic.class
@@ -101,7 +103,6 @@ rubimod\cards\attacks\rare\Deliverance.class
 rubimod\cards\skills\uncommon\Feint.class
 rubimod\cards\attacks\common\LeechBite.class
 rubimod\patches\ExecuteJudgementPatch.class
-rubimod\patches\PoisonTotalPatch.class
 rubimod\patches\LearnedPatches.class
 rubimod\cards\skills\starter\CloakofNight.class
 rubimod\cards\skills\starter\Defend.class

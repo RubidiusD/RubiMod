@@ -66,6 +66,6 @@ public class Sin extends BasePower {
         if (!owner.isPlayer && AbstractDungeon.player.hasRelic(PaperUmbrella.ID))
             this.description = DESCRIPTIONS[0] + amount * 15 + DESCRIPTIONS[1];
         else
-            this.description = DESCRIPTIONS[0] + amount + "0" + DESCRIPTIONS[1];
+            this.description = DESCRIPTIONS[0] + amount * 10 + DESCRIPTIONS[1];
     }
 }

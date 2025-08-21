@@ -20,7 +20,7 @@ public class Imbibe extends BaseCard {
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int BLOCK = 7;
+    private static final int BLOCK = 8;
     private static final int UPG_BLOCK = 2;
     private static final int MAGIC = 1;
     private static final int UPG_MAGIC = 1;

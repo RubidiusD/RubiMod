@@ -43,7 +43,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 @SpireInitializer
-@SpireSideload(modIDs = {"customcafepatchmod"})
+@SpireSideload(modIDs = {"PatchEverything"})
 public class RubiMod implements
         EditCardsSubscriber,
         EditRelicsSubscriber,
@@ -106,7 +106,8 @@ public class RubiMod implements
                 loadLocalization(getLangString());
             }
             catch (GdxRuntimeException e) {
-                e.printStackTrace();
+                System.out.println(e.getMessage());
+                System.out.println(e.getCause().getMessage());
             }
         }
     }
