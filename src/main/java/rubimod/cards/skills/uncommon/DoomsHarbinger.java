@@ -1,4 +1,4 @@
-package rubimod.cards.skills.rare;
+package rubimod.cards.skills.uncommon;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -8,6 +8,7 @@ import rubimod.actions.ApplyNecrotoxinAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Harbinger;
+import rubimod.powers.debuff.LeechToxin;
 import rubimod.util.CardStats;
 
 public class DoomsHarbinger extends BaseCard {
@@ -15,7 +16,7 @@ public class DoomsHarbinger extends BaseCard {
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
-            CardRarity.RARE,
+            CardRarity.UNCOMMON,
             CardTarget.ENEMY,
             2 // card cost!! (-1 is X, -2 is unplayable)
     );
@@ -33,7 +34,7 @@ public class DoomsHarbinger extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyNecrotoxinAction(m, p, magicNumber));
+        addToBot(new ApplyPowerAction(m, p, new LeechToxin(m, p, magicNumber)));
         addToBot(new ApplyPowerAction(m, p, new Harbinger(m, customVar("Harbinger"))));
     }
 

@@ -12,6 +12,8 @@ import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
+import static com.badlogic.gdx.math.MathUtils.random;
+
 public class Anticipation extends BaseCard {
     public static final String ID = ("rubimod:" + Anticipation.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -22,7 +24,7 @@ public class Anticipation extends BaseCard {
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 2;
+    private static final int MAGIC = 3;
     private static final int UPG_MAGIC = 2;
     private static final int ENERGY = 2;
     private static final int TAX = 10;
@@ -35,7 +37,7 @@ public class Anticipation extends BaseCard {
         setCustomVar("Energy", ENERGY);
         setCustomVar("Tax", TAX);
         setCustomVar("Regen", REGEN);
-        setExhaust(true);
+        setExhaust(true, false);
     }
 
     @Override
@@ -44,6 +46,9 @@ public class Anticipation extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, customVar("Energy"))));
         addToBot(new ApplyPowerAction(p, p, new RegenPower(p, customVar("Regen"))));
         addToBot(new LoseHPAction(p, p, customVar("Tax")));
+        if (magicNumber == 5 && random.nextBoolean()) {
+            this.exhaustOnUseOnce = true;
+        }
     }
 
     @Override

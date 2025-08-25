@@ -27,8 +27,8 @@
   },
   "rubimod:LashOut": {
     "NAME": "Lash Out",
-    "DESCRIPTION": "Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !M! rubimod:Necrotic damage."
+    "DESCRIPTION": "Deal !D! damage. NL Inflict rubimod:Bleeding.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict rubimod:Bleeding and !M! rubimod:Leech_Toxin."
   },
   "rubimod:Ruination": {
     "NAME": "Ruination",
@@ -52,7 +52,7 @@
   },
   "rubimod:Dose": {
     "NAME": "Dose",
-    "DESCRIPTION": "Apply !M! Poison."
+    "DESCRIPTION": "Apply !M! rubimod:Leech_Toxin."
   },
   "rubimod:Endure": {
     "NAME": "Endure",
@@ -221,7 +221,7 @@
   },
   "rubimod:Stalling": {
     "NAME": "Stalling",
-    "DESCRIPTION": "Ethereal. NL Apply 2 regen on hit. NL On exhaust, reduce strength by !rubimod:Strength!."
+    "DESCRIPTION": "Unplayable. NL Ethereal. NL Apply 2 regen on hit."
   },
   "rubimod:TacticalMap": {
     "NAME": "Tactical Map",
@@ -238,12 +238,13 @@
   },
   "rubimod:DoomsHarbinger": {
     "NAME": "Doom's Harbinger",
-    "DESCRIPTION": "Apply 5 rubimod:Necrotoxin. Target's debuffs are transferred on death. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply 5 rubimod:Necrotoxin. Target's debuffs are transferred on death."
+    "DESCRIPTION": "Apply 5 rubimod:Leech_Toxin. Target's debuffs are transferred on death. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply 5 rubimod:Leech_Toxin. Target's debuffs are transferred on death."
   },
   "rubimod:Anticipation": {
     "NAME": "Anticipation",
-    "DESCRIPTION": "Lose !rubimod:Tax! temporary HP. NL Next turn, gain 2 [E], draw !M! cards. NL Exhaust."
+    "DESCRIPTION": "Lose !rubimod:Tax! temporary HP. NL Next turn, gain 2 [E], draw !M! cards. NL Exhaust.",
+    "UPG_DESCRIPTION": "Lose !rubimod:Tax! temporary HP. NL Next turn, gain 2 [E], draw !M! cards. NL Might Exhaust."
   },
   "rubimod:FeastofBlood": {
     "NAME": "Feast of Blood",
@@ -272,7 +273,11 @@
   },
   "rubimod:PlagueBearer": {
     "NAME": "Plague Bearer",
-    "DESCRIPTION": "After each turn, shuffle a Vector into the draw pile.",
-    "UPGRADE_DESCRIPTION": "After each turn, shuffle 2 Vectors into the draw pile."
+    "DESCRIPTION": "After each turn, shuffle a *Vector into the draw pile.",
+    "UPGRADE_DESCRIPTION": "After each turn, shuffle 2 *Vectors into the draw pile."
+  },
+  "rubimod:GentleTouch": {
+    "NAME": "Gentle Touch",
+    "DESCRIPTION": "Gain !M! Strength and heal targets by !M! on hit."
   }
 }

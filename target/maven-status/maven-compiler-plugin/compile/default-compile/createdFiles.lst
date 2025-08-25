@@ -28,6 +28,7 @@ rubimod\relics\MysteriousStranger.class
 rubimod\actions\HarvestAction.class
 rubimod\powers\buff\PlagueBearerPower.class
 rubimod\cards\attacks\uncommon\HeroicPlay.class
+rubimod\cards\skills\uncommon\DoomsHarbinger.class
 rubimod\cards\skills\common\Endure.class
 rubimod\cards\powers\uncommon\TacticalMap.class
 rubimod\cards\skills\common\SkillBookPurple.class
@@ -38,7 +39,6 @@ rubimod\util\TextureLoader$1.class
 rubimod\powers\BasePower.class
 rubimod\cards\statuses\Stalling.class
 rubimod\cards\powers\uncommon\AfflictionSpecialisation.class
-rubimod\cards\skills\rare\DoomsHarbinger.class
 rubimod\cards\skills\rare\Anticipation.class
 rubimod\cards\skills\uncommon\Stall.class
 rubimod\cards\attacks\uncommon\StoriedDagger.class
@@ -49,11 +49,9 @@ rubimod\powers\buff\BlessingsBounty.class
 rubimod\patches\ArtifactPatch.class
 rubimod\patches\LearnedPatches$LearnedDrawPilePatch.class
 rubimod\powers\buff\PhoenixPower.class
-rubimod\patches\CardCopyPatch.class
 rubimod\powers\debuff\Harbinger.class
 rubimod\cards\attacks\uncommon\HydraFlail.class
 rubimod\cards\powers\rare\DarkGuardian.class
-rubimod\patches\PowerTotalPatches$PoisonTotalPatch.class
 rubimod\cards\powers\uncommon\RelentlessStudy.class
 rubimod\actions\SkillBookAction$SingleUse.class
 rubimod\relics\PropheticScraps.class
@@ -62,7 +60,6 @@ rubimod\actions\AbsolutionAction.class
 rubimod\cards\BaseCard$LocalVarInfo.class
 rubimod\util\KeywordInfo.class
 rubimod\cards\skills\uncommon\Hemorrhage.class
-rubimod\patches\PowerTotalPatches.class
 rubimod\cards\skills\common\SkillBookGreen.class
 rubimod\powers\buff\TacticalMapPower.class
 rubimod\relics\SuspiciousSalve.class
@@ -85,7 +82,6 @@ rubimod\powers\buff\StudiousPower.class
 rubimod\cards\powers\uncommon\Meditation.class
 rubimod\patches\LearnedPatches$LearnedForeignPatch.class
 rubimod\cards\skills\uncommon\Imbibe.class
-rubimod\patches\PowerTotalPatches$RegenTotalPatch.class
 rubimod\powers\debuff\Bleeding.class
 rubimod\cards\attacks\starter\LashOut.class
 rubimod\relics\GordonRelic.class
@@ -94,6 +90,7 @@ rubimod\util\CardStats.class
 rubimod\cards\BaseCard$QuickDynamicVariable.class
 rubimod\cards\skills\common\MidnightEyes.class
 rubimod\relics\PaperUmbrella.class
+rubimod\powers\buff\GentlePower.class
 rubimod\patches\LearnedPatches$LearnedDiscoveryPatch.class
 rubimod\powers\debuff\DoomPower.class
 rubimod\cards\attacks\common\SpiritCoin.class
@@ -127,6 +124,7 @@ rubimod\patches\LearnedPatches$LearnedHandPatch.class
 rubimod\cards\attacks\uncommon\ToxicElbow.class
 rubimod\cards\powers\rare\SuitUp.class
 rubimod\actions\FeastAction.class
+rubimod\cards\powers\uncommon\GentleTouch.class
 rubimod\actions\NecrotoxinLoseHPAction.class
 rubimod\subscriptions\ArtifactLostSubscriber.class
 rubimod\cards\attacks\uncommon\Penitent.class

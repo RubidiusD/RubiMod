@@ -12,10 +12,5 @@
       "This": "Contains pairs of Strings, used to get values based on keys.",
       "This is a key": "This is a value."
     }
-  },
-  "rubimod:PowerTotalPatches": {
-    "TEXT": [
-      " For a total of #b"
-    ]
   }
 }

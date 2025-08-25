@@ -143,5 +143,11 @@
     "DESCRIPTIONS": [
       "End of turn, create #b", " Vectors in the draw pile. "
     ]
+  },
+  "rubimod:GentlePower": {
+    "NAME": "Gentle Touch",
+    "DESCRIPTIONS": [
+      "On hit, heal target by #b", ". "
+    ]
   }
 }

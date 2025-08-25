@@ -33,6 +33,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\rare\
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\rare\SuitUp.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\rare\Vaccine.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\uncommon\AfflictionSpecialisation.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\uncommon\GentleTouch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\uncommon\HegemonyCard.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\uncommon\LikeBlood.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\powers\uncommon\Meditation.java
@@ -53,12 +54,12 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\commo
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\common\Suffer.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\Punish.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\Anticipation.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\DoomsHarbinger.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\FeastofAbsolution.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\rare\HegemonsMercy.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\starter\CloakofNight.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\starter\Defend.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\Disease.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\DoomsHarbinger.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\FeastofBlood.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\Feint.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\uncommon\Hemorrhage.java
@@ -72,14 +73,13 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\skills\Vecto
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\cards\statuses\Stalling.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\character\Hegemon.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\ArtifactPatch.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\CardCopyPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\ExecuteJudgementPatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\ExecutePatch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\LearnedPatches.java
-C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\patches\PowerTotalPatches.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\potions\BasePotion.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\BasePower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\BlessingsBounty.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\GentlePower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\HegemonyPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\LearnedPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\rubimod\powers\buff\LikeBloodPower.java

@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.RegenPower;
 import rubimod.powers.debuff.Bleeding;
+import rubimod.powers.debuff.LeechToxin;
 
 public class FeastAction extends AbstractGameAction {
     private int amount = 0;
@@ -26,7 +27,7 @@ public class FeastAction extends AbstractGameAction {
             addToTop(new ApplyPowerAction(source, source, new RegenPower(source, heal)));
             addToTop(new RemoveSpecificPowerAction(target, source, Bleeding.POWER_ID));
         }
-        addToTop(new ApplyNecrotoxinAction(target, source, amount));
+        addToTop(new ApplyPowerAction(target, source, new LeechToxin(target, source, amount)));
 
         this.isDone = true;
     }

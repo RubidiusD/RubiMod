@@ -71,13 +71,7 @@ public class RubiMod implements
 
     @Override
     public void receivePostInitialize() {
-        //This loads the image used as an icon in the in-game mods menu.
         Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
-        //Set up the mod information displayed in the in-game mods menu.
-        //The information used is taken from your pom.xml file.
-
-        //If you want to set up a config panel, that will be done here.
-        //You can find information about this on the BaseMod wiki page "Mod Config and Panel".
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
     }
 
