@@ -23,7 +23,8 @@ import rubimod.util.CustomTags;
     @SpirePatch2(cls= "hermit.cards.DeadOrAlive", method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "Hermit"),
     @SpirePatch2(cls= "hermit.cards.DeadOrAlive", method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "downfall"),
     @SpirePatch2(cls= "slimebound.cards.MassFeed", method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "downfall"),
-    @SpirePatch2(cls= "fakermod.cards.projection.Arrow", method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "FakerMod")
+    @SpirePatch2(cls= "fakermod.cards.projection.Arrow", method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "FakerMod"),
+    @SpirePatch2(cls= "dumbjokedivamod.cards.rare.FameAndFortune", method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "dumbjokedivamod")
 })
 public class ExecutePatch {
     @SpirePostfixPatch

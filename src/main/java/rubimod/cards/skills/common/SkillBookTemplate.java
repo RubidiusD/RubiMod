@@ -9,7 +9,7 @@ import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.util.CardStats;
 
-import java.util.ArrayList;
+import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public class SkillBookTemplate extends BaseCard {
     public static final String ID = ("rubimod:" + SkillBookTemplate.class.getSimpleName());
@@ -36,9 +36,12 @@ public class SkillBookTemplate extends BaseCard {
 
     public AbstractCard setColour(CardLibrary.LibraryType colour) {
         this.colour = colour;
-        name = colour.toString() + name;
-        rawDescription = rawDescription.substring(0, rawDescription.indexOf("?")) + colour.toString() + rawDescription.substring(rawDescription.indexOf("?") + 1);
-        cardID += colour.toString();
+        String colour_name = colour.toString();
+        cardID += colour_name;
+        java.util.Map<String, String> dict = languagePack.getUIString("rubimod:SkillBooks").TEXT_DICT;
+        if (dict.containsKey(colour_name)) {colour_name = dict.get(colour_name);}
+        name = colour_name + name;
+        rawDescription = rawDescription.substring(0, rawDescription.indexOf("?")) + colour_name + rawDescription.substring(rawDescription.indexOf("?") + 1);
         return this;
     }
 

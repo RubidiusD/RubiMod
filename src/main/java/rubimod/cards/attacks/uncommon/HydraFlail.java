@@ -36,7 +36,9 @@ public class HydraFlail extends BaseCard {
             addToBot(new DamageRandomEnemyAction(new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
             addToBot(new DamageRandomEnemyAction(new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         }
-        addToBot(new LoseEnergyAction(energyOnUse));
+        if (!freeToPlayOnce) {
+            addToBot(new LoseEnergyAction(energyOnUse));
+        }
     }
 
     @Override

@@ -47,7 +47,9 @@ public class LeechHose extends BaseCard {
                 addToBot(new ApplyPowerAction(enemy, p, new StrengthPower(enemy, -energyOnUse)));
             }
         }
-        addToBot(new LoseEnergyAction(energyOnUse));
+        if (!freeToPlayOnce) {
+            addToBot(new LoseEnergyAction(energyOnUse));
+        }
     }
 
     @Override
