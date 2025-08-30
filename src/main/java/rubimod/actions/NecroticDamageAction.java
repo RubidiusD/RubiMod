@@ -14,7 +14,7 @@ public class NecroticDamageAction extends AbstractGameAction {
     public NecroticDamageAction(AbstractCreature target, DamageInfo info, AbstractGameAction.AttackEffect effect, boolean shouldApplyBonus)
     {
         this.attackEffect = effect;
-        if (shouldApplyBonus && info.owner != null && info.owner.hasPower(ShadowHand.POWER_ID)) {
+        if (shouldApplyBonus && damageType != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner.hasPower(ShadowHand.POWER_ID)) {
             this.info = new DamageInfo(info.owner, info.base + info.owner.getPower(ShadowHand.POWER_ID).amount, DamageInfo.DamageType.THORNS);
         }
         else {

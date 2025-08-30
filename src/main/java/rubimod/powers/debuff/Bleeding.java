@@ -4,8 +4,7 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
-
-
+import rubimod.powers.buff.SinEaterPower;
 
 public class Bleeding extends BasePower {
     public static final String POWER_ID = ("rubimod:" + Bleeding.class.getSimpleName());
@@ -40,4 +39,5 @@ public class Bleeding extends BasePower {
         this.description = DESCRIPTIONS[0];
     }
 
+    public AbstractPower makeCopy() {return new Bleeding(owner, source);}
 }

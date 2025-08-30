@@ -4,9 +4,10 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.actions.NecroticDamageAction;
 import rubimod.powers.BasePower;
-
+import rubimod.powers.buff.SinEaterPower;
 
 import static rubimod.powers.debuff.Sin.calculateSin;
 
@@ -29,6 +30,13 @@ public class LeechToxin extends BasePower {
     }
 
     @Override
+    public void onInitialApplication() {
+        if (!owner.hasPower(Bleeding.POWER_ID)) {
+            onSpecificTrigger();
+        }
+    }
+
+    @Override
     public void onSpecificTrigger() {
         reducePower(1);
         if (amount == 0)
@@ -43,4 +51,6 @@ public class LeechToxin extends BasePower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + calculateSin(owner, amount) + DESCRIPTIONS[1];
     }
+
+    public AbstractPower makeCopy() {return new LeechToxin(owner, source, amount);}
 }

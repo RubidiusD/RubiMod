@@ -264,8 +264,7 @@ public class RubiMod implements
             public boolean test(AbstractCard card) {
                 //return true if "card" follows this rule, else return false
 
-                return ((card.cardID.equals(LeechHose.ID) && card.magicNumber != 0 && AbstractDungeon.actionManager.cardsPlayedThisTurn.isEmpty()) ||
-                        (card.cardID.equals(InexorableDoom.ID) && AbstractDungeon.player.drawPile.size() >= card.magicNumber) ||
+                return ((card.cardID.equals(InexorableDoom.ID) && AbstractDungeon.player.drawPile.size() >= card.magicNumber) ||
                         (card.tags.contains(CustomTags.EXECUTE) && canExecute(card.damage))
                 );
             }

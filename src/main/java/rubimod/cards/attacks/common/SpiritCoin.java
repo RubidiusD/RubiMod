@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Bleeding;
-import rubimod.util.CardStats;
 
 public class SpiritCoin extends BaseCard {
     public static final String ID = ("rubimod:" + SpiritCoin.class.getSimpleName());

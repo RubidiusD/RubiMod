@@ -4,10 +4,9 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.RegenPower;
 import rubimod.powers.BasePower;
-
-
 
 public class StallingPower extends BasePower {
     public static final String POWER_ID = ("rubimod:" + StallingPower.class.getSimpleName());
@@ -36,4 +35,6 @@ public class StallingPower extends BasePower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
+
+    public AbstractPower makeCopy() {return new StallingPower(owner, amount);}
 }

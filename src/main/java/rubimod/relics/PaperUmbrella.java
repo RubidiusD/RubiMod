@@ -3,8 +3,6 @@ package rubimod.relics;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 
-
-
 public class PaperUmbrella extends BaseRelic {
     private static final String NAME = PaperUmbrella.class.getSimpleName();
     public static final String ID = ("rubimod:" + NAME);

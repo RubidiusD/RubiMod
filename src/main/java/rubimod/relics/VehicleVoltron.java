@@ -7,8 +7,6 @@ import com.megacrit.cardcrawl.powers.RegenPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 
-
-
 public class VehicleVoltron extends BaseRelic {
     private static final String NAME = VehicleVoltron.class.getSimpleName();
     public static final String ID = ("rubimod:" + NAME);

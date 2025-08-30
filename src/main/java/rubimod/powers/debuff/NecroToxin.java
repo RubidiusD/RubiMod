@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import rubimod.actions.NecrotoxinLoseHPAction;
 import rubimod.powers.BasePower;
-
+import rubimod.powers.buff.SinEaterPower;
 
 import static rubimod.powers.debuff.Sin.calculateSin;
 
@@ -68,4 +68,6 @@ public class Necrotoxin extends BasePower implements HealthBarRenderPower {
     public Color getColor() {
         return CardHelper.getColor(50, 25, 75);
     }
+
+    public AbstractPower makeCopy() {return new Necrotoxin(owner, source, amount);}
 }

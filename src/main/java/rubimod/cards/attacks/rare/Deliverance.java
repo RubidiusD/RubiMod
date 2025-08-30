@@ -11,7 +11,6 @@ import rubimod.actions.NecroticDamageAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Sin;
-import rubimod.util.CardStats;
 
 public class Deliverance extends BaseCard {
     public static final String ID = ("rubimod:" + Deliverance.class.getSimpleName());

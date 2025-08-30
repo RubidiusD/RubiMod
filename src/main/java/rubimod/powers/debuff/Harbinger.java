@@ -8,25 +8,27 @@ import rubimod.powers.BasePower;
 
 import java.util.ArrayList;
 
-
-
 public class Harbinger extends BasePower {
     public static final String POWER_ID = ("rubimod:" + Harbinger.class.getSimpleName());
     private static final PowerType TYPE = PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
-    public int transferEnergy;
 
     public Harbinger(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
-        transferEnergy = amount;
+        amount2 = amount;
         updateDescription();
+    }
+    
+    public Harbinger(AbstractCreature owner, int amount, int amount2) {
+        this(owner, amount);
+        this.amount2 = amount2;
     }
 
     @Override
     public void atStartOfTurn()
     {
         this.flashWithoutSound();
-        transferEnergy += this.amount;
+        this.amount2 += this.amount;
         updateDescription();
     }
 
@@ -44,20 +46,20 @@ public class Harbinger extends BasePower {
             }
         }
 
-        while (transferEnergy > 0 && !debuffs.isEmpty()) { // while there are debuffs to transfer, and energy to do so with
+        while (this.amount2 > 0 && !debuffs.isEmpty()) { // while there are debuffs to transfer, and energy to do so with
             AbstractPower debuff = debuffs.remove((int) (Math.random() * debuffs.size())); // remove a random debuff from the list
             if (debuff.canGoNegative)
-                transferEnergy += debuff.amount;
+                this.amount2 += debuff.amount;
             else if (debuff.amount < 0)
-                transferEnergy--;
-            else transferEnergy -= debuff.amount; // reduce the energy appropriately
+                this.amount2--;
+            else this.amount2 -= debuff.amount; // reduce the energy appropriately
 
-            if (transferEnergy < 0) // reduce amount transferred if insufficient energy
-                debuff.amount += (debuff.amount < 0) ? -transferEnergy : transferEnergy;
+            if (this.amount2 < 0) // reduce amount transferred if insufficient energy
+                debuff.amount += (debuff.amount < 0) ? -this.amount2 : this.amount2;
             addToTop(new ApplyPowerToRandomEnemyAction(owner, debuff, debuff.amount, true)); // apply power
         }
-        if (transferEnergy > 0) // if leftover energy, use to transfer self
-            amount += transferEnergy;
+        if (this.amount2 > 0) // if leftover energy, use to transfer self
+            amount += this.amount2;
         while (amount > 0) { // transfer self
             addToTop(new ApplyPowerToRandomEnemyAction(owner, new Harbinger(null, 1), 1, true));
             amount --;
@@ -67,11 +69,13 @@ public class Harbinger extends BasePower {
     @Override
     public void stackPower(int stackAmount) { // on gaining an additional instance
         super.stackPower(stackAmount);
-        this.transferEnergy += stackAmount; // also immediately increase rate of gain
+        this.amount2 += stackAmount; // also immediately increase rate of gain
         this.updateDescription();
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + transferEnergy + DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
+        this.description = DESCRIPTIONS[0] + this.amount2 + DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
     }
+
+    public AbstractPower makeCopy() {return new Harbinger(owner, amount, amount2);}
 }

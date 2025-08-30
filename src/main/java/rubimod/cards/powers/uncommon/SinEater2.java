@@ -6,12 +6,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.powers.buff.MeditationPower;
-import rubimod.powers.buff.SinEaterPower;
-import rubimod.util.CardStats;
+import rubimod.powers.buff.SinEaterPower2;
 
-public class SinEaterCard extends BaseCard {
-    public static final String ID = ("rubimod:" + SinEaterCard.class.getSimpleName());
+public class SinEater2 extends BaseCard {
+    public static final String ID = ("rubimod:" + SinEater2.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,
@@ -20,10 +18,10 @@ public class SinEaterCard extends BaseCard {
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 5;
+    private static final int MAGIC = 4;
     private static final int UPG_MAGIC = 2;
 
-    public SinEaterCard() {
+    public SinEater2() {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
@@ -31,11 +29,11 @@ public class SinEaterCard extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new SinEaterPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new SinEaterPower2(p, magicNumber)));
     }
 
     @Override
     public AbstractCard makeCopy() { // Optional
-        return new SinEaterCard();
+        return new SinEater2();
     }
 }

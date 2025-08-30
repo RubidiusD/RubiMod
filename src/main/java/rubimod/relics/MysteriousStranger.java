@@ -6,8 +6,6 @@ import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 
-
-
 public class MysteriousStranger extends BaseRelic {
     private static final String NAME = MysteriousStranger.class.getSimpleName();
     public static final String ID = ("rubimod:" + NAME);

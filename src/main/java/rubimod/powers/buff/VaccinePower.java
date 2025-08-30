@@ -6,8 +6,6 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import rubimod.powers.BasePower;
 
-
-
 public class VaccinePower extends BasePower {
     public static final String POWER_ID = ("rubimod:" + VaccinePower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
@@ -34,4 +32,6 @@ public class VaccinePower extends BasePower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
+
+    public AbstractPower makeCopy() {return new VaccinePower(owner, amount);}
 }

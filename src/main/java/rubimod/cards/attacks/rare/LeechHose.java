@@ -1,19 +1,17 @@
 package rubimod.cards.attacks.rare;
 
+import com.evacipated.cardcrawl.mod.stslib.actions.common.AllEnemyApplyPowerAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
+import rubimod.actions.XEnergyAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.powers.debuff.Colin;
-import rubimod.util.CardStats;
+import rubimod.powers.debuff.LeechToxin;
 
 public class LeechHose extends BaseCard {
     public static final String ID = ("rubimod:" + LeechHose.class.getSimpleName());
@@ -26,30 +24,24 @@ public class LeechHose extends BaseCard {
     );
 
     private static final int DAMAGE = 5;
-    private static final int MAGIC = 0;
+    private static final int UPG_DAMAGE = 2;
+    private static final int MAGIC = 2;
     private static final int UPG_MAGIC = 1;
 
     public LeechHose() {
         super(ID, info); // calls the parent constructor
 
-        setDamage(DAMAGE); // self-explanatory
+        setDamage(DAMAGE, UPG_DAMAGE); // self-explanatory
         setMagic(MAGIC, UPG_MAGIC);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (int i = 0; i < energyOnUse; i++) {
-            addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        }
-        for (AbstractMonster enemy : AbstractDungeon.getMonsters().monsters) {
-            addToBot(new ApplyPowerAction(enemy, p, new Colin(enemy, p, energyOnUse)));
-            if (magicNumber > 0 && AbstractDungeon.actionManager.cardsPlayedThisTurn.size() == 1) {
-                addToBot(new ApplyPowerAction(enemy, p, new StrengthPower(enemy, -energyOnUse)));
-            }
-        }
-        if (!freeToPlayOnce) {
-            addToBot(new LoseEnergyAction(energyOnUse));
-        }
+        addToBot(new XEnergyAction(energyOnUse, freeToPlayOnce, () -> {
+            addToTop(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+            addToTop(new AllEnemyApplyPowerAction(p, 1, (AbstractMonster mo) -> new LeechToxin(mo, p, magicNumber)));
+            addToTop(new AllEnemyApplyPowerAction(p, 1, (AbstractMonster mo) -> new VulnerablePower(mo, 1, false)));
+        }));
     }
 
     @Override

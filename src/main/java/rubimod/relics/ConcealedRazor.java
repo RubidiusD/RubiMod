@@ -6,8 +6,6 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Bleeding;
 
-
-
 public class ConcealedRazor extends BaseRelic {
     private static final String NAME = ConcealedRazor.class.getSimpleName();
     public static final String ID = ("rubimod:" + NAME);

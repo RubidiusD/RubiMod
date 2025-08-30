@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.actions.ApplyNecrotoxinAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.util.CardStats;
 
 public class ToxicElbow extends BaseCard {
     public static final String ID = ("rubimod:" + ToxicElbow.class.getSimpleName());

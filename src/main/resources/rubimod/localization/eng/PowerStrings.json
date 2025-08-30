@@ -59,6 +59,12 @@
       "Whenever you would lose Artifact, gain #b", " Block."
     ]
   },
+  "rubimod:SinEaterPower2": {
+    "NAME": "Sin Eaterer",
+    "DESCRIPTIONS": [
+      "Whenever you would lose Artifact, gain #b", " temporary HP."
+    ]
+  },
   "rubimod:BlessingsBounty": {
     "NAME": "Blessing's Bounty",
     "DESCRIPTIONS": [
@@ -90,12 +96,6 @@
       "Reapply Bleeding and deal #b", " Necrotic damage."
     ]
   },
-  "rubimod:Colin": {
-    "NAME": "Colin",
-    "DESCRIPTIONS": [
-      "Apply Bleeding and Vulnerable for the next #b", " turns."
-    ]
-  },
   "rubimod:Necrotoxin": {
     "NAME": "Necrotoxin",
     "DESCRIPTIONS": [
@@ -117,7 +117,7 @@
   "rubimod:TacticalMapPower": {
     "NAME": "Tactical Map",
     "DESCRIPTIONS": [
-      "On exhausting a card, draw and then discard #b", " cards."
+      "On exhausting a card, draw and then discard #b1 card."
     ]
   },
   "rubimod:LikeBloodPower": {
@@ -148,6 +148,12 @@
     "NAME": "Gentle Touch",
     "DESCRIPTIONS": [
       "On hit, heal target by #b", ". "
+    ]
+  },
+  "rubimod:Recovery": {
+    "NAME": "Recovery",
+    "DESCRIPTIONS": [
+      "Start of turn, heal by #b", ". "
     ]
   }
 }

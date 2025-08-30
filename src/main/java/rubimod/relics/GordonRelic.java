@@ -10,8 +10,6 @@ import rubimod.powers.debuff.Sin;
 
 import java.util.ArrayList;
 
-
-
 public class GordonRelic extends BaseRelic {
     private static final String NAME = GordonRelic.class.getSimpleName();
     public static final String ID = ("rubimod:" + NAME);

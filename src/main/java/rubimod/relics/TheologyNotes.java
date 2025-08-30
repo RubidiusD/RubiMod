@@ -7,8 +7,6 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Sin;
 
-
-
 public class TheologyNotes extends BaseRelic {
     private static final String NAME = TheologyNotes.class.getSimpleName();
     public static final String ID = ("rubimod:" + NAME);

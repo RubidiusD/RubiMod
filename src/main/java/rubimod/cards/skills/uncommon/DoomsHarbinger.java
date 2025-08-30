@@ -9,7 +9,6 @@ import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Harbinger;
 import rubimod.powers.debuff.LeechToxin;
-import rubimod.util.CardStats;
 
 public class DoomsHarbinger extends BaseCard {
     public static final String ID = ("rubimod:" + DoomsHarbinger.class.getSimpleName());

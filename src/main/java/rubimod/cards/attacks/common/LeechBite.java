@@ -11,7 +11,6 @@ import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Bleeding;
 import rubimod.powers.debuff.LeechToxin;
-import rubimod.util.CardStats;
 
 public class LeechBite extends BaseCard {
     public static final String ID = ("rubimod:" + LeechBite.class.getSimpleName());

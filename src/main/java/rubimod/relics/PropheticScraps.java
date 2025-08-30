@@ -8,8 +8,6 @@ import rubimod.character.Hegemon;
 import rubimod.powers.debuff.DoomPower;
 import rubimod.powers.debuff.Sin;
 
-
-
 public class PropheticScraps extends BaseRelic {
     private static final String NAME = PropheticScraps.class.getSimpleName();
     public static final String ID = ("rubimod:" + NAME);

@@ -4,8 +4,7 @@ import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
-
-
+import rubimod.powers.buff.SinEaterPower;
 
 public class DoomPower extends BasePower {
     public static final String POWER_ID = ("rubimod:" + DoomPower.class.getSimpleName());
@@ -16,6 +15,11 @@ public class DoomPower extends BasePower {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
         this.amount2 = amount;
         updateDescription();
+    }
+
+    public DoomPower(AbstractCreature owner, int amount, int amount2) {
+        this(owner, amount);
+        this.amount2 = amount2;
     }
 
     @Override
@@ -71,4 +75,6 @@ public class DoomPower extends BasePower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + this.amount2 + DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
     }
+
+    public AbstractPower makeCopy() {return new DoomPower(owner, amount, amount2);}
 }

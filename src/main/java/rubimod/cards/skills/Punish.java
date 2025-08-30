@@ -11,7 +11,6 @@ import rubimod.actions.NecroticDamageAction;
 import rubimod.cards.BaseCard;
 import rubimod.powers.debuff.Sin;
 import rubimod.relics.ComicPage;
-import rubimod.util.CardStats;
 
 public class Punish extends BaseCard {
     public static final String ID = ("rubimod:" + Punish.class.getSimpleName());

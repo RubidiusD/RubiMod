@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import rubimod.cards.BaseCard;
 import rubimod.powers.buff.StallingPower;
-import rubimod.util.CardStats;
 
 public class Stalling extends BaseCard {
     public static final String ID = ("rubimod:" + Stalling.class.getSimpleName());
@@ -48,6 +47,4 @@ public class Stalling extends BaseCard {
     public void triggerOnExhaust() {
         use(AbstractDungeon.player, null);
     }
-
-
 }

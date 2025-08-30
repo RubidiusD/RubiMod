@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.ShadowHand;
-import rubimod.util.CardStats;
 
 public class SuitUp extends BaseCard {
     public static final String ID = ("rubimod:" + SuitUp.class.getSimpleName());

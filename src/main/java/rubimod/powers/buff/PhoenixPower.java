@@ -5,8 +5,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
 
-
-
 public class PhoenixPower extends BasePower {
     public static final String POWER_ID = ("rubimod:" + PhoenixPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
@@ -16,6 +14,11 @@ public class PhoenixPower extends BasePower {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
         this.amount2 = amount;
         updateDescription();
+    }
+
+    public PhoenixPower(AbstractCreature owner, int amount, int amount2) {
+        this(owner, amount);
+        this.amount2 = amount2;
     }
 
     @Override
@@ -70,4 +73,6 @@ public class PhoenixPower extends BasePower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + this.amount2 + DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
     }
+
+    public AbstractPower makeCopy() {return new PhoenixPower(owner, amount, amount2);}
 }

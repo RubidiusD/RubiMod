@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.powers.debuff.LeechToxin;
-import rubimod.util.CardStats;
 
 public class Vector extends BaseCard {
     public static final String ID = ("rubimod:" + Vector.class.getSimpleName());
@@ -20,7 +19,7 @@ public class Vector extends BaseCard {
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 1;
+    private static final int MAGIC = 2;
     private static final int UPG_MAGIC = 1;
 
     public Vector() {

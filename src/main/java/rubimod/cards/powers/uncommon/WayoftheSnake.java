@@ -8,7 +8,6 @@ import rubimod.cards.BaseCard;
 import rubimod.cards.skills.Punish;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.SnakePower;
-import rubimod.util.CardStats;
 
 public class WayoftheSnake extends BaseCard {
     public static final String ID = ("rubimod:" + WayoftheSnake.class.getSimpleName());

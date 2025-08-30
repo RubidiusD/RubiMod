@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.actions.SkillBookAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.util.CardStats;
 
 public class SkillBookGreen extends BaseCard {
     public static final String ID = ("rubimod:" + SkillBookGreen.class.getSimpleName());
@@ -28,7 +27,7 @@ public class SkillBookGreen extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SkillBookAction(CardRarity.COMMON, CardLibrary.LibraryType.GREEN, (magicNumber == 1)));
+        addToBot(new SkillBookAction(CardRarity.COMMON, CardLibrary.LibraryType.GREEN, (magicNumber == 1), false));
     }
 
     @Override

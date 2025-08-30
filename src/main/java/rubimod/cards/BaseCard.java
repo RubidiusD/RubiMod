@@ -4,7 +4,6 @@ import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
 import basemod.abstracts.DynamicVariable;
 import rubimod.RubiMod;
-import rubimod.util.CardStats;
 import rubimod.util.TriFunction;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -21,8 +20,24 @@ import java.util.Map;
 import static rubimod.util.GeneralUtils.removePrefix;
 import static rubimod.util.TextureLoader.getCardTextureString;
 
-
 public abstract class BaseCard extends CustomCard {
+    public static class CardStats {
+        public final int baseCost;
+        public final AbstractCard.CardType cardType;
+        public final AbstractCard.CardTarget cardTarget;
+        public final AbstractCard.CardRarity cardRarity;
+        public final AbstractCard.CardColor cardColor;
+
+        public CardStats(AbstractCard.CardColor cardColor, AbstractCard.CardType cardType, AbstractCard.CardRarity cardRarity, AbstractCard.CardTarget cardTarget, int baseCost)
+        {
+            this.baseCost = baseCost;
+            this.cardType = cardType;
+            this.cardTarget = cardTarget;
+            this.cardRarity = cardRarity;
+            this.cardColor = cardColor;
+        }
+    }
+
     final private static Map<String, DynamicVariable> customVars = new HashMap<>();
 
     protected CardStrings cardStrings;

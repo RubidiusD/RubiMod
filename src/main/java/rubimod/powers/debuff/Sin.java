@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
+import rubimod.powers.buff.SinEaterPower;
 import rubimod.relics.PaperUmbrella;
 
 public class Sin extends BasePower {
@@ -68,4 +69,6 @@ public class Sin extends BasePower {
         else
             this.description = DESCRIPTIONS[0] + amount * 10 + DESCRIPTIONS[1];
     }
+
+    public AbstractPower makeCopy() {return new Sin(owner, amount);}
 }

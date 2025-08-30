@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.actions.NecroticDamageAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.util.CardStats;
 
 public class Ruination extends BaseCard {
     public static final String ID = ("rubimod:" + Ruination.class.getSimpleName());

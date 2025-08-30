@@ -2,10 +2,9 @@ package rubimod.powers.buff;
 
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.cards.skills.Punish;
 import rubimod.powers.BasePower;
-
-
 
 public class SnakePower extends BasePower {
     public static final String POWER_ID = ("rubimod:" + SnakePower.class.getSimpleName());
@@ -31,4 +30,6 @@ public class SnakePower extends BasePower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
+
+    public AbstractPower makeCopy() {return new SnakePower(owner, amount);}
 }

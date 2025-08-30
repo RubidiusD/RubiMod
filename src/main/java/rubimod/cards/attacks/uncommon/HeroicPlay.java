@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.util.CardStats;
 
 public class HeroicPlay extends BaseCard {
     public static final String ID = ("rubimod:" + HeroicPlay.class.getSimpleName());

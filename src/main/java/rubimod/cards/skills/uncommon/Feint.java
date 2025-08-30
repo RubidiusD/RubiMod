@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Sin;
-import rubimod.util.CardStats;
 
 public class Feint extends BaseCard {
     public static final String ID = ("rubimod:" + Feint.class.getSimpleName());

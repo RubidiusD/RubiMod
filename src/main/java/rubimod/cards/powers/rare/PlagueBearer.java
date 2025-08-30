@@ -8,7 +8,6 @@ import rubimod.cards.BaseCard;
 import rubimod.cards.skills.Vector;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.PlagueBearerPower;
-import rubimod.util.CardStats;
 
 public class PlagueBearer extends BaseCard {
     public static final String ID = ("rubimod:" + PlagueBearer.class.getSimpleName());

@@ -10,7 +10,6 @@ import rubimod.cards.BaseCard;
 import rubimod.cards.statuses.Stalling;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.StallingPower;
-import rubimod.util.CardStats;
 
 public class Stall extends BaseCard {
     public static final String ID = ("rubimod:" + Stall.class.getSimpleName());

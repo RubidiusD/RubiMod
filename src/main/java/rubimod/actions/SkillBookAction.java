@@ -12,14 +12,9 @@ public class SkillBookAction extends AbstractGameAction {
     private final boolean upgraded;
     private final CardLibrary.LibraryType color;
     private final AbstractCard.CardRarity rarity;
-    private final SingleUse single_use;
+    private final boolean single_use;
 
-    public enum SingleUse {
-        TRUE,
-        FALSE
-    }
-
-    public SkillBookAction(AbstractCard.CardRarity rarity, CardLibrary.LibraryType color_, boolean upgraded, SingleUse single_use) {
+    public SkillBookAction(AbstractCard.CardRarity rarity, CardLibrary.LibraryType color_, boolean upgraded, boolean single_use) {
         this.actionType = ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FAST;
         this.upgraded = upgraded;
@@ -29,15 +24,7 @@ public class SkillBookAction extends AbstractGameAction {
     }
 
     public SkillBookAction(AbstractCard.CardRarity rarity, CardLibrary.LibraryType color_) {
-        this(rarity, color_, false, SingleUse.FALSE);
-    }
-
-    public SkillBookAction(AbstractCard.CardRarity rarity, CardLibrary.LibraryType color_, boolean upgraded) {
-        this(rarity, color_,  upgraded, SingleUse.FALSE);
-    }
-
-    public SkillBookAction(AbstractCard.CardRarity rarity, CardLibrary.LibraryType color_, SingleUse single_use) {
-        this(rarity, color_, false, single_use);
+        this(rarity, color_, false, false);
     }
 
     public void update() {
@@ -51,7 +38,7 @@ public class SkillBookAction extends AbstractGameAction {
         AbstractCard tmp = cardList.get(choice);
         if (this.upgraded)
             tmp.upgrade();
-        if (this.single_use.equals(SingleUse.TRUE))
+        if (this.single_use)
         {
             tmp.exhaustOnUseOnce = true;
             tmp.exhaust = true;

@@ -161,9 +161,13 @@
     "DESCRIPTION": "Ethereal. NL Whenever you would lose Artifact, gain !M! Regen.",
     "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever you would lose Artifact, gain !M! Regen."
   },
-  "rubimod:SinEaterCard": {
+  "rubimod:SinEater": {
     "NAME": "Sin Eater",
     "DESCRIPTION": "Whenever you would lose Artifact, gain !M! Block."
+  },
+  "rubimod:SinEater2": {
+    "NAME": "Sin Eaterer",
+    "DESCRIPTION": "Whenever you would lose Artifact, gain !M! temporary HP."
   },
   "rubimod:LessonLearned": {
     "NAME": "Lesson Learned",
@@ -185,8 +189,8 @@
   },
   "rubimod:LeechHose": {
     "NAME": "Leech Hose",
-    "DESCRIPTION": "Deal !D!X damage to ALL enemies and apply rubimod:Bleed and Vulnerable for X turns. ",
-    "UPGRADE_DESCRIPTION": "Deal !D!X damage to ALL enemies and apply rubimod:Bleed and Vulnerable for X turns. NL If this is the first card you play, reduce their strength by X. "
+    "DESCRIPTION": "Deal !D!X damage to ALL enemies and apply X Vulnerable and 2X rubimod:Leech_Toxin.",
+    "UPGRADE_DESCRIPTION": "Deal !D!X damage to ALL enemies and apply X Vulnerable and 3X rubimod:Leech_Toxin."
   },
   "rubimod:Sacrifice": {
     "NAME": "Ritual Sacrifice",
@@ -252,8 +256,7 @@
   },
   "rubimod:Hemorrhage": {
     "NAME": "Hemorrhage",
-    "DESCRIPTION": "Apply rubimod:Bleeding. Draw 1 card.",
-    "UPGRADE_DESCRIPTION": "Apply rubimod:Bleeding and rubimod:Leech_Toxin. Draw 1 card."
+    "DESCRIPTION": "Apply rubimod:Bleeding and !M! rubimod:Leech_Toxin. Draw 1 card."
   },
   "rubimod:BloodHarvest": {
     "NAME": "Blood Harvest",
@@ -279,5 +282,17 @@
   "rubimod:GentleTouch": {
     "NAME": "Gentle Touch",
     "DESCRIPTION": "Gain !M! Strength and heal targets by !M! on hit."
+  },
+  "rubimod:Massage": {
+    "NAME": "Massage",
+    "DESCRIPTION": "Deal !D! damage and heal target by !M!. Increase heal by !rubimod:Stack! this combat."
+  },
+  "rubimod:Recovery": {
+    "NAME": "Recovery",
+    "DESCRIPTION": "Gain !rubimod:Artifact! Artifact. Target monster heals by 3 each turn."
+  },
+  "rubimod:Hamartia": {
+    "NAME": "Hamartia",
+    "DESCRIPTION": "Apply !M! rubimod:Sin."
   }
 }

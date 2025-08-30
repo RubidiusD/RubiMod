@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.actions.HarvestAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.util.CardStats;
 import rubimod.util.CustomTags;
 
 public class BloodHarvest extends BaseCard {
@@ -19,7 +18,7 @@ public class BloodHarvest extends BaseCard {
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int DAMAGE = 5;
+    private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 1;
 
     public BloodHarvest() {

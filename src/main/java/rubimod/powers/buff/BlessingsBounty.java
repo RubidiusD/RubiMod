@@ -2,9 +2,10 @@ package rubimod.powers.buff;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.RegenPower;
 import rubimod.powers.BasePower;
-import rubimod.subscriptions.ArtifactLostSubscriber;
+import rubimod.patches.ArtifactPatch.ArtifactLostSubscriber;
 
 public class BlessingsBounty extends BasePower implements ArtifactLostSubscriber {
     public static final String POWER_ID = ("rubimod:" + BlessingsBounty.class.getSimpleName());
@@ -32,4 +33,6 @@ public class BlessingsBounty extends BasePower implements ArtifactLostSubscriber
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
+
+    public AbstractPower makeCopy() {return new BlessingsBounty(owner, amount);}
 }

@@ -8,7 +8,6 @@ import rubimod.actions.ApplyNecrotoxinAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Sin;
-import rubimod.util.CardStats;
 
 public class Suffer extends BaseCard {
     public static final String ID = ("rubimod:" + Suffer.class.getSimpleName());

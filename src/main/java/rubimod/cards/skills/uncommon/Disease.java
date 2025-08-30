@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.actions.DiseaseAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.util.CardStats;
 
 public class Disease extends BaseCard {
     public static final String ID = ("rubimod:" + Disease.class.getSimpleName());

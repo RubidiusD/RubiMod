@@ -3,8 +3,6 @@ package rubimod.relics;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.character.Hegemon;
 
-
-
 public class ComicPage extends BaseRelic {
     private static final String NAME = ComicPage.class.getSimpleName();
     public static final String ID = ("rubimod:" + NAME);

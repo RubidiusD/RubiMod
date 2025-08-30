@@ -2,9 +2,9 @@ package rubimod.powers.buff;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.actions.SkillBookAction;
 import rubimod.powers.BasePower;
-
 
 import static rubimod.character.Hegemon.Meta.LIBRARY_COLOR;
 
@@ -27,7 +27,7 @@ public class StudiousPower extends BasePower {
     public void atStartOfTurn() {
         super.atStartOfTurn();
 
-        addToBot(new SkillBookAction(AbstractCard.CardRarity.UNCOMMON, LIBRARY_COLOR, SkillBookAction.SingleUse.TRUE));
+        addToBot(new SkillBookAction(AbstractCard.CardRarity.UNCOMMON, LIBRARY_COLOR, false, true));
         this.flashWithoutSound();
     }
 
@@ -37,4 +37,6 @@ public class StudiousPower extends BasePower {
         else
             this.description = DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
     }
+
+    public AbstractPower makeCopy() {return new StudiousPower(owner, amount);}
 }

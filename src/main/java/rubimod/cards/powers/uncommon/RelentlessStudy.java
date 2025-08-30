@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.StudiousPower;
-import rubimod.util.CardStats;
 
 public class RelentlessStudy extends BaseCard {
     public static final String ID = ("rubimod:" + RelentlessStudy.class.getSimpleName());

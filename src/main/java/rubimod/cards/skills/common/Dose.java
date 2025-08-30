@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.powers.PoisonPower;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.LeechToxin;
-import rubimod.util.CardStats;
 
 public class Dose extends BaseCard {
     public static final String ID = ("rubimod:" + Dose.class.getSimpleName());

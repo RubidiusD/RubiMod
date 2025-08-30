@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.powers.BlurPower;
 import com.megacrit.cardcrawl.powers.NoBlockPower;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.util.CardStats;
 
 public class PathofShadows extends BaseCard {
     public static final String ID = ("rubimod:" + PathofShadows.class.getSimpleName());

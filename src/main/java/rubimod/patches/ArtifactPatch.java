@@ -2,12 +2,12 @@ package rubimod.patches;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch2;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import rubimod.subscriptions.ArtifactLostSubscriber;
 
 @SpirePatch2(
         clz= ArtifactPower.class,
@@ -16,6 +16,10 @@ import rubimod.subscriptions.ArtifactLostSubscriber;
 )
 public class ArtifactPatch
 {
+    public interface ArtifactLostSubscriber {
+        void receiveArtifactLost(AbstractCreature owner);
+    }
+
     @SpirePrefixPatch
     public static void Prefix(ArtifactPower __instance)
     {

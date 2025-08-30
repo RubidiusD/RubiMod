@@ -2,6 +2,7 @@ package rubimod.powers.buff;
 
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.actions.NecroticDamageAction;
 import rubimod.powers.BasePower;
 
@@ -29,4 +30,6 @@ public class ShadowHand extends BasePower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
+
+    public AbstractPower makeCopy() {return new ShadowHand(owner, amount);}
 }

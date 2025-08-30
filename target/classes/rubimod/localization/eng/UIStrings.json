@@ -25,7 +25,9 @@
       "HERMIT_YELLOW": "Hermit",
       "SLIMEBOUND": "Slime",
       "SNECKO_CYAN": "Snecko",
-      "HEXA_GHOST_PURPLE": "Hexaghost"
+      "HEXA_GHOST_PURPLE": "Hexaghost",
+      "RUNNERPURPLE":  "Runner",
+      "UNCHAINED_ORANGE_COLOR": "Unchained"
     }
   }
 }

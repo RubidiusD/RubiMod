@@ -3,10 +3,9 @@ package rubimod.powers.buff;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
 import rubimod.powers.debuff.Sin;
-
-
 
 public class HegemonyPower extends BasePower {
     public static final String POWER_ID = ("rubimod:" + HegemonyPower.class.getSimpleName());
@@ -35,4 +34,6 @@ public class HegemonyPower extends BasePower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
+
+    public AbstractPower makeCopy() {return new HegemonyPower(owner, amount);}
 }

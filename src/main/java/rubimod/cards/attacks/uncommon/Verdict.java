@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.LegacyofSin;
-import rubimod.util.CardStats;
 
 import static rubimod.powers.debuff.LegacyofSin.calculateExecute;
 
@@ -24,7 +23,7 @@ public class Verdict extends BaseCard {
     );
 
     private static final int DAMAGE = 0;
-    private static final int MAGIC = 10;
+    private static final int MAGIC = 12;
     private static final int UPG_MAGIC = 3;
 
     public Verdict() {

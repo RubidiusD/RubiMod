@@ -9,7 +9,6 @@ import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Bleeding;
 import rubimod.powers.debuff.LeechToxin;
-import rubimod.util.CardStats;
 
 public class Hemorrhage extends BaseCard {
     public static final String ID = ("rubimod:" + Hemorrhage.class.getSimpleName());
@@ -21,8 +20,8 @@ public class Hemorrhage extends BaseCard {
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 0;
-    private static final int UPG_MAGIC = 1;
+    private static final int MAGIC = 1;
+    private static final int UPG_MAGIC = 2;
 
     public Hemorrhage() {
         super(ID, info); // calls the parent constructor

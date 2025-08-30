@@ -2,10 +2,9 @@ package rubimod.powers.buff;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import rubimod.powers.BasePower;
-
-
 
 public class LikeBloodPower extends BasePower {
     public static final String POWER_ID = ("rubimod:" + LikeBloodPower.class.getSimpleName());
@@ -34,4 +33,6 @@ public class LikeBloodPower extends BasePower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
+
+    public AbstractPower makeCopy() {return new LikeBloodPower(owner, amount);}
 }

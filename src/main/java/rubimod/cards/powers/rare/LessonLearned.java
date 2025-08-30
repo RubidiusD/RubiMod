@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.LearnedPower;
-import rubimod.util.CardStats;
 
 public class LessonLearned extends BaseCard {
     public static final String ID = ("rubimod:" + LessonLearned.class.getSimpleName());

@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.cards.skills.Punish;
 import rubimod.character.Hegemon;
-import rubimod.util.CardStats;
 
 public class FalseOpening extends BaseCard {
     public static final String ID = ("rubimod:" + FalseOpening.class.getSimpleName());

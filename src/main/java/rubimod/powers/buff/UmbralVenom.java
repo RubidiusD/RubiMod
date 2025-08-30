@@ -1,12 +1,13 @@
 package rubimod.powers.buff;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.actions.ApplyNecrotoxinAction;
 import rubimod.powers.BasePower;
-
-
+import rubimod.powers.debuff.LeechToxin;
 
 public class UmbralVenom extends BasePower {
     public static final String POWER_ID = ("rubimod:" + UmbralVenom.class.getSimpleName());
@@ -27,7 +28,7 @@ public class UmbralVenom extends BasePower {
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (info.type != DamageInfo.DamageType.HP_LOSS)
         {
-            addToTop(new ApplyNecrotoxinAction(target, owner, amount));
+            addToTop(new ApplyPowerAction(target, owner, new LeechToxin(target, owner, amount)));
             flashWithoutSound();
         }
     }
@@ -41,4 +42,6 @@ public class UmbralVenom extends BasePower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
+
+    public AbstractPower makeCopy() {return new UmbralVenom(owner, amount);}
 }

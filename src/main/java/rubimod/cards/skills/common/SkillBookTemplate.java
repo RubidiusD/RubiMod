@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.actions.SkillBookAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.util.CardStats;
 
 import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
@@ -31,7 +30,7 @@ public class SkillBookTemplate extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SkillBookAction(CardRarity.COMMON, colour, (magicNumber == 1)));
+        addToBot(new SkillBookAction(CardRarity.COMMON, colour, (magicNumber == 1), false));
     }
 
     public AbstractCard setColour(CardLibrary.LibraryType colour) {

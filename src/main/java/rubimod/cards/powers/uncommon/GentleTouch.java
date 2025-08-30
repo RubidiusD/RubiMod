@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.GentlePower;
-import rubimod.util.CardStats;
 
 public class GentleTouch extends BaseCard {
     public static final String ID = ("rubimod:" + GentleTouch.class.getSimpleName());

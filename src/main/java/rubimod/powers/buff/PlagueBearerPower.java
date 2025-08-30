@@ -2,9 +2,9 @@ package rubimod.powers.buff;
 
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.cards.skills.Vector;
 import rubimod.powers.BasePower;
-
 
 public class PlagueBearerPower extends BasePower {
     public static final String POWER_ID = ("rubimod:" + PlagueBearerPower.class.getSimpleName());
@@ -30,4 +30,6 @@ public class PlagueBearerPower extends BasePower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
+
+    public AbstractPower makeCopy() {return new PlagueBearerPower(owner, amount);}
 }

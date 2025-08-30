@@ -7,9 +7,7 @@ import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import rubimod.RubiMod;
 import rubimod.character.Hegemon;
-import rubimod.subscriptions.ArtifactLostSubscriber;
-
-
+import rubimod.patches.ArtifactPatch.ArtifactLostSubscriber;
 
 public class SuspiciousSalve extends BaseRelic implements ArtifactLostSubscriber {
     private static final String NAME = SuspiciousSalve.class.getSimpleName();

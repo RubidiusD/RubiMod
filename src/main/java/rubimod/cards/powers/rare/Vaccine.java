@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.VaccinePower;
-import rubimod.util.CardStats;
 
 public class Vaccine extends BaseCard {
     public static final String ID = ("rubimod:" + Vaccine.class.getSimpleName());
@@ -16,7 +15,7 @@ public class Vaccine extends BaseCard {
             CardType.POWER,
             CardRarity.RARE,
             CardTarget.SELF,
-            3 // card cost!! (-1 is X, -2 is unplayable)
+            2 // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int MAGIC = 1;
@@ -25,7 +24,7 @@ public class Vaccine extends BaseCard {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC); // self-explanatory
-        setCostUpgrade(2);
+        setInnate(false, true);
     }
 
     @Override

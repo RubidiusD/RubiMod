@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.TacticalMapPower;
-import rubimod.util.CardStats;
 
 public class TacticalMap extends BaseCard {
     public static final String ID = ("rubimod:" + TacticalMap.class.getSimpleName());
@@ -30,7 +29,7 @@ public class TacticalMap extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new TacticalMapPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new TacticalMapPower(p)));
     }
 
     @Override

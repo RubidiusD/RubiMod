@@ -2,8 +2,9 @@ package rubimod.powers.buff;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
-import rubimod.subscriptions.ArtifactLostSubscriber;
+import rubimod.patches.ArtifactPatch.ArtifactLostSubscriber;
 
 public class SinEaterPower extends BasePower implements ArtifactLostSubscriber {
     public static final String POWER_ID = ("rubimod:" + SinEaterPower.class.getSimpleName());
@@ -24,9 +25,11 @@ public class SinEaterPower extends BasePower implements ArtifactLostSubscriber {
     public void receiveArtifactLost(AbstractCreature owner) {
         if (owner.equals(this.owner)) {
             this.flashWithoutSound();
-            addToTop(new GainBlockAction(owner, owner, this.amount));
+            addToTop(new GainBlockAction(owner, this.amount));
         }
     }
 
     public void updateDescription() { this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1]; }
+
+    public AbstractPower makeCopy() {return new SinEaterPower(owner, amount);}
 }

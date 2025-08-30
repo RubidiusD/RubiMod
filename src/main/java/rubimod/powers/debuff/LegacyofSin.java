@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import rubimod.powers.BasePower;
 import rubimod.util.CustomTags;
 
@@ -46,4 +47,6 @@ public class LegacyofSin extends BasePower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + amount * 10 + DESCRIPTIONS[1];
     }
+
+    public AbstractPower makeCopy() {return new LegacyofSin(owner, amount);}
 }

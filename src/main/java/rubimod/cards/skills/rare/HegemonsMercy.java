@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.actions.MercyAction;
 import rubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import rubimod.util.CardStats;
 
 public class HegemonsMercy extends BaseCard {
     public static final String ID = ("rubimod:" + HegemonsMercy.class.getSimpleName());
