@@ -38,7 +38,7 @@ public class LashOut extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new ApplyPowerAction(m, p, new Bleeding(m, p)));
+        addToBot(new ApplyPowerAction(m, p, new Bleeding(m)));
         if (magicNumber > 0) {
             addToBot(new ApplyPowerAction(m, p, new LeechToxin(m, p, magicNumber)));
         }

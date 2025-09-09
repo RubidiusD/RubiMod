@@ -40,7 +40,7 @@ public class Sacrifice extends BaseCard {
 
         if (!p.hasPower(Bleeding.POWER_ID))
         {
-            p.powers.add(new Bleeding(p, p));
+            p.powers.add(new Bleeding(p));
             p.powers.add(new LeechToxin(p, p, customVar("Leech")));
         }
         else if (p.hasPower(LeechToxin.POWER_ID))

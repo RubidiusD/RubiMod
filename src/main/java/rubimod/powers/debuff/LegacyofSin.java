@@ -29,7 +29,7 @@ public class LegacyofSin extends BasePower {
     }
 
     @Override
-    public float atDamageReceive(float damage, DamageInfo.DamageType type, AbstractCard card)
+    public float atDamageFinalReceive(float damage, DamageInfo.DamageType type, AbstractCard card)
     {
         if (card.tags.contains(CustomTags.EXECUTE))
             return calculate(damage);
