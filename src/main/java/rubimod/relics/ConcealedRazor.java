@@ -18,7 +18,7 @@ public class ConcealedRazor extends BaseRelic {
 
     @Override
     public void atBattleStartPreDraw() {
-        addToTop(new ApplyPowerAction(AbstractDungeon.player,  AbstractDungeon.player, new Bleeding(AbstractDungeon.player, AbstractDungeon.player)));
+        addToTop(new ApplyPowerAction(AbstractDungeon.player,  AbstractDungeon.player, new Bleeding(AbstractDungeon.player)));
     }
 
     public void onEquip() {

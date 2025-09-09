@@ -31,7 +31,7 @@ public class Hemorrhage extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new Bleeding(m, p)));
+        addToBot(new ApplyPowerAction(m, p, new Bleeding(m)));
         addToBot(new DrawCardAction(1));
         if (magicNumber > 0) {
             addToBot(new ApplyPowerAction(m, p, new LeechToxin(m, p, magicNumber)));
