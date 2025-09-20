@@ -1,0 +1,153 @@
+{
+  "HegemonMod:PowerID": {
+    "NAME": "Ultimate Power",
+    "DESCRIPTIONS": [
+      "You are Very Cool and Strong."
+    ]
+  },
+
+  "HegemonMod:GentlePower": {
+    "NAME": "Gentle Touch",
+    "DESCRIPTIONS": [
+      "On hit, heal target by #g", ". "
+    ]
+  },
+  "HegemonMod:LikeBloodPower": {
+    "NAME": "Like Blood",
+    "DESCRIPTIONS": [
+      "At the end of your turn, if you have Artifact, gain #b", " Block."
+    ]
+  },
+  "HegemonMod:MeditationPower": {
+    "NAME": "Meditation",
+    "DESCRIPTIONS": [
+      "Gain #b", " Frail and draw #b", " cards."
+    ]
+  },
+  "HegemonMod:MysteriousPower": {
+    "NAME": "Mysterious Stranger",
+    "DESCRIPTIONS": [
+      "Gain #b", " Artifact on taking a debuff."
+    ]
+  },
+  "HegemonMod:PhoenixPower": {
+    "NAME": "Phoenix Form",
+    "DESCRIPTIONS": [
+      "Increase buffs by #b", " at the end of each turn, then increase that number by #b", ". "
+    ]
+  },
+  "HegemonMod:PlagueBearerPower": {
+    "NAME": "Plague Bearer",
+    "DESCRIPTIONS": [
+      "End of turn, create #b", " Vectors in the draw pile. "
+    ]
+  },
+  "HegemonMod:RecoveryPower": {
+    "NAME": "Recovery",
+    "DESCRIPTIONS": [
+      "Start of turn, heal by #b", ". "
+    ]
+  },
+  "HegemonMod:SinEaterPower": {
+    "NAME": "Sin Eater",
+    "DESCRIPTIONS": [
+      "Whenever you would lose Artifact, gain #b", " temporary HP."
+    ]
+  },
+  "HegemonMod:SnakePower": {
+    "NAME": "Way of the Snake",
+    "DESCRIPTIONS": [
+      "Create #b", " Punish in your hand at the start of each turn."
+    ]
+  },
+  "HegemonMod:LearnedPower": {
+    "NAME": "Learned",
+    "DESCRIPTIONS": [
+      "On creating a card, reduce its [E] cost by #b1."
+    ]
+  },
+
+  "HegemonMod:DoomPower": {
+    "NAME": "Doom",
+    "DESCRIPTIONS": [
+      "Increase debuffs by #b", " at the start of each turn, then increase that number by #b", ". "
+    ]
+  },
+  "HegemonMod:LeechToxin": {
+    "NAME": "Leech Toxin",
+    "DESCRIPTIONS": [
+      "Negate the next #b", " instances of healing. Instead, deal #b", " Necrotic damage."
+    ]
+  },
+  "HegemonMod:LegacyofSin": {
+    "NAME": "Legacy of Sin",
+    "DESCRIPTIONS": [
+      "Takes #b", "% additional execute damage."
+    ]
+  },
+  "HegemonMod:Necrotoxin": {
+    "NAME": "Necrotoxin",
+    "DESCRIPTIONS": [
+      "Take #b", " Necrotic damage at the start of each turn, for #r", " total."
+    ]
+  },
+  "HegemonMod:Sin": {
+    "NAME": "Sin",
+    "DESCRIPTIONS": [
+      "Take #b", "% additional Necrotic damage."
+    ]
+  },
+
+
+
+
+  "HegemonMod:Harbinger": {
+    "NAME": "Harbinger of Doom",
+    "DESCRIPTIONS": [
+      "On death, transfer #b", " debuffs to a random enemy. Each turn, increase that number by #b", ". "
+    ]
+  },
+  "HegemonMod:ShadowHand": {
+    "NAME": "Shadow Hand",
+    "DESCRIPTIONS": [
+      "Deal #b", " Necrotic damage with each attack. "
+    ]
+  },
+  "HegemonMod:HegemonyPower": {
+    "NAME": "Hegemony",
+    "DESCRIPTIONS": [
+      "Retributively apply #b", " Sin when hit."
+    ]
+  },
+  "HegemonMod:BlessingsBounty": {
+    "NAME": "Blessing's Bounty",
+    "DESCRIPTIONS": [
+      "Whenever you would lose Artifact, gain #b", " Regen."
+    ]
+  },
+  "HegemonMod:StudiousPower": {
+    "NAME": "Studious",
+    "DESCRIPTIONS": [
+      "Learn an uncommon single-use skill each turn.",
+      "Learn #b1", " uncommon single-use skills each turn."
+    ]
+  },
+  "HegemonMod:UmbralVenom": {
+    "NAME": "Umbral Venom",
+    "DESCRIPTIONS": [
+      "Apply #b", " Necrotoxin on hit this turn."
+    ]
+  },
+  "HegemonMod:StallingPower": {
+    "NAME": "Stalling",
+    "DESCRIPTIONS": [
+      "Apply #b", " Regen on hit for the turn."
+    ]
+  },
+  "HegemonMod:TacticalMapPower": {
+    "NAME": "Tactical Map",
+    "DESCRIPTIONS": [
+      "On exhausting a card, draw and then discard #b1 card."
+    ]
+  }
+}

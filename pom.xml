@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <modID>rubimod</modID>
+        <modID>HegemonMod</modID>
         <author>Rubidius \"Rubi\" Dext</author>
 
         <!-- Change the path for your system to match your Steam installation. -->
@@ -24,7 +24,7 @@
 
     <!-- This information will be displayed in ModTheSpire, the modded launcher. -->
     <name>The Hegemon</name>
-    <version>1.5.2</version>
+    <version>2.0.0</version>
     <!-- Avoid using \ in this description, as they can cause the description to fail to load. -->
     <!-- If you really want to use them, you'll need to "escape" them by putting another one in front, like \\ -->
     <description>This mod adds random nonsense.\n
@@ -36,8 +36,8 @@
     <!--You'll get a warning regarding these when you package your mod, but don't worry, it's just set up like this for convenience.-->
     <!--Technically these should be changed individually, but this allows you to just set it in one place.-->
     <!--Absolutely a no-go for larger projects, but for a personal mod it's fine.-->
-    <groupId>rubimod</groupId>
-    <artifactId>rubimod</artifactId>
+    <groupId>HegemonMod</groupId>
+    <artifactId>HegemonMod</artifactId>
 
     <dependencies>
         <dependency>
@@ -160,8 +160,8 @@
                             <target>
                                 <!--This puts a copy of your mod's jar file into the SlayTheSpire mods folder so it will be loaded.-->
                                 <!--On mac, it will be copied to another location. See further below.-->
-                                <copy file="target/rubimod.jar" tofile="${steam.path}/common/SlayTheSpire/rubimod/content/rubimod.jar"/>
-                                <copy file="target/rubimod.jar" tofile="${steam.path}/workshop/content/646570/3531504374/rubimod.jar"/>
+                                <copy file="target/HegemonMod.jar" tofile="${steam.path}/common/SlayTheSpire/HegemonMod/content/HegemonMod.jar"/>
+                                <copy file="target/HegemonMod.jar" tofile="${steam.path}/workshop/content/646570/3531504374/HegemonMod.jar"/>
                             </target>
                         </configuration>
                         <goals>
@@ -188,7 +188,7 @@
                     <include>**/*.json</include>
                 </includes>
             </resource>
-            <!-- Filtering replaces certain text like rubimod with the corresponding value from this file. -->
+            <!-- Filtering replaces certain text like HegemonMod with the corresponding value from this file. -->
         </resources>
     </build>
 
@@ -242,8 +242,8 @@
                                 <configuration>
                                     <target>
                                         <!-- This moves your mod into a common folder where all mods you make can go. -->
-                                        <copy file="target/rubimod.jar" tofile="${steam.path}/common/SlayTheSpire/rubimod/content/rubimod.jar"/>
-                                        <copy file="target/rubimod.jar" tofile="${steam.path}/workshop/content/646570/3531504374/rubimod.jar"/>
+                                        <copy file="target/HegemonMod.jar" tofile="${steam.path}/common/SlayTheSpire/HegemonMod/content/HegemonMod.jar"/>
+                                        <copy file="target/HegemonMod.jar" tofile="${steam.path}/workshop/content/646570/3531504374/HegemonMod.jar"/>
                                     </target>
                                 </configuration>
                                 <goals>

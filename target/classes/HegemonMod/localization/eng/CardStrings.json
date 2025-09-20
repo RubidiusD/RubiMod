@@ -1,0 +1,298 @@
+{
+  "HegemonMod:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description. NL Second line.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "HegemonMod:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+
+  "HegemonMod:LashOut": {
+    "NAME": "Lash Out",
+    "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage. NL Inflict !M! HegemonMod:Leech_Toxin."
+  },
+
+  "HegemonMod:Punish": {
+    "NAME": "Punish",
+    "DESCRIPTION": "Deal !M! HegemonMod:Necrotic damage. NL Apply !HegemonMod:Sin! HegemonMod:Sin. NL Exhaust"
+  },
+
+
+  "HegemonMod:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "HegemonMod:CloakofNight": {
+    "NAME": "Cloak of Night",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Dexterity and 1 Frail."
+  },
+  "HegemonMod:MidnightEyes": {
+    "NAME": "Midnight Eyes",
+    "DESCRIPTION": "Gain 1 Artifact. NL Scry !M!."
+  },
+
+  "HegemonMod:SkillBookRed": {
+    "NAME": "Red Skill Book",
+    "DESCRIPTION": "Create a random {!M!|>1=upgraded }red common skill in your hand. NL Exhaust."
+  },
+  "HegemonMod:SkillBookGreen": {
+    "NAME": "Green Skill Book",
+    "DESCRIPTION": "Create a random {!M!|>1=upgraded }green common skill in your hand. NL Exhaust."
+  },
+  "HegemonMod:SkillBookBlue": {
+    "NAME": "Blue Skill Book",
+    "DESCRIPTION": "Create a random {!M!|>1=upgraded }blue common skill in your hand. NL Exhaust."
+  },
+  "HegemonMod:SkillBookPurple": {
+    "NAME": "Purple Skill Book",
+    "DESCRIPTION": "Create a random {!M!|>1=upgraded }purple common skill in your hand. NL Exhaust."
+  },
+  "HegemonMod:SkillBookTemplate": {
+    "NAME": " Skill Book",
+    "DESCRIPTION": "Create a random {!M!|>1=upgraded }? common skill in your hand. NL Exhaust."
+  },
+
+  "HegemonMod:InexorableDoom": {
+    "NAME": "Inexorable Doom",
+    "DESCRIPTION": "Apply !HegemonMod:Doom! HegemonMod:Doom. NL Shuffle this card into your draw pile if it has !M! cards. "
+  },
+  "HegemonMod:SkillBookColorless": {
+    "NAME": "Colorless Skill Book",
+    "DESCRIPTION": "Create a random {!M!|>1=upgraded }colorless uncommon skill in your hand. NL Exhaust."
+  },
+
+  "HegemonMod:Hamartia": {
+    "NAME": "Hamartia",
+    "DESCRIPTION": "Apply !M! HegemonMod:Sin."
+  },
+
+
+  "HegemonMod:AfflictionSpecialisation": {
+    "NAME": "Affliction Specialisation",
+    "DESCRIPTION": "Innate. NL Gain !M! Artifact."
+  },
+  "HegemonMod:GentleTouch": {
+    "NAME": "Gentle Touch",
+    "DESCRIPTION": "Gain !M! Strength and heal targets by !M! on hit."
+  },
+  "HegemonMod:LikeBlood": {
+    "NAME": "Like Blood",
+    "DESCRIPTION": "At the end of your turn, if you have Artifact, gain !M! Block."
+  },
+  "HegemonMod:Meditation": {
+    "NAME": "Meditation",
+    "DESCRIPTION": "At the start of each turn, gain Weak and draw a card."
+  },
+  "HegemonMod:Sacrifice": {
+    "NAME": "Ritual Sacrifice",
+    "DESCRIPTION": "Can only be played if you have no Artifact. NL !M! Strength. You can no longer heal.",
+    "UPGRADE_DESCRIPTION": "Can only be played if you have no Artifact. NL !M! Strength and 1 Ritual. You can no longer heal."
+  },
+  "HegemonMod:SinEater": {
+    "NAME": "Sin Eater",
+    "DESCRIPTION": "Whenever you would lose Artifact, gain !M! temporary HP."
+  },
+  "HegemonMod:WayOfTheSnake": {
+    "NAME": "Way of the Snake",
+    "DESCRIPTION": "Start each turn with a *Punish in hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Start each turn with a *Punish in hand."
+  },
+
+  "HegemonMod:PhoenixForm": {
+    "NAME": "Phoenix Form",
+    "DESCRIPTION": "Ethereal. NL Increase your buffs by an amount that increases each turn."
+  },
+  "HegemonMod:FastLearner": {
+    "NAME": "Fast Learner",
+    "DESCRIPTION": "Whenever you create a card in combat, reduce its cost by 1.",
+    "UPGRADE_DESCRIPTION": "Whenever you create a card in combat, reduce its cost by 1. NL Adds *Master *Reality to the discard pile."
+  },
+  "HegemonMod:PlagueBearer": {
+    "NAME": "Plague Bearer",
+    "DESCRIPTION": "After each turn, shuffle !M! *Vector{!M!|>1=s} into the draw pile."
+  },
+
+
+
+
+
+  "HegemonMod:Ruination": {
+    "NAME": "Ruination",
+    "DESCRIPTION": "Deal !D! damage. NL Deal !M! HegemonMod:Necrotic damage."
+  },
+  "HegemonMod:HeroicPlay": {
+    "NAME": "Heroic Play",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail and !M! Vulnerable."
+  },
+  "HegemonMod:Penitent": {
+    "NAME": "Penitent",
+    "DESCRIPTION": "Deal !D! x !M! damage. NL Gain and apply 1 Strength."
+  },
+  "HegemonMod:HydraFlail": {
+    "NAME": "Hydra Flail",
+    "DESCRIPTION": "Deal !D! damage to a random enemy NL 2X times."
+  },
+  "HegemonMod:Dose": {
+    "NAME": "Dose",
+    "DESCRIPTION": "Apply !M! HegemonMod:Leech_Toxin."
+  },
+  "HegemonMod:Endure": {
+    "NAME": "Endure",
+    "DESCRIPTION": "Gain !B! x !M! Block. NL Gain Frail."
+  },
+  "HegemonMod:Imbibe": {
+    "NAME": "Imbibe",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact."
+  },
+  "HegemonMod:PathOfShadows": {
+    "NAME": "Path of Shadows",
+    "DESCRIPTION": "Gain !B!x2 Block. NL Gain no more Block from cards this turn. NL Keep your Block at the start of next turn."
+  },
+  "HegemonMod:Deliverance": {
+    "NAME": "Deliverance",
+    "DESCRIPTION": "Retain. NL Deal !D! damage, !M! HegemonMod:Necrotic damage and apply !HegemonMod:Sin! HegemonMod:Sin. Increase both by !HegemonMod:Increase! on retain."
+  },
+  "HegemonMod:Feint": {
+    "NAME": "Feint",
+    "DESCRIPTION": "Gain !B! Block. NL If the target is attacking, apply !M! HegemonMod:Sin."
+  },
+  "HegemonMod:FeastofAbsolution": {
+    "NAME": "Absolution",
+    "DESCRIPTION": "Draw !M! and gain [E]. NL Cleanse all of the target's debuffs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw !M!. Cleanse all of the target's debuffs and heal the half the amount. NL Exhaust."
+  },
+  "HegemonMod:HegemonsMercy": {
+    "NAME": "Hegemon's Mercy",
+    "DESCRIPTION": "Cleanse all of the target's debuffs and reduce their strength by the same amount. NL Only half is permanent. NL Exhaust."
+  },
+  "HegemonMod:HiddenJab": {
+    "NAME": "Hidden Jab",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+  },
+  "HegemonMod:Riposte": {
+    "NAME": "Riposte",
+    "DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 *Punish",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 *Punish+"
+  },
+  "HegemonMod:FalseOpening": {
+    "NAME": "False Opening",
+    "DESCRIPTION": "Gain !B! Block. NL Create !M! *Punish."
+  },
+  "HegemonMod:Punition": {
+    "NAME": "Punition",
+    "DESCRIPTION": "Apply !M! HegemonMod:Sin. Deal HegemonMod:Necrotic damage equal to the target's HegemonMod:Sin. NL Exhaust."
+  },
+  "HegemonMod:HegemonyCard": {
+    "NAME": "Hegemony",
+    "DESCRIPTION": "Ethereal. NL Whenever you are attacked, apply !M! HegemonMod:Sin back.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever you are attacked, apply !M! HegemonMod:Sin back."
+  },
+  "HegemonMod:DarkGuardian": {
+    "NAME": "Dark Guardian",
+    "DESCRIPTION": "Ethereal. NL Whenever you would lose Artifact, gain !M! Regen.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever you would lose Artifact, gain !M! Regen."
+  },
+  "HegemonMod:RelentlessStudy": {
+    "NAME": "Relentless Study",
+    "DESCRIPTION": "Create !M! random single-use uncommon skill in your hand each turn."
+  },
+  "HegemonMod:LeechBite": {
+    "NAME": "Leech Bite",
+    "DESCRIPTION": "Deal !D! damage. NL Inflict HegemonMod:Bleeding. ",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict HegemonMod:Bleeding and HegemonMod:Leech_Toxin."
+  },
+  "HegemonMod:SpiritCoin": {
+    "NAME": "Spirit Coin",
+    "DESCRIPTION": "Deal !D! damage. NL HegemonMod:Bleed. ",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict HegemonMod:Bleeding and HegemonMod:Leech_Toxin."
+  },
+  "HegemonMod:LeechHose": {
+    "NAME": "Leech Hose",
+    "DESCRIPTION": "Deal !D!X damage to ALL enemies and apply X Vulnerable and 2X HegemonMod:Leech_Toxin.",
+    "UPGRADE_DESCRIPTION": "Deal !D!X damage to ALL enemies and apply X Vulnerable and 3X HegemonMod:Leech_Toxin."
+  },
+  "HegemonMod:ToxicStrike": {
+    "NAME": "Toxic Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! HegemonMod:Necrotoxin."
+  },
+  "HegemonMod:ToxicElbow": {
+    "NAME": "Toxic Elbow",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! HegemonMod:Necrotoxin."
+  },
+  "HegemonMod:StoriedDagger": {
+    "NAME": "Storied Dagger",
+    "DESCRIPTION": "Apply !M! HegemonMod:Necrotoxin with each attack this turn. NL Deal !D! damage."
+  },
+  "HegemonMod:Suffer": {
+    "NAME": "Suffer!",
+    "DESCRIPTION": "Apply !M! HegemonMod:Necrotoxin.",
+    "UPGRADE_DESCRIPTION": "Apply !M! HegemonMod:Necrotoxin and !HegemonMod:Sin! HegemonMod:Sin"
+  },
+  "HegemonMod:SuitUp": {
+    "NAME": "Suit Up!",
+    "DESCRIPTION": "Whenever an unblocked attack deals damage, apply !M! HegemonMod:Necrotoxin."
+  },
+  "HegemonMod:Stall": {
+    "NAME": "Stall",
+    "DESCRIPTION": "Gain !M! Strength while Stalling.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain !M! Strength while Stalling."
+  },
+  "HegemonMod:Stalling": {
+    "NAME": "Stalling",
+    "DESCRIPTION": "Unplayable. NL Ethereal. NL Apply 2 regen on hit."
+  },
+  "HegemonMod:TacticalMap": {
+    "NAME": "Tactical Map",
+    "DESCRIPTION": "On exhausting a card, draw and then discard !M! card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL On exhausting a card, draw and then discard !M! card."
+  },
+  "HegemonMod:DoomsHarbinger": {
+    "NAME": "Doom's Harbinger",
+    "DESCRIPTION": "Apply 5 HegemonMod:Leech_Toxin. Target's debuffs are transferred on death. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply 5 HegemonMod:Leech_Toxin. Target's debuffs are transferred on death."
+  },
+  "HegemonMod:Anticipation": {
+    "NAME": "Anticipation",
+    "DESCRIPTION": "Lose !HegemonMod:Tax! temporary HP. NL Next turn, gain 2 [E], draw !M! cards. NL Exhaust.",
+    "UPG_DESCRIPTION": "Lose !HegemonMod:Tax! temporary HP. NL Next turn, gain 2 [E], draw !M! cards. NL Might Exhaust."
+  },
+  "HegemonMod:FeastofBlood": {
+    "NAME": "Feast of Blood",
+    "DESCRIPTION": "Apply !M! HegemonMod:Leech_Toxin. NL If the target is HegemonMod:Bleeding, remove it and gain !HegemonMod:Regen! Regen."
+  },
+  "HegemonMod:Hemorrhage": {
+    "NAME": "Hemorrhage",
+    "DESCRIPTION": "Apply HegemonMod:Bleeding and !M! HegemonMod:Leech_Toxin. Draw 1 card."
+  },
+  "HegemonMod:BloodHarvest": {
+    "NAME": "Blood Harvest",
+    "DESCRIPTION": "Deal !D! damage. If Fatal, heal HP equal to unblocked damage dealt."
+  },
+  "HegemonMod:Verdict": {
+    "NAME": "Verdict",
+    "DESCRIPTION": "Deal damage equal to !M!% of target's lost health."
+  },
+  "HegemonMod:Vector": {
+    "NAME": "Vector",
+    "DESCRIPTION": "Apply !M! HegemonMod:Leech_Toxin and heal target by 1. NL Draw 1 card. NL Exhaust."
+  },
+  "HegemonMod:Disease": {
+    "NAME": "Disease",
+    "DESCRIPTION": "Apply !M! HegemonMod:Leech_Toxin and heal target."
+  },
+  "HegemonMod:Massage": {
+    "NAME": "Massage",
+    "DESCRIPTION": "Deal !D! damage and heal target by !M!. Increase heal by !HegemonMod:Stack! this combat."
+  },
+  "HegemonMod:Recovery": {
+    "NAME": "Recovery",
+    "DESCRIPTION": "Gain !HegemonMod:Artifact! Artifact. Target monster heals by 3 each turn."
+  }
+}

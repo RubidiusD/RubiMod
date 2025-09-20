@@ -1,0 +1,48 @@
+package HegemonMod.powers.debuff;
+
+import HegemonMod.powers.BasePower;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+
+import static HegemonMod.util.CustomTags.EXECUTE;
+
+public class LegacyofSin extends BasePower {
+    public static final String POWER_ID = ("HegemonMod:" + LegacyofSin.class.getSimpleName());
+    private static final PowerType TYPE = PowerType.DEBUFF;
+    private static final boolean TURN_BASED = false;
+
+    public LegacyofSin(AbstractCreature owner, int amount) { super(POWER_ID, TYPE, TURN_BASED, owner, amount);     }
+
+    @Override public void stackPower(int stackAmount) {
+        super.stackPower(stackAmount);
+        updateDescription();
+    }
+
+    @Override public void onRemove() {
+        addToTop(new ApplyPowerAction(owner, owner, new LegacyofSin(owner, amount)));
+    }
+
+    @Override public float atDamageFinalReceive(float damage, DamageInfo.DamageType type, AbstractCard card)
+    {
+        if (card.tags.contains(EXECUTE))
+            return calculate(damage);
+        return damage;
+    }
+
+    public float calculate(float damage) {
+        return damage * (1 + ((float) this.amount * 0.1f));
+    }
+
+    public static float calculateExecute(float damage, int amount) {
+        return damage * (1 + ((float) amount * 0.1f));
+    }
+
+    @Override public void updateDescription() {
+        this.description = DESCRIPTIONS[0] + amount * 10 + DESCRIPTIONS[1];
+    }
+
+    public AbstractPower makeCopy() {return new LegacyofSin(owner, amount);}
+}

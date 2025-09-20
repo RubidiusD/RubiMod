@@ -1,0 +1,38 @@
+package HegemonMod.cards.skills.starter;
+
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import HegemonMod.cards.BaseCard;
+import HegemonMod.character.Hegemon;
+
+public class Defend extends BaseCard {
+    public static final String ID = ("HegemonMod:" + Defend.class.getSimpleName());
+    private static final CardStats info = new CardStats(
+            Hegemon.Meta.CARD_COLOR,
+            CardType.SKILL,
+            CardRarity.BASIC,
+            CardTarget.SELF,
+            1 // card cost!! (-1 is X, -2 is unplayable)
+    );
+
+    private static final int BLOCK = 5;
+    private static final int UPG_BLOCK = 3;
+
+    public Defend() {
+        super(ID, info); // calls the parent constructor
+
+        setBlock(BLOCK, UPG_BLOCK); // self-explanatory
+
+        addTag(CardTags.STARTER_DEFEND);
+    }
+
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new GainBlockAction(p, p, block));
+    }
+
+    @Override public AbstractCard makeCopy() { //Optional
+        return new Defend();
+    }
+}
