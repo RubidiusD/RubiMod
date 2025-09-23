@@ -1,4 +1,4 @@
-package HegemonMod.cards.powers.uncommon;
+package HegemonMod.cards.powers.rare;
 
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
@@ -16,7 +16,7 @@ public class Sacrifice extends BaseCard {
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,
-            CardRarity.UNCOMMON,
+            CardRarity.RARE,
             CardTarget.SELF,
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
@@ -33,7 +33,7 @@ public class Sacrifice extends BaseCard {
     }
 
     @Override public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        return !p.hasPower(ArtifactPower.POWER_ID);
+        return !p.hasPower(ArtifactPower.POWER_ID) && hasEnoughEnergy();
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {

@@ -23,8 +23,8 @@ public class HeroicPlay extends BaseCard {
     );
 
     private static final int DAMAGE = 9;
-    private static final int UPG_DAMAGE = 2;
-    private static final int MAGIC = 2;
+    private static final int UPG_DAMAGE = 3;
+    private static final int MAGIC = 1;
 
     public HeroicPlay() {
         super(ID, info); // calls the parent constructor

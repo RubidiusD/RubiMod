@@ -22,6 +22,10 @@
     "NAME": "Lash Out",
     "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage. NL Inflict !M! HegemonMod:Leech_Toxin."
   },
+  "HegemonMod:PunishFlurry": {
+    "NAME": "Punish Flurry",
+    "DESCRIPTION": "Apply !M! HegemonMod:Sin then deal !D! HegemonMod:Necrotic damage to ALL enemies."
+  },
   "HegemonMod:Ruination": {
     "NAME": "Ruination",
     "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage."
@@ -29,7 +33,7 @@
 
   "HegemonMod:Punish": {
     "NAME": "Punish",
-    "DESCRIPTION": "Deal !M! HegemonMod:Necrotic damage. NL Apply !HegemonMod:Sin! HegemonMod:Sin. NL Exhaust"
+    "DESCRIPTION": "Apply !M! HegemonMod:Sin. NL Deal !D! HegemonMod:Necrotic damage. NL Exhaust."
   },
 
 
@@ -65,6 +69,11 @@
   "HegemonMod:SkillBookTemplate": {
     "NAME": "%s Skill Book",
     "DESCRIPTION": "Create a random {!M!|>1=upgraded }%s common skill in your hand. NL Exhaust."
+  },
+  "HegemonMod:Vaccinate": {
+    "NAME": "Vaccinate",
+    "DESCRIPTION": "Gain 1 HegemonMod:Leech_Toxin !M! times.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain 1 HegemonMod:Leech_Toxin !M! times."
   },
 
   "HegemonMod:InexorableDoom": {

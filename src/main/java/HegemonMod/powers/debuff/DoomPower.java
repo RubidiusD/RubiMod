@@ -58,7 +58,7 @@ public class DoomPower extends BasePower {
             }
         }
 
-        this.amount2 += amount + amount_to_distribute;
+        this.amount2 += amount + (amount_to_distribute == 0 ? 0 : amount);
         updateDescription();
         this.flash();
     }

@@ -8,7 +8,6 @@ HegemonMod\actions\SkillBookAction.class
 HegemonMod\cards\attacks\common\LashOut.class
 HegemonMod\cards\skills\uncommon\InexorableDoom.class
 HegemonMod\relics\ReaperToken.class
-HegemonMod\cards\powers\uncommon\Sacrifice.class
 HegemonMod\actions\XEnergyAction$FunctionR.class
 HegemonMod\powers\buff\SnakePower.class
 HegemonMod\relics\PaperUmbrella.class
@@ -51,6 +50,7 @@ HegemonMod\powers\debuff\Necrotoxin.class
 HegemonMod\cards\skills\common\SkillBookPurple.class
 HegemonMod\cards\powers\uncommon\WayOfTheSnake.class
 HegemonMod\patches\LearnedPatch$1.class
+HegemonMod\cards\powers\rare\Sacrifice.class
 HegemonMod\powers\buff\GentlePower.class
 HegemonMod\relics\BaseRelic.class
 HegemonMod\cards\BaseCard$CardStats.class
@@ -70,6 +70,7 @@ HegemonMod\actions\LeechToxinLoseHPAction.class
 HegemonMod\character\Hegemon.class
 HegemonMod\cards\BaseCard.class
 HegemonMod\util\TriFunction.class
+HegemonMod\cards\skills\uncommon\Vaccinate.class
 HegemonMod\cards\attacks\common\HeroicPlay.class
 HegemonMod\cards\attacks\Punish.class
 HegemonMod\relics\PropheticScraps.class
@@ -83,4 +84,5 @@ HegemonMod\cards\skills\starter\MidnightEyes.class
 HegemonMod\HegemonMod.class
 HegemonMod\relics\ComicPage.class
 HegemonMod\util\CustomTags.class
+HegemonMod\cards\attacks\common\PunishFlurry.class
 HegemonMod\powers\buff\ToxicPower.class

@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 
 public class AfflictionSpecialisation extends BaseCard {
-    public static final String ID = ("HegemonPower:" + AfflictionSpecialisation.class.getSimpleName());
+    public static final String ID = ("HegemonMod:" + AfflictionSpecialisation.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,

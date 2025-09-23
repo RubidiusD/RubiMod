@@ -23,8 +23,8 @@ public class MysteriousStranger extends BaseRelic {
 
     @Override public void atBattleStart() {
         this.flash();
-        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MysteriousPower(AbstractDungeon.player, 1)));
         addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, 1)));
+        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MysteriousPower(AbstractDungeon.player, 1)));
     }
 
     @Override public String getUpdatedDescription() {

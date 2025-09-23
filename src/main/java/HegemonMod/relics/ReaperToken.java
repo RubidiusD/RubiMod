@@ -22,8 +22,8 @@ public class ReaperToken extends BaseRelic {
 
     @Override public void atBattleStart() {
         this.flash();
-        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MysteriousPower(AbstractDungeon.player, 2)));
         addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, 2)));
+        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MysteriousPower(AbstractDungeon.player, 2)));
     }
 
     @Override public boolean canSpawn() {

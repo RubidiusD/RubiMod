@@ -41,6 +41,22 @@ public class SkillBookTemplate extends BaseCard {
         name = String.format(name, colour_name);
         rawDescription = String.format(rawDescription, colour_name);
         initializeDescription();
+//        textureImg = "";
+//        loadCardImage(textureImg);
+        return this;
+    }
+
+    public AbstractCard setColour(AbstractPlayer character) {
+        this.colour = CardLibrary.LibraryType.valueOf(character.getCardColor().toString());
+        String colour_name = colour.toString();
+        cardID += colour_name;
+        name = String.format(name, character.getTitle(character.chosenClass));
+        rawDescription = String.format(rawDescription, character.getTitle(character.chosenClass));
+        initializeDescription();
+
+        portrait = character.getStartCardForEvent().portrait;
+        portraitImg = character.getStartCardForEvent().portrait.getTexture();
+
         return this;
     }
 
