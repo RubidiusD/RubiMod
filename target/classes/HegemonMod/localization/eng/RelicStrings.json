@@ -71,7 +71,7 @@
     "NAME": "Reaper Token",
     "FLAVOR": "That isn't meant to be in this world. Whoever put it here likes you. Hopefully.",
     "DESCRIPTIONS": [
-      "On gaining a debuff, gain 2 Artifact. Start combat with 2 Artifact."
+      "Replaces #rMysterious #rStranger. On gaining a debuff, gain 2 Artifact. Start combat with 2 Artifact."
     ]
   },
   "HegemonMod:VehicleVoltron": {

@@ -3,7 +3,9 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\Necroti
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\NecrotoxinLoseHPAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\SkillBookAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\XEnergyAction.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\common\HeroicPlay.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\common\LashOut.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\common\Ruination.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\Punish.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\starter\Strike.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\BaseCard.java
@@ -27,6 +29,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\st
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\starter\Defend.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\starter\MidnightEyes.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\InexorableDoom.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\PathOfShadows.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\SkillBookColorless.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\Vector.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\character\Hegemon.java

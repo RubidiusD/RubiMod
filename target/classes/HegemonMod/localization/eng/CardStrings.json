@@ -14,9 +14,17 @@
     "DESCRIPTION": "Deal !D! damage."
   },
 
+  "HegemonMod:HeroicPlay": {
+    "NAME": "Heroic Play",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail and !M! Vulnerable."
+  },
   "HegemonMod:LashOut": {
     "NAME": "Lash Out",
     "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage. NL Inflict !M! HegemonMod:Leech_Toxin."
+  },
+  "HegemonMod:Ruination": {
+    "NAME": "Ruination",
+    "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage."
   },
 
   "HegemonMod:Punish": {
@@ -55,13 +63,17 @@
     "DESCRIPTION": "Create a random {!M!|>1=upgraded }purple common skill in your hand. NL Exhaust."
   },
   "HegemonMod:SkillBookTemplate": {
-    "NAME": " Skill Book",
-    "DESCRIPTION": "Create a random {!M!|>1=upgraded }? common skill in your hand. NL Exhaust."
+    "NAME": "%s Skill Book",
+    "DESCRIPTION": "Create a random {!M!|>1=upgraded }%s common skill in your hand. NL Exhaust."
   },
 
   "HegemonMod:InexorableDoom": {
     "NAME": "Inexorable Doom",
     "DESCRIPTION": "Apply !HegemonMod:Doom! HegemonMod:Doom. NL Shuffle this card into your draw pile if it has !M! cards. "
+  },
+  "HegemonMod:PathOfShadows": {
+    "NAME": "Path of Shadows",
+    "DESCRIPTION": "Gain !B! x !M! Block. NL You cannot gain Block from cards this turn. Block is not removed at the start of your next turn."
   },
   "HegemonMod:SkillBookColorless": {
     "NAME": "Colorless Skill Book",
@@ -123,14 +135,6 @@
 
 
 
-  "HegemonMod:Ruination": {
-    "NAME": "Ruination",
-    "DESCRIPTION": "Deal !D! damage. NL Deal !M! HegemonMod:Necrotic damage."
-  },
-  "HegemonMod:HeroicPlay": {
-    "NAME": "Heroic Play",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail and !M! Vulnerable."
-  },
   "HegemonMod:Penitent": {
     "NAME": "Penitent",
     "DESCRIPTION": "Deal !D! x !M! damage. NL Gain and apply 1 Strength."
@@ -150,10 +154,6 @@
   "HegemonMod:Imbibe": {
     "NAME": "Imbibe",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact."
-  },
-  "HegemonMod:PathOfShadows": {
-    "NAME": "Path of Shadows",
-    "DESCRIPTION": "Gain !B!x2 Block. NL Gain no more Block from cards this turn. NL Keep your Block at the start of next turn."
   },
   "HegemonMod:Deliverance": {
     "NAME": "Deliverance",

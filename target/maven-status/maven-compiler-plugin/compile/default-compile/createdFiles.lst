@@ -40,9 +40,11 @@ HegemonMod\powers\debuff\DoomPower.class
 HegemonMod\util\KeywordInfo.class
 HegemonMod\cards\BaseCard$VariableType.class
 HegemonMod\cards\powers\rare\PhoenixForm.class
+HegemonMod\cards\attacks\common\Ruination.class
 HegemonMod\powers\BasePower.class
 HegemonMod\cards\skills\common\SkillBookRed.class
 HegemonMod\cards\powers\rare\PlagueBearer.class
+HegemonMod\cards\skills\uncommon\PathOfShadows.class
 HegemonMod\util\TextureLoader$1.class
 HegemonMod\relics\BaseRelic$1.class
 HegemonMod\powers\debuff\Necrotoxin.class
@@ -68,6 +70,7 @@ HegemonMod\actions\LeechToxinLoseHPAction.class
 HegemonMod\character\Hegemon.class
 HegemonMod\cards\BaseCard.class
 HegemonMod\util\TriFunction.class
+HegemonMod\cards\attacks\common\HeroicPlay.class
 HegemonMod\cards\attacks\Punish.class
 HegemonMod\relics\PropheticScraps.class
 HegemonMod\powers\buff\PhoenixPower.class

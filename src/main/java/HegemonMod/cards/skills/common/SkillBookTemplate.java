@@ -38,8 +38,8 @@ public class SkillBookTemplate extends BaseCard {
         cardID += colour_name;
         java.util.Map<String, String> dict = languagePack.getUIString("HegemonMod:SkillBooks").TEXT_DICT;
         if (dict.containsKey(colour_name)) {colour_name = dict.get(colour_name);}
-        name = colour_name + name;
-        rawDescription = rawDescription.substring(0, rawDescription.indexOf("?")) + colour_name + rawDescription.substring(rawDescription.indexOf("?") + 1);
+        name = String.format(name, colour_name);
+        rawDescription = String.format(rawDescription, colour_name);
         initializeDescription();
         return this;
     }
