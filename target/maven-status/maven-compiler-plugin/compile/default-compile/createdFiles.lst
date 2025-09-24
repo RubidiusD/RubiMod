@@ -3,12 +3,14 @@ HegemonMod\powers\buff\MeditationPower.class
 HegemonMod\cards\skills\Vector.class
 HegemonMod\cards\skills\common\SkillBookTemplate.class
 HegemonMod\cards\skills\common\SkillBookGreen.class
+HegemonMod\cards\powers\uncommon\IncreaseToxicity.class
 HegemonMod\powers\buff\RecoveryPower.class
 HegemonMod\actions\SkillBookAction.class
 HegemonMod\cards\attacks\common\LashOut.class
 HegemonMod\cards\skills\uncommon\InexorableDoom.class
 HegemonMod\relics\ReaperToken.class
 HegemonMod\actions\XEnergyAction$FunctionR.class
+HegemonMod\actions\ToxicityAction.class
 HegemonMod\powers\buff\SnakePower.class
 HegemonMod\relics\PaperUmbrella.class
 HegemonMod\cards\skills\rare\Hamartia.class
@@ -19,6 +21,8 @@ HegemonMod\patches\ExecutePatch.class
 HegemonMod\cards\powers\uncommon\AfflictionSpecialisation.class
 HegemonMod\relics\ConcealedRazor.class
 HegemonMod\actions\XEnergyAction$FunctionV.class
+HegemonMod\cards\attacks\common\Crunch$1.class
+HegemonMod\cards\attacks\common\Crunch.class
 HegemonMod\relics\VehicleVoltron.class
 HegemonMod\powers\buff\LikeBloodPower.class
 HegemonMod\powers\debuff\LegacyofSin.class
@@ -38,6 +42,7 @@ HegemonMod\powers\buff\PlagueBearerPower.class
 HegemonMod\powers\debuff\DoomPower.class
 HegemonMod\util\KeywordInfo.class
 HegemonMod\cards\BaseCard$VariableType.class
+HegemonMod\cards\attacks\uncommon\ToxicStrike.class
 HegemonMod\cards\powers\rare\PhoenixForm.class
 HegemonMod\cards\attacks\common\Ruination.class
 HegemonMod\powers\BasePower.class
@@ -52,6 +57,7 @@ HegemonMod\cards\powers\uncommon\WayOfTheSnake.class
 HegemonMod\patches\LearnedPatch$1.class
 HegemonMod\cards\powers\rare\Sacrifice.class
 HegemonMod\powers\buff\GentlePower.class
+HegemonMod\cards\skills\uncommon\SwordTrance.class
 HegemonMod\relics\BaseRelic.class
 HegemonMod\cards\BaseCard$CardStats.class
 HegemonMod\powers\buff\MysteriousPower.class

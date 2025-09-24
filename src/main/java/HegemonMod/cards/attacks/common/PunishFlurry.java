@@ -1,6 +1,7 @@
 package HegemonMod.cards.attacks.common;
 
 import HegemonMod.cards.BaseCard;
+import HegemonMod.character.Hegemon;
 import HegemonMod.powers.debuff.Sin;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.AllEnemyApplyPowerAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -16,7 +17,7 @@ import static HegemonMod.util.CustomTags.PUNISH;
 public class PunishFlurry extends BaseCard {
     public static final String ID = ("HegemonMod:" + PunishFlurry.class.getSimpleName());
     private static final CardStats info = new CardStats(
-            CardColor.COLORLESS,
+            Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,
             CardRarity.COMMON,
             CardTarget.ALL_ENEMY,

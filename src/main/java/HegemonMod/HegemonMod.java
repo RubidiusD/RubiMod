@@ -48,7 +48,8 @@ public class HegemonMod implements
         EditCharactersSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        OnPlayerTurnStartSubscriber{
     public static ModInfo info;
     public static String modID; //Edit your pom.xml to change this
     static { loadModInfo(); }
@@ -70,6 +71,12 @@ public class HegemonMod implements
     @Override public void receivePostInitialize() {
         Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
+
+//        for (AbstractPlayer player : BaseMod.getModdedCharacters()) {
+//            AbstractCard.CardColor colour = player.getCardColor();
+//            System.out.println("Making card for colour " + colour.toString());
+//            BaseMod.addCard(new SkillBookTemplate().setColour(CardLibrary.LibraryType.valueOf(colour.toString())));
+//        }
     }
 
     /*----------Localization----------*/
@@ -245,18 +252,12 @@ public class HegemonMod implements
                 });
 
         BaseMod.removeCard(SkillBookTemplate.ID, Hegemon.Meta.CARD_COLOR);
-//        for (AbstractCard.CardColor colour : BaseMod.getCardColors()) {
-//            System.out.println("Making card for colour " + colour.toString());
-//            if (SkillBookTemplate.isAccepted(colour)) {
-//                BaseMod.addCard(new SkillBookTemplate().setColour(CardLibrary.LibraryType.valueOf(colour.toString())));
-//                System.out.println(" (accepted)");
-//            }
-//        }
-
-        for (AbstractPlayer player : BaseMod.getModdedCharacters()) {
-            AbstractCard.CardColor colour = player.getCardColor();
+        for (AbstractCard.CardColor colour : BaseMod.getCardColors()) {
             System.out.println("Making card for colour " + colour.toString());
-            BaseMod.addCard(new SkillBookTemplate().setColour(CardLibrary.LibraryType.valueOf(colour.toString())));
+            if (SkillBookTemplate.isAccepted(colour)) {
+                BaseMod.addCard(new SkillBookTemplate().setColour(CardLibrary.LibraryType.valueOf(colour.toString())));
+                System.out.println(" (accepted)");
+            }
         }
 
         // Card Glow Conditions
@@ -284,5 +285,12 @@ public class HegemonMod implements
                     if (info.seen)
                         UnlockTracker.markRelicAsSeen(relic.relicId);
                 });
+    }
+
+    public static int ToxicityThisTurn = 0;
+
+    @Override
+    public void receiveOnPlayerTurnStart() {
+        ToxicityThisTurn = 0;
     }
 }

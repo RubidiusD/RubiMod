@@ -20,14 +20,6 @@
     ],
     "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
   },
-
-
-
-
-
-
-
-
   {
     "PROPER_NAME": "Sin",
     "NAMES": [
@@ -71,5 +63,14 @@
       "leech_toxin"
     ],
     "DESCRIPTION": "On refreshes target's Bleeding and deals Necrotic damage equal to stacks."
+  },
+  {
+    "PROPER_NAME": "Toxic",
+    "NAMES": [
+      "toxic",
+      "toxicity",
+      "intoxicate"
+    ],
+    "DESCRIPTION": "Deals X Necrotic damage with each attack."
   }
 ]

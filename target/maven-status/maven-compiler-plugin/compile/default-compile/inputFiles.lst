@@ -2,13 +2,16 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\LeechTo
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\NecroticDamageAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\NecrotoxinLoseHPAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\SkillBookAction.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\ToxicityAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\XEnergyAction.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\common\Crunch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\common\HeroicPlay.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\common\LashOut.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\common\PunishFlurry.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\common\Ruination.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\Punish.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\starter\Strike.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\uncommon\ToxicStrike.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\BaseCard.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\rare\FastLearner.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\rare\PhoenixForm.java
@@ -16,6 +19,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\ra
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\rare\Sacrifice.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\uncommon\AfflictionSpecialisation.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\uncommon\GentleTouch.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\uncommon\IncreaseToxicity.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\uncommon\LikeBlood.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\uncommon\Meditation.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\uncommon\SinEater.java
@@ -32,6 +36,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\st
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\InexorableDoom.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\PathOfShadows.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\SkillBookColorless.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\SwordTrance.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\Vaccinate.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\Vector.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\character\Hegemon.java

@@ -14,6 +14,10 @@
     "DESCRIPTION": "Deal !D! damage."
   },
 
+  "HegemonMod:Crunch": {
+    "NAME": "Crunch",
+    "DESCRIPTION": "Deal Necrotic damage equal to !M!* HegemonMod:Toxicity gained this turn. (!D!)"
+  },
   "HegemonMod:HeroicPlay": {
     "NAME": "Heroic Play",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail and !M! Vulnerable."
@@ -29,6 +33,11 @@
   "HegemonMod:Ruination": {
     "NAME": "Ruination",
     "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage."
+  },
+
+  "HegemonMod:ToxicStrike": {
+    "NAME": "Toxic Strike",
+    "DESCRIPTION": "Deal !D! Necrotic damage. NL Become !M! HegemonMod:Toxic."
   },
 
   "HegemonMod:Punish": {
@@ -88,6 +97,10 @@
     "NAME": "Colorless Skill Book",
     "DESCRIPTION": "Create a random {!M!|>1=upgraded }colorless uncommon skill in your hand. NL Exhaust."
   },
+  "HegemonMod:SwordTrance": {
+    "NAME": "Sword Trance",
+    "DESCRIPTION": "Gain [E] [E]. Become Confused."
+  },
 
   "HegemonMod:Hamartia": {
     "NAME": "Hamartia",
@@ -102,6 +115,10 @@
   "HegemonMod:GentleTouch": {
     "NAME": "Gentle Touch",
     "DESCRIPTION": "Gain !M! Strength and heal targets by !M! on hit."
+  },
+  "HegemonMod:IncreaseToxicity": {
+    "NAME": "Become Toxic",
+    "DESCRIPTION": "Gain !M! HegemonMod:Toxicity"
   },
   "HegemonMod:LikeBlood": {
     "NAME": "Like Blood",
@@ -226,10 +243,6 @@
     "NAME": "Leech Hose",
     "DESCRIPTION": "Deal !D!X damage to ALL enemies and apply X Vulnerable and 2X HegemonMod:Leech_Toxin.",
     "UPGRADE_DESCRIPTION": "Deal !D!X damage to ALL enemies and apply X Vulnerable and 3X HegemonMod:Leech_Toxin."
-  },
-  "HegemonMod:ToxicStrike": {
-    "NAME": "Toxic Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! HegemonMod:Necrotoxin."
   },
   "HegemonMod:ToxicElbow": {
     "NAME": "Toxic Elbow",

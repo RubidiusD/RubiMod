@@ -25,7 +25,6 @@ public class NecroticDamageAction extends AbstractGameAction {
     public void update()
     {
         addToTop(new DamageAction(target, new DamageInfo(source, calculateSinInt(target, amount), DamageInfo.DamageType.THORNS), attackEffect));
-
         this.isDone = true;
     }
 }

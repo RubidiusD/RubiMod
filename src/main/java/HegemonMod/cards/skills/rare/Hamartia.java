@@ -13,7 +13,7 @@ public class Hamartia extends BaseCard {
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
-            CardRarity.BASIC,
+            CardRarity.RARE,
             CardTarget.SELF,
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
