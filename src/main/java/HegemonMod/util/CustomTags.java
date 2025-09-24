@@ -7,4 +7,5 @@ public class CustomTags {
     @SpireEnum public static AbstractCard.CardTags EXECUTE;
     @SpireEnum public static AbstractCard.CardTags NECROTIC;
     @SpireEnum public static AbstractCard.CardTags PUNISH;
+    @SpireEnum public static AbstractCard.CardTags SKILL_BOOK;
 }

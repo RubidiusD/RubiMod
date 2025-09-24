@@ -8,6 +8,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static HegemonMod.util.CustomTags.SKILL_BOOK;
+
 public class SkillBookColorless extends BaseCard {
     public static final String ID = ("HegemonMod:" + SkillBookColorless.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -23,6 +25,7 @@ public class SkillBookColorless extends BaseCard {
 
         setMagic(0, 1);
         setExhaust(true);
+        addTag(SKILL_BOOK);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {

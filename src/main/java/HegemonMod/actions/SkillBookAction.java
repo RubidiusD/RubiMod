@@ -8,17 +8,29 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 
 import java.util.ArrayList;
 
+import static HegemonMod.util.CustomTags.SKILL_BOOK;
+import static com.badlogic.gdx.math.MathUtils.random;
+
 public class SkillBookAction extends AbstractGameAction {
     private final boolean upgraded;
-    private final CardLibrary.LibraryType color;
+    private final ArrayList<CardLibrary.LibraryType> colours = new ArrayList<>();
     private final AbstractCard.CardRarity rarity;
     private final boolean single_use;
 
-    public SkillBookAction(AbstractCard.CardRarity rarity, CardLibrary.LibraryType color_, boolean upgraded, boolean single_use) {
+    public SkillBookAction(AbstractCard.CardRarity rarity, CardLibrary.LibraryType colour, boolean upgraded, boolean single_use) {
         this.actionType = ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FAST;
         this.upgraded = upgraded;
-        this.color = color_;
+        this.colours.add(colour);
+        this.rarity = rarity;
+        this.single_use = single_use;
+    }
+
+    public SkillBookAction(AbstractCard.CardRarity rarity, ArrayList<CardLibrary.LibraryType> colours, boolean upgraded, boolean single_use) {
+        this.actionType = ActionType.CARD_MANIPULATION;
+        this.duration = Settings.ACTION_DUR_FAST;
+        this.upgraded = upgraded;
+        this.colours.addAll(colours);
         this.rarity = rarity;
         this.single_use = single_use;
     }
@@ -28,14 +40,13 @@ public class SkillBookAction extends AbstractGameAction {
     }
 
     public void update() {
-        ArrayList<AbstractCard> cardList = CardLibrary.getCardList(color);
-        cardList.removeIf(card -> card.rarity != rarity || card.type != AbstractCard.CardType.SKILL);
+        ArrayList<AbstractCard> cardList = new ArrayList<>();
+        for (CardLibrary.LibraryType colour : colours) {
+            cardList.addAll(CardLibrary.getCardList(colour));
+        }
+        cardList.removeIf(card -> card.rarity != rarity || card.type != AbstractCard.CardType.SKILL || card.hasTag(SKILL_BOOK));
 
-        int choice = (int) (Math.random() * cardList.size());
-        if (choice == cardList.size())
-            choice = 0;
-
-        AbstractCard tmp = cardList.get(choice);
+        AbstractCard tmp = cardList.get(random.nextInt(cardList.size()));
         if (this.upgraded)
             tmp.upgrade();
         if (this.single_use)

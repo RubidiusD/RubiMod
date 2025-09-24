@@ -27,12 +27,11 @@ public class Crunch extends BaseCard {
 
         setDamage(0);
         setCostUpgrade(0);
-
-        addTag(NECROTIC);
+        setMagic(3);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        baseDamage = HegemonMod.ToxicityThisTurn * 3;
+        baseDamage = HegemonMod.ToxicityThisTurn * magicNumber;
         calculateCardDamage(m);
         addToBot(new AbstractGameAction() {
             @Override

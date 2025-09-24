@@ -22,7 +22,7 @@ public class ToxicPower extends BasePower {
     @Override public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (info.type == DamageInfo.DamageType.NORMAL)
         {
-            addToTop(new NecroticDamageAction(target, info.owner, damageAmount, AbstractGameAction.AttackEffect.POISON));
+            addToTop(new NecroticDamageAction(target, info.owner, this.amount, AbstractGameAction.AttackEffect.POISON));
             flashWithoutSound();
         }
     }

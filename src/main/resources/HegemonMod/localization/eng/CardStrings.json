@@ -16,7 +16,7 @@
 
   "HegemonMod:Crunch": {
     "NAME": "Crunch",
-    "DESCRIPTION": "Deal Necrotic damage equal to !M!* HegemonMod:Toxicity gained this turn. (!D!)"
+    "DESCRIPTION": "Deal Necrotic damage equal to HegemonMod:Toxicity gained this turn * !M!. NL (!D!)"
   },
   "HegemonMod:HeroicPlay": {
     "NAME": "Heroic Play",
@@ -59,25 +59,34 @@
     "DESCRIPTION": "Gain 1 Artifact. NL Scry !M!."
   },
 
-  "HegemonMod:SkillBookRed": {
-    "NAME": "Red Skill Book",
-    "DESCRIPTION": "Create a random {!M!|>1=upgraded }red common skill in your hand. NL Exhaust."
+  "HegemonMod:Dose": {
+    "NAME": "Dose",
+    "DESCRIPTION": "Apply !M! HegemonMod:Leech_Toxin."
   },
-  "HegemonMod:SkillBookGreen": {
-    "NAME": "Green Skill Book",
-    "DESCRIPTION": "Create a random {!M!|>1=upgraded }green common skill in your hand. NL Exhaust."
+  "HegemonMod:FalseOpening": {
+    "NAME": "False Opening",
+    "DESCRIPTION": "Gain !B! Block. NL Create a *Punish.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Create a *Punish+."
   },
-  "HegemonMod:SkillBookBlue": {
-    "NAME": "Blue Skill Book",
-    "DESCRIPTION": "Create a random {!M!|>1=upgraded }blue common skill in your hand. NL Exhaust."
+  "HegemonMod:Recover": {
+    "NAME": "Recover",
+    "DESCRIPTION": "Gain !HegemonMod:Artifact! Artifact. Target monster heals by 3 each turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !HegemonMod:Artifact! Artifact. Target monster heals by 3 each turn."
   },
-  "HegemonMod:SkillBookPurple": {
-    "NAME": "Purple Skill Book",
-    "DESCRIPTION": "Create a random {!M!|>1=upgraded }purple common skill in your hand. NL Exhaust."
+  "HegemonMod:SkillBookVanilla": {
+    "NAME": "Vanilla Skill Book",
+    "DESCRIPTION": "Create a random common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded common skill in your hand. NL Exhaust."
   },
-  "HegemonMod:SkillBookTemplate": {
-    "NAME": "%s Skill Book",
-    "DESCRIPTION": "Create a random {!M!|>1=upgraded }%s common skill in your hand. NL Exhaust."
+  "HegemonMod:SkillBookBlack": {
+    "NAME": "Black Skill Book",
+    "DESCRIPTION": "Create a random common Hegemon skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded common Hegemon skill in your hand. NL Exhaust."
+  },
+  "HegemonMod:SkillBookMods": {
+    "NAME": "Modded Skill Book",
+    "DESCRIPTION": "Create a random common Hegemon skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded common Hegemon skill in your hand. NL Exhaust."
   },
   "HegemonMod:Vaccinate": {
     "NAME": "Vaccinate",
@@ -105,6 +114,11 @@
   "HegemonMod:Hamartia": {
     "NAME": "Hamartia",
     "DESCRIPTION": "Apply !M! HegemonMod:Sin."
+  },
+
+  "HegemonMod:Vector": {
+    "NAME": "Vector",
+    "DESCRIPTION": "Apply !M! HegemonMod:Leech_Toxin and heal target by 1. NL Draw 1 card. NL Exhaust."
   },
 
 
@@ -154,8 +168,13 @@
   },
   "HegemonMod:PlagueBearer": {
     "NAME": "Plague Bearer",
-    "DESCRIPTION": "After each turn, shuffle !M! *Vector{!M!|>1=s} into the draw pile."
+    "DESCRIPTION": "After each turn, shuffle a *Vector into the draw pile.",
+    "UPGRADE_DESCRIPTION": "After each turn, shuffle !M! *Vectors into the draw pile."
   },
+
+
+
+
 
 
 
@@ -168,10 +187,6 @@
   "HegemonMod:HydraFlail": {
     "NAME": "Hydra Flail",
     "DESCRIPTION": "Deal !D! damage to a random enemy NL 2X times."
-  },
-  "HegemonMod:Dose": {
-    "NAME": "Dose",
-    "DESCRIPTION": "Apply !M! HegemonMod:Leech_Toxin."
   },
   "HegemonMod:Endure": {
     "NAME": "Endure",
@@ -206,10 +221,6 @@
     "NAME": "Riposte",
     "DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 *Punish",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 *Punish+"
-  },
-  "HegemonMod:FalseOpening": {
-    "NAME": "False Opening",
-    "DESCRIPTION": "Gain !B! Block. NL Create !M! *Punish."
   },
   "HegemonMod:Punition": {
     "NAME": "Punition",
@@ -301,10 +312,6 @@
     "NAME": "Verdict",
     "DESCRIPTION": "Deal damage equal to !M!% of target's lost health."
   },
-  "HegemonMod:Vector": {
-    "NAME": "Vector",
-    "DESCRIPTION": "Apply !M! HegemonMod:Leech_Toxin and heal target by 1. NL Draw 1 card. NL Exhaust."
-  },
   "HegemonMod:Disease": {
     "NAME": "Disease",
     "DESCRIPTION": "Apply !M! HegemonMod:Leech_Toxin and heal target."
@@ -313,8 +320,9 @@
     "NAME": "Massage",
     "DESCRIPTION": "Deal !D! damage and heal target by !M!. Increase heal by !HegemonMod:Stack! this combat."
   },
-  "HegemonMod:Recovery": {
-    "NAME": "Recovery",
-    "DESCRIPTION": "Gain !HegemonMod:Artifact! Artifact. Target monster heals by 3 each turn."
+  "HegemonMod:SkillBookTemplate": {
+    "NAME": "%s Skill Book",
+    "DESCRIPTION": "Create a random %s common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded %s common skill in your hand. NL Exhaust."
   }
 }

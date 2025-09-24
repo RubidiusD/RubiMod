@@ -1,8 +1,8 @@
 HegemonMod\cards\skills\starter\CloakofNight.class
 HegemonMod\powers\buff\MeditationPower.class
+HegemonMod\cards\skills\common\SkillBookMods.class
 HegemonMod\cards\skills\Vector.class
-HegemonMod\cards\skills\common\SkillBookTemplate.class
-HegemonMod\cards\skills\common\SkillBookGreen.class
+HegemonMod\cards\skills\common\SkillBookVanilla.class
 HegemonMod\cards\powers\uncommon\IncreaseToxicity.class
 HegemonMod\powers\buff\RecoveryPower.class
 HegemonMod\actions\SkillBookAction.class
@@ -18,8 +18,11 @@ HegemonMod\relics\GordonRelic.class
 HegemonMod\patches\ArtifactPatch$ArtifactLostSubscriber.class
 HegemonMod\HegemonMod$1.class
 HegemonMod\patches\ExecutePatch.class
+HegemonMod\cards\skills\common\FalseOpening.class
 HegemonMod\cards\powers\uncommon\AfflictionSpecialisation.class
+HegemonMod\cards\skills\common\Dose.class
 HegemonMod\relics\ConcealedRazor.class
+HegemonMod\cards\skills\common\SkillBookBlack.class
 HegemonMod\actions\XEnergyAction$FunctionV.class
 HegemonMod\cards\attacks\common\Crunch$1.class
 HegemonMod\cards\attacks\common\Crunch.class
@@ -46,13 +49,11 @@ HegemonMod\cards\attacks\uncommon\ToxicStrike.class
 HegemonMod\cards\powers\rare\PhoenixForm.class
 HegemonMod\cards\attacks\common\Ruination.class
 HegemonMod\powers\BasePower.class
-HegemonMod\cards\skills\common\SkillBookRed.class
 HegemonMod\cards\powers\rare\PlagueBearer.class
 HegemonMod\cards\skills\uncommon\PathOfShadows.class
 HegemonMod\util\TextureLoader$1.class
 HegemonMod\relics\BaseRelic$1.class
 HegemonMod\powers\debuff\Necrotoxin.class
-HegemonMod\cards\skills\common\SkillBookPurple.class
 HegemonMod\cards\powers\uncommon\WayOfTheSnake.class
 HegemonMod\patches\LearnedPatch$1.class
 HegemonMod\cards\powers\rare\Sacrifice.class
@@ -68,7 +69,6 @@ HegemonMod\cards\powers\uncommon\Meditation.class
 HegemonMod\patches\LearnedPatch.class
 HegemonMod\cards\skills\starter\Defend.class
 HegemonMod\util\GeneralUtils.class
-HegemonMod\cards\skills\common\SkillBookBlue.class
 HegemonMod\cards\powers\uncommon\LikeBlood.class
 HegemonMod\cards\skills\uncommon\SkillBookColorless.class
 HegemonMod\patches\ExecuteJudgementPatch.class
@@ -83,6 +83,7 @@ HegemonMod\relics\PropheticScraps.class
 HegemonMod\powers\buff\PhoenixPower.class
 HegemonMod\util\TextureLoader.class
 HegemonMod\cards\powers\rare\FastLearner.class
+HegemonMod\cards\skills\common\Recover.class
 HegemonMod\relics\MysteriousStranger.class
 HegemonMod\relics\SuspiciousSalve.class
 HegemonMod\actions\NecroticDamageAction.class

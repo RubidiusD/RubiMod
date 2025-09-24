@@ -1,5 +1,7 @@
 package HegemonMod;
 
+import HegemonMod.cards.skills.common.SkillBookMods;
+import HegemonMod.cards.skills.common.SkillBookVanilla;
 import HegemonMod.cards.skills.uncommon.InexorableDoom;
 import basemod.AutoAdd;
 import basemod.BaseMod;
@@ -7,13 +9,11 @@ import basemod.helpers.CardBorderGlowManager;
 import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.MinionPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import HegemonMod.cards.skills.common.SkillBookTemplate;
 import HegemonMod.relics.BaseRelic;
 import HegemonMod.util.CustomTags;
 import HegemonMod.util.GeneralUtils;
@@ -251,14 +251,17 @@ public class HegemonMod implements
                         UnlockTracker.markCardAsSeen(card.cardID); // marks as discovered if seen before or a starter
                 });
 
-        BaseMod.removeCard(SkillBookTemplate.ID, Hegemon.Meta.CARD_COLOR);
+        SkillBookVanilla.Colours.add(CardLibrary.LibraryType.RED);
+        SkillBookVanilla.Colours.add(CardLibrary.LibraryType.GREEN);
+        SkillBookVanilla.Colours.add(CardLibrary.LibraryType.BLUE);
+        SkillBookVanilla.Colours.add(CardLibrary.LibraryType.PURPLE);
         for (AbstractCard.CardColor colour : BaseMod.getCardColors()) {
-            System.out.println("Making card for colour " + colour.toString());
-            if (SkillBookTemplate.isAccepted(colour)) {
-                BaseMod.addCard(new SkillBookTemplate().setColour(CardLibrary.LibraryType.valueOf(colour.toString())));
-                System.out.println(" (accepted)");
+            if (SkillBookMods.isAccepted(colour)) {
+                SkillBookMods.Colours.add(CardLibrary.LibraryType.valueOf(colour.toString()));
             }
         }
+        if (SkillBookMods.Colours.isEmpty())
+            BaseMod.removeCard(SkillBookMods.ID, Hegemon.Meta.CARD_COLOR);
 
         // Card Glow Conditions
         CardBorderGlowManager.addGlowInfo(new CardBorderGlowManager.GlowInfo() {

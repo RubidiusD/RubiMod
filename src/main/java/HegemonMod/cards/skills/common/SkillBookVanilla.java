@@ -8,8 +8,13 @@ import HegemonMod.actions.SkillBookAction;
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
 
-public class SkillBookGreen extends BaseCard {
-    public static final String ID = ("HegemonMod:" + SkillBookGreen.class.getSimpleName());
+import java.util.ArrayList;
+
+import static HegemonMod.util.CustomTags.SKILL_BOOK;
+
+public class SkillBookVanilla extends BaseCard {
+    public static final String ID = ("HegemonMod:" + SkillBookVanilla.class.getSimpleName());
+    public static ArrayList<CardLibrary.LibraryType> Colours = new ArrayList<>();
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
@@ -18,18 +23,19 @@ public class SkillBookGreen extends BaseCard {
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    public SkillBookGreen() {
+    public SkillBookVanilla() {
         super(ID, info); // calls the parent constructor
 
         setMagic(0, 1);
         setExhaust(true);
+        addTag(SKILL_BOOK);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SkillBookAction(CardRarity.COMMON, CardLibrary.LibraryType.GREEN, (magicNumber == 1), false));
+        addToBot(new SkillBookAction(CardRarity.COMMON, Colours, (magicNumber == 1), false));
     }
 
     @Override public AbstractCard makeCopy() { //Optional
-        return new SkillBookGreen();
+        return new SkillBookVanilla();
     }
 }

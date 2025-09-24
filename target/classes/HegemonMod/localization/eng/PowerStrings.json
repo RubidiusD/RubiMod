@@ -97,6 +97,12 @@
       "Take #b", "% additional Necrotic damage."
     ]
   },
+  "HegemonMod:ToxicPower": {
+    "NAME": "Toxicity",
+    "DESCRIPTIONS": [
+      "Deal #b", " Necrotic damage each time you attack."
+    ]
+  },
 
 
 
