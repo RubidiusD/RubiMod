@@ -31,7 +31,5 @@ public class Meditation extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new MeditationPower(p, magicNumber)));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new Meditation();
-    }
+    @Override public AbstractCard makeCopy() { return new Meditation(); }
 }

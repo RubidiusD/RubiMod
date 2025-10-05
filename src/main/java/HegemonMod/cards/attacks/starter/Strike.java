@@ -35,7 +35,5 @@ public class Strike extends BaseCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new Strike();
-    }
+    @Override public AbstractCard makeCopy() { return new Strike(); }
 }

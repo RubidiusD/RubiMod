@@ -33,7 +33,5 @@ public class WayOfTheSnake extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new SnakePower(p, magicNumber)));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new WayOfTheSnake();
-    }
+    @Override public AbstractCard makeCopy() { return new WayOfTheSnake(); }
 }

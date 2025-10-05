@@ -27,13 +27,9 @@ public class PlagueBearer extends BaseCard {
         cardsToPreview = new Vector();
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new PlagueBearerPower(p, magicNumber)));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new PlagueBearer();
-    }
+    @Override public AbstractCard makeCopy() { return new PlagueBearer(); }
 }

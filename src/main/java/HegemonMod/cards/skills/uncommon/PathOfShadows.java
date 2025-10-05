@@ -32,21 +32,16 @@ public class PathOfShadows extends BaseCard {
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         for (int i = 0; i != magicNumber; i++)
             addToBot(new GainBlockAction(p, block));
         addToBot(new ApplyPowerAction(p, p, new NoBlockPower(p, 1, false)));
         addToBot(new ApplyPowerAction(p, p, new BlurPower(p, 1)));
     }
 
-    @Override
-    public void triggerWhenDrawn() {
+    @Override public void triggerWhenDrawn() {
         this.shuffleBackIntoDrawPile = false;
     }
 
-    @Override
-    public AbstractCard makeCopy() { //Optional
-        return new PathOfShadows();
-    }
+    @Override public AbstractCard makeCopy() { return new PathOfShadows(); }
 }

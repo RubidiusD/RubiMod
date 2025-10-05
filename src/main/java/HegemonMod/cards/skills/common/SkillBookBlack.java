@@ -31,7 +31,5 @@ public class SkillBookBlack extends BaseCard {
         addToBot(new SkillBookAction(CardRarity.COMMON, Hegemon.Meta.LIBRARY_COLOR, (magicNumber == 1), false));
     }
 
-    @Override public AbstractCard makeCopy() { //Optional
-        return new SkillBookBlack();
-    }
+    @Override public AbstractCard makeCopy() { return new SkillBookBlack(); }
 }

@@ -32,7 +32,5 @@ public class AfflictionSpecialisation extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, magicNumber)));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new AfflictionSpecialisation();
-    }
+    @Override public AbstractCard makeCopy() { return new AfflictionSpecialisation(); }
 }

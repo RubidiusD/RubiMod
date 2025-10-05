@@ -16,11 +16,11 @@
 
   "HegemonMod:Crunch": {
     "NAME": "Crunch",
-    "DESCRIPTION": "Deal Necrotic damage equal to HegemonMod:Toxicity gained this turn * !M!. NL (!D!)"
+    "DESCRIPTION": "Deal damage equal to HegemonMod:Toxicity gained this turn X !M!. NL (!D!)"
   },
   "HegemonMod:HeroicPlay": {
     "NAME": "Heroic Play",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail and !M! Vulnerable."
+    "DESCRIPTION": "Deal !D! damage. NL Become Frail and Vulnerable."
   },
   "HegemonMod:LashOut": {
     "NAME": "Lash Out",
@@ -34,6 +34,10 @@
     "NAME": "Ruination",
     "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage."
   },
+  "HegemonMod:SpiritCoin": {
+    "NAME": "Spirit Coin",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! HegemonMod:Leech_Toxin."
+  },
 
   "HegemonMod:ToxicStrike": {
     "NAME": "Toxic Strike",
@@ -42,7 +46,7 @@
 
   "HegemonMod:Punish": {
     "NAME": "Punish",
-    "DESCRIPTION": "Apply !M! HegemonMod:Sin. NL Deal !D! HegemonMod:Necrotic damage. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Apply !M! HegemonMod:Sin. NL Deal !D! HegemonMod:Necrotic damage. NL Exhaust."
   },
 
 
@@ -62,6 +66,10 @@
   "HegemonMod:Dose": {
     "NAME": "Dose",
     "DESCRIPTION": "Apply !M! HegemonMod:Leech_Toxin."
+  },
+  "HegemonMod:Endure": {
+    "NAME": "Endure",
+    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HegemonMod:Toxicity."
   },
   "HegemonMod:FalseOpening": {
     "NAME": "False Opening",
@@ -104,16 +112,26 @@
   },
   "HegemonMod:SkillBookColorless": {
     "NAME": "Colorless Skill Book",
-    "DESCRIPTION": "Create a random {!M!|>1=upgraded }colorless uncommon skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random uncommon colorless skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded uncommon colorless skill in your hand. NL Exhaust."
   },
   "HegemonMod:SwordTrance": {
     "NAME": "Sword Trance",
     "DESCRIPTION": "Gain [E] [E]. Become Confused."
   },
 
+  "HegemonMod:Cleanse": {
+    "NAME": "Cleanse",
+    "DESCRIPTION": "Heal !M!. NL Lose 2 HegemonMod:Toxicity. NL Exhaust."
+  },
+  "HegemonMod:FastLearner": {
+    "NAME": "Fast Learner",
+    "DESCRIPTION": "Unplayable. NL Cards created with this in hand cost 1 less. NL Retains for !M! turns. NL (!HegemonMod:Retain! turns left)"
+  },
   "HegemonMod:Hamartia": {
     "NAME": "Hamartia",
-    "DESCRIPTION": "Apply !M! HegemonMod:Sin."
+    "DESCRIPTION": "Apply !M! HegemonMod:Sin. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Apply !M! HegemonMod:Sin."
   },
 
   "HegemonMod:Vector": {
@@ -142,12 +160,11 @@
     "NAME": "Meditation",
     "DESCRIPTION": "At the start of each turn, gain Weak and draw a card."
   },
-  "HegemonMod:Sacrifice": {
-    "NAME": "Ritual Sacrifice",
-    "DESCRIPTION": "Can only be played if you have no Artifact. NL !M! Strength. You can no longer heal.",
-    "UPGRADE_DESCRIPTION": "Can only be played if you have no Artifact. NL !M! Strength and 1 Ritual. You can no longer heal."
-  },
   "HegemonMod:SinEater": {
+    "NAME": "Sin Eater",
+    "DESCRIPTION": "Whenever you would lose Artifact, gain !M! temporary HP."
+  },
+  "HegemonMod:Undeath": {
     "NAME": "Sin Eater",
     "DESCRIPTION": "Whenever you would lose Artifact, gain !M! temporary HP."
   },
@@ -161,15 +178,15 @@
     "NAME": "Phoenix Form",
     "DESCRIPTION": "Ethereal. NL Increase your buffs by an amount that increases each turn."
   },
-  "HegemonMod:FastLearner": {
-    "NAME": "Fast Learner",
-    "DESCRIPTION": "Whenever you create a card in combat, reduce its cost by 1.",
-    "UPGRADE_DESCRIPTION": "Whenever you create a card in combat, reduce its cost by 1. NL Adds *Master *Reality to the discard pile."
-  },
   "HegemonMod:PlagueBearer": {
     "NAME": "Plague Bearer",
     "DESCRIPTION": "After each turn, shuffle a *Vector into the draw pile.",
     "UPGRADE_DESCRIPTION": "After each turn, shuffle !M! *Vectors into the draw pile."
+  },
+  "HegemonMod:Sacrifice": {
+    "NAME": "Ritual Sacrifice",
+    "DESCRIPTION": "Can only be played if you have no Artifact. NL !M! Strength. You can no longer heal.",
+    "UPGRADE_DESCRIPTION": "Can only be played if you have no Artifact. NL !M! Strength and 1 Ritual. You can no longer heal."
   },
 
 
@@ -187,10 +204,6 @@
   "HegemonMod:HydraFlail": {
     "NAME": "Hydra Flail",
     "DESCRIPTION": "Deal !D! damage to a random enemy NL 2X times."
-  },
-  "HegemonMod:Endure": {
-    "NAME": "Endure",
-    "DESCRIPTION": "Gain !B! x !M! Block. NL Gain Frail."
   },
   "HegemonMod:Imbibe": {
     "NAME": "Imbibe",
@@ -243,11 +256,6 @@
   "HegemonMod:LeechBite": {
     "NAME": "Leech Bite",
     "DESCRIPTION": "Deal !D! damage. NL Inflict HegemonMod:Bleeding. ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict HegemonMod:Bleeding and HegemonMod:Leech_Toxin."
-  },
-  "HegemonMod:SpiritCoin": {
-    "NAME": "Spirit Coin",
-    "DESCRIPTION": "Deal !D! damage. NL HegemonMod:Bleed. ",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Inflict HegemonMod:Bleeding and HegemonMod:Leech_Toxin."
   },
   "HegemonMod:LeechHose": {

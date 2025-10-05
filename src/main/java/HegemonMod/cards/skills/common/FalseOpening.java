@@ -32,13 +32,10 @@ public class FalseOpening extends BaseCard {
         addToBot(new MakeTempCardInHandAction(cardsToPreview.makeStatEquivalentCopy()));
     }
 
-    @Override
-    public void upgrade() {
+    @Override public void upgrade() {
         super.upgrade();
         cardsToPreview.upgrade();
     }
 
-    @Override public AbstractCard makeCopy() { //Optional
-        return new FalseOpening();
-    }
+    @Override public AbstractCard makeCopy() { return new FalseOpening(); }
 }

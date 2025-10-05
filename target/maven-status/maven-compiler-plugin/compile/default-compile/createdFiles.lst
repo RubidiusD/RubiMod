@@ -23,6 +23,7 @@ HegemonMod\cards\powers\uncommon\AfflictionSpecialisation.class
 HegemonMod\cards\skills\common\Dose.class
 HegemonMod\relics\ConcealedRazor.class
 HegemonMod\cards\skills\common\SkillBookBlack.class
+HegemonMod\cards\skills\rare\FastLearner.class
 HegemonMod\actions\XEnergyAction$FunctionV.class
 HegemonMod\cards\attacks\common\Crunch$1.class
 HegemonMod\cards\attacks\common\Crunch.class
@@ -37,6 +38,7 @@ HegemonMod\powers\debuff\Sin.class
 HegemonMod\cards\BaseCard$QuickDynamicVariable.class
 HegemonMod\character\Hegemon$Meta.class
 HegemonMod\cards\BaseCard$LocalVarInfo.class
+HegemonMod\cards\powers\uncommon\Undeath.class
 HegemonMod\powers\buff\LearnedPower.class
 HegemonMod\patches\ArtifactPatch.class
 HegemonMod\powers\debuff\LeechToxin.class
@@ -51,7 +53,9 @@ HegemonMod\cards\attacks\common\Ruination.class
 HegemonMod\powers\BasePower.class
 HegemonMod\cards\powers\rare\PlagueBearer.class
 HegemonMod\cards\skills\uncommon\PathOfShadows.class
+HegemonMod\cards\skills\rare\FastLearner$BouncyPatch.class
 HegemonMod\util\TextureLoader$1.class
+HegemonMod\cards\skills\rare\Cleanse.class
 HegemonMod\relics\BaseRelic$1.class
 HegemonMod\powers\debuff\Necrotoxin.class
 HegemonMod\cards\powers\uncommon\WayOfTheSnake.class
@@ -59,10 +63,13 @@ HegemonMod\patches\LearnedPatch$1.class
 HegemonMod\cards\powers\rare\Sacrifice.class
 HegemonMod\powers\buff\GentlePower.class
 HegemonMod\cards\skills\uncommon\SwordTrance.class
+HegemonMod\cards\attacks\common\SpiritCoin.class
 HegemonMod\relics\BaseRelic.class
 HegemonMod\cards\BaseCard$CardStats.class
+HegemonMod\cards\skills\common\Endure.class
 HegemonMod\powers\buff\MysteriousPower.class
 HegemonMod\cards\powers\uncommon\SinEater.class
+HegemonMod\powers\buff\UndeathPower.class
 HegemonMod\potions\BasePotion.class
 HegemonMod\cards\powers\uncommon\GentleTouch.class
 HegemonMod\cards\powers\uncommon\Meditation.class
@@ -82,8 +89,8 @@ HegemonMod\cards\attacks\Punish.class
 HegemonMod\relics\PropheticScraps.class
 HegemonMod\powers\buff\PhoenixPower.class
 HegemonMod\util\TextureLoader.class
-HegemonMod\cards\powers\rare\FastLearner.class
 HegemonMod\cards\skills\common\Recover.class
+HegemonMod\cards\skills\rare\FastLearner$BouncyPatch$1.class
 HegemonMod\relics\MysteriousStranger.class
 HegemonMod\relics\SuspiciousSalve.class
 HegemonMod\actions\NecroticDamageAction.class

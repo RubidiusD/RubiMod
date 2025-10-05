@@ -1,14 +1,15 @@
 package HegemonMod.cards.powers.uncommon;
 
-import HegemonMod.actions.ToxicityAction;
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
+import HegemonMod.powers.buff.UndeathPower;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class IncreaseToxicity extends BaseCard {
-    public static final String ID = ("HegemonMod:" + IncreaseToxicity.class.getSimpleName());
+public class Undeath extends BaseCard {
+    public static final String ID = ("HegemonMod:" + Undeath.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,
@@ -17,18 +18,18 @@ public class IncreaseToxicity extends BaseCard {
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 2;
-    private static final int UPG_MAGIC = 1;
+    private static final int MAGIC = 1;
 
-    public IncreaseToxicity() {
+    public Undeath() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(MAGIC, UPG_MAGIC); // self-explanatory
+        setMagic(MAGIC); // self-explanatory
+        setCostUpgrade(0);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ToxicityAction(p, magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new UndeathPower(p, magicNumber)));
     }
 
-    @Override public AbstractCard makeCopy() { return new IncreaseToxicity(); }
+    @Override public AbstractCard makeCopy() { return new Undeath(); }
 }

@@ -31,7 +31,5 @@ public class Recover extends BaseCard {
         addToBot(new ApplyPowerAction(m, p, new RecoveryPower(m, magicNumber)));
     }
 
-    @Override public AbstractCard makeCopy() { //Optional
-        return new Recover();
-    }
+    @Override public AbstractCard makeCopy() { return new Recover(); }
 }

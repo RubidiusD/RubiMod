@@ -31,7 +31,5 @@ public class LikeBlood extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new LikeBloodPower(p, magicNumber)));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new LikeBlood();
-    }
+    @Override public AbstractCard makeCopy() { return new LikeBlood(); }
 }

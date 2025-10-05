@@ -35,7 +35,5 @@ public class CloakofNight extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new FrailPower(p, 1, false)));
     }
 
-    @Override public AbstractCard makeCopy() { //Optional
-        return new CloakofNight();
-    }
+    @Override public AbstractCard makeCopy() { return new CloakofNight(); }
 }

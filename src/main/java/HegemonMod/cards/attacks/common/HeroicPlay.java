@@ -39,7 +39,5 @@ public class HeroicPlay extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new VulnerablePower(p, magicNumber, false)));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new HeroicPlay();
-    }
+    @Override public AbstractCard makeCopy() { return new HeroicPlay(); }
 }

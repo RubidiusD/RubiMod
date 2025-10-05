@@ -36,7 +36,5 @@ public class Ruination extends BaseCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new Ruination();
-    }
+    @Override public AbstractCard makeCopy() { return new Ruination(); }
 }

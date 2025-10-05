@@ -28,7 +28,5 @@ public class Dose extends BaseCard {
         addToBot(new ApplyPowerAction(m, p, new LeechToxin(m, p, magicNumber)));
     }
 
-    @Override public AbstractCard makeCopy() { //Optional
-        return new Dose();
-    }
+    @Override public AbstractCard makeCopy() { return new Dose(); }
 }

@@ -28,19 +28,14 @@ public class SwordTrance extends BaseCard {
         setCostUpgrade(0);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainEnergyAction(magicNumber));
         addToBot(new ApplyPowerAction(p, p, new ConfusionPower(p)));
     }
 
-    @Override
-    public void triggerWhenDrawn() {
+    @Override public void triggerWhenDrawn() {
         this.shuffleBackIntoDrawPile = false;
     }
 
-    @Override
-    public AbstractCard makeCopy() { //Optional
-        return new SwordTrance();
-    }
+    @Override public AbstractCard makeCopy() { return new SwordTrance(); }
 }

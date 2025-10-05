@@ -44,7 +44,5 @@ public class LashOut extends BaseCard {
         }
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new LashOut();
-    }
+    @Override public AbstractCard makeCopy() { return new LashOut(); }
 }

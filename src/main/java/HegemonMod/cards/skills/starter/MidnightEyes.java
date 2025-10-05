@@ -33,7 +33,5 @@ public class MidnightEyes extends BaseCard {
         addToBot(new ScryAction(magicNumber));
     }
 
-    @Override public AbstractCard makeCopy() { //Optional
-        return new MidnightEyes();
-    }
+    @Override public AbstractCard makeCopy() { return new MidnightEyes(); }
 }

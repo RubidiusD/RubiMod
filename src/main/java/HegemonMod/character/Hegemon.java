@@ -243,6 +243,5 @@ public class Hegemon extends CustomPlayer {
 
     @Override public AbstractPlayer newInstance() {
         //Makes a new instance of your character class.
-        return new Hegemon();
-    }
+        return new Hegemon(); }
 }

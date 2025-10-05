@@ -66,6 +66,12 @@
       "On creating a card, reduce its [E] cost by #b1."
     ]
   },
+  "HegemonMod:UndeathPower": {
+    "NAME": "Undeath",
+    "DESCRIPTIONS": [
+      "End of turn, lose #r", " health and gain #b", " Artifact."
+    ]
+  },
 
   "HegemonMod:DoomPower": {
     "NAME": "Doom",
@@ -100,7 +106,8 @@
   "HegemonMod:ToxicPower": {
     "NAME": "Toxicity",
     "DESCRIPTIONS": [
-      "Deal #b", " Necrotic damage each time you attack."
+      "Deal #b", " Necrotic damage each time you attack. Reduces by 1 at the end of your turn.",
+      "Deal #r", " less Necrotic damage."
     ]
   },
 

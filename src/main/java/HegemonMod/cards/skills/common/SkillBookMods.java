@@ -35,8 +35,7 @@ public class SkillBookMods extends BaseCard {
         addToBot(new SkillBookAction(CardRarity.COMMON, Colours, (magicNumber == 1), false));
     }
 
-    @Override public AbstractCard makeCopy() { //Optional
-        return new SkillBookMods();
+    @Override public AbstractCard makeCopy() { return new SkillBookMods();
     }
 
     private static final String[] rejectedColors = {"Hegemon", "Saber", "Projections", "Extra", "Other_COLOR", "Noble_Phantasm_COLOR"};

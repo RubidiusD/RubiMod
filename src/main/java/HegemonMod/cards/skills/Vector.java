@@ -35,7 +35,5 @@ public class Vector extends BaseCard {
         addToBot(new DrawCardAction(1));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new Vector();
-    }
+    @Override public AbstractCard makeCopy() { return new Vector(); }
 }

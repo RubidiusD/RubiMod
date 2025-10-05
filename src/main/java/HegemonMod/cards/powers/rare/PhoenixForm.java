@@ -35,7 +35,5 @@ public class PhoenixForm extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new PhoenixPower(p, magicNumber, 1)));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new PhoenixForm();
-    }
+    @Override public AbstractCard makeCopy() { return new PhoenixForm(); }
 }

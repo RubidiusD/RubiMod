@@ -31,7 +31,5 @@ public class SinEater extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new SinEaterPower(p, magicNumber)));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new SinEater();
-    }
+    @Override public AbstractCard makeCopy() { return new SinEater(); }
 }

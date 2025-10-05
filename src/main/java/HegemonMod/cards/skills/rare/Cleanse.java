@@ -1,35 +1,38 @@
-package HegemonMod.cards.skills.uncommon;
+package HegemonMod.cards.skills.rare;
 
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
-import HegemonMod.powers.debuff.LeechToxin;
+import HegemonMod.powers.buff.ToxicPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Vaccinate extends BaseCard {
-    public static final String ID = ("HegemonMod:" + Vaccinate.class.getSimpleName());
+public class Cleanse extends BaseCard {
+    public static final String ID = ("HegemonMod:" + Cleanse.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
-            CardRarity.UNCOMMON,
+            CardRarity.RARE,
             CardTarget.SELF,
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    public Vaccinate() {
+    private static final int MAGIC = 4;
+    private static final int UPG_MAGIC = 2;
+
+    public Cleanse() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(3);
-        setSelfRetain(false, true);
+        setMagic(MAGIC, UPG_MAGIC);
+        setExhaust(true);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        for (int i = 0; i != magicNumber; i ++) {
-            addToBot(new ApplyPowerAction(p, p, new LeechToxin(p, p, 1)));
-        }
+        addToBot(new HealAction(p, p, magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new ToxicPower(p, -2)));
     }
 
-    @Override public AbstractCard makeCopy() { return new Vaccinate(); }
+    @Override public AbstractCard makeCopy() { return new Cleanse(); }
 }

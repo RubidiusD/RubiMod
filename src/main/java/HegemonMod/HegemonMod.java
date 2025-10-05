@@ -292,8 +292,7 @@ public class HegemonMod implements
 
     public static int ToxicityThisTurn = 0;
 
-    @Override
-    public void receiveOnPlayerTurnStart() {
+    @Override public void receiveOnPlayerTurnStart() {
         ToxicityThisTurn = 0;
     }
 }

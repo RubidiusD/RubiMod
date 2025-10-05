@@ -14,7 +14,7 @@ public class Hamartia extends BaseCard {
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
             CardRarity.RARE,
-            CardTarget.SELF,
+            CardTarget.ENEMY,
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
@@ -31,7 +31,5 @@ public class Hamartia extends BaseCard {
         addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber)));
     }
 
-    @Override public AbstractCard makeCopy() { //Optional
-        return new Hamartia();
-    }
+    @Override public AbstractCard makeCopy() { return new Hamartia(); }
 }

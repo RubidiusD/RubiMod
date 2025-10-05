@@ -19,7 +19,7 @@ public class MysteriousPower extends BasePower {
     }
 
     @Override public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if (target.equals(owner) && ( (power.canGoNegative) ? (power.amount < 0) : (power.type == PowerType.DEBUFF)) && (!owner.hasPower(ArtifactPower.POWER_ID) || owner.getPower(ArtifactPower.POWER_ID).amount < 1))
+        if (target.equals(owner) && ( (power.canGoNegative) ? (power.amount < 0) : (power.type == PowerType.DEBUFF) ) && (!owner.hasPower(ArtifactPower.POWER_ID) || owner.getPower(ArtifactPower.POWER_ID).amount < 1))
             addToTop(new ApplyPowerAction(owner, owner, new ArtifactPower(owner, amount)));
     }
 

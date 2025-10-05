@@ -32,7 +32,5 @@ public class Defend extends BaseCard {
         addToBot(new GainBlockAction(p, p, block));
     }
 
-    @Override public AbstractCard makeCopy() { //Optional
-        return new Defend();
-    }
+    @Override public AbstractCard makeCopy() { return new Defend(); }
 }

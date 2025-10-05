@@ -34,8 +34,7 @@ public class Crunch extends BaseCard {
         baseDamage = HegemonMod.ToxicityThisTurn * magicNumber;
         calculateCardDamage(m);
         addToBot(new AbstractGameAction() {
-            @Override
-            public void update() {
+            @Override public void update() {
                 addToTop(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
 
                 this.isDone = true;
@@ -43,13 +42,10 @@ public class Crunch extends BaseCard {
         });
     }
 
-    @Override
-    public void applyPowers() {
+    @Override public void applyPowers() {
         this.baseDamage = HegemonMod.ToxicityThisTurn * 3;
         super.applyPowers();
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new Crunch();
-    }
+    @Override public AbstractCard makeCopy() { return new Crunch(); }
 }

@@ -32,7 +32,5 @@ public class SkillBookColorless extends BaseCard {
         addToBot(new SkillBookAction(CardRarity.UNCOMMON, CardLibrary.LibraryType.COLORLESS, (magicNumber == 1), false));
     }
 
-    @Override public AbstractCard makeCopy() { //Optional
-        return new SkillBookColorless();
-    }
+    @Override public AbstractCard makeCopy() { return new SkillBookColorless(); }
 }

@@ -22,7 +22,7 @@ public class Sacrifice extends BaseCard {
     );
 
     private static final int MAGIC = 5;
-    private static final int LEECH = 10;
+    private static final int LEECH = 5;
 
     public Sacrifice() {
         super(ID, info); // calls the parent constructor
@@ -43,7 +43,5 @@ public class Sacrifice extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new LeechToxin(p, p, customVar("Leech"))));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new Sacrifice();
-    }
+    @Override public AbstractCard makeCopy() { return new Sacrifice(); }
 }

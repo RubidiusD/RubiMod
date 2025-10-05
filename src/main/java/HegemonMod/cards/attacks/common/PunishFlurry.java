@@ -44,7 +44,5 @@ public class PunishFlurry extends BaseCard {
         addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new PunishFlurry();
-    }
+    @Override public AbstractCard makeCopy() { return new PunishFlurry(); }
 }

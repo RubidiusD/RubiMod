@@ -28,20 +28,15 @@ public class InexorableDoom extends BaseCard {
         setCustomVar("Doom", 1);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(m, p, new DoomPower(m, customVar("Doom"))));
         if (p.drawPile.size() >= magicNumber)
             this.shuffleBackIntoDrawPile = true;
     }
 
-    @Override
-    public void triggerWhenDrawn() {
+    @Override public void triggerWhenDrawn() {
         this.shuffleBackIntoDrawPile = false;
     }
 
-    @Override
-    public AbstractCard makeCopy() { //Optional
-        return new InexorableDoom();
-    }
+    @Override public AbstractCard makeCopy() { return new InexorableDoom(); }
 }

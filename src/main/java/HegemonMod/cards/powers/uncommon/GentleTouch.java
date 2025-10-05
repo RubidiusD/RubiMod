@@ -33,7 +33,5 @@ public class GentleTouch extends BaseCard {
         addToBot(new ApplyPowerAction(p, p, new GentlePower(p, magicNumber)));
     }
 
-    @Override public AbstractCard makeCopy() { // Optional
-        return new GentleTouch();
-    }
+    @Override public AbstractCard makeCopy() { return new GentleTouch(); }
 }

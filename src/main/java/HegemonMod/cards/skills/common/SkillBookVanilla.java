@@ -35,7 +35,5 @@ public class SkillBookVanilla extends BaseCard {
         addToBot(new SkillBookAction(CardRarity.COMMON, Colours, (magicNumber == 1), false));
     }
 
-    @Override public AbstractCard makeCopy() { //Optional
-        return new SkillBookVanilla();
-    }
+    @Override public AbstractCard makeCopy() { return new SkillBookVanilla(); }
 }
