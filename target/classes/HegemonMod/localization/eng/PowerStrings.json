@@ -6,12 +6,6 @@
     ]
   },
 
-  "HegemonMod:GentlePower": {
-    "NAME": "Gentle Touch",
-    "DESCRIPTIONS": [
-      "On hit, heal target by #g", ". "
-    ]
-  },
   "HegemonMod:LikeBloodPower": {
     "NAME": "Like Blood",
     "DESCRIPTIONS": [
@@ -61,7 +55,7 @@
     ]
   },
   "HegemonMod:LearnedPower": {
-    "NAME": "Learned",
+    "NAME": "Fast Learner",
     "DESCRIPTIONS": [
       "On creating a card, reduce its [E] cost by #b1."
     ]
@@ -77,6 +71,12 @@
     "NAME": "Doom",
     "DESCRIPTIONS": [
       "Increase debuffs by #b", " at the start of each turn, then increase that number by #b", ". "
+    ]
+  },
+  "HegemonMod:GentlePower": {
+    "NAME": "Gentle Touch",
+    "DESCRIPTIONS": [
+      "On hit, heal target by #g", ". "
     ]
   },
   "HegemonMod:LeechToxin": {

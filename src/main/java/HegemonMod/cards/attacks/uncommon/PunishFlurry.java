@@ -1,4 +1,4 @@
-package HegemonMod.cards.attacks.common;
+package HegemonMod.cards.attacks.uncommon;
 
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
@@ -19,7 +19,7 @@ public class PunishFlurry extends BaseCard {
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.COMMON,
+            CardRarity.UNCOMMON,
             CardTarget.ALL_ENEMY,
             0 // card cost!! (-1 is X, -2 is unplayable)
     );

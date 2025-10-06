@@ -9,6 +9,8 @@ public class PaperUmbrella extends BaseRelic {
     private static final RelicTier RARITY = RelicTier.UNCOMMON;
     private static final LandingSound SOUND = LandingSound.CLINK;
 
+    public static final float Strength = 0.13f;
+
     public PaperUmbrella()  { super(ID, NAME, Hegemon.Meta.CARD_COLOR, RARITY, SOUND); }
 
     @Override public void onEquip() {

@@ -2,7 +2,7 @@ package HegemonMod.cards.powers.uncommon;
 
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
-import HegemonMod.powers.buff.GentlePower;
+import HegemonMod.powers.debuff.GentlePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;

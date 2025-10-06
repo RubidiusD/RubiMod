@@ -23,11 +23,12 @@ public class Recover extends BaseCard {
         super(ID, info); // calls the parent constructor
 
         setMagic(3);
+        setCustomVar("Artifact", 2);
         setExhaust(true, false);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, 2)));
+        addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, customVar("Artifact"))));
         addToBot(new ApplyPowerAction(m, p, new RecoveryPower(m, magicNumber)));
     }
 

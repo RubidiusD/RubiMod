@@ -11,14 +11,15 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.watcher.MasterRealityPower;
 import javassist.CannotCompileException;
 import javassist.expr.ExprEditor;
 import javassist.expr.MethodCall;
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
-public class FastLearner extends BaseCard {
-    public static final String ID = ("HegemonMod:" + FastLearner.class.getSimpleName());
+public class HardLearner extends BaseCard {
+    public static final String ID = ("HegemonMod:" + HardLearner.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
@@ -30,7 +31,7 @@ public class FastLearner extends BaseCard {
     private static final int MAGIC = 1;
     private static final int UPG_MAGIC = 1;
 
-    public FastLearner() {
+    public HardLearner() {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC, UPG_MAGIC);
@@ -39,13 +40,11 @@ public class FastLearner extends BaseCard {
 
     @Override public boolean canUse(AbstractPlayer p, AbstractMonster m) { return false; }
 
-    @Override public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-
-    }
+    @Override public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) { }
 
     @Override public void triggerWhenDrawn() {
         magicNumber = customVar("Retain");
-        addToTop(new ApplyPowerAction(player, player, new LearnedPower(player)));
+        addToTop(new ApplyPowerAction(player, player, new MasterRealityPower(player)));
         selfRetain = true;
     }
 
@@ -57,12 +56,12 @@ public class FastLearner extends BaseCard {
     }
 
     @Override public void onMoveToDiscard() {
-        addToBot(new RemoveSpecificPowerAction(player, player, LearnedPower.POWER_ID));
+        addToBot(new RemoveSpecificPowerAction(player, player, MasterRealityPower.POWER_ID));
     }
 
-    @Override public AbstractCard makeCopy() { return new FastLearner(); }
+    @Override public AbstractCard makeCopy() { return new HardLearner(); }
 
-    @SpirePatch2(clz= FastLearner.class, method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "BuxomMod")
+    @SpirePatch2(clz= HardLearner.class, method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "BuxomMod")
     public static class BouncyPatch {
         @SpireInstrumentPatch public static ExprEditor Instrument() {
             return new ExprEditor() {

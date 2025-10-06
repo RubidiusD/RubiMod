@@ -19,7 +19,7 @@ public class LikeBlood extends BaseCard {
     );
 
     private static final int MAGIC = 8;
-    private static final int UPG_MAGIC = 6;
+    private static final int UPG_MAGIC = 4;
 
     public LikeBlood() {
         super(ID, info); // calls the parent constructor

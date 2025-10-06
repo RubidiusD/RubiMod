@@ -2,7 +2,7 @@ package HegemonMod.powers.buff;
 
 import HegemonMod.patches.ArtifactPatch;
 import HegemonMod.powers.BasePower;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -20,8 +20,9 @@ public class SinEaterPower extends BasePower implements ArtifactPatch.ArtifactLo
     
     @Override public void receiveArtifactLost(AbstractCreature owner) {
         if (owner.equals(this.owner)) {
-            this.flashWithoutSound();
-            addToTop(new GainBlockAction(owner, owner, this.amount));
+            this.flash();
+            addToTop(new AddTemporaryHPAction(owner, owner, amount));
+//            addToTop(new GainBlockAction(owner, owner, this.amount));
         }
     }
 

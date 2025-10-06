@@ -30,8 +30,6 @@ public class Necrotoxin extends BasePower implements HealthBarRenderPower {
     }
 
     @Override public void atStartOfTurn() {
-        super.atStartOfTurn();
-
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             addToTop(new NecrotoxinLoseHPAction(owner, source, amount, AbstractGameAction.AttackEffect.POISON));
 

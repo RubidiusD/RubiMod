@@ -38,10 +38,18 @@
     "NAME": "Spirit Coin",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! HegemonMod:Leech_Toxin."
   },
-
   "HegemonMod:ToxicStrike": {
     "NAME": "Toxic Strike",
-    "DESCRIPTION": "Deal !D! Necrotic damage. NL Become !M! HegemonMod:Toxic."
+    "DESCRIPTION": "Deal !D! damage. Gain !M! HegemonMod:Toxicity and 1 Weak."
+  },
+
+  "HegemonMod:BurnOut": {
+    "NAME": "Burn Out",
+    "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage to ALL enemies. NL Gain !M! less [E] next turn."
+  },
+  "HegemonMod:Exert": {
+    "NAME": "Exert",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! less next turn."
   },
 
   "HegemonMod:Punish": {
@@ -76,6 +84,10 @@
     "DESCRIPTION": "Gain !B! Block. NL Create a *Punish.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Create a *Punish+."
   },
+  "HegemonMod:IncreaseToxicity": {
+    "NAME": "Intoxicate",
+    "DESCRIPTION": "Gain 2 HegemonMod:Toxicity, 1 Weak and draw !M!. NL Can be Upgraded any number of times."
+  },
   "HegemonMod:Recover": {
     "NAME": "Recover",
     "DESCRIPTION": "Gain !HegemonMod:Artifact! Artifact. Target monster heals by 3 each turn. NL Exhaust.",
@@ -93,8 +105,8 @@
   },
   "HegemonMod:SkillBookMods": {
     "NAME": "Modded Skill Book",
-    "DESCRIPTION": "Create a random common Hegemon skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded common Hegemon skill in your hand. NL Exhaust."
+    "DESCRIPTION": "Create a random common Modded skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded common Modded skill in your hand. NL Exhaust."
   },
   "HegemonMod:Vaccinate": {
     "NAME": "Vaccinate",
@@ -126,12 +138,16 @@
   },
   "HegemonMod:FastLearner": {
     "NAME": "Fast Learner",
-    "DESCRIPTION": "Unplayable. NL Cards created with this in hand cost 1 less. NL Retains for !M! turns. NL (!HegemonMod:Retain! turns left)"
+    "DESCRIPTION": "Unplayable. NL Retains for !HegemonMod:Retain! turns. NL Cards created with this in hand cost 1 less. NL (!M! left)"
   },
   "HegemonMod:Hamartia": {
     "NAME": "Hamartia",
     "DESCRIPTION": "Apply !M! HegemonMod:Sin. NL Exhaust",
     "UPGRADE_DESCRIPTION": "Apply !M! HegemonMod:Sin."
+  },
+  "HegemonMod:HardLearner": {
+    "NAME": "Hard Learner",
+    "DESCRIPTION": "Unplayable. NL Retains for !HegemonMod:Retain! turns. NL Upgrade cards created with this in hand. NL (!M! left)"
   },
 
   "HegemonMod:Vector": {
@@ -141,16 +157,12 @@
 
 
   "HegemonMod:AfflictionSpecialisation": {
-    "NAME": "Affliction Specialisation",
+    "NAME": "Specialist",
     "DESCRIPTION": "Innate. NL Gain !M! Artifact."
   },
   "HegemonMod:GentleTouch": {
     "NAME": "Gentle Touch",
     "DESCRIPTION": "Gain !M! Strength and heal targets by !M! on hit."
-  },
-  "HegemonMod:IncreaseToxicity": {
-    "NAME": "Become Toxic",
-    "DESCRIPTION": "Gain !M! HegemonMod:Toxicity"
   },
   "HegemonMod:LikeBlood": {
     "NAME": "Like Blood",

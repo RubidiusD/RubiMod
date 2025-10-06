@@ -1,4 +1,4 @@
-package HegemonMod.powers.buff;
+package HegemonMod.powers.debuff;
 
 import HegemonMod.powers.BasePower;
 import com.megacrit.cardcrawl.actions.common.HealAction;
@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class GentlePower extends BasePower {
     public static final String POWER_ID = ("HegemonMod:" + GentlePower.class.getSimpleName());
-    private static final PowerType TYPE = PowerType.BUFF;
+    private static final PowerType TYPE = PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
 
     public GentlePower(AbstractCreature owner, int amount) { super(POWER_ID, TYPE, TURN_BASED, owner, amount);     }

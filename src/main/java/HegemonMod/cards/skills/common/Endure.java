@@ -22,7 +22,7 @@ public class Endure extends BaseCard {
     public Endure() {
         super(ID, info); // calls the parent constructor
 
-        setBlock(15, 5);
+        setBlock(16, 5);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
