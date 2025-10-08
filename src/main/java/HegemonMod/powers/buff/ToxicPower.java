@@ -1,13 +1,16 @@
 package HegemonMod.powers.buff;
 
+import HegemonMod.HegemonMod;
 import HegemonMod.actions.NecroticDamageAction;
 import HegemonMod.powers.BasePower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 
 import static HegemonMod.util.CustomTags.NECROTIC;
 
@@ -21,12 +24,24 @@ public class ToxicPower extends BasePower {
         canGoNegative = true;
     }
 
+    @Override
+    public void onInitialApplication() {
+        if (this.amount > 0) {
+            HegemonMod.ToxicityThisTurn += this.amount;
+            addToTop(new ApplyPowerAction(owner, owner, new WeakPower(owner, this.amount, false)));
+        }
+    }
+
     @Override public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
         if (amount == 0) {
             addToTop(new RemoveSpecificPowerAction(owner, owner, this));
         } else {
             updateDescription();
+            if (stackAmount > 0) {
+                HegemonMod.ToxicityThisTurn += stackAmount;
+                addToTop(new ApplyPowerAction(owner, owner, new WeakPower(owner, this.amount, false)));
+            }
         }
     }
 

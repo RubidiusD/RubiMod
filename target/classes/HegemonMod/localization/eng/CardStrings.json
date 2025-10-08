@@ -108,11 +108,6 @@
     "DESCRIPTION": "Create a random common Modded skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Create a random upgraded common Modded skill in your hand. NL Exhaust."
   },
-  "HegemonMod:Vaccinate": {
-    "NAME": "Vaccinate",
-    "DESCRIPTION": "Gain 1 HegemonMod:Leech_Toxin !M! times.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Gain 1 HegemonMod:Leech_Toxin !M! times."
-  },
 
   "HegemonMod:InexorableDoom": {
     "NAME": "Inexorable Doom",
@@ -127,9 +122,18 @@
     "DESCRIPTION": "Create a random uncommon colorless skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Create a random upgraded uncommon colorless skill in your hand. NL Exhaust."
   },
+  "HegemonMod:SoberUp": {
+    "NAME": "Sober Up",
+    "DESCRIPTION": "Draw !M!. NL Lose 1 HegemonMod:Toxicity."
+  },
   "HegemonMod:SwordTrance": {
     "NAME": "Sword Trance",
     "DESCRIPTION": "Gain [E] [E]. Become Confused."
+  },
+  "HegemonMod:Vaccinate": {
+    "NAME": "Vaccinate",
+    "DESCRIPTION": "Gain 1 HegemonMod:Leech_Toxin !M! times.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain 1 HegemonMod:Leech_Toxin !M! times."
   },
 
   "HegemonMod:Cleanse": {

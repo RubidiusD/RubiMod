@@ -105,4 +105,5 @@ HegemonMod\cards\skills\starter\MidnightEyes.class
 HegemonMod\HegemonMod.class
 HegemonMod\relics\ComicPage.class
 HegemonMod\util\CustomTags.class
+HegemonMod\cards\skills\uncommon\SoberUp.class
 HegemonMod\powers\buff\ToxicPower.class
