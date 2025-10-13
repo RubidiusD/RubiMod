@@ -1,5 +1,6 @@
 package HegemonMod.cards.skills.common;
 
+import basemod.BaseMod;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
@@ -35,10 +36,19 @@ public class SkillBookMods extends BaseCard {
         addToBot(new SkillBookAction(CardRarity.COMMON, Colours, (magicNumber == 1), false));
     }
 
-    @Override public AbstractCard makeCopy() { return new SkillBookMods();
+    public static void setColours() {
+        for (AbstractCard.CardColor colour : BaseMod.getCardColors()) {
+            if (isAccepted(colour)) {
+                Colours.add(CardLibrary.LibraryType.valueOf(colour.toString()));
+            }
+        }
+        if (Colours.isEmpty()) {
+            BaseMod.removeCard(SkillBookMods.ID, Hegemon.Meta.CARD_COLOR);
+        }
     }
 
     private static final String[] rejectedColors = {"Hegemon", "Saber", "Projections", "Extra", "Other_COLOR", "Noble_Phantasm_COLOR"};
+
     public static boolean isAccepted(CardColor c) {
         for (String s : rejectedColors) {
             if (c.toString().equals(s)) {
@@ -47,4 +57,6 @@ public class SkillBookMods extends BaseCard {
         }
         return true;
     }
+
+    @Override public AbstractCard makeCopy() { return new SkillBookMods(); }
 }

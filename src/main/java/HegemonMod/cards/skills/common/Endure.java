@@ -1,9 +1,8 @@
 package HegemonMod.cards.skills.common;
 
+import HegemonMod.actions.ToxicityAction;
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
-import HegemonMod.powers.buff.ToxicPower;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -27,7 +26,7 @@ public class Endure extends BaseCard {
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, block));
-        addToBot(new ApplyPowerAction(p, p, new ToxicPower(p, -1)));
+        addToBot(new ToxicityAction(p, -1));
     }
 
     @Override public AbstractCard makeCopy() { return new Endure(); }

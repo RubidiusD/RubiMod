@@ -11,6 +11,7 @@ import HegemonMod.character.Hegemon;
 import java.util.ArrayList;
 
 import static HegemonMod.util.CustomTags.SKILL_BOOK;
+import static com.megacrit.cardcrawl.helpers.CardLibrary.LibraryType.*;
 
 public class SkillBookVanilla extends BaseCard {
     public static final String ID = ("HegemonMod:" + SkillBookVanilla.class.getSimpleName());
@@ -22,6 +23,13 @@ public class SkillBookVanilla extends BaseCard {
             CardTarget.NONE,
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
+
+    static {
+        Colours.add(RED);
+        Colours.add(GREEN);
+        Colours.add(BLUE);
+        Colours.add(PURPLE);
+    }
 
     public SkillBookVanilla() {
         super(ID, info); // calls the parent constructor

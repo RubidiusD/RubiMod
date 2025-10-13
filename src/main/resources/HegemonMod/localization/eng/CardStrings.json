@@ -111,7 +111,7 @@
 
   "HegemonMod:InexorableDoom": {
     "NAME": "Inexorable Doom",
-    "DESCRIPTION": "Apply !HegemonMod:Doom! HegemonMod:Doom. NL Shuffle this card into your draw pile if it has !M! cards. "
+    "DESCRIPTION": "Apply HegemonMod:Doom. NL Exhaust."
   },
   "HegemonMod:PathOfShadows": {
     "NAME": "Path of Shadows",
@@ -181,8 +181,8 @@
     "DESCRIPTION": "Whenever you would lose Artifact, gain !M! temporary HP."
   },
   "HegemonMod:Undeath": {
-    "NAME": "Sin Eater",
-    "DESCRIPTION": "Whenever you would lose Artifact, gain !M! temporary HP."
+    "NAME": "Undeath",
+    "DESCRIPTION": "At the end of your turn, gain 1 Artifact and lose !M! HP."
   },
   "HegemonMod:WayOfTheSnake": {
     "NAME": "Way of the Snake",

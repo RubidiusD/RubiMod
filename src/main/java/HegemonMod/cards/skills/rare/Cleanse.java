@@ -1,9 +1,8 @@
 package HegemonMod.cards.skills.rare;
 
+import HegemonMod.actions.ToxicityAction;
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
-import HegemonMod.powers.buff.ToxicPower;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -31,7 +30,7 @@ public class Cleanse extends BaseCard {
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new HealAction(p, p, magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new ToxicPower(p, -2)));
+        addToBot(new ToxicityAction(p, -2));
     }
 
     @Override public AbstractCard makeCopy() { return new Cleanse(); }

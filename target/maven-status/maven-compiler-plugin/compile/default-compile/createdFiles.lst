@@ -18,7 +18,6 @@ HegemonMod\relics\GordonRelic.class
 HegemonMod\cards\skills\common\IncreaseToxicity.class
 HegemonMod\patches\ArtifactPatch$ArtifactLostSubscriber.class
 HegemonMod\powers\debuff\GentlePower.class
-HegemonMod\HegemonMod$1.class
 HegemonMod\patches\ExecutePatch.class
 HegemonMod\cards\skills\common\FalseOpening.class
 HegemonMod\cards\powers\uncommon\AfflictionSpecialisation.class
@@ -35,6 +34,7 @@ HegemonMod\powers\debuff\LegacyofSin.class
 HegemonMod\actions\NecrotoxinLoseHPAction.class
 HegemonMod\cards\attacks\uncommon\PunishFlurry.class
 HegemonMod\cards\attacks\starter\Strike.class
+HegemonMod\patches\ExecutePatch$1.class
 HegemonMod\actions\XEnergyAction.class
 HegemonMod\powers\buff\SinEaterPower.class
 HegemonMod\powers\debuff\Sin.class

@@ -82,7 +82,7 @@
   "HegemonMod:LeechToxin": {
     "NAME": "Leech Toxin",
     "DESCRIPTIONS": [
-      "Negate the next #b", " instances of healing. Instead, deal #b", " Necrotic damage."
+      "Negate the next #b", " instances of healing. Instead, take #b", " Necrotic damage."
     ]
   },
   "HegemonMod:LegacyofSin": {

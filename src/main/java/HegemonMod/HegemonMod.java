@@ -1,21 +1,14 @@
 package HegemonMod;
 
 import HegemonMod.cards.skills.common.SkillBookMods;
-import HegemonMod.cards.skills.common.SkillBookVanilla;
-import HegemonMod.cards.skills.uncommon.InexorableDoom;
+import HegemonMod.powers.debuff.Sin;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.helpers.CardBorderGlowManager;
 import basemod.interfaces.*;
-import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.CardLibrary;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.MinionPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import HegemonMod.relics.BaseRelic;
-import HegemonMod.util.CustomTags;
 import HegemonMod.util.GeneralUtils;
 import HegemonMod.util.KeywordInfo;
 import HegemonMod.util.TextureLoader;
@@ -41,6 +34,8 @@ import org.scannotation.AnnotationDB;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
+import static HegemonMod.patches.ExecutePatch.ExecuteGlow;
+
 @SpireInitializer
 public class HegemonMod implements
         EditCardsSubscriber,
@@ -49,7 +44,7 @@ public class HegemonMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         PostInitializeSubscriber,
-        OnPlayerTurnStartSubscriber{
+        OnPlayerTurnStartSubscriber {
     public static ModInfo info;
     public static String modID; //Edit your pom.xml to change this
     static { loadModInfo(); }
@@ -71,12 +66,9 @@ public class HegemonMod implements
     @Override public void receivePostInitialize() {
         Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
-
-//        for (AbstractPlayer player : BaseMod.getModdedCharacters()) {
-//            AbstractCard.CardColor colour = player.getCardColor();
-//            System.out.println("Making card for colour " + colour.toString());
-//            BaseMod.addCard(new SkillBookTemplate().setColour(CardLibrary.LibraryType.valueOf(colour.toString())));
-//        }
+        if (Loader.isModLoaded("spireTogether")) {
+            Sin.Strength -= 0.3f;
+        }
     }
 
     /*----------Localization----------*/
@@ -231,16 +223,6 @@ public class HegemonMod implements
     @Override public void receiveEditCharacters() { // adds any characters to the game
         Hegemon.Meta.registerCharacter();
     }
-
-    public static boolean canExecute(int damage)
-    {
-        for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
-            if (!m.halfDead && !m.isDead && m.currentHealth <= damage && !m.hasPower(MinionPower.POWER_ID)) {
-                return true;
-            }
-        }
-        return false;
-    }
     
     @Override public void receiveEditCards() { // adds any cards to the game
         new AutoAdd(modID) // Loads files
@@ -251,28 +233,9 @@ public class HegemonMod implements
                         UnlockTracker.markCardAsSeen(card.cardID); // marks as discovered if seen before or a starter
                 });
 
-        SkillBookVanilla.Colours.add(CardLibrary.LibraryType.RED);
-        SkillBookVanilla.Colours.add(CardLibrary.LibraryType.GREEN);
-        SkillBookVanilla.Colours.add(CardLibrary.LibraryType.BLUE);
-        SkillBookVanilla.Colours.add(CardLibrary.LibraryType.PURPLE);
-        for (AbstractCard.CardColor colour : BaseMod.getCardColors()) {
-            if (SkillBookMods.isAccepted(colour)) {
-                SkillBookMods.Colours.add(CardLibrary.LibraryType.valueOf(colour.toString()));
-            }
-        }
-        if (SkillBookMods.Colours.isEmpty())
-            BaseMod.removeCard(SkillBookMods.ID, Hegemon.Meta.CARD_COLOR);
+        SkillBookMods.setColours();
 
-        // Card Glow Conditions
-        CardBorderGlowManager.addGlowInfo(new CardBorderGlowManager.GlowInfo() {
-            @Override public Color getColor(AbstractCard card) { return Color.YELLOW.cpy(); }
-            @Override public String glowID() { return ("HegemonMod:YellowGlow"); }
-            @Override public boolean test(AbstractCard card) {
-                return ((card.cardID.equals(InexorableDoom.ID) && AbstractDungeon.player.drawPile.size() >= card.magicNumber) ||
-                        (card.tags.contains(CustomTags.EXECUTE) && canExecute(card.damage))
-                );
-            }
-        });
+        CardBorderGlowManager.addGlowInfo(ExecuteGlow());
     }
 
     @Override public void receiveEditRelics() { // adds any relics to the game

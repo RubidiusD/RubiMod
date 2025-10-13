@@ -25,11 +25,8 @@ public class LegacyofSin extends BasePower {
         addToTop(new ApplyPowerAction(owner, owner, new LegacyofSin(owner, amount)));
     }
 
-    @Override public float atDamageFinalReceive(float damage, DamageInfo.DamageType type, AbstractCard card)
-    {
-        if (card.tags.contains(EXECUTE))
-            return calculate(damage);
-        return damage;
+    @Override public float atDamageFinalReceive(float damage, DamageInfo.DamageType type, AbstractCard card) {
+        return (card.tags.contains(EXECUTE)) ? calculate(damage) : damage;
     }
 
     public float calculate(float damage) {

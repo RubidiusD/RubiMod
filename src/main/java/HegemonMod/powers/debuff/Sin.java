@@ -17,7 +17,7 @@ public class Sin extends BasePower {
     private static final PowerType TYPE = PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
 
-    public static final float Strength = 0.1f;
+    public static float Strength = 0.1f;
 
     public Sin(AbstractCreature owner, int amount) { super(POWER_ID, TYPE, TURN_BASED, owner, amount);     }
 
@@ -39,12 +39,7 @@ public class Sin extends BasePower {
     }
 
     public float calculateSin(float damage) {
-        float sin_potency = Strength;
-        if (!owner.isPlayer && AbstractDungeon.player.hasRelic(PaperUmbrella.ID)) {
-            sin_potency = PaperUmbrella.Strength;
-        }
-
-        float new_damage = damage * (1.0f + amount * sin_potency);
+        float new_damage = damage * (1.0f + amount * Strength);
         if (new_damage < 0) new_damage = 0;
         return new_damage;
     }
@@ -52,13 +47,7 @@ public class Sin extends BasePower {
     public static int calculateSinInt(AbstractCreature target, int base) {
         int new_damage = base;
         if (target.hasPower(Sin.POWER_ID) && target.getPower(Sin.POWER_ID).amount > 0) {
-            float sin_potency = Strength;
-            if (!target.isPlayer && AbstractDungeon.player.hasRelic(PaperUmbrella.ID)) {
-                sin_potency = PaperUmbrella.Strength;
-                AbstractDungeon.player.getRelic(PaperUmbrella.ID).flash();
-            }
-
-            new_damage = MathUtils.floor(((float) base) * (1.0f + (((float) target.getPower(Sin.POWER_ID).amount) * sin_potency))); // apply sin and round
+            new_damage = MathUtils.floor(((float) base) * (1.0f + (((float) target.getPower(Sin.POWER_ID).amount) * Strength))); // apply sin and round
 
             if (new_damage < 0) new_damage = 0;
         }
@@ -67,10 +56,7 @@ public class Sin extends BasePower {
     }
 
     @Override public void updateDescription() {
-        if (!owner.isPlayer && AbstractDungeon.player.hasRelic(PaperUmbrella.ID))
-            this.description = DESCRIPTIONS[0] + amount * (PaperUmbrella.Strength * 100) + DESCRIPTIONS[1];
-        else
-            this.description = DESCRIPTIONS[0] + amount * (Strength * 100) + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + amount * (int)(Strength * 100) + DESCRIPTIONS[1];
     }
 
     public AbstractPower makeCopy() {return new Sin(owner, amount);}

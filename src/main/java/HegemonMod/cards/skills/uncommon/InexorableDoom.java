@@ -18,24 +18,15 @@ public class InexorableDoom extends BaseCard {
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 25;
-    private static final int UPG_MAGIC = -15;
-
     public InexorableDoom() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(MAGIC, UPG_MAGIC); // self-explanatory
-        setCustomVar("Doom", 1);
+        setCostUpgrade(0);
+        setExhaust(true);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new DoomPower(m, customVar("Doom"))));
-        if (p.drawPile.size() >= magicNumber)
-            this.shuffleBackIntoDrawPile = true;
-    }
-
-    @Override public void triggerWhenDrawn() {
-        this.shuffleBackIntoDrawPile = false;
+        addToBot(new ApplyPowerAction(m, p, new DoomPower(m, 1)));
     }
 
     @Override public AbstractCard makeCopy() { return new InexorableDoom(); }

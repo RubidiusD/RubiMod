@@ -28,12 +28,13 @@ public class ToxicPower extends BasePower {
     public void onInitialApplication() {
         if (this.amount > 0) {
             HegemonMod.ToxicityThisTurn += this.amount;
-            addToTop(new ApplyPowerAction(owner, owner, new WeakPower(owner, this.amount, false)));
+            addToTop(new ApplyPowerAction(owner, owner, new WeakPower(owner, 1, false)));
         }
     }
 
     @Override public void stackPower(int stackAmount) {
-        super.stackPower(stackAmount);
+        this.fontScale = 8.0F;
+        this.amount += stackAmount;
         if (amount == 0) {
             addToTop(new RemoveSpecificPowerAction(owner, owner, this));
         } else {
