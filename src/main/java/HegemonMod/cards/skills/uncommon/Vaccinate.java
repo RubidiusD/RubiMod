@@ -4,9 +4,12 @@ import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
 import HegemonMod.powers.debuff.LeechToxin;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
+import static com.megacrit.cardcrawl.cards.AbstractCard.CardTags.HEALING;
 
 public class Vaccinate extends BaseCard {
     public static final String ID = ("HegemonMod:" + Vaccinate.class.getSimpleName());
@@ -18,14 +21,20 @@ public class Vaccinate extends BaseCard {
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
 
+    public static final int MAGIC = 3;
+    public static final int UPG_MAGIC = -1;
+
     public Vaccinate() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(3);
-        setSelfRetain(false, true);
+        setMagic(MAGIC, UPG_MAGIC);
+        setEthereal(true);
+
+        addTag(HEALING);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new HealAction(p, p, 4));
         for (int i = 0; i != magicNumber; i ++) {
             addToBot(new ApplyPowerAction(p, p, new LeechToxin(p, p, 1)));
         }

@@ -131,9 +131,8 @@
     "DESCRIPTION": "Gain [E] [E]. Become Confused."
   },
   "HegemonMod:Vaccinate": {
-    "NAME": "Vaccinate",
-    "DESCRIPTION": "Gain 1 HegemonMod:Leech_Toxin !M! times.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Gain 1 HegemonMod:Leech_Toxin !M! times."
+    "NAME": "Health Potion",
+    "DESCRIPTION": "Ethereal. NL Heal 4. Gain 1 HegemonMod:Leech_Toxin !M! times."
   },
 
   "HegemonMod:Cleanse": {
