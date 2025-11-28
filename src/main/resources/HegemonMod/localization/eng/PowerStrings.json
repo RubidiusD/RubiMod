@@ -6,6 +6,30 @@
     ]
   },
 
+  "HegemonMod:EnrichedPower": {
+    "NAME": "Enriched",
+    "DESCRIPTIONS": [
+      "On creating a card, Upgrade it. Lasts #b", " turns."
+    ]
+  },
+  "HegemonMod:HermitPower": {
+    "NAME": "Way of the Hermit",
+    "DESCRIPTIONS": [
+      "Each time you play an Attack, gain #b1 Vulnerable and #b", " Block."
+    ]
+  },
+  "HegemonMod:HierophantPower": {
+    "NAME": "Way of the Hierophant",
+    "DESCRIPTIONS": [
+      "Create #b", " Punition in your hand at the start of each turn."
+    ]
+  },
+  "HegemonMod:HunterPower": {
+    "NAME": "Way of the Hunter",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b1 Weak and #b", "Toxicity."
+    ]
+  },
   "HegemonMod:LikeBloodPower": {
     "NAME": "Like Blood",
     "DESCRIPTIONS": [
@@ -31,7 +55,7 @@
     ]
   },
   "HegemonMod:PlagueBearerPower": {
-    "NAME": "Plague Bearer",
+    "NAME": "Way of the Trickster",
     "DESCRIPTIONS": [
       "End of turn, create #b", " Vectors in the draw pile. "
     ]
@@ -49,9 +73,15 @@
     ]
   },
   "HegemonMod:SnakePower": {
-    "NAME": "Way of the Snake",
+    "NAME": "Way of the Sage",
     "DESCRIPTIONS": [
       "Create #b", " Punish in your hand at the start of each turn."
+    ]
+  },
+  "HegemonMod:SurplusPower": {
+    "NAME": "Life Surplus",
+    "DESCRIPTIONS": [
+      "At the end of combat, heal for at most #g", " of your Temporary HP."
     ]
   },
   "HegemonMod:LearnedPower": {
@@ -71,6 +101,12 @@
     "NAME": "Doom",
     "DESCRIPTIONS": [
       "Increase debuffs by #b", " at the start of each turn, then increase that number by #b", ". "
+    ]
+  },
+  "HegemonMod:EnergyDownPower": {
+    "NAME": "Energy Down",
+    "DESCRIPTIONS": [
+      "Lose #r", " [E] next turn."
     ]
   },
   "HegemonMod:GentlePower": {

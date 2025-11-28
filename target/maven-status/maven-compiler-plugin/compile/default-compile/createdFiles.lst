@@ -1,8 +1,11 @@
 HegemonMod\cards\skills\starter\CloakofNight.class
+HegemonMod\cards\skills\uncommon\Unflex.class
 HegemonMod\powers\buff\MeditationPower.class
 HegemonMod\cards\skills\common\SkillBookMods.class
 HegemonMod\cards\skills\Vector.class
+HegemonMod\cards\attacks\Punition.class
 HegemonMod\cards\skills\common\SkillBookVanilla.class
+HegemonMod\cards\attacks\rare\WayOfTheReaper.class
 HegemonMod\powers\buff\RecoveryPower.class
 HegemonMod\actions\SkillBookAction.class
 HegemonMod\cards\attacks\common\LashOut.class
@@ -10,6 +13,7 @@ HegemonMod\cards\skills\uncommon\InexorableDoom.class
 HegemonMod\cards\attacks\common\ToxicStrike.class
 HegemonMod\relics\ReaperToken.class
 HegemonMod\actions\XEnergyAction$FunctionR.class
+HegemonMod\cards\powers\uncommon\WayOfTheHierophant.class
 HegemonMod\actions\ToxicityAction.class
 HegemonMod\powers\buff\SnakePower.class
 HegemonMod\relics\PaperUmbrella.class
@@ -18,6 +22,7 @@ HegemonMod\relics\GordonRelic.class
 HegemonMod\cards\skills\common\IncreaseToxicity.class
 HegemonMod\patches\ArtifactPatch$ArtifactLostSubscriber.class
 HegemonMod\powers\debuff\GentlePower.class
+HegemonMod\cards\attacks\uncommon\Flail.class
 HegemonMod\patches\ExecutePatch.class
 HegemonMod\cards\skills\common\FalseOpening.class
 HegemonMod\cards\powers\uncommon\AfflictionSpecialisation.class
@@ -41,8 +46,10 @@ HegemonMod\powers\debuff\Sin.class
 HegemonMod\cards\BaseCard$QuickDynamicVariable.class
 HegemonMod\cards\skills\rare\HardLearner$BouncyPatch$1.class
 HegemonMod\character\Hegemon$Meta.class
+HegemonMod\cards\powers\rare\WayOfTheHermit.class
 HegemonMod\cards\BaseCard$LocalVarInfo.class
 HegemonMod\cards\powers\uncommon\Undeath.class
+HegemonMod\powers\buff\EnrichedPower.class
 HegemonMod\powers\buff\LearnedPower.class
 HegemonMod\patches\ArtifactPatch.class
 HegemonMod\powers\debuff\LeechToxin.class
@@ -58,6 +65,7 @@ HegemonMod\cards\skills\rare\HardLearner$BouncyPatch.class
 HegemonMod\cards\skills\rare\HardLearner.class
 HegemonMod\cards\powers\rare\PlagueBearer.class
 HegemonMod\cards\skills\uncommon\PathOfShadows.class
+HegemonMod\cards\powers\rare\WayOfTheHunter.class
 HegemonMod\cards\skills\rare\FastLearner$BouncyPatch.class
 HegemonMod\util\TextureLoader$1.class
 HegemonMod\powers\debuff\EnergyDownPower.class
@@ -66,11 +74,15 @@ HegemonMod\relics\BaseRelic$1.class
 HegemonMod\powers\debuff\Necrotoxin.class
 HegemonMod\cards\powers\uncommon\WayOfTheSnake.class
 HegemonMod\cards\attacks\uncommon\BurnOut.class
+HegemonMod\powers\buff\SurplusPower$SpecificTrigger.class
+HegemonMod\powers\buff\HunterPower.class
 HegemonMod\patches\LearnedPatch$1.class
 HegemonMod\cards\powers\rare\Sacrifice.class
+HegemonMod\actions\RandomFormAction.class
 HegemonMod\cards\attacks\uncommon\Exert.class
 HegemonMod\cards\skills\uncommon\SwordTrance.class
 HegemonMod\cards\attacks\common\SpiritCoin.class
+HegemonMod\powers\buff\HermitPower.class
 HegemonMod\relics\BaseRelic.class
 HegemonMod\cards\BaseCard$CardStats.class
 HegemonMod\cards\skills\common\Endure.class
@@ -81,6 +93,7 @@ HegemonMod\potions\BasePotion.class
 HegemonMod\cards\powers\uncommon\GentleTouch.class
 HegemonMod\cards\powers\uncommon\Meditation.class
 HegemonMod\patches\LearnedPatch.class
+HegemonMod\powers\buff\HierophantPower.class
 HegemonMod\cards\skills\starter\Defend.class
 HegemonMod\util\GeneralUtils.class
 HegemonMod\cards\powers\uncommon\LikeBlood.class
@@ -89,10 +102,12 @@ HegemonMod\patches\ExecuteJudgementPatch.class
 HegemonMod\actions\LeechToxinLoseHPAction.class
 HegemonMod\character\Hegemon.class
 HegemonMod\cards\BaseCard.class
+HegemonMod\powers\buff\SurplusPower.class
 HegemonMod\util\TriFunction.class
 HegemonMod\cards\skills\uncommon\Vaccinate.class
 HegemonMod\cards\attacks\common\HeroicPlay.class
 HegemonMod\cards\attacks\Punish.class
+HegemonMod\cards\powers\uncommon\LifeSurplus.class
 HegemonMod\relics\PropheticScraps.class
 HegemonMod\powers\buff\PhoenixPower.class
 HegemonMod\util\TextureLoader.class

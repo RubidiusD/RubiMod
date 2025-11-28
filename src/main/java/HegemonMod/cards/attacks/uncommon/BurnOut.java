@@ -19,7 +19,7 @@ public class BurnOut extends BaseCard {
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,
             CardRarity.UNCOMMON,
-            CardTarget.ENEMY,
+            CardTarget.ALL_ENEMY,
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 

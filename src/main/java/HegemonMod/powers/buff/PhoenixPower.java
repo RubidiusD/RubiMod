@@ -1,7 +1,9 @@
 package HegemonMod.powers.buff;
 
 import HegemonMod.powers.BasePower;
+import HegemonMod.powers.debuff.EnergyDownPower;
 import com.badlogic.gdx.math.MathUtils;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -22,6 +24,13 @@ public class PhoenixPower extends BasePower {
     }
 
     @Override public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
+        if (isPlayer == owner.isPlayer) {
+            addToTop(new ApplyPowerAction(owner, owner, new EnergyDownPower(owner, 1)));
+        }
+    }
+
+    @Override
+    public void atEndOfRound() {
         int totalBuff = 0; // calculate the total amount of buff you have
         for (AbstractPower power : owner.powers) {
             if (power.amount > 0 && ((power.type == PowerType.BUFF && !power.ID.equals(POWER_ID)) || (power.canGoNegative))) {
@@ -30,9 +39,9 @@ public class PhoenixPower extends BasePower {
         }
 
         if (totalBuff == 0) { // if you have none
-            this.amount2 += amount * 2; // just increase how much they'll gain later
+            amount2 += amount * 2; // just increase how much they'll gain later
             updateDescription();
-            this.flash();
+            flash();
             return;
         }
 

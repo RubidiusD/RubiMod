@@ -1,5 +1,6 @@
 package HegemonMod.patches;
 
+import HegemonMod.powers.buff.EnrichedPower;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInstrumentPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch2;
@@ -14,6 +15,8 @@ import javassist.expr.ExprEditor;
 import javassist.expr.MethodCall;
 import HegemonMod.powers.buff.LearnedPower;
 
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
+
 @SpirePatches2({
         @SpirePatch2(clz= ShowCardAndAddToHandEffect.class, method= SpirePatch.CONSTRUCTOR, paramtypez= {AbstractCard.class, float.class, float.class}),
         @SpirePatch2(clz= ShowCardAndAddToHandEffect.class, method= SpirePatch.CONSTRUCTOR, paramtypez= {AbstractCard.class}),
@@ -24,10 +27,14 @@ import HegemonMod.powers.buff.LearnedPower;
 })
 public class LearnedPatch {
     public static void ApplyLearned(AbstractCard c) {
-        if (c.type != AbstractCard.CardType.STATUS && c.type != AbstractCard.CardType.CURSE && AbstractDungeon.player.hasPower(LearnedPower.POWER_ID)) {
-            if (c.costForTurn > 0)
+        if (c.type != AbstractCard.CardType.STATUS && c.type != AbstractCard.CardType.CURSE) {
+            if (player.hasPower(LearnedPower.POWER_ID) && c.costForTurn > 0) {
                 c.costForTurn = c.cost -= 1;
-            c.isCostModified = true;
+                c.isCostModified = true;
+            }
+            if (player.hasPower(EnrichedPower.POWER_ID)) {
+                c.upgrade();
+            }
         }
     }
 

@@ -26,10 +26,6 @@
     "NAME": "Lash Out",
     "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage. NL Inflict !M! HegemonMod:Leech_Toxin."
   },
-  "HegemonMod:PunishFlurry": {
-    "NAME": "Punish Flurry",
-    "DESCRIPTION": "Apply !M! HegemonMod:Sin then deal !D! HegemonMod:Necrotic damage to ALL enemies."
-  },
   "HegemonMod:Ruination": {
     "NAME": "Ruination",
     "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage."
@@ -51,9 +47,27 @@
     "NAME": "Exert",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! less next turn."
   },
+  "HegemonMod:Flail": {
+    "NAME": "Flail",
+    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times. Make a *Punition in your draw pile and draw 1."
+  },
+  "HegemonMod:PunishFlurry": {
+    "NAME": "Punish Flurry",
+    "DESCRIPTION": "Apply !M! HegemonMod:Sin then deal !D! HegemonMod:Necrotic damage to ALL enemies."
+  },
+
+  "HegemonMod:WayOfTheReaper": {
+    "NAME": "Way of the Reaper",
+    "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage and gain a random *Form *of *the *Reaper. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage and gain a random *Form *of *the *Reaper."
+  },
 
   "HegemonMod:Punish": {
     "NAME": "Punish",
+    "DESCRIPTION": "Retain. NL Apply !M! HegemonMod:Sin. NL Deal !D! HegemonMod:Necrotic damage. NL Exhaust."
+  },
+  "HegemonMod:Punition": {
+    "NAME": "Punition",
     "DESCRIPTION": "Retain. NL Apply !M! HegemonMod:Sin. NL Deal !D! HegemonMod:Necrotic damage. NL Exhaust."
   },
 
@@ -86,7 +100,7 @@
   },
   "HegemonMod:IncreaseToxicity": {
     "NAME": "Intoxicate",
-    "DESCRIPTION": "Gain 2 HegemonMod:Toxicity, 1 Weak and draw !M!. NL Can be Upgraded any number of times."
+    "DESCRIPTION": "Gain 2 HegemonMod:Toxicity, 1 Weak and draw !M!. NL Exhaust. NL Can be Upgraded any number of times."
   },
   "HegemonMod:Recover": {
     "NAME": "Recover",
@@ -130,6 +144,10 @@
     "NAME": "Sword Trance",
     "DESCRIPTION": "Gain [E] [E]. Become Confused."
   },
+  "HegemonMod:Unflex": {
+    "NAME": "Un-flex",
+    "DESCRIPTION": "Gain !M! HegemonMod:Toxicity and 1 Weak. NL Lose !M! Strength at the end of your turn."
+  },
   "HegemonMod:Vaccinate": {
     "NAME": "Health Potion",
     "DESCRIPTION": "Ethereal. NL Heal 4. Gain 1 HegemonMod:Leech_Toxin !M! times."
@@ -167,6 +185,10 @@
     "NAME": "Gentle Touch",
     "DESCRIPTION": "Gain !M! Strength and heal targets by !M! on hit."
   },
+  "HegemonMod:LifeSurplus": {
+    "NAME": "Life Surplus",
+    "DESCRIPTION": "Ethereal. NL At the end of combat, heal up to !M! of your temp HP. NL Gain !HegemonMod:HP! temp HP."
+  },
   "HegemonMod:LikeBlood": {
     "NAME": "Like Blood",
     "DESCRIPTION": "At the end of your turn, if you have Artifact, gain !M! Block."
@@ -184,17 +206,23 @@
     "DESCRIPTION": "At the end of your turn, gain 1 Artifact and lose !M! HP."
   },
   "HegemonMod:WayOfTheSnake": {
-    "NAME": "Way of the Snake",
+    "NAME": "Way of the Sage",
     "DESCRIPTION": "Start each turn with a *Punish in hand.",
     "UPGRADE_DESCRIPTION": "Innate. NL Start each turn with a *Punish in hand."
+  },
+  "HegemonMod:WayOfTheHierophant": {
+    "NAME": "Way of the Hierophant",
+    "DESCRIPTION": "Start each turn with a *Punition in hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Start each turn with a *Punition in hand."
   },
 
   "HegemonMod:PhoenixForm": {
     "NAME": "Phoenix Form",
-    "DESCRIPTION": "Ethereal. NL Increase your buffs by an amount that increases each turn."
+    "DESCRIPTION": "Ethereal. NL Increase your buffs by an amount that increases each turn. Start each turn with less [E].",
+    "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Increase your buffs by an amount that increases each turn. Start each turn with less [E]."
   },
   "HegemonMod:PlagueBearer": {
-    "NAME": "Plague Bearer",
+    "NAME": "Way of the Trickster",
     "DESCRIPTION": "After each turn, shuffle a *Vector into the draw pile.",
     "UPGRADE_DESCRIPTION": "After each turn, shuffle !M! *Vectors into the draw pile."
   },
@@ -202,6 +230,14 @@
     "NAME": "Ritual Sacrifice",
     "DESCRIPTION": "Can only be played if you have no Artifact. NL !M! Strength. You can no longer heal.",
     "UPGRADE_DESCRIPTION": "Can only be played if you have no Artifact. NL !M! Strength and 1 Ritual. You can no longer heal."
+  },
+  "HegemonMod:WayOfTheHermit": {
+    "NAME": "Way of the Hermit",
+    "DESCRIPTION": "Playing an attack gains you 1 Vulnerable and !M! Block."
+  },
+  "HegemonMod:WayOfTheHunter": {
+    "NAME": "Way of the Hunter",
+    "DESCRIPTION": "At the start of each turn, gain 1 Weak and 2 HegemonMod:Toxicity."
   },
 
 
@@ -249,10 +285,6 @@
     "NAME": "Riposte",
     "DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 *Punish",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the target is attacking, create 2 *Punish+"
-  },
-  "HegemonMod:Punition": {
-    "NAME": "Punition",
-    "DESCRIPTION": "Apply !M! HegemonMod:Sin. Deal HegemonMod:Necrotic damage equal to the target's HegemonMod:Sin. NL Exhaust."
   },
   "HegemonMod:HegemonyCard": {
     "NAME": "Hegemony",

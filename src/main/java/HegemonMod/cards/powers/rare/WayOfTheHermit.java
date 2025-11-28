@@ -2,38 +2,31 @@ package HegemonMod.cards.powers.rare;
 
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
-import HegemonMod.powers.buff.PhoenixPower;
-import basemod.helpers.BaseModCardTags;
+import HegemonMod.powers.buff.HermitPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class PhoenixForm extends BaseCard {
-    public static final String ID = ("HegemonMod:" + PhoenixForm.class.getSimpleName());
+public class WayOfTheHermit extends BaseCard {
+    public static final String ID = ("HegemonMod:" + WayOfTheHermit.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,
             CardRarity.RARE,
             CardTarget.SELF,
-            3 // card cost!! (-1 is X, -2 is unplayable)
+            2 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 1;
-
-    public PhoenixForm() {
+    public WayOfTheHermit() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(MAGIC); // self-explanatory
-        setEthereal(true);
-        setInnate(false, true);
-
-        addTag(BaseModCardTags.FORM);
+        setMagic(6, 2);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new PhoenixPower(p, magicNumber, 1)));
+        addToBot(new ApplyPowerAction(p, p, new HermitPower(p, magicNumber)));
     }
 
-    @Override public AbstractCard makeCopy() { return new PhoenixForm(); }
+    @Override public AbstractCard makeCopy() { return new WayOfTheHermit(); }
 }

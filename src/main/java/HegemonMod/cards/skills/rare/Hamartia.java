@@ -15,7 +15,7 @@ public class Hamartia extends BaseCard {
             CardType.SKILL,
             CardRarity.RARE,
             CardTarget.ENEMY,
-            1 // card cost!! (-1 is X, -2 is unplayable)
+            2 // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int MAGIC = 5;

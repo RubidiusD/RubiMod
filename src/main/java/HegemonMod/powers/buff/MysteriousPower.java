@@ -11,7 +11,7 @@ public class MysteriousPower extends BasePower {
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
-    public MysteriousPower(AbstractCreature owner, int amount) { super(POWER_ID, TYPE, TURN_BASED, owner, amount);     }
+    public MysteriousPower(AbstractCreature owner, int amount) { super(POWER_ID, TYPE, TURN_BASED, owner, amount); }
 
     @Override public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
@@ -19,8 +19,10 @@ public class MysteriousPower extends BasePower {
     }
 
     @Override public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if (target.equals(owner) && ( (power.canGoNegative) ? (power.amount < 0) : (power.type == PowerType.DEBUFF) ) && (!owner.hasPower(ArtifactPower.POWER_ID) || owner.getPower(ArtifactPower.POWER_ID).amount < 1))
+        if (target.equals(owner) && ( (power.canGoNegative) ? (power.amount < 0) : (power.type == PowerType.DEBUFF) ) && (!owner.hasPower(ArtifactPower.POWER_ID) || owner.getPower(ArtifactPower.POWER_ID).amount < 1)) {
             addToTop(new ApplyPowerAction(owner, owner, new ArtifactPower(owner, amount)));
+            flash();
+        }
     }
 
     @Override public void updateDescription() {

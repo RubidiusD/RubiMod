@@ -1,39 +1,37 @@
-package HegemonMod.cards.powers.rare;
+package HegemonMod.cards.powers.uncommon;
 
 import HegemonMod.cards.BaseCard;
+import HegemonMod.cards.attacks.Punition;
 import HegemonMod.character.Hegemon;
-import HegemonMod.powers.buff.PhoenixPower;
-import basemod.helpers.BaseModCardTags;
+import HegemonMod.powers.buff.HierophantPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class PhoenixForm extends BaseCard {
-    public static final String ID = ("HegemonMod:" + PhoenixForm.class.getSimpleName());
+public class WayOfTheHierophant extends BaseCard {
+    public static final String ID = ("HegemonMod:" + WayOfTheHierophant.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,
-            CardRarity.RARE,
+            CardRarity.UNCOMMON,
             CardTarget.SELF,
-            3 // card cost!! (-1 is X, -2 is unplayable)
+            1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int MAGIC = 1;
 
-    public PhoenixForm() {
+    public WayOfTheHierophant() {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC); // self-explanatory
-        setEthereal(true);
         setInnate(false, true);
-
-        addTag(BaseModCardTags.FORM);
+        cardsToPreview = new Punition();
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new PhoenixPower(p, magicNumber, 1)));
+        addToBot(new ApplyPowerAction(p, p, new HierophantPower(p, magicNumber)));
     }
 
-    @Override public AbstractCard makeCopy() { return new PhoenixForm(); }
+    @Override public AbstractCard makeCopy() { return new WayOfTheHierophant(); }
 }
