@@ -2,12 +2,11 @@ package HegemonMod.relics;
 
 import HegemonMod.powers.buff.MysteriousPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import HegemonMod.character.Hegemon;
+
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class MysteriousStranger extends BaseRelic {
     private static final String NAME = MysteriousStranger.class.getSimpleName();
@@ -23,8 +22,10 @@ public class MysteriousStranger extends BaseRelic {
 
     @Override public void atBattleStart() {
         this.flash();
-        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, 1)));
-        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MysteriousPower(AbstractDungeon.player, 1)));
+        addToTop(new ApplyPowerAction(player, player, new ArtifactPower(player, 1)));
+        if (!player.hasPower(MysteriousPower.POWER_ID)) {
+            addToTop(new ApplyPowerAction(player, player, new MysteriousPower(player, 1)));
+        }
     }
 
     @Override public String getUpdatedDescription() {

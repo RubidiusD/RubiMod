@@ -7,6 +7,9 @@ import basemod.BaseMod;
 import basemod.helpers.CardBorderGlowManager;
 import basemod.interfaces.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import HegemonMod.relics.BaseRelic;
 import HegemonMod.util.GeneralUtils;
@@ -44,7 +47,9 @@ public class HegemonMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         PostInitializeSubscriber,
-        OnPlayerTurnStartSubscriber {
+        OnPlayerTurnStartSubscriber,
+        OnStartBattleSubscriber,
+        PostPowerApplySubscriber {
     public static ModInfo info;
     public static String modID; //Edit your pom.xml to change this
     static { loadModInfo(); }
@@ -257,5 +262,17 @@ public class HegemonMod implements
 
     @Override public void receiveOnPlayerTurnStart() {
         ToxicityThisTurn = 0;
+    }
+
+    public static int debuffCount = 0;
+
+    @Override public void receiveOnBattleStart(AbstractRoom abstractRoom) {
+        debuffCount = 0;
+    }
+
+    @Override public void receivePostPowerApplySubscriber(AbstractPower abstractPower, AbstractCreature target, AbstractCreature source) {
+        if (target.isPlayer && (abstractPower.type == AbstractPower.PowerType.DEBUFF || (abstractPower.canGoNegative) && abstractPower.amount < 0)) {
+            debuffCount ++;
+        }
     }
 }
