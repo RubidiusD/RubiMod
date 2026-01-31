@@ -22,14 +22,16 @@ public class Exert extends BaseCard {
     );
 
     private static final int DAMAGE = 23;
-    private static final int UPG_DAMAGE = 5;
-    private static final int MAGIC = 1;
+    private static final int UPG_DAMAGE = 6;
+    private static final int MAGIC = 2;
 
     public Exert() {
         super(ID, info); // calls the parent constructor
 
         setDamage(DAMAGE, UPG_DAMAGE); // self-explanatory
         setMagic(MAGIC); // self-explanatory
+
+        shuffleBackIntoDrawPile = true;
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {

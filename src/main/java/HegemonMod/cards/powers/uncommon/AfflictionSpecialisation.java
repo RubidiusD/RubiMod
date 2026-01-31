@@ -18,14 +18,14 @@ public class AfflictionSpecialisation extends BaseCard {
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 2;
-    private static final int UPG_MAGIC = 2;
+    private static final int MAGIC = 3;
 
     public AfflictionSpecialisation() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(MAGIC, UPG_MAGIC); // self-explanatory
+        setMagic(MAGIC); // self-explanatory
         setInnate(true);
+        setCostUpgrade(0);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {

@@ -1,6 +1,5 @@
 package HegemonMod;
 
-import HegemonMod.cards.skills.common.SkillBookMods;
 import HegemonMod.powers.debuff.Sin;
 import basemod.AutoAdd;
 import basemod.BaseMod;
@@ -237,8 +236,6 @@ public class HegemonMod implements
                     if (info.seen || card.rarity == AbstractCard.CardRarity.BASIC)
                         UnlockTracker.markCardAsSeen(card.cardID); // marks as discovered if seen before or a starter
                 });
-
-        SkillBookMods.setColours();
 
         CardBorderGlowManager.addGlowInfo(ExecuteGlow());
     }

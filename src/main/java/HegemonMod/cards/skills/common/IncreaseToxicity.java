@@ -25,7 +25,6 @@ public class IncreaseToxicity extends BaseCard {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
-        setExhaust(true, false);
     }
 
     @Override public boolean canUpgrade() {

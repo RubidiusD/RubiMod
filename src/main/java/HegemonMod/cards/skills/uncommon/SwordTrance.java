@@ -2,12 +2,16 @@ package HegemonMod.cards.skills.uncommon;
 
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ConfusionPower;
+
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class SwordTrance extends BaseCard {
     public static final String ID = ("HegemonMod:" + SwordTrance.class.getSimpleName());
@@ -19,7 +23,7 @@ public class SwordTrance extends BaseCard {
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 2;
+    private static final int MAGIC = 3;
 
     public SwordTrance() {
         super(ID, info); // calls the parent constructor
@@ -34,7 +38,14 @@ public class SwordTrance extends BaseCard {
     }
 
     @Override public void triggerWhenDrawn() {
-        this.shuffleBackIntoDrawPile = false;
+        AbstractCard c = this;
+        addToBot(new AbstractGameAction() {
+            public void update() {
+                if (player.hand.contains(c))
+                    addToTop(new NewQueueCardAction(c, null));
+                this.isDone = true;
+            }
+        });
     }
 
     @Override public AbstractCard makeCopy() { return new SwordTrance(); }

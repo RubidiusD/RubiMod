@@ -30,6 +30,12 @@
       "At the start of your turn, gain #b1 Weak and #b", "Toxicity."
     ]
   },
+  "HegemonMod:LearnedPower": {
+    "NAME": "Learned",
+    "DESCRIPTIONS": [
+      "On creating a card, reduce its [E] cost by #b1. Lasts #b", " turns."
+    ]
+  },
   "HegemonMod:LikeBloodPower": {
     "NAME": "Like Blood",
     "DESCRIPTIONS": [
@@ -82,12 +88,6 @@
     "NAME": "Life Surplus",
     "DESCRIPTIONS": [
       "At the end of combat, heal for at most #g", " of your Temporary HP."
-    ]
-  },
-  "HegemonMod:LearnedPower": {
-    "NAME": "Fast Learner",
-    "DESCRIPTIONS": [
-      "On creating a card, reduce its [E] cost by #b1."
     ]
   },
   "HegemonMod:UndeathPower": {

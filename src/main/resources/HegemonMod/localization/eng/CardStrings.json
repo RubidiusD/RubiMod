@@ -45,7 +45,7 @@
   },
   "HegemonMod:Exert": {
     "NAME": "Exert",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! less next turn."
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! less next turn. NL Shuffle this card into your draw pile."
   },
   "HegemonMod:Flail": {
     "NAME": "Flail",
@@ -93,11 +93,11 @@
 
   "HegemonMod:Punish": {
     "NAME": "Punish",
-    "DESCRIPTION": "Retain. NL Apply !M! HegemonMod:Sin. NL Deal !D! HegemonMod:Necrotic damage. NL Exhaust."
+    "DESCRIPTION": "Apply !M! HegemonMod:Sin. NL Deal !D! HegemonMod:Necrotic damage. NL Exhaust."
   },
   "HegemonMod:Punition": {
     "NAME": "Punition",
-    "DESCRIPTION": "Retain. NL Apply !M! HegemonMod:Sin. NL Deal !D! HegemonMod:Necrotic damage. NL Exhaust."
+    "DESCRIPTION": "Apply !M! HegemonMod:Sin. NL Deal !D! HegemonMod:Necrotic damage. NL Exhaust."
   },
 
 
@@ -129,7 +129,7 @@
   },
   "HegemonMod:IncreaseToxicity": {
     "NAME": "Intoxicate",
-    "DESCRIPTION": "Gain 2 HegemonMod:Toxicity, 1 Weak and draw !M!. NL Exhaust. NL Can be Upgraded any number of times."
+    "DESCRIPTION": "Gain 2 HegemonMod:Toxicity, 1 Weak and draw !M!. NL Can be Upgraded any number of times."
   },
   "HegemonMod:Recover": {
     "NAME": "Recover",
@@ -141,10 +141,10 @@
     "DESCRIPTION": "Create a random common skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Create a random upgraded common skill in your hand. NL Exhaust."
   },
-  "HegemonMod:SkillBookBlack": {
-    "NAME": "Black Skill Book",
-    "DESCRIPTION": "Create a random common Hegemon skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded common Hegemon skill in your hand. NL Exhaust."
+  "HegemonMod:SkillBook": {
+    "NAME": "Skill Book",
+    "DESCRIPTION": "Create a random common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded common skill in your hand. NL Exhaust."
   },
   "HegemonMod:SkillBookMods": {
     "NAME": "Modded Skill Book",
@@ -152,6 +152,10 @@
     "UPGRADE_DESCRIPTION": "Create a random upgraded common Modded skill in your hand. NL Exhaust."
   },
 
+  "HegemonMod:GentleTouch": {
+    "NAME": "Gentle Touch",
+    "DESCRIPTION": "Gain !M! Strength and heal targets by !M! on hit."
+  },
   "HegemonMod:InexorableDoom": {
     "NAME": "Inexorable Doom",
     "DESCRIPTION": "Apply HegemonMod:Doom. NL Exhaust."
@@ -171,7 +175,7 @@
   },
   "HegemonMod:SwordTrance": {
     "NAME": "Sword Trance",
-    "DESCRIPTION": "Gain [E] [E]. Become Confused."
+    "DESCRIPTION": "Gain [E] [E] [E]. Become Confused. NL Autoplay."
   },
   "HegemonMod:Unflex": {
     "NAME": "Un-flex",
@@ -186,18 +190,10 @@
     "NAME": "Cleanse",
     "DESCRIPTION": "Heal !M!. NL Lose 2 HegemonMod:Toxicity. NL Exhaust."
   },
-  "HegemonMod:FastLearner": {
-    "NAME": "Fast Learner",
-    "DESCRIPTION": "Unplayable. NL Retains for !HegemonMod:Retain! turns. NL Cards created with this in hand cost 1 less. NL (!M! left)"
-  },
   "HegemonMod:Hamartia": {
     "NAME": "Hamartia",
     "DESCRIPTION": "Apply !M! HegemonMod:Sin. NL Exhaust",
     "UPGRADE_DESCRIPTION": "Apply !M! HegemonMod:Sin."
-  },
-  "HegemonMod:HardLearner": {
-    "NAME": "Hard Learner",
-    "DESCRIPTION": "Unplayable. NL Retains for !HegemonMod:Retain! turns. NL Upgrade cards created with this in hand. NL (!M! left)"
   },
 
   "HegemonMod:Vector": {
@@ -209,10 +205,6 @@
   "HegemonMod:AfflictionSpecialisation": {
     "NAME": "Specialist",
     "DESCRIPTION": "Innate. NL Gain !M! Artifact."
-  },
-  "HegemonMod:GentleTouch": {
-    "NAME": "Gentle Touch",
-    "DESCRIPTION": "Gain !M! Strength and heal targets by !M! on hit."
   },
   "HegemonMod:LifeSurplus": {
     "NAME": "Life Surplus",
@@ -245,6 +237,14 @@
     "UPGRADE_DESCRIPTION": "Innate. NL Start each turn with a *Punition in hand."
   },
 
+  "HegemonMod:FastLearner": {
+    "NAME": "Fast Learner",
+    "DESCRIPTION": "Unplayable. NL On draw, reduce the cost of created cards by 1 for !M! turns."
+  },
+  "HegemonMod:HardLearner": {
+    "NAME": "Hard Learner",
+    "DESCRIPTION": "Unplayable. NL On draw, upgrade created cards for !M! turns."
+  },
   "HegemonMod:PhoenixForm": {
     "NAME": "Phoenix Form",
     "DESCRIPTION": "Ethereal. NL Increase your buffs by an amount that increases each turn. Start each turn with less [E].",

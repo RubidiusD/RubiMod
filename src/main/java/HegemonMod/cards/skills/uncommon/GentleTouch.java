@@ -1,4 +1,4 @@
-package HegemonMod.cards.powers.uncommon;
+package HegemonMod.cards.skills.uncommon;
 
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
@@ -13,7 +13,7 @@ public class GentleTouch extends BaseCard {
     public static final String ID = ("HegemonMod:" + GentleTouch.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
-            CardType.POWER,
+            CardType.SKILL,
             CardRarity.UNCOMMON,
             CardTarget.SELF,
             1 // card cost!! (-1 is X, -2 is unplayable)

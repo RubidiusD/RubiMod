@@ -34,7 +34,6 @@ public class Punition extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE); // self-explanatory
         setMagic(MAGIC, UPG_MAGIC);
         setExhaust(true);
-        setSelfRetain(true);
 
         addTag(NECROTIC);
         addTag(PUNISH);
