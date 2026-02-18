@@ -71,6 +71,6 @@
       "toxicity",
       "intoxicate"
     ],
-    "DESCRIPTION": "Deals X Necrotic damage with each attack."
+    "DESCRIPTION": "Deals X Necrotic damage with each attack. Gaining Toxic gives 1 Weak."
   }
 ]

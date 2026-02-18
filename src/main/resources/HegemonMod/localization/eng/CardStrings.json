@@ -16,7 +16,7 @@
 
   "HegemonMod:Crunch": {
     "NAME": "Crunch",
-    "DESCRIPTION": "Deal damage equal to HegemonMod:Toxicity gained this turn X !M!. NL (!D!)"
+    "DESCRIPTION": "Deal damage equal to HegemonMod:Toxic gained this turn X !M!. NL (!D!)"
   },
   "HegemonMod:HeroicPlay": {
     "NAME": "Heroic Play",
@@ -36,12 +36,16 @@
   },
   "HegemonMod:ToxicStrike": {
     "NAME": "Toxic Strike",
-    "DESCRIPTION": "Deal !D! damage. Gain !M! HegemonMod:Toxicity and 1 Weak."
+    "DESCRIPTION": "Deal !D! damage. Gain !M! HegemonMod:Toxic."
   },
 
   "HegemonMod:BurnOut": {
     "NAME": "Burn Out",
     "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage to ALL enemies. NL Gain !M! less [E] next turn."
+  },
+  "HegemonMod:Entree": {
+    "NAME": "Entrée",
+    "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage. NL Apply !M! HegemonMod:Leech_Toxin, Vulnerable and HegemonMod:Sin. NL Exhaust."
   },
   "HegemonMod:Exert": {
     "NAME": "Exert",
@@ -85,12 +89,20 @@
     "NAME": "Pronouncement",
     "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage to ALL Enemies. Lose 2 Strength, Dexterity and Toxic."
   },
+  "HegemonMod:Synergize": {
+    "NAME": "Synergise",
+    "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage. NL Gain !M! Gentle and !HegemonMod:Toxic! HegemonMod:Toxic and apply !HegemonMod:Leech! HegemonMod:Leech_Toxin."
+  },
   "HegemonMod:WayOfTheReaper": {
     "NAME": "Way of the Reaper",
     "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage and gain a random *Form *of *the *Reaper. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage and gain a random *Form *of *the *Reaper."
   },
 
+  "HegemonMod:Blaze": {
+    "NAME": "Blaze",
+    "DESCRIPTION": "Deal HegemonMod:Necrotic damage equal to your temp HP. Gain !M! temp HP. NL Exhaust."
+  },
   "HegemonMod:Punish": {
     "NAME": "Punish",
     "DESCRIPTION": "Apply !M! HegemonMod:Sin. NL Deal !D! HegemonMod:Necrotic damage. NL Exhaust."
@@ -114,13 +126,21 @@
     "DESCRIPTION": "Gain 1 Artifact. NL Scry !M!."
   },
 
+  "HegemonMod:Banter": {
+    "NAME": "Banter",
+    "DESCRIPTION": "Gain !B!*X Block. NL Add a *Vector to hand for each buff the enemy has, to a max of X. NL Exhaust."
+  },
+  "HegemonMod:DisarmingCharm": {
+    "NAME": "Disarming Charm",
+    "DESCRIPTION": "Gain !B! Block. NL Heal targets !M! on hit. NL Shuffle this card into your draw pile."
+  },
   "HegemonMod:Dose": {
     "NAME": "Dose",
     "DESCRIPTION": "Apply !M! HegemonMod:Leech_Toxin."
   },
   "HegemonMod:Endure": {
     "NAME": "Endure",
-    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HegemonMod:Toxicity."
+    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HegemonMod:Toxic."
   },
   "HegemonMod:FalseOpening": {
     "NAME": "False Opening",
@@ -129,7 +149,7 @@
   },
   "HegemonMod:IncreaseToxicity": {
     "NAME": "Intoxicate",
-    "DESCRIPTION": "Gain 2 HegemonMod:Toxicity, 1 Weak and draw !M!. NL Can be Upgraded any number of times."
+    "DESCRIPTION": "Gain 2 HegemonMod:Toxic and draw !M!. NL Can be Upgraded any number of times."
   },
   "HegemonMod:Recover": {
     "NAME": "Recover",
@@ -151,6 +171,11 @@
     "DESCRIPTION": "Create a random common Modded skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Create a random upgraded common Modded skill in your hand. NL Exhaust."
   },
+  "HegemonMod:Stanislavsky": {
+    "NAME": "Stanislavsky",
+    "DESCRIPTION": "Gain !B!*!M! Block. NL Shuffle !RubiMod:Vectors! *Vectors into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B!*!M! Block. NL Shuffle !RubiMod:Vectors! *Vectors into your discard pile."
+  },
 
   "HegemonMod:GentleTouch": {
     "NAME": "Gentle Touch",
@@ -159,6 +184,10 @@
   "HegemonMod:InexorableDoom": {
     "NAME": "Inexorable Doom",
     "DESCRIPTION": "Apply HegemonMod:Doom. NL Exhaust."
+  },
+  "HegemonMod:Kindle": {
+    "NAME": "Kindle",
+    "DESCRIPTION": "Gain 12 temp HP. Add !M! *Blaze to your discard pile."
   },
   "HegemonMod:PathOfShadows": {
     "NAME": "Path of Shadows",
@@ -171,7 +200,7 @@
   },
   "HegemonMod:SoberUp": {
     "NAME": "Sober Up",
-    "DESCRIPTION": "Draw !M!. NL Lose 1 HegemonMod:Toxicity."
+    "DESCRIPTION": "Draw !M!. NL Lose 1 HegemonMod:Toxic."
   },
   "HegemonMod:SwordTrance": {
     "NAME": "Sword Trance",
@@ -179,7 +208,7 @@
   },
   "HegemonMod:Unflex": {
     "NAME": "Un-flex",
-    "DESCRIPTION": "Gain !M! HegemonMod:Toxicity and 1 Weak. NL Lose !M! Strength at the end of your turn."
+    "DESCRIPTION": "Gain !M! HegemonMod:Toxic. NL Lose !M! Strength at the end of your turn."
   },
   "HegemonMod:Vaccinate": {
     "NAME": "Health Potion",
@@ -188,7 +217,7 @@
 
   "HegemonMod:Cleanse": {
     "NAME": "Cleanse",
-    "DESCRIPTION": "Heal !M!. NL Lose 2 HegemonMod:Toxicity. NL Exhaust."
+    "DESCRIPTION": "Heal !M!. NL Lose 2 HegemonMod:Toxic. NL Exhaust."
   },
   "HegemonMod:Hamartia": {
     "NAME": "Hamartia",
@@ -266,7 +295,13 @@
   },
   "HegemonMod:WayOfTheHunter": {
     "NAME": "Way of the Hunter",
-    "DESCRIPTION": "At the start of each turn, gain 1 Weak and 2 HegemonMod:Toxicity."
+    "DESCRIPTION": "At the start of each turn, gain 2 HegemonMod:Toxic."
+  },
+
+
+  "HegemonMod:GuardiansPrice": {
+    "NAME": "Guardian's Price",
+    "DESCRIPTION": "Ethereal. NL When drawn, draw !M! and lose !M! Dexterity."
   },
 
 

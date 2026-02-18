@@ -27,6 +27,10 @@ public class XEnergyAction extends AbstractGameAction {
         this.modifier = modifier;
     }
 
+    public XEnergyAction(int energyOnUse, boolean freeToPlayOnce, FunctionR functionR, FunctionV functionV) {
+        this(energyOnUse, freeToPlayOnce, functionR, functionV, 0);
+    }
+
     public XEnergyAction(int energyOnUse, boolean freeToPlayOnce, FunctionR function, int modifier) {
         this(energyOnUse, freeToPlayOnce, function, null, modifier);
     }
