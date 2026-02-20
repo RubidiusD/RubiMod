@@ -6,10 +6,40 @@
     ]
   },
 
+  "HegemonMod:CompositePower": {
+    "NAME": "Composite",
+    "DESCRIPTIONS": [
+      "On triggering Artifact, draw #b", " cards."
+    ]
+  },
+  "HegemonMod:ConservePower": {
+    "NAME": "Conserve",
+    "DESCRIPTIONS": [
+      "On playing #b", " more Skill cards this turn, gain #b", " Artifact."
+    ]
+  },
+  "HegemonMod:DefensivePower": {
+    "NAME": "Defensive",
+    "DESCRIPTIONS": [
+      "On creating a card, gain #g", " Temp HP."
+    ]
+  },
+  "HegemonMod:DeservePower": {
+    "NAME": "Deserve",
+    "DESCRIPTIONS": [
+      "On playing #b", " more cards this turn, make #b", " Punishes in hand."
+    ]
+  },
   "HegemonMod:EnrichedPower": {
     "NAME": "Enriched",
     "DESCRIPTIONS": [
       "On creating a card, Upgrade it. Lasts #b", " turns."
+    ]
+  },
+  "HegemonMod:GuardiansBlessingPower": {
+    "NAME": "Guardian's Blessing",
+    "DESCRIPTIONS": [
+      "On playing a Power card, gain #b", " Dexterity and add #r", " Prices to your draw pile."
     ]
   },
   "HegemonMod:HermitPower": {
@@ -27,7 +57,7 @@
   "HegemonMod:HunterPower": {
     "NAME": "Way of the Hunter",
     "DESCRIPTIONS": [
-      "At the start of your turn, gain #b1 Weak and #b", "Toxicity."
+      "At the start of your turn, gain #b1 Weak and #b", " Toxic."
     ]
   },
   "HegemonMod:LearnedPower": {
@@ -52,6 +82,18 @@
     "NAME": "Mysterious Stranger",
     "DESCRIPTIONS": [
       "Gain #b", " Artifact on taking a debuff."
+    ]
+  },
+  "HegemonMod:PocketDimensionPower": {
+    "NAME": "Pocket Dimension",
+    "DESCRIPTIONS": [
+      "On drawing, gain #b", " Block. Each turn, lose #r", " Dexterity."
+    ]
+  },
+  "HegemonMod:ReservePower": {
+    "NAME": "Reserve",
+    "DESCRIPTIONS": [
+      "On playing #b", " more Attack cards this turn, gain #b", " Toxic and #r1 Weak."
     ]
   },
   "HegemonMod:PhoenixPower": {
@@ -154,12 +196,6 @@
     "NAME": "Harbinger of Doom",
     "DESCRIPTIONS": [
       "On death, transfer #b", " debuffs to a random enemy. Each turn, increase that number by #b", ". "
-    ]
-  },
-  "HegemonMod:ShadowHand": {
-    "NAME": "Shadow Hand",
-    "DESCRIPTIONS": [
-      "Deal #b", " Necrotic damage with each attack. "
     ]
   },
   "HegemonMod:HegemonyPower": {

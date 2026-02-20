@@ -1,5 +1,6 @@
 package HegemonMod.patches;
 
+import HegemonMod.powers.buff.DefensivePower;
 import HegemonMod.powers.buff.EnrichedPower;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInstrumentPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
@@ -33,6 +34,9 @@ public class LearnedPatch {
             }
             if (player.hasPower(EnrichedPower.POWER_ID)) {
                 c.upgrade();
+            }
+            if (player.hasPower(DefensivePower.POWER_ID)) {
+                player.getPower(DefensivePower.POWER_ID).onSpecificTrigger();
             }
         }
     }

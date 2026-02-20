@@ -2,20 +2,14 @@ package HegemonMod.cards.attacks.rare;
 
 import HegemonMod.HegemonMod;
 import HegemonMod.cards.BaseCard;
-import HegemonMod.cards.attacks.Punition;
 import HegemonMod.character.Hegemon;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
-import com.megacrit.cardcrawl.actions.unique.GreedAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.GainPennyEffect;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 import com.megacrit.cardcrawl.vfx.combat.HemokinesisParticle;
 
@@ -49,20 +43,20 @@ public class BloodHarvest extends BaseCard {
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new AbstractGameAction() {
             @Override public void update() {
-                AbstractDungeon.effectList.add(new FlashAtkImgEffect(this.target.hb.cX, this.target.hb.cY, AttackEffect.BLUNT_HEAVY));
-                calculateCardDamage(m);
-                this.target.damage(new DamageInfo(p, damage, NORMAL));
-                if ((this.target.isDying || this.target.currentHealth <= 0) && !this.target.halfDead && !this.target.hasPower("Minion") && HegemonMod.debuffCount != 0) {
-                    addToTop(new HealAction(p, p, HegemonMod.debuffCount));
+            AbstractDungeon.effectList.add(new FlashAtkImgEffect(m.hb.cX, m.hb.cY, AttackEffect.BLUNT_HEAVY));
+            calculateCardDamage(m);
+            m.damage(new DamageInfo(p, damage, NORMAL));
+            if (HegemonMod.debuffCount != 0 && (m.isDying || m.currentHealth <= 0) && !m.halfDead && !m.hasPower("Minion")) {
+                addToTop(new HealAction(p, p, HegemonMod.debuffCount));
 
-                    for (int index = 0; index != HegemonMod.debuffCount; index ++) {
-                        AbstractDungeon.effectList.add(new HemokinesisParticle(m.hb.cX, m.hb.cY, p.hb.cX, p.hb.cY, true));
-                    }
+                for (int index = 0; index != HegemonMod.debuffCount; index ++) {
+                    AbstractDungeon.effectList.add(new HemokinesisParticle(m.hb.cX, m.hb.cY, p.hb.cX, p.hb.cY, true));
                 }
+            }
 
-                if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead()) {
-                    AbstractDungeon.actionManager.clearPostCombatActions();
-                }
+            if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead()) {
+                AbstractDungeon.actionManager.clearPostCombatActions();
+            }
             }
         });
     }

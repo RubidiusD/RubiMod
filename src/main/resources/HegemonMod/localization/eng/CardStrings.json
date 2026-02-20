@@ -61,8 +61,8 @@
   },
   "HegemonMod:MasteredStrike": {
     "NAME": "Mastered Strike",
-    "DESCRIPTION": "Deal !D! damage. 1 Artifact. NL Put a card from your discard pile to the top of the draw pile.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. 1 Artifact. NL Put 2 cards from your discard pile to the top of the draw pile."
+    "DESCRIPTION": "Deal !D! damage. NL 1 Artifact. NL Put a card from your discard pile to the top of the draw pile.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL 1 Artifact. NL Put 2 cards from your discard pile to the top of the draw pile."
   },
   "HegemonMod:PunishFlurry": {
     "NAME": "Punish Flurry",
@@ -156,20 +156,10 @@
     "DESCRIPTION": "Gain !HegemonMod:Artifact! Artifact. Target monster heals by 3 each turn. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain !HegemonMod:Artifact! Artifact. Target monster heals by 3 each turn."
   },
-  "HegemonMod:SkillBookVanilla": {
-    "NAME": "Vanilla Skill Book",
-    "DESCRIPTION": "Create a random common skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded common skill in your hand. NL Exhaust."
-  },
-  "HegemonMod:SkillBook": {
+  "HegemonMod:SkillBookBlack": {
     "NAME": "Skill Book",
     "DESCRIPTION": "Create a random common skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Create a random upgraded common skill in your hand. NL Exhaust."
-  },
-  "HegemonMod:SkillBookMods": {
-    "NAME": "Modded Skill Book",
-    "DESCRIPTION": "Create a random common Modded skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Create a random upgraded common Modded skill in your hand. NL Exhaust."
   },
   "HegemonMod:Stanislavsky": {
     "NAME": "Stanislavsky",
@@ -235,6 +225,29 @@
     "NAME": "Specialist",
     "DESCRIPTION": "Innate. NL Gain !M! Artifact."
   },
+  "HegemonMod:Composite": {
+    "NAME": "Composite",
+    "DESCRIPTION": "Draw !M! on triggering Artifact."
+  },
+  "HegemonMod:Conserve": {
+    "NAME": "Conserve",
+    "DESCRIPTION": "Playing 3 Skills in a turn gains you !M! Artifact."
+  },
+  "HegemonMod:Defensive": {
+    "NAME": "Defensive",
+    "DESCRIPTION": "Ethereal. NL Gain 1 Temp HP when you make a card.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Temp HP when you make a card."
+  },
+  "HegemonMod:Deserve": {
+    "NAME": "Deserve",
+    "DESCRIPTION": "Playing 5 cards in a turn makes a *Punish in hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Playing 5 cards in a turn makes a *Punish in hand."
+  },
+  "HegemonMod:GuardiansBlessing": {
+    "NAME": "Guardian's Blessing",
+    "DESCRIPTION": "Playing a Power gains you !M! Dexterity and makes !M! *Price in the draw pile.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Playing a Power gains you !M! Dexterity and makes !M! *Price in the draw pile."
+  },
   "HegemonMod:LifeSurplus": {
     "NAME": "Life Surplus",
     "DESCRIPTION": "Ethereal. NL At the end of combat, heal up to !M! of your temp HP. NL Gain !HegemonMod:HP! temp HP."
@@ -246,6 +259,10 @@
   "HegemonMod:Meditation": {
     "NAME": "Meditation",
     "DESCRIPTION": "At the start of each turn, gain Weak and draw a card."
+  },
+  "HegemonMod:Reserve": {
+    "NAME": "Reserve",
+    "DESCRIPTION": "Playing 2 Attacks in a turn gains you !M! HegemonMod:Toxic."
   },
   "HegemonMod:SinEater": {
     "NAME": "Sin Eater",
@@ -279,10 +296,9 @@
     "DESCRIPTION": "Ethereal. NL Increase your buffs by an amount that increases each turn. Start each turn with less [E].",
     "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Increase your buffs by an amount that increases each turn. Start each turn with less [E]."
   },
-  "HegemonMod:PlagueBearer": {
-    "NAME": "Way of the Trickster",
-    "DESCRIPTION": "After each turn, shuffle a *Vector into the draw pile.",
-    "UPGRADE_DESCRIPTION": "After each turn, shuffle !M! *Vectors into the draw pile."
+  "HegemonMod:PocketDimension": {
+    "NAME": "Pocket Dimension",
+    "DESCRIPTION": "Ethereal. Gain !M! Block each time you draw. Lose 1 Dexterity each turn."
   },
   "HegemonMod:Sacrifice": {
     "NAME": "Ritual Sacrifice",
@@ -296,6 +312,11 @@
   "HegemonMod:WayOfTheHunter": {
     "NAME": "Way of the Hunter",
     "DESCRIPTION": "At the start of each turn, gain 2 HegemonMod:Toxic."
+  },
+  "HegemonMod:PlagueBearer": {
+    "NAME": "Way of the Trickster",
+    "DESCRIPTION": "After each turn, shuffle a *Vector into the draw pile.",
+    "UPGRADE_DESCRIPTION": "After each turn, shuffle !M! *Vectors into the draw pile."
   },
 
 
@@ -439,5 +460,15 @@
     "NAME": "%s Skill Book",
     "DESCRIPTION": "Create a random %s common skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Create a random upgraded %s common skill in your hand. NL Exhaust."
+  },
+  "HegemonMod:SkillBookMods": {
+    "NAME": "Modded Skill Book",
+    "DESCRIPTION": "Create a random common Modded skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded common Modded skill in your hand. NL Exhaust."
+  },
+  "HegemonMod:SkillBookVanilla": {
+    "NAME": "Vanilla Skill Book",
+    "DESCRIPTION": "Create a random common skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Create a random upgraded common skill in your hand. NL Exhaust."
   }
 }
