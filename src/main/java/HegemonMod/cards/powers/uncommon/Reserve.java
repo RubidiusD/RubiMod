@@ -2,7 +2,7 @@ package HegemonMod.cards.powers.uncommon;
 
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
-import HegemonMod.powers.buff.ConservePower;
+import HegemonMod.powers.buff.ReservePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -28,7 +28,7 @@ public class Reserve extends BaseCard {
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new ConservePower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new ReservePower(p, magicNumber)));
     }
 
     @Override public AbstractCard makeCopy() { return new Reserve(); }

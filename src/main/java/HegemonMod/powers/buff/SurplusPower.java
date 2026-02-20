@@ -4,7 +4,6 @@ import HegemonMod.powers.BasePower;
 import com.evacipated.cardcrawl.mod.stslib.patches.core.AbstractCreature.TempHPField;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch2;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
-import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
@@ -29,7 +28,7 @@ public class SurplusPower extends BasePower {
         int tempHP = TempHPField.tempHp.get(owner);
         System.out.println("amount of tempHP is" + tempHP);
         if (tempHP != 0) {
-            addToTop(new HealAction(owner, owner, min(tempHP, amount)));
+            owner.heal(min(tempHP, amount));
         }
     }
 

@@ -25,7 +25,7 @@ public class Punish extends BaseCard {
             0 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int DAMAGE = 2;
+    private static final int DAMAGE = 3;
     private static final int UPG_DAMAGE = 1;
     private static final int MAGIC = 1;
     private static final int UPG_MAGIC = 1;
@@ -42,8 +42,8 @@ public class Punish extends BaseCard {
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber)));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber)));
     }
 
     @Override public AbstractCard makeCopy() { return new Punish(); }

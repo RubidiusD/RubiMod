@@ -19,7 +19,7 @@ public class DefensivePower extends BasePower {
 
     @Override
     public void onSpecificTrigger() {
-        addToTop(new AddTemporaryHPAction(owner, owner, amount));
+        addToBot(new AddTemporaryHPAction(owner, owner, amount));
     }
 
     @Override public void updateDescription() {

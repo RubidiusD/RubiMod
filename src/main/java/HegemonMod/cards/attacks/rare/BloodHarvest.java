@@ -41,24 +41,19 @@ public class BloodHarvest extends BaseCard {
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new AbstractGameAction() {
-            @Override public void update() {
+        addToBot(new AbstractGameAction() { @Override public void update() {
             AbstractDungeon.effectList.add(new FlashAtkImgEffect(m.hb.cX, m.hb.cY, AttackEffect.BLUNT_HEAVY));
             calculateCardDamage(m);
             m.damage(new DamageInfo(p, damage, NORMAL));
             if (HegemonMod.debuffCount != 0 && (m.isDying || m.currentHealth <= 0) && !m.halfDead && !m.hasPower("Minion")) {
-                addToTop(new HealAction(p, p, HegemonMod.debuffCount));
-
-                for (int index = 0; index != HegemonMod.debuffCount; index ++) {
-                    AbstractDungeon.effectList.add(new HemokinesisParticle(m.hb.cX, m.hb.cY, p.hb.cX, p.hb.cY, true));
-                }
+                p.heal(HegemonMod.debuffCount);
+                AbstractDungeon.effectList.add(new HemokinesisParticle(m.hb.cX, m.hb.cY, p.hb.cX, p.hb.cY, true));
             }
 
             if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead()) {
                 AbstractDungeon.actionManager.clearPostCombatActions();
             }
-            }
-        });
+        }});
     }
 
     @Override public AbstractCard makeCopy() { return new BloodHarvest(); }

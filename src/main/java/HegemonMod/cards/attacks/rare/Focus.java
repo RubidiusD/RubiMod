@@ -33,23 +33,25 @@ public class Focus extends BaseCard {
 
         setDamage(DAMAGE, UPG_DAMAGE); // self-explanatory
         setExhaust(true);
+        cardsToPreview = new Punition();
 
         addTag(NECROTIC);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        addToBot(new AbstractGameAction() {
-            @Override public void update() {
-                int count = 1;
-                for (AbstractCard card : p.discardPile.group) {
-                    addToTop(new ExhaustSpecificCardAction(card, p.discardPile, true));
-                }
-                addToTop(new MakeTempCardInDiscardAction(cardsToPreview.makeCopy(), count));
-
-                isDone = true;
+        addToBot(new AbstractGameAction() { @Override public void update() {
+            int count = 0;
+            for (AbstractCard card : p.discardPile.group) {
+                addToTop(new ExhaustSpecificCardAction(card, p.discardPile, true));
+                count ++;
             }
-        });
+            if (count != 0) {
+                addToTop(new MakeTempCardInDiscardAction(cardsToPreview.makeCopy(), count));
+            }
+
+            isDone = true;
+        }});
     }
 
     @Override public AbstractCard makeCopy() { return new Focus(); }

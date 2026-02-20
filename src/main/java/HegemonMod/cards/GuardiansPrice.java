@@ -31,8 +31,8 @@ public class GuardiansPrice extends BaseCard {
 
     @Override
     public void triggerWhenDrawn() {
-        addToTop(new DrawCardAction(1));
-        addToTop(new ApplyPowerAction(player, player, new DexterityPower(player, -1)));
+        addToBot(new DrawCardAction(1));
+        addToBot(new ApplyPowerAction(player, player, new DexterityPower(player, -1)));
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

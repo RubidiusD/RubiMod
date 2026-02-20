@@ -30,7 +30,7 @@ public class DisarmingCharm extends BaseCard {
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, block));
-        addToBot(new ApplyPowerAction(m, p, new GentlePower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new GentlePower(p, magicNumber)));
     }
 
     @Override public AbstractCard makeCopy() { return new DisarmingCharm(); }
