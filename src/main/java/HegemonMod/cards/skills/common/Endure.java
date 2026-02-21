@@ -21,12 +21,12 @@ public class Endure extends BaseCard {
     public Endure() {
         super(ID, info); // calls the parent constructor
 
-        setBlock(16, 5);
+        setBlock(18, 4);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, block));
-        addToBot(new ToxicityAction(p, -1));
+        addToBot(new ToxicityAction(p, -2));
     }
 
     @Override public AbstractCard makeCopy() { return new Endure(); }

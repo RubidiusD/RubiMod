@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DrawReductionPower;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 public class Exert extends BaseCard {
     public static final String ID = ("HegemonMod:" + Exert.class.getSimpleName());
@@ -36,7 +37,10 @@ public class Exert extends BaseCard {
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        addToBot(new ApplyPowerAction(p, p, new DrawReductionPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, 1, false)));
+        for (int index = 0; index != magicNumber; index ++) {
+            addToBot(new ApplyPowerAction(p, p, new DrawReductionPower(p, 1)));
+        }
     }
 
     @Override public AbstractCard makeCopy() { return new Exert(); }

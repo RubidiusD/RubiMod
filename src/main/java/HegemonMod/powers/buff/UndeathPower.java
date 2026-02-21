@@ -1,6 +1,8 @@
 package HegemonMod.powers.buff;
 
 import HegemonMod.powers.BasePower;
+import com.badlogic.gdx.graphics.Color;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -8,7 +10,9 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 
-public class UndeathPower extends BasePower {
+import static com.badlogic.gdx.graphics.Color.DARK_GRAY;
+
+public class UndeathPower extends BasePower implements HealthBarRenderPower {
     public static final String POWER_ID = ("HegemonMod:" + UndeathPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
@@ -30,4 +34,14 @@ public class UndeathPower extends BasePower {
     }
 
     public AbstractPower makeCopy() { return new UndeathPower(owner, amount); }
+
+    @Override
+    public int getHealthBarAmount() {
+        return amount;
+    }
+
+    @Override
+    public Color getColor() {
+        return DARK_GRAY.cpy();
+    }
 }

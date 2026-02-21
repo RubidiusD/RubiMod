@@ -21,6 +21,11 @@ public class GuardiansPrice extends BaseCard {
 
     private static final int MAGIC = 1;
 
+    @Override
+    public boolean canUpgrade() {
+        return false;
+    }
+
     public GuardiansPrice() {
         super(ID, info); // calls the parent constructor
 

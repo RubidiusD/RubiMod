@@ -3,12 +3,14 @@ package HegemonMod.cards.attacks.rare;
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
 import HegemonMod.powers.buff.ToxicPower;
+import com.evacipated.cardcrawl.mod.stslib.actions.common.AllEnemyApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 
 import static HegemonMod.util.CustomTags.NECROTIC;
 import static com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect.LIGHTNING;
@@ -37,6 +39,7 @@ public class Pronouncement extends BaseCard {
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAllEnemiesAction(p, damage, NORMAL, LIGHTNING));
+        addToBot(new AllEnemyApplyPowerAction(p, 1, (AbstractMonster mo) -> new WeakPower(mo, 1, false)));
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, -2)));
         addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -2)));
         addToBot(new ApplyPowerAction(p, p, new ToxicPower(p, -2)));

@@ -30,10 +30,22 @@
       "On playing #b", " more cards this turn, make #b", " Punishes in hand."
     ]
   },
+  "HegemonMod:EfficiencyPower": {
+    "NAME": "Efficiency",
+    "DESCRIPTIONS": [
+      "On playing a #b 0 cost card, draw #g", " now and #r", " less next turn."
+    ]
+  },
   "HegemonMod:EnrichedPower": {
     "NAME": "Enriched",
     "DESCRIPTIONS": [
       "On creating a card, Upgrade it. Lasts #b", " turns."
+    ]
+  },
+  "HegemonMod:GiantSlayerPower": {
+    "NAME": "Giant Slayer",
+    "DESCRIPTIONS": [
+      "On healing, give the player #b", " Strength. Cannot be removed."
     ]
   },
   "HegemonMod:GuardiansBlessingPower": {

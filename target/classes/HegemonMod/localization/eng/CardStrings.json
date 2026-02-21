@@ -14,17 +14,22 @@
     "DESCRIPTION": "Deal !D! damage."
   },
 
+  "HegemonMod:Convict": {
+    "NAME": "Convict",
+    "DESCRIPTION": "Deal !D! damage. NL Create a *Punish.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Create a *Punish+."
+  },
   "HegemonMod:Crunch": {
     "NAME": "Crunch",
     "DESCRIPTION": "Deal damage equal to HegemonMod:Toxic gained this turn X !M!. NL (!D!)"
   },
   "HegemonMod:HeroicPlay": {
     "NAME": "Heroic Play",
-    "DESCRIPTION": "Deal !D! damage. NL Become Frail and Vulnerable."
+    "DESCRIPTION": "Deal !D! damage and apply !M! Weak. NL Become Frail and Vulnerable."
   },
   "HegemonMod:LashOut": {
     "NAME": "Lash Out",
-    "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage. NL Inflict !M! HegemonMod:Leech_Toxin."
+    "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage. NL Inflict Weak and !M! HegemonMod:Leech_Toxin."
   },
   "HegemonMod:Ruination": {
     "NAME": "Ruination",
@@ -49,7 +54,7 @@
   },
   "HegemonMod:Exert": {
     "NAME": "Exert",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! less next turn. NL Shuffle this card into your draw pile."
+    "DESCRIPTION": "Deal !D! damage and apply Vulnerable. NL Draw !M! less next turn. NL Shuffle this card into your draw pile."
   },
   "HegemonMod:Flail": {
     "NAME": "Flail",
@@ -87,7 +92,7 @@
   },
   "HegemonMod:Pronouncement": {
     "NAME": "Pronouncement",
-    "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage to ALL Enemies. Lose 2 Strength, Dexterity and Toxic."
+    "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage and apply Weak to ALL Enemies. Lose 2 Strength, Dexterity and Toxic."
   },
   "HegemonMod:Synergize": {
     "NAME": "Synergise",
@@ -126,9 +131,13 @@
     "DESCRIPTION": "Gain 1 Artifact. NL Scry !M!."
   },
 
+  "HegemonMod:Allege": {
+    "NAME": "Allege",
+    "DESCRIPTION": "Gain !B! Block and !HegemonMod:Punish! *Punish. NL Scry !M!, draw 1 now and 1 less next turn."
+  },
   "HegemonMod:Banter": {
     "NAME": "Banter",
-    "DESCRIPTION": "Gain !B!*X Block. NL Add a *Vector to hand for each buff the enemy has, to a max of X. NL Exhaust."
+    "DESCRIPTION": "Gain !B! * X Block. NL Add a *Vector to hand for each buff the enemy has, to a max of X. NL Exhaust."
   },
   "HegemonMod:DisarmingCharm": {
     "NAME": "Disarming Charm",
@@ -140,10 +149,10 @@
   },
   "HegemonMod:Endure": {
     "NAME": "Endure",
-    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HegemonMod:Toxic."
+    "DESCRIPTION": "Gain !B! Block. NL Lose 2 HegemonMod:Toxic."
   },
   "HegemonMod:FalseOpening": {
-    "NAME": "False Opening",
+    "NAME": "Entrap",
     "DESCRIPTION": "Gain !B! Block. NL Create a *Punish.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Create a *Punish+."
   },
@@ -163,25 +172,36 @@
   },
   "HegemonMod:Stanislavsky": {
     "NAME": "Stanislavsky",
-    "DESCRIPTION": "Gain !B!*!M! Block. NL Shuffle !RubiMod:Vectors! *Vectors into your draw pile.",
-    "UPGRADE_DESCRIPTION": "Gain !B!*!M! Block. NL Shuffle !RubiMod:Vectors! *Vectors into your discard pile."
+    "DESCRIPTION": "Gain !B! * !M! Block. NL Shuffle !HegemonMod:Vectors! *Vectors into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B! * !M! Block. NL Shuffle !HegemonMod:Vectors! *Vectors into your discard pile."
   },
 
+  "HegemonMod:Absolve": {
+    "NAME": "Absolve",
+    "DESCRIPTION": "Discard your hand. NL Add 1 *Punish for each card discarded.",
+    "UPGRADE_DESCRIPTION": "Discard your hand. NL Add 1 *Punish for each card discarded. NL Shuffle this card into your draw pile."
+  },
   "HegemonMod:GentleTouch": {
     "NAME": "Gentle Touch",
     "DESCRIPTION": "Gain !M! Strength and heal targets by !M! on hit."
   },
   "HegemonMod:InexorableDoom": {
     "NAME": "Inexorable Doom",
-    "DESCRIPTION": "Apply HegemonMod:Doom. NL Exhaust."
+    "DESCRIPTION": "Apply HegemonMod:Doom. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply Weak, HegemonMod:Leech_Toxin and HegemonMod:Doom. NL Exhaust."
   },
   "HegemonMod:Kindle": {
     "NAME": "Kindle",
     "DESCRIPTION": "Gain 12 temp HP. Add !M! *Blaze to your discard pile."
   },
+  "HegemonMod:Loan": {
+    "NAME": "Loan",
+    "DESCRIPTION": "Draw cards equal to your energy. NL Draw that many fewer next turn. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Draw cards equal to your energy. NL Draw that many fewer next turn."
+  },
   "HegemonMod:PathOfShadows": {
     "NAME": "Path of Shadows",
-    "DESCRIPTION": "Gain !B! x !M! Block. NL You cannot gain Block from cards this turn. Block is not removed at the start of your next turn."
+    "DESCRIPTION": "Gain !B! * !M! Block. NL You cannot gain Block from cards this turn. Block is not removed at the start of your next turn."
   },
   "HegemonMod:SkillBookColorless": {
     "NAME": "Colorless Skill Book",
@@ -283,9 +303,18 @@
     "UPGRADE_DESCRIPTION": "Innate. NL Start each turn with a *Punition in hand."
   },
 
+  "HegemonMod:Efficiency": {
+    "NAME": "Efficiency",
+    "DESCRIPTION": "Autoplay. NL On playing a 0 cost card, draw 1 now and 1 less next turn.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Autoplay. NL On playing a 0 cost card, draw 1 now and 1 less next turn."
+  },
   "HegemonMod:FastLearner": {
     "NAME": "Fast Learner",
     "DESCRIPTION": "Unplayable. NL On draw, reduce the cost of created cards by 1 for !M! turns."
+  },
+  "HegemonMod:GiantSlayer": {
+    "NAME": "Giant Slayer",
+    "DESCRIPTION": "Can only be played if no enemies have Artifact. NL Each time an enemy heals, gain 1 Strength."
   },
   "HegemonMod:HardLearner": {
     "NAME": "Hard Learner",
@@ -335,7 +364,7 @@
 
   "HegemonMod:Penitent": {
     "NAME": "Penitent",
-    "DESCRIPTION": "Deal !D! x !M! damage. NL Gain and apply 1 Strength."
+    "DESCRIPTION": "Deal !D! * !M! damage. NL Gain and apply 1 Strength."
   },
   "HegemonMod:HydraFlail": {
     "NAME": "Hydra Flail",

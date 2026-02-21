@@ -6,6 +6,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\SkillBo
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\ToxicityAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\actions\XEnergyAction.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\Blaze.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\common\Convict.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\common\Crunch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\common\HeroicPlay.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\common\LashOut.java
@@ -31,7 +32,9 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\u
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\attacks\uncommon\Slap5.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\BaseCard.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\GuardiansPrice.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\rare\Efficiency.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\rare\FastLearner.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\rare\GiantSlayer.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\rare\HardLearner.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\rare\PhoenixForm.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\rare\PlagueBearer.java
@@ -53,6 +56,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\un
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\uncommon\Undeath.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\uncommon\WayOfTheHierophant.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\powers\uncommon\WayOfTheSnake.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\common\Allege.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\common\Banter.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\common\DisarmingCharm.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\common\Dose.java
@@ -67,9 +71,11 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\ra
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\starter\CloakofNight.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\starter\Defend.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\starter\MidnightEyes.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\Absolve.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\GentleTouch.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\InexorableDoom.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\Kindle.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\Loan.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\PathOfShadows.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\SkillBookColorless.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\cards\skills\uncommon\SoberUp.java
@@ -89,6 +95,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\buff\Com
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\buff\ConservePower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\buff\DefensivePower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\buff\DeservePower.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\buff\EfficiencyPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\buff\EnrichedPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\buff\GuardiansBlessingPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\buff\HermitPower.java
@@ -111,6 +118,7 @@ C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\buff\Und
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\debuff\DoomPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\debuff\EnergyDownPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\debuff\GentlePower.java
+C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\debuff\GiantSlayerPower.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\debuff\LeechToxin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\debuff\LegacyofSin.java
 C:\Users\brine\Documents\GitHub\RubiMod\src\main\java\HegemonMod\powers\debuff\Necrotoxin.java

@@ -21,7 +21,7 @@ public class SoberUp extends BaseCard {
     public SoberUp() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(1, 1);
+        setMagic(2, 1);
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {

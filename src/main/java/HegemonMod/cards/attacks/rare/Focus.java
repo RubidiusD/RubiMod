@@ -46,8 +46,10 @@ public class Focus extends BaseCard {
                 addToTop(new ExhaustSpecificCardAction(card, p.discardPile, true));
                 count ++;
             }
+            System.out.println("Number of cards exhausted: " + count);
             if (count != 0) {
-                addToTop(new MakeTempCardInDiscardAction(cardsToPreview.makeCopy(), count));
+                addToBot(new MakeTempCardInDiscardAction(new Punition(), count));
+                System.out.println("Number of punitions being made: " + count);
             }
 
             isDone = true;

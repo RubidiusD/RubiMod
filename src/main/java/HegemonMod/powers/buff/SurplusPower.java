@@ -1,17 +1,20 @@
 package HegemonMod.powers.buff;
 
 import HegemonMod.powers.BasePower;
+import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.patches.core.AbstractCreature.TempHPField;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch2;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
+import static com.badlogic.gdx.graphics.Color.GREEN;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static java.lang.Math.min;
 
-public class SurplusPower extends BasePower {
+public class SurplusPower extends BasePower implements HealthBarRenderPower {
     public static final String POWER_ID = ("HegemonMod:" + SurplusPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
@@ -37,6 +40,16 @@ public class SurplusPower extends BasePower {
     }
 
     public AbstractPower makeCopy() { return new SurplusPower(owner, amount); }
+
+    @Override
+    public int getHealthBarAmount() {
+        return min(TempHPField.tempHp.get(owner), amount);
+    }
+
+    @Override
+    public Color getColor() {
+        return GREEN.cpy();
+    }
 
     @SpirePatch2(clz= com.evacipated.cardcrawl.mod.stslib.patches.tempHp.BattleEnd.class, method= "Prefix", paramtypez = {AbstractRoom.class})
     public static class SpecificTrigger {

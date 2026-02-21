@@ -35,9 +35,9 @@ public class LearnedPatch {
             if (player.hasPower(EnrichedPower.POWER_ID)) {
                 c.upgrade();
             }
-            if (player.hasPower(DefensivePower.POWER_ID)) {
-                player.getPower(DefensivePower.POWER_ID).onSpecificTrigger();
-            }
+        }
+        if (player.hasPower(DefensivePower.POWER_ID)) {
+            player.getPower(DefensivePower.POWER_ID).onSpecificTrigger();
         }
     }
 

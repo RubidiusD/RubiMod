@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.RegenPower;
 
 import static HegemonMod.powers.debuff.Sin.calculateSinInt;
 
@@ -47,7 +48,7 @@ public class LeechToxin extends BasePower implements HealthBarRenderPower {
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1] + calculateSinInt(owner, amount) + DESCRIPTIONS[2];
     }
 
-    @Override public int getHealthBarAmount() { return (owner.hasPower(RecoveryPower.POWER_ID)) ? calculateSinInt(owner, this.amount) : 0; }
+    @Override public int getHealthBarAmount() { return (owner.hasPower(RecoveryPower.POWER_ID) || (owner.isPlayer && owner.hasPower(RegenPower.POWER_ID))) ? calculateSinInt(owner, this.amount) : 0; }
 
     @Override public Color getColor() { return CardHelper.getColor(150, 200, 100); }
 

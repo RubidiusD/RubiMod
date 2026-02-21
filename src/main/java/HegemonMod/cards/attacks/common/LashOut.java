@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import HegemonMod.cards.BaseCard;
 import HegemonMod.character.Hegemon;
 import HegemonMod.powers.debuff.LeechToxin;
+import com.megacrit.cardcrawl.powers.WeakPower;
 
 import static HegemonMod.util.CustomTags.NECROTIC;
 
@@ -24,7 +25,7 @@ public class LashOut extends BaseCard {
     );
 
     private static final int DAMAGE = 3;
-    private static final int UPG_DAMAGE = 2;
+    private static final int UPG_DAMAGE = 1;
     private static final int MAGIC = 1;
     private static final int UPG_MAGIC = 2;
 
@@ -39,6 +40,7 @@ public class LashOut extends BaseCard {
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        addToBot(new ApplyPowerAction(m, p, new WeakPower(m, 1, false)));
         if (magicNumber > 0) {
             addToBot(new ApplyPowerAction(m, p, new LeechToxin(m, p, magicNumber)));
         }

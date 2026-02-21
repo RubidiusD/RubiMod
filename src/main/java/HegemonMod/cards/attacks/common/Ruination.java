@@ -22,7 +22,7 @@ public class Ruination extends BaseCard {
     );
 
     private static final int DAMAGE = 7;
-    private static final int UPG_DAMAGE = 3;
+    private static final int UPG_DAMAGE = 4;
 
     public Ruination() {
         super(ID, info); // calls the parent constructor
