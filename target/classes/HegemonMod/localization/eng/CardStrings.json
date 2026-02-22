@@ -137,7 +137,7 @@
   },
   "HegemonMod:Banter": {
     "NAME": "Banter",
-    "DESCRIPTION": "Gain !B! * X Block. NL Add a *Vector to hand for each buff the enemy has, to a max of X. NL Exhaust."
+    "DESCRIPTION": "Gain !B! x X Block. NL Add a *Vector to hand for each buff the enemy has, to a max of X. NL Exhaust."
   },
   "HegemonMod:DisarmingCharm": {
     "NAME": "Disarming Charm",
@@ -172,8 +172,8 @@
   },
   "HegemonMod:Stanislavsky": {
     "NAME": "Stanislavsky",
-    "DESCRIPTION": "Gain !B! * !M! Block. NL Shuffle !HegemonMod:Vectors! *Vectors into your draw pile.",
-    "UPGRADE_DESCRIPTION": "Gain !B! * !M! Block. NL Shuffle !HegemonMod:Vectors! *Vectors into your discard pile."
+    "DESCRIPTION": "Gain !B! x !M! Block. NL Shuffle !HegemonMod:Vectors! *Vectors into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B! x !M! Block. NL Shuffle !HegemonMod:Vectors! *Vectors into your discard pile."
   },
 
   "HegemonMod:Absolve": {
@@ -201,7 +201,7 @@
   },
   "HegemonMod:PathOfShadows": {
     "NAME": "Path of Shadows",
-    "DESCRIPTION": "Gain !B! * !M! Block. NL You cannot gain Block from cards this turn. Block is not removed at the start of your next turn."
+    "DESCRIPTION": "Gain !B! x !M! Block. NL You cannot gain Block from cards this turn. Block is not removed at the start of your next turn."
   },
   "HegemonMod:SkillBookColorless": {
     "NAME": "Colorless Skill Book",
@@ -364,7 +364,7 @@
 
   "HegemonMod:Penitent": {
     "NAME": "Penitent",
-    "DESCRIPTION": "Deal !D! * !M! damage. NL Gain and apply 1 Strength."
+    "DESCRIPTION": "Deal !D! x !M! damage. NL Gain and apply 1 Strength."
   },
   "HegemonMod:HydraFlail": {
     "NAME": "Hydra Flail",

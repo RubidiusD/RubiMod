@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.DrawReductionPower;
+import HegemonMod.powers.debuff.DrawLessNextTurnPower;
 
 public class EfficiencyPower extends BasePower {
     public static final String POWER_ID = ("HegemonMod:" + EfficiencyPower.class.getSimpleName());
@@ -25,7 +25,9 @@ public class EfficiencyPower extends BasePower {
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
         if (card.costForTurn == 0) {
             addToBot(new DrawCardAction(amount));
-            addToBot(new ApplyPowerAction(owner, owner, new DrawReductionPower(owner, amount)));
+            for (int index = 0; index != amount; index ++) {
+                addToBot(new ApplyPowerAction(owner, owner, new DrawLessNextTurnPower(owner, 1)));
+            }
         }
     }
 

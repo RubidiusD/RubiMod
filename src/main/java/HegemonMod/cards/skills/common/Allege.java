@@ -3,6 +3,7 @@ package HegemonMod.cards.skills.common;
 import HegemonMod.cards.BaseCard;
 import HegemonMod.cards.attacks.Punish;
 import HegemonMod.character.Hegemon;
+import HegemonMod.powers.debuff.DrawLessNextTurnPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -11,7 +12,6 @@ import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DrawReductionPower;
 
 public class Allege extends BaseCard {
     public static final String ID = ("HegemonMod:" + Allege.class.getSimpleName());
@@ -37,7 +37,7 @@ public class Allege extends BaseCard {
         addToBot(new MakeTempCardInHandAction(cardsToPreview.makeCopy(), customVar("Punish")));
         addToBot(new ScryAction(magicNumber));
         addToBot(new DrawCardAction(1));
-        addToBot(new ApplyPowerAction(p, p, new DrawReductionPower(p, 1)));
+        addToBot(new ApplyPowerAction(p, p, new DrawLessNextTurnPower(p, 1)));
     }
 
     @Override public AbstractCard makeCopy() { return new Allege(); }

@@ -28,6 +28,9 @@ public class GiantSlayer extends BaseCard {
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        if (!super.canUse(p, m)) {
+            return false;
+        }
         for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
             if (mo.hasPower(ArtifactPower.POWER_ID)) {
                 return false;

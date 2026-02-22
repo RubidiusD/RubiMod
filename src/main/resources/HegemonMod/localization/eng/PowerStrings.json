@@ -33,7 +33,7 @@
   "HegemonMod:EfficiencyPower": {
     "NAME": "Efficiency",
     "DESCRIPTIONS": [
-      "On playing a #b 0 cost card, draw #g", " now and #r", " less next turn."
+      "On playing a #b0 cost card, draw #g", " now and #r", " less next turn."
     ]
   },
   "HegemonMod:EnrichedPower": {
@@ -154,7 +154,13 @@
   "HegemonMod:DoomPower": {
     "NAME": "Doom",
     "DESCRIPTIONS": [
-      "Increase debuffs by #b", " at the start of each turn, then increase that number by #b", ". "
+      "Increase debuffs by #b", " at the start of each turn, then increase that number by #b", "."
+    ]
+  },
+  "HegemonMod:DrawLessNextTurnPower": {
+    "NAME": "Draw Less Next Turn",
+    "DESCRIPTIONS": [
+      "Draw #r", " less cards next turn."
     ]
   },
   "HegemonMod:EnergyDownPower": {

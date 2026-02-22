@@ -29,5 +29,10 @@
       "RUNNERPURPLE":  "Runner",
       "UNCHAINED_ORANGE_COLOR": "Unchained"
     }
+  },
+  "HegemonMod:0CardDraw": {
+    "TEXT": [
+      "Not drawing anything next turn, lol"
+    ]
   }
 }

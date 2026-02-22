@@ -8,7 +8,9 @@ import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DrawReductionPower;
+import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
+import HegemonMod.powers.debuff.DrawLessNextTurnPower;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 public class Loan extends BaseCard {
     public static final String ID = ("HegemonMod:" + Loan.class.getSimpleName());
@@ -28,9 +30,19 @@ public class Loan extends BaseCard {
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new AbstractGameAction() { @Override public void update() {
-            addToTop(new DrawCardAction(energyOnUse));
-            for (int index = 0; index != energyOnUse; index ++) {
-                addToTop(new ApplyPowerAction(p, p, new DrawReductionPower(p, 1)));
+            int effect = EnergyPanel.totalCount;
+            if (energyOnUse != -1) {
+                effect = energyOnUse;
+            }
+            System.out.println("totalCount" + EnergyPanel.totalCount);
+            System.out.println("energyOnUse" + energyOnUse);
+            System.out.println("effect" + effect);
+
+            if (effect > 0) {
+                addToTop(new DrawCardAction(effect));
+                for (int index = 0; index != effect; index ++) {
+                    addToTop(new ApplyPowerAction(p, p, new DrawLessNextTurnPower(p, 1)));
+                }
             }
 
             this.isDone = true;

@@ -112,6 +112,7 @@ HegemonMod\powers\buff\HermitPower.class
 HegemonMod\relics\BaseRelic.class
 HegemonMod\cards\BaseCard$CardStats.class
 HegemonMod\powers\buff\EfficiencyPower.class
+HegemonMod\powers\debuff\DrawLessNextTurnPower.class
 HegemonMod\cards\skills\common\Endure.class
 HegemonMod\powers\buff\MysteriousPower.class
 HegemonMod\cards\powers\uncommon\SinEater.class
