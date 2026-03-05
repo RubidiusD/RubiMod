@@ -10,6 +10,8 @@ public class LearnedPower extends BasePower {
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = true;
 
+    private boolean justApplied = true;
+
     public LearnedPower(AbstractCreature owner, int amount) { super(POWER_ID, TYPE, TURN_BASED, owner, amount); }
 
     @Override public void stackPower(int stackAmount) {
@@ -17,8 +19,18 @@ public class LearnedPower extends BasePower {
         updateDescription();
     }
 
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        justApplied = false;
+    }
+
     @Override public void atEndOfRound() {
-        addToBot(new ReducePowerAction(owner, owner, this, 1));
+        if (justApplied) {
+            justApplied = false;
+        }
+        else {
+            addToBot(new ReducePowerAction(owner, owner, this, 1));
+        }
     }
 
     @Override public void updateDescription() {

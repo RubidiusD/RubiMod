@@ -81,7 +81,7 @@
   "HegemonMod:LikeBloodPower": {
     "NAME": "Like Blood",
     "DESCRIPTIONS": [
-      "At the end of your turn, if you have Artifact, gain #b", " Block."
+      "At the end of your turn, if you have Artifact, gain #b", " Block. Otherwise, take #r15% more damage for the rest of combat."
     ]
   },
   "HegemonMod:MeditationPower": {
@@ -191,6 +191,12 @@
     "NAME": "Necrotoxin",
     "DESCRIPTIONS": [
       "Take #b", " Necrotic damage at the start of each turn, for #r", " total."
+    ]
+  },
+  "HegemonMod:PenitentPower": {
+    "NAME": "Penitent",
+    "DESCRIPTIONS": [
+      "Increase received damage by #r", "%."
     ]
   },
   "HegemonMod:Sin": {

@@ -1,6 +1,8 @@
 package HegemonMod.powers.buff;
 
 import HegemonMod.powers.BasePower;
+import HegemonMod.powers.debuff.PenitentPower;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -21,6 +23,9 @@ public class LikeBloodPower extends BasePower {
     @Override public void atEndOfTurn(boolean isPlayer) {
         if (owner.hasPower(ArtifactPower.POWER_ID) && owner.getPower(ArtifactPower.POWER_ID).amount > 0) {
             addToTop(new GainBlockAction(owner, amount));
+        }
+        else {
+            addToTop(new ApplyPowerAction(owner, owner, new PenitentPower(owner, 1)));
         }
     }
 

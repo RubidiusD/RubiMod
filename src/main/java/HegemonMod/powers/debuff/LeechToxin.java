@@ -6,7 +6,6 @@ import HegemonMod.powers.buff.RecoveryPower;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -30,18 +29,9 @@ public class LeechToxin extends BasePower implements HealthBarRenderPower {
     }
 
     @Override public int onHeal(int healAmount) {
-        onSpecificTrigger();
-        return 0;
-    }
-
-    @Override public void onSpecificTrigger() {
-        reducePower(1);
-        if (amount == 0)
-            addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
         this.flash();
-        updateDescription();
-
         addToTop(new LeechToxinLoseHPAction(owner, source, amount + 1, AbstractGameAction.AttackEffect.POISON));
+        return 0;
     }
 
     @Override public void updateDescription() {

@@ -18,7 +18,7 @@ public class LikeBlood extends BaseCard {
             2 // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 8;
+    private static final int MAGIC = 9;
     private static final int UPG_MAGIC = 4;
 
     public LikeBlood() {

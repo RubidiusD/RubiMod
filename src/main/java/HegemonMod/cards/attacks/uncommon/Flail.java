@@ -18,7 +18,7 @@ public class Flail extends BaseCard {
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,
             CardRarity.UNCOMMON,
-            CardTarget.ENEMY,
+            CardTarget.ALL_ENEMY,
             2 // card cost!! (-1 is X, -2 is unplayable)
     );
 

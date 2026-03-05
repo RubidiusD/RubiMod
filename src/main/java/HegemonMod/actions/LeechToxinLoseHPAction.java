@@ -1,11 +1,14 @@
 package HegemonMod.actions;
 
+import HegemonMod.powers.debuff.LeechToxin;
 import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.unique.PoisonLoseHpAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 
@@ -29,6 +32,12 @@ public class LeechToxinLoseHPAction extends PoisonLoseHpAction {
                 this.target.tint.color = Color.CORAL.cpy();
                 this.target.tint.changeColor(Color.WHITE.cpy());
                 this.target.damage(new DamageInfo(this.source, calculateSinInt(target, amount), DamageInfo.DamageType.HP_LOSS));
+                AbstractPower p = target.getPower(LeechToxin.POWER_ID);
+                p.reducePower(1);
+                if (p.amount == 0)
+                    addToTop(new RemoveSpecificPowerAction(target, target, LeechToxin.POWER_ID));
+                else
+                    p.updateDescription();
             }
             if ((AbstractDungeon.getCurrRoom()).monsters.areMonstersBasicallyDead())
                 AbstractDungeon.actionManager.clearPostCombatActions();

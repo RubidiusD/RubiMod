@@ -130,6 +130,7 @@ HegemonMod\cards\powers\rare\HardLearner.class
 HegemonMod\cards\skills\starter\Defend.class
 HegemonMod\util\GeneralUtils.class
 HegemonMod\cards\powers\uncommon\LikeBlood.class
+HegemonMod\powers\debuff\PenitentPower.class
 HegemonMod\cards\skills\uncommon\SkillBookColorless.class
 HegemonMod\patches\ExecuteJudgementPatch.class
 HegemonMod\actions\LeechToxinLoseHPAction.class

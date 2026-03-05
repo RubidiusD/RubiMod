@@ -62,7 +62,7 @@
   },
   "HegemonMod:HeidelKick": {
     "NAME": "Heidel Kick",
-    "DESCRIPTION": "Deal !D! damage. Draw !M!. NL Draw 1 less for the rest of combat."
+    "DESCRIPTION": "Deal !D! damage. Apply 2 Weak. Draw !M!. NL Draw 1 less for the rest of combat."
   },
   "HegemonMod:MasteredStrike": {
     "NAME": "Mastered Strike",
@@ -274,7 +274,7 @@
   },
   "HegemonMod:LikeBlood": {
     "NAME": "Like Blood",
-    "DESCRIPTION": "At the end of your turn, if you have Artifact, gain !M! Block."
+    "DESCRIPTION": "Each turn, if you have Artifact, gain !M! Block. Otherwise, take 15% more damage."
   },
   "HegemonMod:Meditation": {
     "NAME": "Meditation",

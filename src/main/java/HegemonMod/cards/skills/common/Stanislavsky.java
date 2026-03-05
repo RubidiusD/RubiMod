@@ -24,7 +24,7 @@ public class Stanislavsky extends BaseCard {
         super(ID, info); // calls the parent constructor
 
         setBlock(5);
-        setMagic(2, 1);
+        setMagic(2);
         setCustomVar("Vectors", 2, 3);
 
         cardsToPreview = new Vector();
